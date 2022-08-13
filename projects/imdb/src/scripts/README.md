@@ -1,0 +1,1 @@
+This directory is intended to be used for python and shell scripts for your project
