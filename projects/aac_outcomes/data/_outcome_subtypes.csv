@@ -1,0 +1,43 @@
+id,outcome_type_id,outcome_subtype
+327,103,None
+328,103,Foster
+329,103,Customer S
+330,107,Court/Investigation
+331,100,Snr
+332,106,In Foster
+333,106,None
+334,103,Field
+335,100,Partner
+336,99,Foster
+337,102,None
+338,106,In Surgery
+339,101,None
+340,107,Behavior
+341,107,Aggressive
+342,106,Enroute
+343,99,None
+344,107,Rabies Risk
+345,99,Offsite
+346,106,At Vet
+347,100,In State
+348,97,In Kennel
+349,103,At Vet
+350,104,None
+351,100,Barn
+352,107,Medical
+353,98,None
+354,107,None
+355,99,Barn
+356,100,Out State
+357,107,Underage
+358,106,Emergency
+359,97,None
+360,100,Emer
+361,97,Possible Theft
+362,106,In Kennel
+363,97,In Foster
+364,100,SCRP
+365,107,At Vet
+366,103,Prc
+367,105,None
+368,107,Suffering
