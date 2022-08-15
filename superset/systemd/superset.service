@@ -1,0 +1,12 @@
+[Unit]
+Description=Python Venv Apache Superset service
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+ExecStart=/home/ubuntu/bin/run_superset.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
