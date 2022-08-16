@@ -31,6 +31,10 @@ This course is co-taught by [Chip Young](http://example.com), a working data pro
 
 Office hours are by email request. Also happy to talk before class, please email to set that up.  Please do reach out, happy to chat about anything, including career paths, other courses, life in organizations, and getting the best out of your UTexas experience.
 
+## Canvas link
+
+The course space on Canvas is available at: https://utexas.instructure.com/courses/1341797
+
 ## Land Acknowledgement
 
 We would like to acknowledge that when we are meeting on Indigenous land. Moreover, we would like to acknowledge and pay our respects to the Carrizo & Comecrudo, Coahuiltecan, Caddo, Tonkawa, Comanche, Lipan Apache, Alabama-Coushatta, Kickapoo, Tigua Pueblo, and all the American Indian and Indigenous Peoples and communities who have been or have become a part of these lands and territories in Texas, here on Turtle Island.
@@ -146,6 +150,11 @@ Careers in Data Engineering
 * Data Engineer as an Infrastructure Engineer  
 
 ## Assessments
+
+TODO: 
+- Grading policy, including the means of evaluation and assignment of class grades, including whether plus and minus grades will be used for the final class grade and whether and, if so, how attendance will be used in determining the course grade;
+- A brief descriptive overview of all major course requirements and assignments, along with the dates of exams and assignments that count for 20 percent or more of the class grade;
+- Making Up Missed Work – Policies and procedures around makeup assignments;  In particular we should have clear guidance around what should happen if student tech fails for homework.  I usually handle this through allowing two assignment "drops" for everyone (and add an additional drop for all if there are unforseen circumstances that affect everyone, like the server failing or ice storms.)
 
 ### Weekly Assignments
 
