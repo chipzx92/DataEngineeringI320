@@ -49,6 +49,17 @@ You need a laptop with a browser to access the data visualization tool we will u
 using a virtual machine (VM) on a cloud service to do most of your work. The software used in this 
 class will be installed on your VM or as a cloud servicw. However you will need your own laptop for class, able to access the utexas wifi network.  If you do not have a laptop, or yours stops working, the school and unversity has resources available. Please check [these university resources](https://onestop.utexas.edu/keep-learning/#acc_1-1). Check the "Before your classes" section; I believe that you reach out to the Texas One Stop). We will work to have one or two loaner laptops available since we know things sometimes break just before class.
 
+## Class Recordings
+
+The course is an in person course; you should plan to attend each and every class.  However, we know that recordings can be very useful for unavoidable missed classes and for reviewing in-class material when working on homework or studying.
+
+Therefore, this class is using the Lectures Online recording system. This system records the audio and video material presented in class for you to review after class. Links for the recordings will appear in the Lectures Online tab on the Canvas page for this class. You will find this tab along the left side navigation in Canvas.
+
+To review a recording, simply click on the Lectures Online navigation tab (in Canvas) and follow the instructions presented to you on the page. You can learn more about how to use the Lectures Online system at http://sites.la.utexas.edu/lecturesonline/students/how-to-access-recordings/.
+
+You can find additional information about Lectures Online at: https://sites.la.utexas.edu/lecturesonline/.
+
+
 ## Course Texts
 
 There are no required texts for the course, but you will find these resources to be useful.
