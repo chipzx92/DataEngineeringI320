@@ -18,7 +18,7 @@ critical.
 
 ### "Raw Data"
 ##### Where Does It Come From?
-* Consumer software systems (Tiktok, Spotify, Amazon)  
+* Consumer software systems (TikTok, Spotify, Amazon)  
 * Internal systems (Salesforce, CRM, Accounting, HR, etc. )  
 * Internal business users (Excel spreadsheets)  
 * IoT devices (solar panels, automobiles, cell phones)  

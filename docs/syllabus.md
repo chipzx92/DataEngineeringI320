@@ -27,7 +27,7 @@ INF 385T.9 (Data Wrangling), or INF 380P (Introduction to Programming) are also 
 
 ## Professors and Office Hours
 
-This course is co-taught by [Chip Young](http://example.com), a working data professional, and [James Howison](https://www.ischool.utexas.edu/people/person_details?PersonID=175), an associate professor in the Texas School of Information.
+This course is co-taught by [Chip Young](https://utexas.instructure.com/courses/1341797/users/4569937), a working data professional, and [James Howison](https://www.ischool.utexas.edu/people/person_details?PersonID=175), an associate professor in the Texas School of Information.
 
 Office hours are by email request. Also happy to talk before class, please email to set that up.  Please do reach out, happy to chat about anything, including career paths, other courses, life in organizations, and getting the best out of your UTexas experience.
 
@@ -47,7 +47,7 @@ Prepare students for careers as data professionals.
 ## Computing Resources
 You need a laptop with a browser to access the data visualization tool we will use. You will be 
 using a virtual machine (VM) on a cloud service to do most of your work. The software used in this 
-class will be installed on your VM or as a cloud servicw. However you will need your own laptop for class, able to access the utexas wifi network.  If you do not have a laptop, or yours stops working, the school and unversity has resources available. Please check [these university resources](https://onestop.utexas.edu/keep-learning/#acc_1-1). Check the "Before your classes" section; I believe that you reach out to the Texas One Stop). We will work to have one or two loaner laptops available since we know things sometimes break just before class.
+class will be installed on your VM or as a cloud service. However, you will need your own laptop for class, able to access the utexas Wi-Fi network.  If you do not have a laptop, or yours stops working, the school and university has resources available. Please check [these university resources](https://onestop.utexas.edu/keep-learning/#acc_1-1). Check the "Before your classes" section; I believe that you reach out to the Texas One Stop. We will work to have one or two loaner laptops available since we know things sometimes break just before class.
 
 ## Class Recordings
 
@@ -77,13 +77,12 @@ As a member of this class you will have free access to the DataCamp site, I beli
 
 ### Class 1: Introduction to Data Engineering (Aug 23/25)  
 Introductions  
-Syllabus review
+Syllabus review  
 Definition and Overview of Data Engineering 
 
 “Data Is The New Oil” presentation  
 Overview of example end-to-end project  
-Overview of semester project  
-
+Overview of semester project 
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 30/Sep 1)  
 Presentation and distribution of sample end-to-end project  
@@ -181,7 +180,7 @@ If you've uploaded a PDF there will be comments left on the PDF, in addition to 
 
 A portion of the course grade is a project to produce a data engineering workflow (sometimes also called a "data pipeline"). 
 
-The project will be done in pairs. We will have an initial individual assignment to generate ideas, then opportunities to review each other's ideas and form groups. Groups are optional; you may complete this project individually as as a pair. 
+The project will be done in pairs. We will have an initial individual assignment to generate ideas, then opportunities to review each other's ideas and form groups. Groups are optional; you may complete this project individually as a pair. 
 
 Working in pairs for this course does not mean dividing up the work; I require each group member to understand everything about their project. If there is a part of your project that you don't understand or couldn't work with then you are missing a crucial learning opportunity. We work in pairs to work together (supporting each other's learning) not to reduce the amount or diversity of the work that we do.
 
@@ -189,7 +188,7 @@ When I use the word "workflow" (or "pipeline") I mean a process that moves from 
 
 The project builds up through the semester (e.g., after we've learned Database Design you will do a design for the database in your workflow), culminating in a full workflow that you demonstrate and describe through the report.
 
-There are more details on the specific Assignment page on Canvas, but note that each project needs at least three datasets from at least two different organizations (i.e., 3 datasets in total, per idea, no more than 2 of those can come from the same organization). In addition your project must handle synonyms of some form (e.g., modeling a single US state that can be referred to as Texas, TX, State of Texas, Tejas, etc.). This page outlines [advice on finding interesting data sources](class_modules/data_sources/) including tools to convert formats.
+There are more details on the specific Assignment page on Canvas, but note that each project needs at least three datasets from at least two different organizations (i.e., 3 datasets in total, per idea, no more than 2 of those can come from the same organization). In addition, your project must handle synonyms of some form (e.g., modeling a single US state that can be referred to as Texas, TX, State of Texas, Tejas, etc.). This page outlines [advice on finding interesting data sources](class_modules/data_sources/) including tools to convert formats.
 
 Example projects from previous years (note that whimsy is encouraged, funny projects keep the focus on wrangling, serious projects keep the focus on the topic. I think you want people to whom you describe this project not to quibble about your analysis, but to appreciate your data wrangling.):
 
@@ -206,7 +205,7 @@ Example projects from previous years (note that whimsy is encouraged, funny proj
 
 ### Academic Integrity
 
-Each student in the course is expected to abide by the University of Texas Honor Code: "As a student of The University of Texas at Austin, I shall abide by the core values of the University and uphold academic integrity." Plagiarism is taken very seriously at UT. Therefore, if you use words or ideas that are not your own (or that you have used in previous class), you must cite your sources and use quote marks appropriately. Otherwise you will be guilty of plagiarism and subject to academic disciplinary action, including failure of the course. In particular, students are reminded that proper citation requires mentioning sources when you use them, not just in a general list of references at the end of a document. You are responsible for understanding [UT's Academic Honesty and the University Honor Code]( https://deanofstudents.utexas.edu/conduct/academicintegrity.php). If this is at all confusing, please take this [Plagarism Tutorial](https://www.lib.usm.edu/plagiarism_tutorial/).
+Each student in the course is expected to abide by the University of Texas Honor Code: "As a student of The University of Texas at Austin, I shall abide by the core values of the University and uphold academic integrity." Plagiarism is taken very seriously at UT. Therefore, if you use words or ideas that are not your own (or that you have used in previous class), you must cite your sources and use quote marks appropriately. Otherwise, you will be guilty of plagiarism and subject to academic disciplinary action, including failure of the course. In particular, students are reminded that proper citation requires mentioning sources when you use them, not just in a general list of references at the end of a document. You are responsible for understanding [UT's Academic Honesty and the University Honor Code]( https://deanofstudents.utexas.edu/conduct/academicintegrity.php). If this is at all confusing, please take this [Plagiarism Tutorial](https://www.lib.usm.edu/plagiarism_tutorial/).
 
 In particular, **any time you use the copy function** from someone else's writing (e.g., an article, blog post) you must have a plan about how you will use those words, how you will use quote marks ("), and how you will cite the work.
 
@@ -214,7 +213,7 @@ In particular, **any time you use the copy function** from someone else's writin
 
 The weekly assignments are individual work. However, as long as you meet the condition below, I give you explicit permission to work together with other classmates on the assignments or on your projects. With the same condition, you are also welcome to seek input from people outside the class, such as friends and family. 
 
-The one condition is that you add a note to your homework (ideally through a comment in the Canvas submission) indicating how the work was done and identifying with whom you worked and how (thus ensuring that we are following the Academic Integrity policy above). For example you might say "Daria and I worked on this in the lab together, when we started out we were confused about X but I figured it out and shared that with Daria. Our code is very similar because we worked together". Or perhaps "I was confused about how to pad a string with spaces, and after working at it for 30 minutes I chatted about it with my partner who suggested the xyz method. I was pleased when I got that working myself." When you have worked together your code will have similarities, but you must not turn in identical code; rather you should take code you've worked on together and personalize it through comments that explain what is happening in the code. The comments must be your own, individual, work.
+The one condition is that you add a note to your homework (ideally through a comment in the Canvas submission) indicating how the work was done and identifying with whom you worked and how (thus ensuring that we are following the Academic Integrity policy above). For example, you might say "Daria and I worked on this in the lab together, when we started out we were confused about X but I figured it out and shared that with Daria. Our code is very similar because we worked together". Or perhaps "I was confused about how to pad a string with spaces, and after working at it for 30 minutes I chatted about it with my partner who suggested the xyz method. I was pleased when I got that working myself." When you have worked together your code will have similarities, but you must not turn in identical code; rather you should take code you've worked on together and personalize it through comments that explain what is happening in the code. The comments must be your own, individual, work.
 
 Neither "working together" nor "seeking input" means having others do the work for you; you should always be certain that you are learning and that you understand the code that you have submitted. 
 
@@ -252,7 +251,7 @@ With these rights come responsibilities:
 
 ### Personal Pronoun Preference
 
-Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: https://utdirect.utexas.edu/apps/ais/chosen_name/. I will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc). Please advise me of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit https://utexas.instructure.com/courses/633028/pages/profile-pronouns. More resources available on the Gender and Sexuality Center’s website, www.utgsc.org.
+Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: https://utdirect.utexas.edu/apps/ais/chosen_name/. I will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc.). Please advise me of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit https://utexas.instructure.com/courses/633028/pages/profile-pronouns. More resources available on the Gender and Sexuality Center’s website, www.utgsc.org.
  
 ###  Basic Needs Security
 
@@ -276,7 +275,7 @@ Your success in this class is important to me. We will all need accommodations b
 
 This class respects and welcomes students of all backgrounds, identities, and abilities. If there are circumstances that make our learning environment and activities difficult, if you have medical information that you need to share with me, or if you need specific arrangements in case the building needs to be evacuated, please let me know. 
 
-I am committed to creating an effective learning environment for all students, but I can only do so if you discuss your needs with me as early as possible. Requests for accomodations are quite normal and quite frequent and I promise to maintain the confidentiality of these discussions. If appropriate, also contact [Services for Students with Disabilities](http://ddce.utexas.edu/disability/about/).
+I am committed to creating an effective learning environment for all students, but I can only do so if you discuss your needs with me as early as possible. Requests for accommodations are quite normal and quite frequent and I promise to maintain the confidentiality of these discussions. If appropriate, also contact [Services for Students with Disabilities](http://ddce.utexas.edu/disability/about/).
 
 ### Counseling and Mental Health Center
 
