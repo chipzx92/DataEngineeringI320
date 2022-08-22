@@ -161,6 +161,17 @@ Careers in Data Engineering
 
 ## Assessments
 
+Course grades will be assiged based on performance in the course assessments (see below for details):
+
+- Weekly assignments (~10): 50%
+- Semester Project: 50%
+  - Group Pipeline code and dashboard: 35%, Due Nov Friday 18 (before Thanksgiving break)
+  - Group presentation: 5%, Tuesday Nov 29 (just after Thanksgiving break)
+  - Individual interview about group project: 10% (scheduled during last week of classes (Mon Nov 28-Fri Dec 2).
+
+The assignments and grading scheme (A, A-, B, ..., F) are shown in Canvas.  Assignments will be submitted through Canvas.
+
+
 TODO: 
 - Grading policy, including the means of evaluation and assignment of class grades, including whether plus and minus grades will be used for the final class grade and whether and, if so, how attendance will be used in determining the course grade;
 - A brief descriptive overview of all major course requirements and assignments, along with the dates of exams and assignments that count for 20 percent or more of the class grade;
@@ -168,38 +179,31 @@ TODO:
 
 ### Weekly Assignments
 
-<!-- The bulk of your course grade (75%) comes from Weekly Assignments. There are assignments throughout each week for this course, covering the material addressed that week.  The weekly assignments are due 11:59 pm on Sunday (this is to ensure that we can grade them before Tuesday class). Late assignments *will receive a grade of zero* but you can drop your 3 lowest grades. It's always worth turning in the assignment, even if late, because the assignments test and drive your learning and your performance helps guide me on material. So not completing an assignment is a sure way to fall behind. Students have used their drops in the past and then been very sad when an actual emergency meant they could not complete their homework.
+50% of your courser grade will come from Weekly Assignments. Thesee are assignments each week for this course, covering the material addressed that week, with the assignment released and introduced during class on Thursday. The weekly assignments are due 11:59 pm on Sunday (this is to ensure that we can grade them before Tuesday class). Late assignments *will receive a grade of zero* but you can drop your 2 lowest grades. It's always worth turning in the assignment, even if late, because the assignments test and drive your learning and your performance helps guide me on material. So not completing an assignment is a sure way to fall behind. Students have used their drops in the past and then been very sad when an actual emergency meant they could not complete their homework.
 
-The assignments, and grading rubric, will be released on Canvas before each Thursday class, so we'll go over the assignment and ensure everyone knows what's required. Each assignment will be turned in through Canvas, usually by uploading a PDF, text, or notebook HTML export file. 
+If technology fails you (broken laptops, server issues) and this means that you have difficulty with your homework you should complete and submit as much as can be done without the computer (e.g., hand drawn diagrams, writing out parts of queries, describing pipeline elements). Describe the issues that you have faced and the professors will consider excusing the remainder of the assignment.
 
-If you've uploaded a PDF there will be comments left on the PDF, in addition to any text comments in Canvas. You can see the comments on the PDF via by using the ["viewing feedback"](https://guides.instructure.com/m/4212/l/352349-how-do-i-view-assignment-feedback-comments-from-my-instructor-using-crocodoc-annotations) button.  -->
+If you've uploaded a PDF as part of the assignhment there will be comments left on the PDF, in addition to any text comments in Canvas. You can see the comments on the PDF via by using the ["viewing feedback"](https://guides.instructure.com/m/4212/l/352349-how-do-i-view-assignment-feedback-comments-from-my-instructor-using-crocodoc-annotations) button.
+
+Weekly assignments should take about 1-2 hours. If you are spending 3 or more hours on the homework you are spending more time than expected; reach out for a meeting with a course professor.
 
 ### Project
 
-<!--
+50% of your course grade will come from a group project to a data engineering workflow (sometimes also called a "data pipeline"). 
 
-A portion of the course grade is a project to produce a data engineering workflow (sometimes also called a "data pipeline"). 
+The project will be done in groups (to be determined but likely 3 or 4 students).
 
-The project will be done in pairs. We will have an initial individual assignment to generate ideas, then opportunities to review each other's ideas and form groups. Groups are optional; you may complete this project individually as a pair. 
+The project will consist of three elements, two graded as a group and one graded individually.
 
-Working in pairs for this course does not mean dividing up the work; I require each group member to understand everything about their project. If there is a part of your project that you don't understand or couldn't work with then you are missing a crucial learning opportunity. We work in pairs to work together (supporting each other's learning) not to reduce the amount or diversity of the work that we do.
+1. A working data pipeline, using the technologies taught in this class, including vizualization dashboards, together with a written commentary (README.md) describing the pipeline and the challenges overcome will be submitted (3-4 pages including illustrations). Worth 35% of course grade.
+2. A group presentation built using Markdown and presented in class on Tuesday Nov 28 (presentation 5-8 minutes, around 6 slides). Worth 5% of course grade.
+3. An individual interview with course professor to explain the project and answers questions about the techniques and results. Worth 10% of course grade. 
 
-When I use the word "workflow" (or "pipeline") I mean a process that moves from data you obtain through reading, cleaning, validating, analyzing, and providing results. The workflow includes the data, the scripts that read and query the data, and the final output. We will discuss example projects in class early in the semester. 
+Working in groups for this course does not mean dividing up the work; We require each group member to understand everything about their project. If there is a part of your project that you don't understand or couldn't work with then you are missing a crucial learning opportunity. We work in groups to work together (supporting each other's learning) not to reduce the amount or diversity of the work that we do. The individual interview helps us assess how each group member understands the project as whole.
 
-The project builds up through the semester (e.g., after we've learned Database Design you will do a design for the database in your workflow), culminating in a full workflow that you demonstrate and describe through the report.
+We will provide each group with data and requirements for their project. The datasets will be randomly allocated to groups. Only a single group will be working with each dataset.
 
-There are more details on the specific Assignment page on Canvas, but note that each project needs at least three datasets from at least two different organizations (i.e., 3 datasets in total, per idea, no more than 2 of those can come from the same organization). In addition, your project must handle synonyms of some form (e.g., modeling a single US state that can be referred to as Texas, TX, State of Texas, Tejas, etc.). This page outlines [advice on finding interesting data sources](class_modules/data_sources/) including tools to convert formats.
-
-Example projects from previous years (note that whimsy is encouraged, funny projects keep the focus on wrangling, serious projects keep the focus on the topic. I think you want people to whom you describe this project not to quibble about your analysis, but to appreciate your data wrangling.):
-
-- State education, teachers salaries, public schools. [Report](https://utexas.instructure.com/courses/1189186/files/41274072/download?verifier=yFgdabI46a1l37rxDgurtExKoFOHeUYs0JhpyEpH).
-- Visualizing impact of weather on border crossings. [Report](https://utexas.instructure.com/courses/1189186/files/41227376/download?verifier=uK3u7IkSbXWZkr2EKDVlHuCqO7XNPI519VXLZrU6&wrap=1).
-- How have "Game of Thrones" character names influenced baby names in the US? [Report](https://utexas.instructure.com/courses/1189186/files/41274102/download?verifier=WKMrLQfg7aBpKDTQW5oCMO3enRMIQfvxmHXg6xQy&wrap=1).
-- Lightening strikes and baseball games
-- Average age of Oscar winners by gender
-- How do solar flares affects temperatures on Earth and on Mars
-
--->
+The group project should take 15-20 hours over a number of weeks. We will cover each element expected in the project during the course materials and have in-class workshops the week of Nov 15/17.
 
 ## Policies
 
