@@ -1,4 +1,12 @@
-# Course Syllabus
+# Syllabus for I320: Data Engineering
+
+Welcome to I320: Data Engineering in the School of Information at the University of Texas at Austin.
+
+| ----------- | ----------- |
+| Semester    | Fall 2022   |
+| Classroom   |  PAR 208
+| Class times |  11-12:30 Tuesdays and Thursdays |
+| Unique Number | 28275    |
 
 ## Course Description
 
