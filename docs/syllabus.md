@@ -2,6 +2,7 @@
 
 Welcome to I320: Data Engineering in the School of Information at the University of Texas at Austin.
 
+
 | ----------- | ----------- |
 | Semester    | Fall 2022   |
 | Classroom   |  PAR 208
