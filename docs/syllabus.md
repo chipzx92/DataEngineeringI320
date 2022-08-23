@@ -171,17 +171,11 @@ Course grades will be assiged based on performance in the course assessments (se
 
 The assignments and grading scheme (A, A-, B, ..., F) are shown in Canvas.  Assignments will be submitted through Canvas.
 
-
-TODO: 
-- Grading policy, including the means of evaluation and assignment of class grades, including whether plus and minus grades will be used for the final class grade and whether and, if so, how attendance will be used in determining the course grade;
-- A brief descriptive overview of all major course requirements and assignments, along with the dates of exams and assignments that count for 20 percent or more of the class grade;
-- Making Up Missed Work – Policies and procedures around makeup assignments;  In particular we should have clear guidance around what should happen if student tech fails for homework.  I usually handle this through allowing two assignment "drops" for everyone (and add an additional drop for all if there are unforseen circumstances that affect everyone, like the server failing or ice storms.)
-
 ### Weekly Assignments
 
 50% of your courser grade will come from Weekly Assignments. Thesee are assignments each week for this course, covering the material addressed that week, with the assignment released and introduced during class on Thursday. The weekly assignments are due 11:59 pm on Sunday (this is to ensure that we can grade them before Tuesday class). Late assignments *will receive a grade of zero* but you can drop your 2 lowest grades. It's always worth turning in the assignment, even if late, because the assignments test and drive your learning and your performance helps guide me on material. So not completing an assignment is a sure way to fall behind. Students have used their drops in the past and then been very sad when an actual emergency meant they could not complete their homework.
 
-If technology fails you (broken laptops, server issues) and this means that you have difficulty with your homework you should complete and submit as much as can be done without the computer (e.g., hand drawn diagrams, writing out parts of queries, describing pipeline elements). Describe the issues that you have faced and the professors will consider excusing the remainder of the assignment.
+If technology fails you (broken laptops, server issues) and this means that you have difficulty with your homework you should complete and submit as much as can be done without the computer (e.g., hand drawn diagrams, writing out parts of queries, describing pipeline elements). Describe the issues that you have faced and the professors will consider excusing the remainder of the assignment, or may require you to use one of your drops.
 
 If you've uploaded a PDF as part of the assignhment there will be comments left on the PDF, in addition to any text comments in Canvas. You can see the comments on the PDF via by using the ["viewing feedback"](https://guides.instructure.com/m/4212/l/352349-how-do-i-view-assignment-feedback-comments-from-my-instructor-using-crocodoc-annotations) button.
 
