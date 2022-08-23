@@ -256,9 +256,17 @@ With these rights come responsibilities:
 - You are responsible for creating an inclusive environment and for speaking up when someone is excluded. In particular, you are responsible for ensuring that your participation does not exclude the participation of others. Office hours are available for in-depth further discussion of advanced topics or other interests that pursuing in depth during class would exclude others.
 - You are responsible for holding yourself accountable to these standards, holding each other to these standards, and holding the teaching team accountable as well.
 
-### Personal Pronoun Preference
+### Personal Pronoun Preference and Pronounciation
 
-Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: https://utdirect.utexas.edu/apps/ais/chosen_name/. I will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc.). Please advise me of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit https://utexas.instructure.com/courses/633028/pages/profile-pronouns. More resources available on the Gender and Sexuality Center’s website, www.utgsc.org.
+Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: https://utdirect.utexas.edu/apps/ais/chosen_name/. 
+
+We will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc.). Please advise us of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit https://utexas.instructure.com/courses/633028/pages/profile-pronouns. More resources available on the Gender and Sexuality Center’s website, www.utgsc.org.
+
+While I wish that we were all able to pronouce each others names from the way they are written and replicate the correct way each of us says our names, this is a challenge we all face.  To help us learn to match correct pronounciations I have two suggestions:
+
+The canvas site has NameCoach enabled to help us all listen to learn to pronounce each other's names.  Please ensure you have a recording in NameCoach.
+
+Please also consider creating a [respelling pronounciation guide](https://en.wikipedia.org/wiki/Pronunciation_respelling_for_English) and include it in your emails.  For example, James can be rendered as "Jaymz" or the US state of Arkansaw as "Ar-kuhn-saw", or Beyonce as "Be-yon-say".  James finds the [Wikipedia respelling key](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) the most useful starting point.
  
 ###  Basic Needs Security
 
