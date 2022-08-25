@@ -9,6 +9,8 @@ Welcome to I320: Data Engineering in the School of Information at the University
 | Class times |  11-12:30 Tuesdays and Thursdays |
 | Unique Number | 28275    |
 
+Jump to [Course Schedule](#course-schedule).
+
 ## Course Description
 
 This class will be a foundational course in Data Engineering principles and practices. This course will enable you to:
