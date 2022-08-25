@@ -58,6 +58,7 @@ Your task is to merge all the facts in the files above into one single file. For
 year, person_name, hobby
 ```
 
+If you don't have excel on your computer, you can also make this as a file in Google Docs.
 
 ## Additional reading
 
