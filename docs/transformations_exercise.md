@@ -18,12 +18,9 @@ Ravi, dancing; skiing
 Diane, skating
 ```
 
-### filename: 2010-hobbies.csv
+### filename: 2010-hobbies.xlsx
 
-```
-skaters, Daewon, Desmond, Sarah
-dancers, Bruce, Princess
-```
+![2010-hobbies-screenshot](https://user-images.githubusercontent.com/91986/186706956-091e4835-5ed7-490f-87d9-2c8aa8407994.png)
 
 ### filename: 2009-records/skaters-new.csv
 
