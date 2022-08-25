@@ -20,7 +20,7 @@ Diane, skating
 
 ### filename: 2010-hobbies.xlsx
 
-![2010-hobbies-screenshot](https://user-images.githubusercontent.com/91986/186706956-091e4835-5ed7-490f-87d9-2c8aa8407994.png)
+![2010-hobbies-screenshot](https://user-images.githubusercontent.com/91986/186707202-42c29ac3-423e-47ea-bdc1-d8d8e3ccfe1f.png)
 
 ### filename: 2009-records/skaters-new.csv
 
