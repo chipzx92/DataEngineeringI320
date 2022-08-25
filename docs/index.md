@@ -1,3 +1,3 @@
 [Syllabus link](syllabus.html)
 
-[Data Transformations Exercise](transformations_exercise/)
+[Data Transformations Exercise](exercises/transformations_exercise/)
