@@ -84,7 +84,7 @@ As a member of this class you will have free access to the DataCamp site, I beli
 ## Course Schedule 
 [subject to change as course materials are developed]
 
-### Class 1: Introduction to Data Engineering (Aug 23/25)  
+### Week 1: Introduction to Data Engineering (Aug 23/25)  
 Introductions  
 Syllabus review  
 Definition and Overview of Data Engineering 
@@ -92,6 +92,8 @@ Definition and Overview of Data Engineering
 “Data Is The New Oil” presentation  
 Overview of example end-to-end project  
 Overview of semester project 
+
+[Data Transformation Exercise](transformation_exercise/)
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 30/Sep 1)  
 Presentation and distribution of sample end-to-end project  
