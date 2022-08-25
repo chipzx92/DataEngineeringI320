@@ -50,7 +50,7 @@ Xiao
 
 ## Desired output file
 
-Your task is to merge all the facts in the files above into one single file
+Your task is to merge all the facts in the files above into one single file. For each file think about where you are finding each piece of information.  This semester we will learn to have the computer do and manage these type of data transformations.
 
 ### filename: all_hobbies.xlsx
 
