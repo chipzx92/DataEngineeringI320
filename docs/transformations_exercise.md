@@ -26,19 +26,27 @@ dancers, Bruce, Princess
 ```
 
 ### filename: 2009-records/skaters-new.csv
-folder: 
+
+```
 Alvin
 Reg
 Jin
+```
 
 ### filename: 2009-records/dancers.csv
+
+```
 Micah
 Xiao
+```
 
 ### filename: Aishwarya.csv
+
+```
 2009,dancing
 2010,dancing
 2011,dancing & skating
+```
 
 ## Desired output file
 
