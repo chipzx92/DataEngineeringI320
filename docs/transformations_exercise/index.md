@@ -18,12 +18,9 @@ Ravi, dancing; skiing
 Diane, skating
 ```
 
-### filename: 2010-hobbies.csv
+### filename: 2010-hobbies.xlsx
 
-```
-skaters, Daewon, Desmond, Sarah
-dancers, Bruce, Princess
-```
+![2010-hobbies-screenshot](https://user-images.githubusercontent.com/91986/186707202-42c29ac3-423e-47ea-bdc1-d8d8e3ccfe1f.png)
 
 ### filename: 2009-records/skaters-new.csv
 
@@ -58,6 +55,7 @@ Your task is to merge all the facts in the files above into one single file. For
 year, person_name, hobby
 ```
 
+If you don't have excel on your computer, you can also make this as a file in Google Docs.
 
 ## Additional reading
 
