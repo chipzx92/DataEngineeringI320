@@ -8,7 +8,7 @@ In this exercise you have found a bunch of files on a shared server, all about s
 
 ## The files
 
-You can download a zip of the files using this link.
+You should download [a zip of the files](transformation_files.zip) and work with them on your computer.
 
 ### filename: 2011-hobbies.csv
 
