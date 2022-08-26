@@ -39,7 +39,7 @@ We first need to extract the data from the transactional system, then we need to
 
 TODO: The exported files:
 
-![images/example-figure.png](An example of an ER diagram, showing the relationships between the tables in our source system database tables)
+![An example of an ER diagram, showing the relationships between the tables in our source system database tables](images/example-figure.png)
 
 TODO: The source system ER diagram.
 
