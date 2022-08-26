@@ -39,6 +39,8 @@ We first need to extract the data from the transactional system, then we need to
 
 TODO: The exported files:
 
+![images/example-figure.png](An example of an ER diagram, showing the relationships between the tables in our source system database tables)
+
 TODO: The source system ER diagram.
 
 The system holds data on Performances by Bands in Venues, together with People who have made Purchases of Tickets to Performances.
