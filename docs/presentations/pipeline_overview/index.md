@@ -14,9 +14,9 @@ The festival wants to identify the most successful venues through the history of
 
 What does success mean?  For the festival, the most successful venues and bands are those whose performances tend to sell most tickets. <!-- In addition, as potential all-stars, bands should have played at least three festivals over the years. -->
 
-The festival would like to see a vizualization of these data, to help assess whether there are clear "must invite" standout bands, or whether there are groups of bands that have been about equally successful, such that any of them could be invited.
+The festival would like to see a visualization of these data, to help assess whether there are clear "must invite" standout bands, or whether there are groups of bands that have been about equally successful, such that any of them could be invited.
 
-## Vizualizations
+## Visualizations
 
 1. Ticket sales over all time
 
@@ -33,17 +33,27 @@ The festival would like to see a vizualization of these data, to help assess whe
 
 ### Ingestion
 
-The festival has its data in a transactional database, organized in a structure that makes sense for the system that sells tickets.  This system is being used currently to sell tickets to the 2022 ACL fest, so it is crucial that we do not bog the ticket sales server down.
+The festival has its data in a transactional or operational database, organized in a structure that  
+makes sense for the system that sells tickets.  This system is being used currently to sell tickets  
+to the 2022 ACL fest, so it is crucial that we do not bog the ticket sales server down.
 
-We first need to extract the data from the transactional system, then we need to understand the structure of that database.
+We first need to extract the data from the transactional system, then we need to understand the 
+structure of that database.  
 
-TODO: The exported files:
+We have a set of CSV files that were exported from the source system database. They are shown here
+in a Jupyter notebook. You can see the CSV files on the left and the bands.csv file opened up in a 
+panel on the right.  
 
-![An example of an ER diagram, showing the relationships between the tables in our source system database tables](images/example-figure.png)
+![bands.csv](../../../images/bands_csv.png)
 
-TODO: The source system ER diagram.
+The system holds data on Performances by Bands in Venues, Performances are attended by People who 
+have made Purchases of Tickets.  
 
-The system holds data on Performances by Bands in Venues, together with People who have made Purchases of Tickets to Performances.
+As the first step in the process, we're going to replicate the tables in the source system by
+importing the data into copies of those tables. The source tables and their relationships are 
+shown in the following Entity-Relationship Diagram (ERD or ER Diagram for short).
+
+![The source system ER diagram, showing the tables for the ACL Music Festival](../../../images/FestivalERD.png)
 
 ### Cleaning and Validation
 
@@ -62,16 +72,20 @@ To build a usable data product for our analysis (and future analyses that might 
 
 First, we transform this entity database schema into a star schema.
 
-TODO: the star schema screenshot
+![This is the music festival star schema](../../../images/MusicFestival.png)
 
 Each of these steps will be run by the `dbt` tool, implementing a pipeline with dependencies known as a "DAG" (for _D_irected _A_cyclic _G_raph).
 
-TODO: DAG picture.
+![This is the DAG for festival data processing](../../../images/FestivalDAG.png)
 
-`dbt` implements each of these steps (the circles in the DAG) using SQL `SELECT` queries stored in files. The dependencies (the lines in the DAG) are represented by "references" which use the names of the task files.
+The first set of steps ("Load Bands", "Load Venues", etc.) uses the Postgres bulk data loader to 
+insert the contents of the CSV files into the copies of the source tables.
+The `dbt` tool implements the creation of the star schema and the data products using SQL `SELECT` 
+queries stored in files. The dependencies (the lines in the DAG) are represented by "references" 
+which use the names of the task files.
 
 TODO: screenshots of the dbt files, show file system tree, but just show full text from one file for each step of transformation (so 2 in total?)
 
-### Vizualization
+### Visualization
 
-We will vizualize using a tool called Superset.
+We will visualize using a tool called Superset.
