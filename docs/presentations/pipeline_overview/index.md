@@ -21,11 +21,11 @@ The festival would like to see a visualization of these data, to help assess whe
 1. Ticket sales over all time
 
 2. Tickets sales per venue over all time
-    --> visually identify the top venues, a group of three.
+    - visually identify the top venues, a group of three.
 
-3. Per venue, average ticket sales per performance by each band over all time.
-    --> visually identify group of top performers
-    --> maybe limit visualization to top 8 bands per venue
+3. Per those 3 venues, average ticket sales per performance by each band over all time.
+    - visually identify group of top performers
+    - maybe limit visualization to top 8 bands per venue
 
 ## The Pipeline
 
@@ -71,6 +71,8 @@ to the 2022 ACL fest, so it is crucial that we do not bog the ticket sales serve
 
 We first need to extract the data from the transactional system, then we need to understand the 
 structure of that database.  
+
+Data from different years of the festival are all in a single database and have a consistent organization; in many real-world cases the underlying systems would have changed over decades, so we would we ingesting data from different systems and our transformations would make them consistent.
 
 We have a set of CSV files that were exported from the source system database. They are shown here
 in a Jupyter notebook. You can see the CSV files on the left and the tickets.csv file opened up in a 
