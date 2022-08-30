@@ -176,6 +176,8 @@ datasets for machine learning and statistical analysis. Analysts may want to imp
 datasets into Excel spreadsheets. Software engineers may want to feed this data back into their
 operational systems.
 
+These are the data products we created to be able to answer the questions we posed in our scenario.
+
 ![Screenshot of data products](../../../images/DataProducts.png)
 
 ### Visualization
@@ -195,17 +197,15 @@ subject area:
 We start with the dataset to build a dashboard. For the music festival project, the datasets we
 use are the data products we created as the last step in our pipeline.
 
-TODO: Show ERD of data products
-
 We create charts from datasets, which are the data products that we've imported into Superset. Here 
 we see our two data products available as datasets in Superset
 
 ![Screenshot Showing DataSets](../../../images/datasets.png)
 
 When we click on a dataset, it takes us to page where we can create a chart. Here is an example of
-a Pie chart showing revenues by venue:
+a bar chart showing top 3 venues by ticket sales:
 
-![Screenshot Showing Chart Creation](../../../images/chart_example.png)
+![Screenshot Showing Bar Chart](../../../images/TopVenuesByTicketSales.png)
 
 We'll take several charts built from this dataset that answer the questions we want to answer and 
 put them into a dashboard:
