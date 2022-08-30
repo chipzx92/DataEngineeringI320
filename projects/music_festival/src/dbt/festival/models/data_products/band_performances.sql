@@ -1,5 +1,9 @@
 {{ config(
-    materialized="table"
+    materialized="table",
+    indexes=[
+      {'columns': ['band_name']},
+      {'columns': ['performance_id']},
+    ]
 ) }}
 SELECT b.band_id,
        b.band_name,

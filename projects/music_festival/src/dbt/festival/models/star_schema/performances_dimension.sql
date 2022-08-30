@@ -2,6 +2,5 @@
     materialized="table"
 ) }}
 SELECT id AS performance_id,
-       performance_start,
-       performance_end
+       performance_start
 FROM   festival.performances
