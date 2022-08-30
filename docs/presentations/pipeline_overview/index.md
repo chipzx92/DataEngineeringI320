@@ -39,7 +39,7 @@ This will involve the following steps:
 
 A conceptual visualization of this process might look like this:
 
-![Pipeline for Example Project](../../../images/ACLPipeline.png)
+![Pipeline for Example Project](images/ACLPipeline.png)
 
 A pipeline like this follows a pattern known as "ELT", which stands for ***E***xtract ***L***oad ***T***ransform.
 * First we ***E***xtract the data from the source system.
@@ -61,7 +61,7 @@ Directed - Only goes in one direction
 Acyclic - Never loops back  
 Graph - Can be visualized as a connected set of nodes and edges  
 
-![This is the DAG for festival data processing](../../../images/FestivalDAG.png)
+![This is the DAG for festival data processing](images/FestivalDAG.png)
 
 ### Ingestion
 
@@ -78,13 +78,13 @@ We have a set of CSV files that were exported from the source system database. T
 in a Jupyter notebook. You can see the CSV files on the left and the tickets.csv file opened up in a 
 panel on the right.  
 
-![Screen shot of tickets.csv file in Jupyter notebook.csv](../../../images/tickets_csv.png)
+![Screen shot of tickets.csv file in Jupyter notebook.csv](images/tickets_csv.png)
 
 As the first step in the process, we're going to replicate the tables in the source system by
 importing the data into copies of those tables. The source tables and their relationships are 
 shown in the following Entity-Relationship Diagram (ERD or ER-Diagram for short).
 
-![The source system ER diagram, showing the tables for the ACL Music Festival](../../../images/FestivalERD.png)
+![The source system ER diagram, showing the tables for the ACL Music Festival](images/FestivalERD.png)
 
 I find it can be useful to explain the structure of the database in a few simple sentences - for example:  
 
@@ -155,19 +155,19 @@ To build a usable data product for our analysis (and future analyses that might 
 
 First, we transform this entity database schema into a star schema.
 
-![This is the music festival star schema](../../../images/MusicFestival.png)
+![This is the music festival star schema](images/MusicFestival.png)
 
 The `DBT` tool implements the creation of the star schema and the data products using SQL `SELECT` 
 queries stored in files that DBT calls *models*. 
 
 This screenshot shows the DBT model file that creates the central `Fact` table in our star schema.
 
-![Screenshot of festival project directory tree and model file](../../../images/dbt_project_and_model.png)
+![Screenshot of festival project directory tree and model file](images/dbt_project_and_model.png)
 
 The dependencies (the lines in the DAG) can be represented by "references" in the DBT model, which 
 use the names of the task files. This is the DBT model file that creates one of the data products.
 
-![Screenshot of model to create a data product](../../../images/dbt_ref_model.png)
+![Screenshot of model to create a data product](images/dbt_ref_model.png)
 
 We create data products so that we have datasets that are easily consumable by others who want to
 do useful things with the data. For example, most visualization tools need a single table or 
@@ -178,7 +178,7 @@ operational systems.
 
 These are the data products we created to be able to answer the questions we posed in our scenario.
 
-![Screenshot of data products](../../../images/DataProducts.png)
+![Screenshot of data products](images/DataProducts.png)
 
 ### Visualization
 
@@ -187,12 +187,12 @@ create interactive visualizations from datasets. It allows you to create a wide 
 different types of charts for your visualizations. We will only use a few different types of charts,
 but it's nice to have a wide variety to choose from.
 
-![Screenshot of examples of charts in Superset](../../../images/charts_in_superset.png)
+![Screenshot of examples of charts in Superset](images/charts_in_superset.png)
 
 We create dashboards that consist of multiple charts that address different facets of the same 
 subject area:
 
-![Screenshot of example Dashboard](../../../images/Sample_Dashboard.png)
+![Screenshot of example Dashboard](images/Sample_Dashboard.png)
 
 We start with the dataset to build a dashboard. For the music festival project, the datasets we
 use are the data products we created as the last step in our pipeline.
@@ -200,17 +200,17 @@ use are the data products we created as the last step in our pipeline.
 We create charts from datasets, which are the data products that we've imported into Superset. Here 
 we see our two data products available as datasets in Superset
 
-![Screenshot Showing DataSets](../../../images/datasets.png)
+![Screenshot Showing DataSets](images/datasets.png)
 
 When we click on a dataset, it takes us to page where we can create a chart. Here is an example of
 a bar chart showing top 3 venues by ticket sales:
 
-![Screenshot Showing Bar Chart](../../../images/TopVenuesByTicketSales.png)
+![Screenshot Showing Bar Chart](images/TopVenuesByTicketSales.png)
 
 We'll take several charts built from this dataset that answer the questions we want to answer and 
 put them into a dashboard:
 
-![Screen Showing Example Dashboard](../../../images/dashboard_example.png)
+![Screen Showing Example Dashboard](images/dashboard_example.png)
 
 ## Summary
 
