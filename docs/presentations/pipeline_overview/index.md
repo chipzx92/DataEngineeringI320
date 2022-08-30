@@ -210,7 +210,7 @@ a bar chart showing top 3 venues by ticket sales:
 We'll take several charts built from this dataset that answer the questions we want to answer and 
 put them into a dashboard:
 
-![Screen Showing Example Dashboard](images/dashboard_example.png)
+![Screen Showing Example Dashboard](images/BandTicketSalesByVenue.png)
 
 ## Summary
 
