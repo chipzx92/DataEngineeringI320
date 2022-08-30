@@ -99,8 +99,13 @@ Overview of semester project
 - [Data Transformation Exercise](exercises/transformations_exercise/)
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 30/Sep 1)  
+
 Presentation and distribution of sample end-to-end project  
-Installation  
+  - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
+
+Discussion of semester projects
+
+<!-- Installation  
 Processing steps in the data pipeline w/examples  
 Source systems  
 Ingestion  
@@ -112,6 +117,7 @@ Semester Project
 Assignments of data sources  
 Project Definition  
 Assignment: Make enhancements to sample project  
+-->
 
 ### Weeks 3-5: SQL Review (Sep 6/8 13/15 20/22)    
 Into to Postgres and psql   
