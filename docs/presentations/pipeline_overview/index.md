@@ -178,7 +178,7 @@ operational systems.
 
 These are the data products we created to be able to answer the questions we posed in our scenario.
 
-![Screenshot of data products](images/DataProducts.png)
+![Shows a screenshot of data products](images/DataProducts.png)
 
 ### Visualization
 
