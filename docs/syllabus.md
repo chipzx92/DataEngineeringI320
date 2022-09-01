@@ -77,7 +77,7 @@ There are no required texts for the course, but you will find these resources to
 
 An intro book for MySQL that's available online at UT is: [Learning MySQL](http://www.utxa.eblib.com/patron/FullRecord.aspx?p=540862).
 
-As a member of this class you will have free access to the DataCamp site, I believe that access extends for 6 months. I will establish the access a few weeks into the semester, causing an invitation email to come to the email address registered with the University. The most relevant courses are:
+As a member of this class you will have free access to the DataCamp site through their support for education (more at [datacamp.com/groups/education](datacamp.com/groups/education), I believe that access extends for 6 months. I will establish the access a few weeks into the semester, causing an invitation email to come to the email address registered with the University. The most relevant courses are:
 
 - [Introduction to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - [Intro to SQL for Data Science](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
