@@ -1,0 +1,36 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(here)
+```
+
+```{r}
+# Select all variables for download.
+students <- read_tsv(here::here("/Users/jlh5498/Documents/UTexas/Courses/DataEngineering/DataEngineeringI320", "clips_nro4.WBY")) %>%
+  janitor::clean_names() %>%
+  drop_na(student) # get rid of summary rows.
+ 
+
+emails <- students %>%
+  select(student, email, ut_eid) %>% 
+  separate(student, into = c("last_part", "first_part"), sep = "; ") %>%
+  unite(student, first_part, last_part, sep = " ") %>%
+  mutate(student = student %>% str_to_title(),
+         email = email %>% str_to_lower(),
+         eid_email = str_c(ut_eid, "@eid.utexas.edu")) %>%
+  drop_na()
+  
+emails %>% 
+  mutate(name_and_email = str_glue("{student} <{email}>")) %>% 
+  pull(email) %>%
+  str_c(collapse = " ")
+
+
+```
+
