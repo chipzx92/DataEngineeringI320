@@ -46,6 +46,10 @@ Office hours are by email request. Also happy to talk before class, please email
 
 The course space on Canvas is available at: https://utexas.instructure.com/courses/1341797
 
+## Lab link
+
+You can access your lab machine through this link: https://labs.azure.com/
+
 ## Land Acknowledgement
 
 We would like to acknowledge that when we are meeting on Indigenous land. Moreover, we would like to acknowledge and pay our respects to the Carrizo & Comecrudo, Coahuiltecan, Caddo, Tonkawa, Comanche, Lipan Apache, Alabama-Coushatta, Kickapoo, Tigua Pueblo, and all the American Indian and Indigenous Peoples and communities who have been or have become a part of these lands and territories in Texas, here on Turtle Island.
