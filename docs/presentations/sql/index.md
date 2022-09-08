@@ -53,3 +53,19 @@ There are quite a few different "flavors" of SQL, as well as many levels of comp
 - "tutorial"
 
 Stackoverflow has useful Q&A with answers updated as the underlying technologies change. You will find the [sql](https://stackoverflow.com/questions/tagged/sql) and the [postgresql]](https://stackoverflow.com/questions/tagged/postgresql) tags most useful.
+
+
+-------------------
+
+
+Homework.
+
+You will design a database to represent data about books, their authors, and their genres.
+
+- "I Know Why the Caged Bird Sings" by Maya Angelou; Memoir
+- "The Three-Body Problem" by Liu Cixin; Science Fiction
+- "Wuthering Heights" by Jane Austin; Romance
+- "Dragon Raja" by Lee Yeongdo; Fantasy
+- "Fellowship of the Rings" by JRR Tolkein; Fantasy 
+
+You need to write the needed CREATE TABLE and INSERT statements which you will copy into the text field on Canvas to submit.  You can use the Jupyter editor on your VM to build up the commands, testing them using SQL-lab.
