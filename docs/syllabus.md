@@ -124,6 +124,9 @@ Assignment: Make enhancements to sample project
 -->
 
 ### Weeks 3-5: SQL Review (Sep 6/8 13/15 20/22)    
+
+[Link to SQL material](presentations/sql)
+
 Into to Postgres and psql   
 SQL Basics Review  
 Different types of Joins especially Outer Joins  
