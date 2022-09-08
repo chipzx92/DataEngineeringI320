@@ -48,7 +48,7 @@ The course space on Canvas is available at: https://utexas.instructure.com/cours
 
 ## Lab link
 
-You can access your lab machine through this link: https://labs.azure.com/
+You can access your lab machine through this link: [https://labs.azure.com/](https://labs.azure.com/)
 
 ## Land Acknowledgement
 
