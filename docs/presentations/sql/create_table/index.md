@@ -85,6 +85,7 @@ The login for SQL Lab is `admin` with password `DEI320D_student!`.
 
 Once we have created tables we need to add data. Later in the course we will use a `\copy` command to suck in whole CSV files, but for now we will use `INSERT` for just a little data.
 
+
 ```sql
 INSERT INTO colors(id, name) VALUES (1,'red');
 INSERT INTO colors(id, name) VALUES (2,'green');
@@ -107,7 +108,7 @@ We can also insert more than one row of data per `INSERT`. We do this by sending
 
 The `INSERT` below will create each of our objects and tie them together with their color and function, using the `color_id` foreign key column to point to either the `red` or `green` row in `colors`, and the `function_id` foreign key column to point to either the `writes` or `holds` row in the `functions` table.
 
-```
+```sql
 INSERT INTO objects(name, color_id, function_id) 
   VALUES ('highlighter', 2, 1),
          ('pen', 1, 1),
