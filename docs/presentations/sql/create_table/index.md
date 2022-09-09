@@ -6,7 +6,7 @@ In our string database exercise to hold information about our red mug, red pen, 
 
 You created these on the physical tables in class and they looked like this:
 
-[](images/objects_tables.png)
+![](images/objects_tables.png)
 
 We will now learn the SQL statements to create these tables and insert these rows of data.
 
