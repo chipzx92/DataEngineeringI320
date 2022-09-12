@@ -14,7 +14,7 @@ We will now learn the SQL statements to create these tables and insert these row
 
 --CREATE DATABASE class_objects;
 
-DROP TABLE IF EXISTS colors
+DROP TABLE IF EXISTS colors;
 DROP TABLE IF EXISTS functions;
 DROP TABLE IF EXISTS objects;
 
