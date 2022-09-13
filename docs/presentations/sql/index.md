@@ -26,13 +26,9 @@ Here is an index of the topics we will cover.
     
 2. [SELECT/WHERE and boolean logic and SELECT clause transformations](select_basics)
 
-4. Outer JOIN
+3. [Aggregate functions](aggregate_functions) and [GROUP BY](grouping)
 
-5. Inner JOIN
-
-7. Aggregate functions
-
-8. GROUP BY/HAVING
+4. Outer and Inner JOIN
 
 Additional topics:
 
