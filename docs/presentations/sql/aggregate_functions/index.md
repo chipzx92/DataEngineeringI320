@@ -1,9 +1,5 @@
 # Aggregate Functions and GROUP BY
 
----
-title: 'Aggregate Functions and GROUP BY'
----
-
 Aggregate Functions
 ======================
 
@@ -13,7 +9,7 @@ In this module we're going to learn how to work with columns of data. Aggregate 
 
 Examples include, `SUM` `AVG` `COUNT` and `DISTINCT`.
 
-One of the simplest is to add together all the of the values using `SUM`. This figure shows part of the tickets table from our `class_music_festival` database.  
+One of the simplest aggregate functions is to add together all the values in a column using `SUM`. This figure shows part of the tickets table from our `music_festival` database.  
 
 ![](images/tickets_price.png)
 
@@ -106,8 +102,6 @@ FROM bands
 WHERE bands.fee > 100
 ```
 
-You almost always want to use an `AS` alias with `COUNT(*)`.
-
 `COUNT(DISTINCT column)` is also very useful, when you want to know the number of distinct values in a column (rather than get a list of them).  For example we might want to know the distinct number of manufacturers represented in the cars dataset.
 
 ```sql
@@ -144,7 +138,9 @@ Gives 143,616 rows in the people table.  The difference is due to people having 
 
 ## COUNT(column) considered confusing (if not harmful)
 
-To reiterate, consider the differences between the three forms of `COUNT` on this list:
+My general advice is to avoid `COUNT(column)` entirely. It isn't needed and it is confusing.
+
+To see why, consider the differences between the three forms of `COUNT` on this list:
 
 ```
 id, name
@@ -162,6 +158,14 @@ id, name
 I advise people to avoid `COUNT(column)` because I find the semantics confusing in a query. I mean that what people are intending to accomplish is unclear. More, though, I haven't come across a time when it is necessary.
 
 Whenever you are tempted to use `COUNT(column)`, ask yourself whether `COUNT(*)` is clearer and what you actually mean. Most counting queries are questions about the number of rows (after some conditions), not the number of non-NULL values.
+
+If you really do want to count the number of non-NULL values, you can do this clearly and understandably using
+
+```sql
+SELECT COUNT(*) as count_rows_with_names
+FROM people
+WHERE people.name IS NOT NULL
+```
 
 ## A note about MIN and MAX vs ORDER BY LIMIT 1
 
