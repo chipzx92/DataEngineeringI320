@@ -24,15 +24,11 @@ Here is an index of the topics we will cover.
 
 1. [CREATE table, through text files. Datatypes.](create_table)
     
-2. SELECT/WHERE and boolean logic. 
-
-3. ORDER BY/LIMIT
+2. [SELECT/WHERE and boolean logic and SELECT clause transformations](select_basics)
 
 4. Outer JOIN
 
 5. Inner JOIN
-
-6. SELECT clause transformations (including math)
 
 7. Aggregate functions
 
