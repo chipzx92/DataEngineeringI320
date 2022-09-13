@@ -11,6 +11,10 @@ Welcome to I320: Data Engineering in the School of Information at the University
 
 Jump to [Course Schedule](#course-schedule).
 
+## Lab link
+
+You can access your lab machine through this link: [https://labs.azure.com/](https://labs.azure.com/)
+
 ## Course Description
 
 This class will be a foundational course in Data Engineering principles and practices. This course will enable you to:
@@ -45,10 +49,6 @@ Office hours are by email request. Also happy to talk before class, please email
 ## Canvas link
 
 The course space on Canvas is available at: https://utexas.instructure.com/courses/1341797
-
-## Lab link
-
-You can access your lab machine through this link: [https://labs.azure.com/](https://labs.azure.com/)
 
 ## Land Acknowledgement
 
