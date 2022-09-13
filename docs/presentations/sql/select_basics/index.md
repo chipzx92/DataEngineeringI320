@@ -35,6 +35,18 @@ We will build our queries up step by step. This is a little laborious but as our
 
 To run these queries we need to create a schema and a table called `cars`. [The commands you can copy to do this are here.](create_class_cars.html).
 
+Once you execute those queries, you can select the `analytics` schema.
+
+![select analytics schema](select_analytics_schema.png)
+
+and then select the `cars` table.
+
+![select cars](select_cars_table.png)
+
+and finally choose "Preview"
+
+![preview](cars_preview.png)
+
 Each row in the database represents a single car model and there are 234 car models in the database (I reduced the full set by only including cars produced in 1999 and 2008). On each row we have data about one car, such as the year it was produced (`cars.year`), the manufacturer (`cars.manufacturer`) (e.g., audi, ford), the model (e.g., a4, focus). Using a select query we can narrow the database to find cars that match our query.
 
 Let's say we are interested in cars that have four cylinders. The `cars.cylinders` column has that information. We start by confirming that we are addressing the right table by executing this query:
@@ -44,9 +56,9 @@ SELECT *
 FROM cars
 ```
 
-This asks for all the data in the table and will return 234 rows and all the columns. There is no `WHERE` clause, which means that there are no conditions on the rows and that is why all of them are returned. When you run it in phpmyadmin it will look like this:
+This asks for all the data in the table and will return 234 rows and all the columns. There is no `WHERE` clause, which means that there are no conditions on the rows and that is why all of them are returned. When you run it in SQLLab it will look like this:
 
-![](images/pma-cars-query.png)
+![](images/select_all_cars.png)
 
 If we want to add some conditions we can add a `WHERE` clause:
 
@@ -58,7 +70,7 @@ WHERE cars.cylinders = 4
 
 Now we will only see rows where the condition in the `WHERE` clause is true. It's just the same as using the paper template: the computer looks at one row at a time and checks the number in the `cylinders` column. If that number is a `4` then the whole row is copied into the results.  If you run that query on phpmyadmin, by copying the query above and pasting it into the SQL tab (go ahead and try it now) you'll see that the results have 81 rows (although phpmyadmin breaks the 81 rows up into three pages of 4 pages of 25 each, you can change the results per page at the bottom). Every one of the rows has a `4` in the `cylinders` column.
 
-![](images/pma-cars-query-1.png)
+![](images/query_1.png)
 
 We can add more conditions to our `WHERE` clause to reduce the number of rows shown even more.  For example, let's say that from those 4 cylinder cars we want to find older cars, produced earlier than the year 2000. We can do that by adding a condition to the `WHERE` clause:
 
@@ -171,7 +183,7 @@ WHERE cars.year = 2008
 
 gives us 28 results. So we have 9 extra results. Where are they coming from? See this screenshot:
 
-![](images/pma-cars-query-2.png)
+![](images/query_2.png)
 
 Look closely at the first row; it shows a value of `1999` for `year`. Why is it in the results (since 1999 most definitely is not equal to 2008).
 
@@ -268,10 +280,7 @@ We can
 
 ### Exercise
 
-1. 
 1. Calculate a new column showing expected distance traveled on the highway given a tank with 14 gallons of gas.
-
-
 
 # ORDER BY and LIMIT: Sorting results and getting top x rows
 
@@ -296,9 +305,9 @@ ORDER BY city_mpg DESC
 
 We add an `ORDER BY` clause saying that the rows should be ordered by the values in the `city_mpg` column for that row.  Finally we say that we want those with the highest values first, thus our sorting order is descending which is abbreviated to `DESC`. The opposite is ascending, showing the smallest values at the top, shown with `ASC`. If you don't put either then the results are sorted in Ascending order, but it's most clear if you always include either `DESC` or `ASC`.
 
-Here are the results (selecting just manufacturer, model, fuel type (diesel/gas) and city_mpg):
+Here are the results:
 
-![](images/pma-cars-order-by.png)
+![](images/order_by.png)
 
 We can see that the top three are made by Volkswagen, then a Toyota Corolla and a Honda Civic and so on right through the 81 rows that return.
 
