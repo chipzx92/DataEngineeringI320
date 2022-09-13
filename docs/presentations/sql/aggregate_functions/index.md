@@ -211,3 +211,5 @@ I would only use MIN or MAX when ties really matter, and only in a sub-query.  T
 ### Exercises:
 
 You may find the first five exercises on [SUM and COUNT on SQLZoo](http://sqlzoo.net/wiki/SUM_and_COUNT) useful.
+
+Onward to [GROUP BY](../grouping).
