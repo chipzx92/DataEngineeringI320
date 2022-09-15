@@ -65,7 +65,7 @@ A dialog box will pop up asking you to pick a file. Go to your Downloads directo
 ![SelectRDPFile](../../images/SelectRDPFile.png)
 
 The file will be imported into RDP, and you should see an entry for it in RDP:
-
+![](../../../../../Desktop/SQL_Lab_Signed_In.png)
 ![RDPImported](../../images/RDPImported.png)
 
 Double-click on the entry in RDP and it will take you to a login to the lab. Use `ubuntu` as the username 
@@ -76,4 +76,51 @@ and enter your password. If your password doesn't work, enter `DEI320D_student!'
 Once you login, you will see your VM Desktop
 
 ![VMDesktop](../../images/VMDesktop.png)
+
+Once you see your desktop, click on the Firefox icon in the dock on the left-hand side of the screen.
+
+![Firefox](../../images/Firefox.png)
+
+Firefox will open (it's a little slow the first time). You'll see a web page with a set of icon 
+links below the search bar. Click on the one that says "SQL Lab"
+
+![SQL Lab](../../images/SQL_Lab.png)
+
+Sign in to SQL Lab. The username is `admin` and the password is `DEI320D_student!`. After you sign
+in, click "Save" to save the password so you don't have to sign in again.
+
+![SignIn](../../images/SignIn.png)
+
+You should see a screen that looks like this:
+
+![SignIn](../../images/SQL_Lab_Signed_In.png)
+
+Next, click on the menu selection called `Data` and select `Databases` from the drop-down.
+
+![SignIn](../../images/Select_Databases.png)
+
+You'll see a screen that lists the databases in the system. Click on the `Edit` icon (it looks like 
+a pencil at the right-hand end of `music_festival`.
+
+![Edit](../../images/Select_Edit.png)
+
+This will bring up an `Edit Database` screen. Look for a text box titled `SQLAlchemy URI` in that
+screen. This is the connection string to the database. Change `festival_read_only` to `festival_read_write`.
+Then change `XXXXXXX` to `writer` so that the string looks like it does in the image below. Once you've
+done that, click the 'Test Connection' button. You should get a message that says "Connection Successful". If
+you don't, make sure you changed the connection information correctly.
+
+![EditConnection](../../images/Edit_Connection.png)
+
+Once you successfully tested the connection, click on the `Advanced` tab at the top of the `Edit 
+Database` screen and then open the `SQL Lab` section by clicking on the `v` to the right of `SQL Lab`. 
+Change the settings to match what you see in the image below by clicking on the checkboxes for 
+`Allow CREATE TABLE AS` and `Allow DML`. `Allow this database to be explored`
+should also be checked.
+
+![Advanced](../../images/Advanced.png)
+
+Then click the `Finish` button at the bottom of the page. Click on `SQL Lab` at the top of the
+menu and select `SQL Editor` from the pull down. You can now start typing an executing SQL commands
+in SQL Lab.
 
