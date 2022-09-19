@@ -260,7 +260,8 @@ FROM objects
   JOIN colors ON objects.color_id = colors.id;
 ```
 
-results
+> results
+
 | id | name | color_id | id | name |
 | -- | -- | -- | -- | -- |
 | 1 | Mug | 10 | 10 | red |
@@ -275,7 +276,7 @@ FROM objects
   JOIN colors ON objects.color_id = colors.id;
 ```
 
-object_name | color_name |
+| object_name | color_name |
 | -- | -- |
 | Mug | red |
 | Pen | green | 
@@ -284,7 +285,8 @@ This pattern of joining with an `ON` condition that matches up primary key and f
 
 You may notice that I've used `JOIN` (inner join) rather than `LEFT JOIN` (outer join) in this example. This is because when we have primary and foreign key columns we usually have "well-formed" data with "referential integrity" meaing that we don't have "orphaned records" such that an id in a foreign key column will not be missing in the table it refers to.  For example, we could add a new object, a purple pencil.
 
-objects
+> objects
+
 | id | name | color_id |
 | -- | -- | -- |
 | 1 | Mug | 10 |
@@ -321,7 +323,7 @@ In the data engineering and data warehouse world, this practice (of not specifyi
 
 The takeaway here is that using `LEFT JOIN` when joining tables with primary and foreign keys is certainly a legitimate and important part of data validation and should probably be the default during data exploration. 
 
-The downside of using an outer join, though, is that _all_ the records in the left table are retained. When working interactively doing data exploration, this can be problematic. We will return to this in material on data validation.
+The downside of using an outer join, though, is that _all_ the records in the left table are retained. When working interactively doing data exploration, this can be problematic when the amount of data is large. We will return to this in material on data validation.
 
 ## Joining more than 2 tables
 
@@ -330,19 +332,22 @@ Each join is between two tables (the left and the right). Yet we often want to j
 When we join two tables we get an intermediate result table.  That intermediate result table becomes our new starting point. We can then join a third table onto that newly created table.  In that way we can combine many tables, joining each in turn into an ever growing intermediate results table.
 
 
-objects
+> objects
+
 | id | name | color_id | function_id |
 | -- | -- | -- | -- |
 | 1 | Mug | 10 | 200 |
 | 2 | Pen | 20 | 100 |
 
-colors
+> colors
+
 | id | name  |
 | -- | --    | 
 | 10 | red   |
 | 20 | green |
 
-functions
+> functions
+
 | id | name |
 | -- | --   |
 | 100 | writes | 
@@ -361,7 +366,8 @@ FROM objects
 
 This gives us a result, which is the start of our ever growing intermediate table:
 
-<unnamed intermediate results>
+> intermediate results
+
 | id | name | color_id | function_id | id | name |
 | -- | -- | -- | -- | -- |
 | 1 | Mug | 10 | 200 | 10 | red |
@@ -381,7 +387,8 @@ FROM objects
   JOIN functions ON objects.function_id = functions.id
 ```
 
-results
+> results
+
 | id | name | color_id | function_id | id | name | id | name |
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | 1 | Mug | 10 | 200 | 10 | red | 200 | holds
@@ -398,7 +405,7 @@ FROM objects
   JOIN functions ON objects.function_id = functions.id
 ```
 
-You can mix different types of joins, inner, outer, full in the sequence of JOINs. 
+You can mix different types of joins, inner, outer, full in the sequence of JOINs.
 
 ## Using AS in joins (table abbreviations)
 
