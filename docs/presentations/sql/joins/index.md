@@ -428,6 +428,7 @@ FROM objects AS o
 
 This is useful, although the definition of the abbreviation comes in the middle of the query, after it has already been used.
 
+<!--
 In Postgres (and other moden SQL databases) you can use the `WITH` keyword to define aliases at the top of the query:
 
 ```sql
@@ -442,6 +443,7 @@ FROM o
   JOIN f ON o.function_id = f.id
 ```
 
+-->
 Aliasing tables is common and you will find it very frequently when searching online. However, reasonable people can disagree about its usefulness.
 
 Pros:
