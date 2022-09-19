@@ -2,6 +2,10 @@
 
 Often we want to combine data from different tables.  Take this example:
 
+<table border='1' style='border-collapse:collapse'>
+<tr>
+<td>
+
 > hobbies
 
 | name | hobby |
@@ -10,6 +14,9 @@ Often we want to combine data from different tables.  Take this example:
 | Brian | dancing |
 | Adnan | running |
 
+</td>
+<td>
+
 > majors
 
 | name | major |
@@ -17,6 +24,10 @@ Often we want to combine data from different tables.  Take this example:
 | Shuyen | Art |
 | Brian | Theater |
 | Yungsheng | English |
+
+</td>
+</tr>
+</table>
 
 There are quite a few different ways to get this done.
 
