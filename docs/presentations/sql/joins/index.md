@@ -8,7 +8,7 @@ Often we want to combine data from different tables.  Take this example:
 | -- | -- |
 | Shuyen | dancing |
 | Brian | dancing |
-| Adnan | running |
+|  Adnan (left only) | running |
 
 > majors
 
@@ -16,7 +16,7 @@ Often we want to combine data from different tables.  Take this example:
 | -- | -- |
 | Shuyen | Art |
 | Brian | Theater |
-| Yungsheng | English |
+|  Yungsheng (right only) | English |
 
 There are quite a few different ways to get this done.
 
@@ -50,10 +50,10 @@ FROM hobbies
 
 | student_name | hobby | major |
 | --| --| -- | 
-| Shuyen       | dancing | Art     |
+|  Shuyen (both tables)       | dancing | Art     |
 | Brian        | dancing | Theater | 
-| Adnan       | running | NULL    |
-| Yungsheng   | NULL    | English |
+|  Adnan (left only)       | running | NULL    |
+|  Yungsheng (right only)   | NULL    | English |
 
 ### LEFT and RIGHT JOIN
 
@@ -71,11 +71,11 @@ FROM hobbies
     
 > left_join_result
 
-student_name | hobby |   major
+| student_name | hobby |   major |
 | --| --| -- | 
-| Shuyen | dancing | Art |
-| Brian | dancing |Theater |
-| Adnan | running | NULL
+|  Shuyen (both tables) | dancing | Art |
+|  Brian (both tables) | dancing |Theater |
+|  Adnan (left only) | running | NULL
 
 #### RIGHT JOIN
 
@@ -91,9 +91,9 @@ FROM hobbies
 
 | student_name | hobby |   major
 | --| --| -- |
-| Shuyen |       dancing | Art |
-| Brian |        dancing | Theater |
-| Yungsheng |    NULL |    English |
+|  Shuyen (both tables) |       dancing | Art |
+|  Brian (both tables) |        dancing | Theater |
+|  Yungsheng (right only) |    NULL |    English |
 
 These are really useful when we have data in a table about things and we want to "bring over" any data we have about those things. 
 
@@ -121,8 +121,8 @@ Finally, our fourth option is to only keep rows that have data in both tables. T
 
 | student_name | hobby |   major |
 | -- | -- | -- | 
-| Shuyen |       dancing | Art |
-| Brian |        dancing | Theater |
+|  Shuyen (both tables) |       dancing | Art |
+|  Brian (both tables) |        dancing | Theater |
 
 ## Inner vs Outer?
 
