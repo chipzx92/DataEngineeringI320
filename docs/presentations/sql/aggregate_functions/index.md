@@ -50,7 +50,7 @@ Note that there is no `MEDIAN` function nor a `MODE` function in sql. Both can b
 
 ## DISTINCT
 
-Another useful function is `DISTINCT` which reduces the column by removing duplicates. Unlike other aggregation functions `DISTINCT` does not use parens.
+`DISTINCT` which reduces the column by removing duplicates. `DISTINCT` does not use parens. 
 
 We can find the set of vehicle types in the `cars` database by using `DISTINCT`
 
