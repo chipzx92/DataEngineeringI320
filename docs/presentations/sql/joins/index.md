@@ -87,8 +87,8 @@ FROM hobbies
 | --| --| -- | 
 |  Shuyen (both tables)       | dancing | Art     |
 | Brian        | dancing | Theater | 
-|  Adnan (left only)       | running | NULL    |
-|  Yungsheng (right only)   | NULL    | English |
+|  Adnan (left only)       | running | **NULL**    |
+|  Yungsheng (right only)   | **NULL**    | English |
 
 ### LEFT and RIGHT JOIN
 
@@ -110,7 +110,7 @@ FROM hobbies
 | --| --| -- | 
 |  Shuyen (both tables) | dancing | Art |
 |  Brian (both tables) | dancing |Theater |
-|  Adnan (left only) | running | NULL
+|  Adnan (left only) | running | **NULL**
 
 #### RIGHT JOIN
 
@@ -128,7 +128,7 @@ FROM hobbies
 | --| --| -- |
 |  Shuyen (both tables) |       dancing | Art |
 |  Brian (both tables) |        dancing | Theater |
-|  Yungsheng (right only) |    NULL |    English |
+|  Yungsheng (right only) |    **NULL** |    English |
 
 These are really useful when we have data in a table about things and we want to "bring over" any data we have about those things. 
 
