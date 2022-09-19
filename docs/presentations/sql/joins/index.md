@@ -1,5 +1,7 @@
 # Joining tables
 
+{:toc}
+
 Often we want to combine data from different tables.  Take this example:
 
 > hobbies
