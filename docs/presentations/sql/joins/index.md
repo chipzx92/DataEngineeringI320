@@ -41,7 +41,7 @@ We will look at four different ways to combine these tables: 1) `FULL JOIN`, 2) 
 <td colspan=2>
 FULL JOIN
 
-![](images/full_join.png)
+<img src="images/full_join.png" />
 </td>
 </tr>
 
@@ -49,19 +49,19 @@ FULL JOIN
 <td>
 LEFT JOIN
 
-![](images/left_join.png)
+<img src="images/left_join.png" />
 </td>
 <td>
 RIGHT JOIN
 
-![](images/right_join.png)
+<img src="images/right_join.png" />
 </td>
 </tr>
 <tr>
 <td colspan = 2>
 INNER JOIN
 
-![](images/inner_join.png)
+<img src="images/inner_join.png" />
 </td>
 </tr>
 </table>
