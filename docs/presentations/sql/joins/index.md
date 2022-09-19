@@ -36,6 +36,39 @@ So the database knows ways to combine the tables that preserve the meaning of th
 
 We will look at four different ways to combine these tables: 1) `FULL JOIN`, 2) `LEFT JOIN`, 3) `RIGHT JOIN`, and 4) `INNER JOIN`
 
+<table>
+<tr>
+<td colspan=2>
+FULL JOIN
+
+![](images/full_join.png)
+</td>
+</tr>
+
+<tr>
+<td>
+LEFT JOIN
+
+![](images/left_join.png)
+</td>
+<td>
+RIGHT JOIN
+
+![](images/right_join.png)
+</td>
+</tr>
+<tr>
+<td colspan = 2>
+INNER JOIN
+
+![](images/inner_join.png)
+</td>
+</tr>
+</table>
+
+Images from https://learnsql.com/blog/sql-joins/
+
+
 ## FULL JOIN
 
 The first keeps all of the data, matching up rows and adding `NULL` values where rows are only in one table or the other.  This is called the `FULL JOIN`.
