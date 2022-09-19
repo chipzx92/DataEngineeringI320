@@ -38,7 +38,13 @@ We will look at four different ways to combine these tables: 1) `FULL JOIN`, 2) 
 
 The first keeps all of the data, matching up rows and adding `NULL` values where rows are only in one table or the other.  This is called the `FULL JOIN`.
 
-![](images/full_outer_join.png)
+![](images/full_join.png)
+
+```sql
+SELECT *
+FROM hobbies 
+  FULL JOIN majors
+```
 
 > full_join_result
 
@@ -57,7 +63,11 @@ We can also keep all of the data from one table, and add in only the matching da
 
 ![](images/left_join.png)
 
-`hobbies LEFT JOIN majors`
+```sql
+SELECT *
+FROM hobbies 
+  LEFT JOIN majors
+```
     
 > left_join_result
 
@@ -67,24 +77,32 @@ student_name | hobby |   major
 | Brian | dancing |Theater |
 | Adnan | running | NULL
 
-`hobbies RIGHT JOIN majors`
-left_join_result
-student_name | hobby |   major
------------------------------
-Shuyen |       dancing | Art
-Brian |        dancing | Theater
-Yungsheng |    NULL |    English
-
-These are really useful when we have data in a table about things and we want to "bring over" any data we have about those things. 
-
 #### RIGHT JOIN
 
 ![](images/right_join.png)
 
+```sql
+SELECT *
+FROM hobbies 
+  RIGHT JOIN majors
+```
+
+> right_join_result
+
+| student_name | hobby |   major
+| --| --| -- |
+| Shuyen |       dancing | Art |
+| Brian |        dancing | Theater |
+| Yungsheng |    NULL |    English |
+
+These are really useful when we have data in a table about things and we want to "bring over" any data we have about those things. 
+
+
+
 A `RIGHT JOIN` is identical to a `LEFT JOIN` with the tables reversed in order. This makes it almost never used as people would just rewrite it as a LEFT JOIN. So one generally doesn't come across `RIGHT JOIN`. ie:
 
 ```sql
-majors LEFT JOIN hobbies
+majors RIGHT JOIN hobbies
 ```
 
 is identical to  
@@ -92,6 +110,7 @@ is identical to
 ```sql
 hobbies LEFT JOIN majors
 ```
+
 ## INNER JOIN
 
 ![](images/inner_join.png)
