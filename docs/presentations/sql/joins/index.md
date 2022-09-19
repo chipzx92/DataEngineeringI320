@@ -53,6 +53,10 @@ The first keeps all of the data, matching up rows and adding `NULL` values where
 
 We can also keep all of the data from one table, and add in only the matching data from the other table. This is called the `LEFT JOIN` or the `RIGHT JOIN`. The direction just points to which table we will keep all the rows from.
 
+#### LEFT JOIN
+
+![](images/left_join.png)
+
 `hobbies LEFT JOIN majors`
     
 > left_join_result
@@ -73,7 +77,11 @@ Yungsheng |    NULL |    English
 
 These are really useful when we have data in a table about things and we want to "bring over" any data we have about those things. 
 
-Note though that a `RIGHT JOIN` is identical to a `LEFT JOIN` with the tables reversed in order. This makes it almost never used as people would just rewrite it as a LEFT JOIN. So one generally doesn't come across `RIGHT JOIN`. ie:
+#### RIGHT JOIN
+
+![](images/right_join.png)
+
+A `RIGHT JOIN` is identical to a `LEFT JOIN` with the tables reversed in order. This makes it almost never used as people would just rewrite it as a LEFT JOIN. So one generally doesn't come across `RIGHT JOIN`. ie:
 
 ```sql
 majors LEFT JOIN hobbies
@@ -107,7 +115,9 @@ Because `LEFT JOIN` is by far the most used, if someone says just "outer join" t
 
 `INNER JOIN` is the only inner join (there is only one way to include only the rows that match), it is used frequently enough that `JOIN` with no other word means `INNER JOIN`.
 
-### JOIN synonyms [shows optional part]
+### JOIN synonyms 
+
+[shows optional part]
 
 ```sql
 FULL [OUTER] JOIN
