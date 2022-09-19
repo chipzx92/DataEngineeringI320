@@ -196,7 +196,7 @@ Now we can use these to convert a iso_code to an english name for a country. Con
 
 > olympic_medals
 
-| country | year | medal_count |
+| country | year_occured | medal_count |
 | -- | -- | -- |
 | AU | 1984 | 20 |
 | CN | 1984 | 30 |
@@ -214,7 +214,7 @@ FROM olympic_medals
 
 Now we get:
 
-| country | year | medal_count | english_name | iso_code3 |  iso_code2 |
+| country | year_occured | medal_count | english_name | iso_code3 |  iso_code2 |
 | ---- | ----- | ---- | ---- | ---- |  ----- |
 | AU | 1984 | 20 | Australia | AU | AUS |
 | CN | 1984 | 30 | China | CN | CHN |
@@ -225,7 +225,7 @@ Now we get:
 You can see that using joins by default brings over _all_ of the columns, but we can use `SELECT` to get just those we want, renaming using `AS` if we wish.
 
 ```sql
-SELECT english_name AS country_name, year, medal_count
+SELECT english_name AS country_name, year_occured, medal_count
 FROM olympic_medals
   LEFT JOIN countries ON olympic_medals.country = countries.iso_code2
 ```
