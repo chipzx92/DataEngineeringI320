@@ -204,12 +204,16 @@ FROM hobbies
   LEFT JOIN majors USING student_name 
 ```
 
+<!--
+
 Exercises:
 
 1. Data on countries: area, population, median income. Combine the tables so we can check what data we have available on each country.
     - Which countries have data on population missing? 
     - Which countries have data on median income missing?
     - Do any countries have data on both missing?
+
+-->
 
 ## Looking up values
 
@@ -360,6 +364,13 @@ The takeaway here is that using `LEFT JOIN` when joining tables with primary and
 
 The downside of using an outer join, though, is that _all_ the records in the left table are retained. When working interactively doing data exploration, this can be problematic when the amount of data is large. We will return to this in material on data validation.
 
+Exercises:
+
+Using the festival schema.
+
+1. What years did 'Beardyman' play in the festival?
+
+
 ## Joining more than 2 tables
 
 Each join is between two tables (the left and the right). Yet we often want to join many tables together, to create data products and reports. Even in our very small database we have three tables, `objects`, `colors`, and `functions`. 
@@ -441,6 +452,10 @@ FROM objects
 ```
 
 You can mix different types of joins, inner, outer, full in the sequence of JOINs.
+
+Exercise:
+
+1. Which bands played in the 'BMI' venue in 2012 or after?
 
 ## Using AS in joins (table abbreviations)
 
