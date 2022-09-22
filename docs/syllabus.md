@@ -15,6 +15,7 @@ Jump to [Course Schedule](#course-schedule).
 
 You can access your lab machine through this link: [https://labs.azure.com/](https://labs.azure.com/)    
 You will get an email invitation to the Lab - follow these instructions to set up your machine: [Setting Up Your Lab Machine](https://github.com/chipzx92/DataEngineeringI320/blob/main/docs/presentations/VMSetup.md)
+If the VM assigned to you won't start or isn't available, you can use a spare machine - [follow these instructions](https://chipzx92.github.io/DataEngineeringI320/misc/) to log on to a spare machine.
 
 ## Course Description
 
