@@ -368,7 +368,15 @@ Exercises:
 
 Using the festival schema.
 
-1. What years did 'Beardyman' play in the festival?
+1. Look at the festival.bands table and the festival.performances table? Which columns connect?
+2. What years did 'Beardyman' play in the festival?
+
+<!--
+SELECT *
+FROM bands 
+  JOIN performances ON bands.id = performances.band_id
+WHERE name = 'Beardyman';
+-->
 
 
 ## Joining more than 2 tables
@@ -456,6 +464,8 @@ You can mix different types of joins, inner, outer, full in the sequence of JOIN
 Exercise:
 
 1. Which bands played in the 'BMI' venue in 2012 or after?
+
+
 
 ## Using AS in joins (table abbreviations)
 

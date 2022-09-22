@@ -28,7 +28,7 @@ Here is an index of the topics we will cover.
 
 3. [Aggregate functions](aggregate_functions) and [GROUP BY](grouping)
 
-4. Outer and Inner JOIN
+4. [Combining data with JOIN](joins)
 
 Additional topics:
 
