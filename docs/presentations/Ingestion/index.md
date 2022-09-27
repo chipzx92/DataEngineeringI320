@@ -1,4 +1,4 @@
-# Source Systems and Data Ingestion
+# Source Systems, Extraction, and Loading - Data Ingestion
 
 Most organizations have their operational data in many different source systems. We want to
 **E**xtract the data out of these sources, **L**oad into our analytical data warehouse, and 
@@ -11,7 +11,8 @@ Most organizations have their operational data in many different source systems.
 The data extracted from source systems needs to be stored, organized and managed effectively. The 
 most common approaches to this are the `Data Warehouse` and the `Data Lake`.
 
-![Data Lake/Data Warehouse](./images/DataLakeVsDataWarehouse.jpeg)
+![https://martinfowler.com/bliki/DataLake.html](./images/DataLakeDataWHFowler.png)
+_credit: https://martinfowler.com/bliki/DataLake.html_
 
 The Data Warehouse is:
 * A large-scale SQL-based database management system.
@@ -117,7 +118,7 @@ We'd have to do the following:
 This takes a minimum of 25-30 lines of python code to do this. If we run our python program, this is
 the result:  
 
-[python ingest program](../../../python/ingestion/src/ingest.py)
+[python ingest program](../../src/ingest.py)
 
 ```
 ubuntu@10.0.0.8 % python ingest.py  
