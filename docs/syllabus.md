@@ -136,6 +136,7 @@ Advanced SQL Features - subqueries, CTE’s, and Window functions
 SQL mini-quiz  
 
 ### Week 6: Source Systems and Data Ingestion (Sep 27/29)
+[Link to Ingestion Presentation](presentations/Ingestion/)  
 What is a Data Lake?  
 What is a Data Warehouse?  
 Data Lakehouses   
