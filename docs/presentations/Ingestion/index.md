@@ -118,7 +118,7 @@ We'd have to do the following:
 This takes a minimum of 25-30 lines of python code to do this. If we run our python program, this is
 the result:  
 
-[python ingest program](../../src/ingest.md)
+[python ingest program](../../src/ingest.html)
 
 ```
 ubuntu@10.0.0.8 % python ingest.py  
