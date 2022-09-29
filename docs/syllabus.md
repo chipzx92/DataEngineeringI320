@@ -13,7 +13,9 @@ Jump to [Course Schedule](#course-schedule).
 
 ## Lab link
 
-Instructions for how to access your VM environment are here: [AWS VM Environment Access](https://github.com/chipzx92/DataEngineeringI320/blob/main/docs/presentations/aws_vm)
+Instructions for how to access your VM environment are here: [AWS VM Environment Access](https://github.com/chipzx92/DataEngineeringI320/blob/main/docs/presentations/aws_vm)  
+Superset access: https://superset.dei320.net  
+Jupyter access: https://notebook.dei320.net  
 
 ## Course Description
 
