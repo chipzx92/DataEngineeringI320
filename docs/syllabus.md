@@ -137,6 +137,8 @@ SQL mini-quiz
 
 ### Week 6: Source Systems and Data Ingestion (Sep 27/29)
 [Link to Ingestion Presentation](presentations/Ingestion/)  
+[Link to Bulk Load](presentations/ingestion-pt2/)
+
 What is a Data Lake?  
 What is a Data Warehouse?  
 Data Lakehouses   
