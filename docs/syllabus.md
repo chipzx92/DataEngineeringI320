@@ -149,17 +149,21 @@ Streaming
 Bulk ingestion using the Copy command  
 Workshop on ingesting data for semester project  
 
+<!--
 ### Week 7: Data Cleansing and Validation (Oct 4/6)  
 Data Quality of Source Systems  
 Statistical validation  
 Rule-based validation  
+-->
 
-### Weeks 8-9: Data Modeling (Oct 11/13 18/20)  
-Normalization  
-Dimensional Modeling  
-Creating Tables  
+### Weeks 7-8: Data Modeling (Oct 4/6 and 11/13)  
+ER diagrams and modeling transactional systems
+- [one-to-many](presentations/modeling/01_has_many/)
+- many-to-many
+Normalization
+Dimensional Modeling (Star Schema)
 Schema Migration  
-Assignment: Create dimensional model for semester project  
+Assignment: Document database design for music_festival database.   
 
 ### Week 10: Data Transformation (Oct 25/27)
 Building the data warehouse  
