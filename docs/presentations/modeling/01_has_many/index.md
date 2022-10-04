@@ -4,9 +4,16 @@ title: "Data Wrangling: Data Modeling"
 Data Modeling
 ===================================
 
-In this module we learn two approaches to modeling data: normalized entity relationship modeling and star schema modeling. Fully normalized ER models are common in transactional systems (such as those that run a website). Star schemas are common in data warehouses and are optimized for analysis.  In our data pipeline the data we extract form source systems will often be in a normalized ER schema and we will transform to a star schema. 
+In this module we learn two approaches to modeling data: 
 
-Modeling means understanding the sort of things we have in our dataset and the relationships between them. Thus, we will be learning "relational data modeling." You will find that this is closely related to the SQL queries we have been doing, but data modeling is more abstract and useful regardless of the specific technologies one handles data with.
+1. Normalized entity relationship (ER) modeling 
+2. Star schema modeling
+
+Normalized ER models are common in transactional systems (such as those that run a website). Star schemas are common in data warehouses and are optimized for analysis.  
+
+In our data pipeline the data we extract form source systems will often be in a normalized ER schema and we will transform to a star schema. 
+
+Modeling means understanding the sort of things we have in our dataset and the relationships between them. You will find that this is closely related to the SQL queries we have been doing, but data modeling is more abstract and useful regardless of the specific technologies one handles data with.
 
 ## Start with concrete instances
 
@@ -23,7 +30,7 @@ So, by "free form description" I mean just jotting down some examples in free te
 Two kinds of relationships
 ===================
 
-Think of the exercise we did with the cards in the first class, where we described our four objects with two attributes: color ("red"/"green") and function ("holds"/writes"). Each of the individual objects had a single color and function ("The red mug holds"). Conversely each color or function could have many objects; we could have many green objects or many objects that write. Thus we can informally say that there is a "one to many" relationship between color and objects, or function and objects. 
+Think of the exercise we did with the cards in the first class, where we described our four objects with two attributes: color ("red"/"green") and function ("holds"/writes"). Each of the individual objects had a single color and function ("The red mug holds"). Conversely each color or function could have many objects; we could have many green objects or many objects that write. Thus we can say that there is a "one-to-many" relationship between color and objects. There is a separate one-to-many relationship between function and color.
 
 On the other hand, we could easily imagine a situation where each object was described with more than one color ("The highlighter is green and black"), so that the relationship was two-way: a single color could have many objects, but each object could have many colors. In that situation we might say that we had a "many-to-many" relationship between objects and colors. 
 
