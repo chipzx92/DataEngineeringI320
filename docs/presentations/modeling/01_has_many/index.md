@@ -27,14 +27,16 @@ Think of the exercise we did with the cards in the first class, where we describ
 
 On the other hand, we could easily imagine a situation where each object was described with more than one color ("The highlighter is green and black"), so that the relationship was two-way: a single color could have many objects, but each object could have many colors. In that situation we might say that we had a "many-to-many" relationship between objects and colors. 
 
+First we will do examples with only one-to-many, then we will introduce many-to-many.
 
-# One-to-many
+# The four parts of our database designs
 
-We use `has_many / belongs_to` to model "one to many" relationships. The following picture shows a data model for Object, Function, and Color that uses two elements:
+The following picture shows a data model for Object, Function, and Color that uses four elements:
 
+1. Concrete examples of data (in words and and informal lines/string sketch)
 1. A diagram with boxes and lines ("Conceptual ER diagram")
 2. A diagram that includes foreign_keys ("Physical ER diagram")
-3. A sketch of relational tables with examples (bottom of the page with concrete data "pen", "green" etc.)
+3. A sketch of relational tables with examples ("Table Sketch")
 
 ![](images/ObjectFunctionColor_full.png)
 
