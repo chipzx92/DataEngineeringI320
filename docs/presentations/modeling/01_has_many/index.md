@@ -28,7 +28,7 @@ Think of the exercise we did with the cards in the first class, where we describ
 On the other hand, we could easily imagine a situation where each object was described with more than one color ("The highlighter is green and black"), so that the relationship was two-way: a single color could have many objects, but each object could have many colors. In that situation we might say that we had a "many-to-many" relationship between objects and colors. 
 
 
-# one-to-many
+# One-to-many
 
 We use `has_many / belongs_to` to model "one to many" relationships. The following picture shows a data model for Object, Function, and Color that uses two elements:
 
