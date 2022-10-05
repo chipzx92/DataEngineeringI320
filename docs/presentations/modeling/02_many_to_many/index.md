@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling: has_and_belongs_to_many"
+title: "Many-to-many relationships"
 ---
 Modeling many-to-many relationships
 =================================================================

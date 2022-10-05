@@ -159,7 +159,7 @@ Rule-based validation
 ### Weeks 7-8: Data Modeling (Oct 4/6 and 11/13)  
 ER diagrams and modeling transactional systems
 - [one-to-many](presentations/modeling/01_has_many/)
-- many-to-many
+- [many-to-many](presentations/modeling/02_many_to_many/)
 Normalization
 Dimensional Modeling (Star Schema)
 Schema Migration  
