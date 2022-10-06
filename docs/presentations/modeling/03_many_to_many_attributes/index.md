@@ -16,17 +16,15 @@ To make our simple association table work with extra attributes we would have to
 
 There are two problems with this. First, the key becomes unwieldy as it gets longer. Second, you may have an extra attribute that is not unique. For example, imagine a class code like "Independent Study" that could be taken twice in the same semester by the same student. Now even the three columns (`class_id`, `student_id`, and `semester`) in combination aren't sufficient to make the row unique. In this example we could try to find something further that made the classes unique (perhaps they have a different instructor? Perhaps not.). However then we have to manage keys of length 4. Moreover it may be that we simply don't have data to distinguish between the two relationships, no matter how many attributes we try to add.
 
-So when we have additional attributes about a relationship, rather than extending our composite primary key, we handle this by turning the relationship into its own Entity, with its own entity name and the extra data as an attribute of that entity. As we turn our modeling into tables, this means that we have a new `id` column. To continue the Student-Class example, we would add the `id` column to our growing middle table and make it, rather than the combination of `class_id`, `student_id`, and `semester` the primary key.
+As far as the database is concerned that is fine and you will definitely see databases that are set up like this (and you very well might see composite keys of length 3 or even 4). The real world of databases can be a messy place.
+
+## Promote the association table to be an Entity
+
+So when we have additional attributes about a relationship, rather than extending our composite primary key, we handle this by turning the relationship into its own Entity, with its own entity name and the extra data as an attribute of that entity. 
 
 ![](../03_many_to_many_attributes/images/conceptual_enrollments.png)
 
-As far as the database is concerned that is fine and you will definitely see databases that are set up like this (and you very well might see composite keys of length 3 or even 4). The real world of databases can be a messy place.
-
-For our database design conventions, though, that is a problem because we still have our relationship table named `classes_students` which indicates a simple association table. More importantly, although more abstractly, by adding an `id` column we have promoted the table to an Entity. 
-
-Thus, to keep everything consistent, we reflect the changes in our tables in our modeling by turning the relationship into an Entity:
-
-![](images/ClassStudentThrough.png)
+As we turn our modeling into tables, this means that we have a new `id` column. To continue the Student-Class example, we would add the `id` column to our growing middle table and make it, rather than the combination of `class_id`, `student_id`, and `semester` the primary key.  We can call this Entity "Enrollment".
 
 Now we can say:
 
@@ -39,6 +37,8 @@ Now we can say:
 It is possible to include attributes in the conceptual ER diagram; here we include `semester` as a key attribute of the enrollment.
 
 When we translate to the physical ER diagram, just as before the foreign keys are in the 'middle' table, at the crowsfoot end of the lines.
+
+![](images/promoted.png)
 
 <!--
 Finally, modeling a many to many relationship as a separate Entity allows us to more easily use the relationship entity `id` as a foreign key for additional modeling. That doesn't come up often but when it does it is crucial, because you really don't want to use a composite primary key as a foreign key (you have to have all three of the columns in the other table.)
