@@ -8,7 +8,7 @@ The second of our two relationship types is used when entities have a "many to m
 
 One way of recognizing the many-to-many relationship is to draw out some concrete examples and use lines to join up those that are associated with each other.  Here we work with some hobbies and people that enjoy them.
 
-![](images/people_and_hobbies_full.png)
+![](images/people_and_hobbies_concrete.drawio.png)
 
 If you see objects on _both_ sides with multiple lines coming **from them**, then you know that you have a many-to-many. Above, for instance, "paint" and "running" each point to two people. On the other side, "Sarah" and "Kyle" each point to two hobbies. Because both the hobbies side and the people side both have data points that send out multiple lines, we have a many-to-many relationship.
 

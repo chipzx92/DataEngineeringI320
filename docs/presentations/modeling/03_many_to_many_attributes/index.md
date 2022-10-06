@@ -6,11 +6,11 @@ Modeling Relationships as Entities ("many-to-many with attributes")
 
 Often when we are dealing with many to many relationships we want to go further than simple associations. For example if we were modeling people and their hobbies, we might want to know when the person started having their hobby. If we were modeling sporting events we might want to store results (who won, came second, or their race times) as well as who competed.
 
-We can use an example of Class and Student, we might want to store an additional attribute of the connection between a single student and a single class, such as semester in which the student enrolled in that class. In tables we could do this:
+We can use an example of Class and Student, we might want to store an additional attribute of the connection between a single student and a single class, such as semester in which the student enrolled in that class. In tables we *could* do this:
 
 ![](../03_many_to_many_attributes/images/add_column.png)
 
-This takes our Simple Association table `classes_students` and adds a column to it `semester`.  Now we can represent that Sarah took Poisons twice, once in Fall 2008 and once in Spring 2008. So far so good. However our primary key for this table is the combination of `class_id` and `student_id`. Can you see that we have repeated that combination? The last two rows would have the same primary key (`class_id: 3` and `student_id: 3`). We can't do that (the database server will reject the second row).
+But this is not recommended. This takes a Simple Association table `classes_students` and adds a column to it `semester`.  Now we can represent that Sarah took Poisons twice, once in Fall 2008 and once in Spring 2008. So far so good. However our primary key for this table is the combination of `class_id` and `student_id`. Can you see that we have repeated that combination? The last two rows would have the same primary key (`class_id: 3` and `student_id: 3`). We can't do that (the database server will reject the second row).
 
 To make our simple association table work with extra attributes we would have to add the extra attribute to our composite primary key as well, making the combination of all three columns the unique thing about the row.
 
@@ -44,7 +44,9 @@ When we translate to the physical ER diagram, just as before the foreign keys ar
 Finally, modeling a many to many relationship as a separate Entity allows us to more easily use the relationship entity `id` as a foreign key for additional modeling. That doesn't come up often but when it does it is crucial, because you really don't want to use a composite primary key as a foreign key (you have to have all three of the columns in the other table.)
 -->
 
-Sometimes the middle entity doesn't have a natural name. In that case using "Record" is useful. For example People have many Addresses, such as "billing" and "mailing". We can record that with a middle entity "AddressRecord" with an attribute of "type".
+## Naming the middle entity
+
+Sometimes the middle entity doesn't have a natural name, such as Enrollment. In that case using "Record" is useful. For example People have many Addresses, such as "billing" and "mailing". We can record that with a middle entity "AddressRecord" with an attribute of "type".
 
 <!--
 Now we turn to another example, relevant to modeling a Book Store.
