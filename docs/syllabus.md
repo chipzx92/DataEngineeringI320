@@ -160,6 +160,7 @@ Rule-based validation
 ER diagrams and modeling transactional systems
 - [one-to-many](presentations/modeling/01_has_many/)
 - [many-to-many](presentations/modeling/02_many_to_many/)
+- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)
 Normalization
 Dimensional Modeling (Star Schema)
 Schema Migration  
