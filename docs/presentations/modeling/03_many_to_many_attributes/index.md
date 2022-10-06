@@ -8,7 +8,7 @@ Often when we are dealing with many to many relationships we want to go further 
 
 We can use an example of Class and Student, we might want to store an additional attribute of the connection between a single student and a single class, such as semester in which the student enrolled in that class. In tables we could do this:
 
-![](images/ClassStudentExtraAttribute.png)
+![](../03_many_to_many_attributes/images/add_column.png)
 
 This takes our Simple Association table `classes_students` and adds a column to it `semester`.  Now we can represent that Sarah took Poisons twice, once in Fall 2008 and once in Spring 2008. So far so good. However our primary key for this table is the combination of `class_id` and `student_id`. Can you see that we have repeated that combination? The first row and the second row have the same primary key (`class_id: 1` and `student_id: 10`). We can't do that (the database server will reject the second row).
 
@@ -18,7 +18,7 @@ There are two problems with this. First, the key becomes unwieldy as it gets lon
 
 So when we have additional attributes about a relationship, rather than extending our composite primary key, we handle this by turning the relationship into its own Entity, with its own entity name and the extra data as an attribute of that entity. As we turn our modeling into tables, this means that we have a new `id` column. To continue the Student-Class example, we would add the `id` column to our growing middle table and make it, rather than the combination of `class_id`, `student_id`, and `semester` the primary key.
 
-![](images/ClassStudentExtraAttributeID.png)
+![](../03_many_to_many_attributes/images/conceptual_enrollments.png)
 
 As far as the database is concerned that is fine and you will definitely see databases that are set up like this (and you very well might see composite keys of length 3 or even 4). The real world of databases can be a messy place.
 
@@ -34,9 +34,7 @@ Now we can say:
 
 > "A single enrollment is about a single student"  
 
-> "A single enrollment adds to a single class"  
-
-> "A single class fills up by many enrollments"  
+> "A single student could have many enrollments, each about a single class"
 
 It is possible to include attributes in the conceptual ER diagram; here we include `semester` as a key attribute of the enrollment.
 
@@ -44,6 +42,9 @@ When we translate to the physical ER diagram, just as before the foreign keys ar
 
 Finally, modeling a many to many relationship as a separate Entity allows us to more easily use the relationship entity `id` as a foreign key for additional modeling. That doesn't come up often but when it does it is crucial, because you really don't want to use a composite primary key as a foreign key (you have to have all three of the columns in the other table.)
 
+Sometimes the middle entity doesn't have a natural name.  In that case using "Record" is useful.  For example People have many Addresses, such as "billing" and "mailing".  We can record that with a middle entity "AddressRecord" with an attribute of "type".
+
+<!--
 Now we turn to another example, relevant to modeling a Book Store.
 
 ## People and Addresses of different kinds.
@@ -73,6 +74,8 @@ As before the foreign keys go into the table with the crowsfoot, giving us this 
 ![](images/AddressRecordCircleToTables.png)
 
 When we name this table the AddressRecord now has its own primary key and it has columns which are about the relationship between the person and address referred to by those foreign keys.  Note also that the table is called `address_records` (the plural of AddressRecord) which follows from the entity being `AddressRecord`. Note that you can distinguish this from a simple association table between some `Address` and some `Record` table which would be called `addresses_records` (pluralizing both).  
+
+-->
 
 # Modeling Exercise (in-class)
 
