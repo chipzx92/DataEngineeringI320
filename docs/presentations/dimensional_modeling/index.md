@@ -80,12 +80,12 @@ The first step is to understand what our customers want - remember, we're always
 some organization or entity. In our case, it's the organizers of the music festival. The want us
 to analyze the data to answer questions like the following questions:
 
-1) How much did we make in ticket sales? - per year, per venue, per band
-2) Which venues were the most popular? - by tickets sold, by capacity filled and by revenue
-3) Which bands were the most popular?
-4) What was the highest, lowest, and average price of a ticket? - by band, performance, and venue
-5) When did people buy tickets for a performance? When the show was announced, or just before the performance?
-6) Are there any bands gaining in popularity over the years or losing popularity?
+1. How much did we make in ticket sales? - per year, per venue, per band
+2. Which venues were the most popular? - by tickets sold, by capacity filled and by revenue
+3. Which bands were the most popular?
+4. What was the highest, lowest, and average price of a ticket? - by band, performance, and venue
+5. When did people buy tickets for a performance? When the show was announced, or just before the performance?
+6. Are there any bands gaining in popularity over the years or losing popularity?
 
 If our dimensional model makes it relatively easy to answer these questions, then we know our model
 is more or less correct.
