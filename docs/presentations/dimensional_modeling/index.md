@@ -1,8 +1,7 @@
 # Dimensional Models AKA "Star Schemas"
 
 Today we're going to talk about dimensional modeling. Dimensional modeling is a technique for 
-modeling large-scale analytical data to make it easier to understand, easier to query, and faster 
-to query.
+modeling large-scale analytical data to make it simpler, easier to understand, and faster to query.
 
 ### Why Do We Need A Different Data Model?
 We build (or at least, we should build) normalized data models for our operational
@@ -103,8 +102,66 @@ So we end up with this dimensional model:
 
 ![FestivalStarSchema](./images/FestivalStarSchema.drawio.png)
 
+
+### Why Is This Better?
+
+We stated earlier that the dimensional model was simpler, easier to understand, and faster to 
+query. Here is an example:
+
+_Find the top 10 performances by ticket sales revenue in the history of the festival_:
+
+A query against our operational database in the festival schema that answers this question looks
+like this:
+
+```sql
+SELECT b.name AS band_name,
+       v.name AS venue_name,
+       COUNT(*) AS tickets_sold,
+       SUM(t.price) AS ticket_sales
+FROM   bands AS b
+JOIN   performances AS p ON (b.id = p.band_id)
+JOIN   venues AS v ON (v.id = p.venue_id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY b.name, v.name
+ORDER BY ticket_sales DESC
+LIMIT 10;
+```
+
+It takes about 2.7-3 seconds to run
+
+Here is the same query using the dimensional model:
+
+```sql
+SELECT band_name,
+       venue_name,
+       COUNT(*) AS tickets_sold,
+       SUM(ticket_price) AS ticket_sales
+FROM   ticket_sales_facts AS f 
+JOIN   bands_dimension AS b ON (b.id = f.band_id)
+JOIN   venues_dimension AS v ON (v.id = f.venue_id)
+GROUP BY band_name, venue_name
+ORDER BY ticket_sales DESC
+LIMIT 10;
+```
+
+It took about 20 milliseconds to run.
+
+Note that:
+* It's simpler - 2 joins instead of 3.
+* It's easier to undersand - no aliasing of column names, joins are easier to understand because everything joins to the fact table.
+* It's much faster - simpler for the optimizer to figure out the fastest access paths to the data.
+
 Exercise:
 Using the dimensional model, write out queries to answer some of the questions we posed above:
+
+1. How much did we make in ticket sales? - per venue, per band, per year
+2. Which venues were the most popular? - by tickets sold, by revenue (ticket sales), and by capacity filled
+3. Which bands were the most popular? - by tickets sold, by revenue (ticket sales)
+4. What was the highest, lowest, and average price of a ticket? - by band, performance, and venue
+5. When did more people buy tickets for a performance? When the show was announced, or just before the performance?
+6. Are there any bands gaining in popularity over the years or losing popularity?
+
+
 
 
 
