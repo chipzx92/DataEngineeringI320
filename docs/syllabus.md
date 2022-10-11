@@ -163,11 +163,11 @@ ER diagrams and modeling transactional systems
 - [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)
 Normalization
 Dimensional Modeling (Star Schema)
+- [Link to Dimensional Modeling](presentations/dimensional_modeling)  
 Schema Migration  
 Assignment: Document database design for music_festival database.   
 
 ### Week 10: Data Transformation (Oct 25/27)
-[Link to Dimensional Modeling](presentations/dimensional_modeling)  
 Building the data warehouse  
 Transforming source data into dimensional models  
 Building data products (data marts)  
