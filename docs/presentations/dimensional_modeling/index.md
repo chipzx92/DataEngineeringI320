@@ -11,14 +11,15 @@ when doing more complex kinds of analytics. Analytical queries against operation
 join many tables and use more sophisticated features of SQL to get the answers to the questions we 
 want to ask.
 
-### Concrete Example
-Let's consider a concrete example of our Music Festival Data. 
+### Operational Data Model
+In our last assignment, we created a physical E-R model of our operational database:
+
+What is this data model about?  
+_Bands_ give _Performances_ at _Venues_ to _People_ who made _Purchases_ of _Tickets_.
 
 ![Festival ERD](./images/FestivalERD.drawio.png)
 
-What is that data model about?  
-_Bands_ give _Performances_ at _Venues_ to _People_ who made _Purchases_ of _Tickets_. 
-
+### Concrete Example
 We can give a concrete representation of that in this diagram:
 
 ![Concrete Example](./images/ConcreteFestival.drawio.png)
@@ -63,21 +64,23 @@ we will use dimensional attributes in SELECT, WHERE, GROUP BY, and ORDER BY clau
 statements.
 
 Generally, each row or fact in a fact table represents a **transaction** or an **event** that is measurable
-in some way. We want our facts to be _atomic_ - that is, they should be unique and indivisable. The
-reason for this is that we want to be able to slice and dice our data in every possible way in order
-to thoroughly and effectively analyze it.
+in some way. We want our facts to be _atomic_ or _granular_ - that is, they should be as unique and 
+indivisable as possible. The reason for this is that we want to be able to slice and dice our data 
+in every possible way in order to thoroughly and effectively analyze it.
 
-What is an atomic fact in our Music Festival data model?
+### Who Is Our Customer for the Dimensional Model?
 
-### Creating Our Dimensional Model
+The operational database is used in real time - people add bands who will play at a future festival,
+reserve venues for performances, determine ticket prices for those performances, and sell tickets.
+All that information goes into the operational database as it happens. Over the years, a historical
+record of that data gets built up. 
 
-So let's convert our operational data model for the music_festival database to a dimensional model.
+At some point, the organizers of the festival want to analyze the data to help them make decisions
+about future festivals. There are a set of questions they would like to have answered because they're
+thinking of putting on an all-star festival of the most popular bands at the most popular venues.
 
-![Festival ERD](./images/FestivalERD.drawio.png)
-
-The first step is to understand what our customers want - remember, we're always doing this for
-some organization or entity. In our case, it's the organizers of the music festival. The want us
-to analyze the data to answer questions like the following questions:
+Those questions are our starting point in building the model. We'll know we have the right model
+if we can answer these questions and others like them effectively and efficiently.
 
 1. How much did we make in ticket sales? - per year, per venue, per band
 2. Which venues were the most popular? - by tickets sold, by capacity filled and by revenue
@@ -86,15 +89,27 @@ to analyze the data to answer questions like the following questions:
 5. When did people buy tickets for a performance? When the show was announced, or just before the performance?
 6. Are there any bands gaining in popularity over the years or losing popularity?
 
-If our dimensional model makes it relatively easy to answer these questions, then we know our model
-is more or less correct.
+Given that set of questions, and the knowledge that we want to organize the data into a 
+dimensional model that will help us answer those questions, we need to decide on the facts and
+dimensions. The first, most essential question is this:
+
+What is an atomic fact in our Music Festival data model?
+
+![Festival ERD](./images/FestivalERD.drawio.png)
+
+Remember that facts are numeric and additive - what column in our data model would we want to
+sum up, count, average, or do math on to help us answer the questions above.
+
+### Creating Our Dimensional Model
+
+So let's convert our operational data model for the music_festival database to a dimensional model.
 
 The next step is to take the tables in our festival schema and turn them into dimensions.
 
-1. Remove the foreign keys from each table - the foreign keys will go into the fact table. These will be the dimension tables.
-2. Rename any columns whose names are ambiguous or duplicates.
-3. Identify the candidate facts in the tables.
-4. Build the fact table by adding all the foreign keys and the column(s) that are the facts.
+1. Remove the foreign keys from each table. These tables will become the dimension tables.
+2. Rename any columns in the dimension tables whose names are ambiguous or duplicates. For example, change `name` in the bands table to `band_name`.
+3. Add all the primary keys to the fact table - rename them with the name of the table, e.g., `id` in the bands table becomes `band_id`.
+4. Add the fact column to the fact table.
 
 ![Dimensional Transform](./images/DimensionalTransform.drawio.png)
 

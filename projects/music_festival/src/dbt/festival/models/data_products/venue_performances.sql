@@ -12,6 +12,6 @@ SELECT f.venue_id,
        f.people_id,
        f.ticket_price,
        v.capacity
-FROM {{ ref('band_performance_facts') }} as f
+FROM {{ ref('ticket_sales_facts') }} as f
 JOIN {{ ref('venues_dimension') }} AS v USING (venue_id)
 JOIN {{ ref('performances_dimension') }} AS p USING (performance_id)

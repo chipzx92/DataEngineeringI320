@@ -15,7 +15,7 @@ SELECT b.band_id,
        p.performance_start AS performance_date,
        v.capacity,
        bdf.ticket_price
-FROM   {{ ref('band_performance_facts') }} AS bdf
+FROM   {{ ref('ticket_sales_facts') }} AS bdf
 JOIN   {{ ref('bands_dimension') }} AS b USING (band_id)
 JOIN   {{ ref('performances_dimension') }} AS p USING (performance_id)
 JOIN   {{ ref('venues_dimension') }} AS v USING (venue_id)
