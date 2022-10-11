@@ -152,8 +152,8 @@ SELECT band_name,
        COUNT(*) AS tickets_sold,
        SUM(ticket_price) AS ticket_sales
 FROM   ticket_sales_facts AS f 
-JOIN   bands_dimension AS b ON (b.id = f.band_id)
-JOIN   venues_dimension AS v ON (v.id = f.venue_id)
+JOIN   bands_dimension AS b ON (b.band_id = f.band_id)
+JOIN   venues_dimension AS v ON (v.band_id = f.venue_id)
 GROUP BY band_name, venue_name
 ORDER BY ticket_sales DESC
 LIMIT 10;
