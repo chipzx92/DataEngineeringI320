@@ -65,7 +65,7 @@ statements.
 
 Generally, each row or fact in a fact table represents a **transaction** or an **event** that is measurable
 in some way. We want our facts to be _atomic_ or _granular_ - that is, they should be as unique and 
-indivisable as possible. The reason for this is that we want to be able to slice and dice our data 
+indivisible as possible. The reason for this is that we want to be able to slice and dice our data 
 in every possible way in order to thoroughly and effectively analyze it.
 
 ### Who Is Our Customer for the Dimensional Model?
@@ -153,7 +153,7 @@ SELECT band_name,
        SUM(ticket_price) AS ticket_sales
 FROM   ticket_sales_facts AS f 
 JOIN   bands_dimension AS b ON (b.band_id = f.band_id)
-JOIN   venues_dimension AS v ON (v.band_id = f.venue_id)
+JOIN   venues_dimension AS v ON (v.venue_id = f.venue_id)
 GROUP BY band_name, venue_name
 ORDER BY ticket_sales DESC
 LIMIT 10;
@@ -163,19 +163,49 @@ It took about 20 milliseconds to run.
 
 Note that:
 * It's simpler - 2 joins instead of 3.
-* It's easier to undersand - no aliasing of column names, joins are easier to understand because everything joins to the fact table.
+* It's easier to understand - no aliasing of column names, joins are easier to understand because everything joins to the fact table.
 * It's much faster - simpler for the optimizer to figure out the fastest access paths to the data.
 
 Exercise:
 Using the dimensional model, write out queries to answer some of the questions we posed above:
 
 1. How much did we make in ticket sales? - per venue, per band, per year
-2. Which venues were the most popular? - by tickets sold, by revenue (ticket sales), and by capacity filled
-3. Which bands were the most popular? - by tickets sold, by revenue (ticket sales)
+2. Which venues were the most popular? - by number of tickets sold, by revenue (ticket sales), and by capacity filled
+3. Which bands were the most popular? - by number of tickets sold, by revenue (ticket sales)
 4. What was the highest, lowest, and average price of a ticket? - by band, performance, and venue
 5. When did more people buy tickets for a performance? When the show was announced, or just before the performance?
 6. Are there any bands gaining in popularity over the years or losing popularity?
 
+#### Answers to question 1:
+- Ticket Sales per Venue:
+```sql
+SELECT venue_name, 
+       SUM(t.ticket_price) AS ticket_sales
+FROM   ticket_sales_facts AS t 
+JOIN   venues_dimension AS v ON (v.venue_id = t.venue_id)
+GROUP BY venue_name
+ORDER BY ticket_sales DESC
+```
+
+- Ticket Sales per Band:
+```sql
+SELECT band_name, 
+       SUM(ticket_price) AS ticket_sales
+FROM   ticket_sales_facts AS t 
+JOIN   bands_dimension AS v ON (v.band_id = t.band_id)
+GROUP BY band_name
+ORDER BY ticket_sales DESC
+```
+
+- Ticket Sales per Year
+```sql
+SELECT EXTRACT(YEAR from performance_start) AS year, 
+       SUM(ticket_price) AS ticket_sales
+FROM   ticket_sales_facts AS t 
+JOIN   performances_dimension AS p ON (p.performance_id = t.performance_id)
+GROUP BY EXTRACT(YEAR from performance_start)
+ORDER BY tickets_sold DESC
+```
 
 
 
