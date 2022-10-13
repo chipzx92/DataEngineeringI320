@@ -15,19 +15,19 @@ JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id);
 SELECT v.venue_id, COUNT(*) as tickets_sold
 FROM   ticket_sales_facts AS t
 JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
-GROUP  BY v.venue_id;
+GROUP BY v.venue_id;
 
 -- Add venue_name
 SELECT v.venue_id, v.venue_name, COUNT(*) as tickets_sold
 FROM   ticket_sales_facts AS t
 JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
-GROUP  BY v.venue_id, v.venue_name;
+GROUP BY v.venue_id, v.venue_name;
 
 -- Order by highest to lowest
 SELECT v.venue_id, v.venue_name, COUNT(*) as tickets_sold
 FROM   ticket_sales_facts AS t
 JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
-GROUP  BY v.venue_id, v.venue_name
+GROUP BY v.venue_id, v.venue_name
 ORDER BY tickets_sold DESC;
 
 -- by revenue
@@ -68,7 +68,7 @@ SELECT b.band_id, b.band_name, v.venue_id, v.venue_name, COUNT(*) as tickets_sol
 FROM   ticket_sales_facts AS t
 JOIN   bands_dimension AS b ON (t.band_id = b.band_id)
 JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
-GROUP  BY b.band_id, b.band_name, v.venue_id, v.venue_name
+GROUP BY b.band_id, b.band_name, v.venue_id, v.venue_name
 ORDER BY tickets_sold DESC
 LIMIT 10;
 
@@ -76,7 +76,7 @@ SELECT b.band_id, b.band_name, v.venue_id, v.venue_name, SUM(ticket_price) AS ti
 FROM   ticket_sales_facts AS t
 JOIN   bands_dimension AS b ON (t.band_id = b.band_id)
 JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
-GROUP  BY b.band_id, b.band_name, v.venue_id, v.venue_name
+GROUP BY b.band_id, b.band_name, v.venue_id, v.venue_name
 ORDER BY ticket_sales DESC
 LIMIT 10;
 
