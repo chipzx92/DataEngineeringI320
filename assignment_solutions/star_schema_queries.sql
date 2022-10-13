@@ -1,6 +1,37 @@
 -- Which venues were the most popular? Return the the id and name of the venue
 -- by number of tickets sold
 -- by revenue (ticket sales)
+
+-- Aggregate function - counts all records
+SELECT COUNT(*) as tickets_sold
+FROM   ticket_sales_facts AS t;
+
+-- Join to venues dimension - counts all records
+SELECT COUNT(*) as tickets_sold
+FROM   ticket_sales_facts AS t
+JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id);
+
+-- Group by venue_id - groups counts by venue
+SELECT v.venue_id, COUNT(*) as tickets_sold
+FROM   ticket_sales_facts AS t
+JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
+GROUP  BY v.venue_id;
+
+-- Add venue_name
+SELECT v.venue_id, v.venue_name, COUNT(*) as tickets_sold
+FROM   ticket_sales_facts AS t
+JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
+GROUP  BY v.venue_id, v.venue_name;
+
+-- Order by highest to lowest
+SELECT v.venue_id, v.venue_name, COUNT(*) as tickets_sold
+FROM   ticket_sales_facts AS t
+JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
+GROUP  BY v.venue_id, v.venue_name
+ORDER BY tickets_sold DESC;
+
+-- by revenue
+
 SELECT v.venue_id, v.venue_name, COUNT(*) AS tickets_sold
 FROM   ticket_sales_facts AS t
 JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
