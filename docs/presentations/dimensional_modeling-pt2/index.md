@@ -56,7 +56,7 @@ We can then transform it into a conceptual model for a star schema.
 Here are the questions our customers are asking:
 
 1. What articles have the most pageviews?
-2. What is the most shared article?
+2. What are the most shared articles?
 3. What authors have the most shares?
 4. What sites have the most pageviews?
 5. What is the average length of a session?
