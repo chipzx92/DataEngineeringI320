@@ -1,10 +1,10 @@
 In our last class, we looked at how to transform operational data models into dimensional models or 
 star schemas. We did this by:
 
-First, getting requirements from our customer in the form of a set of questions that could be
+* First, getting requirements from our customer in the form of a set of questions that could be
 answered by querying our data;
 
-Second, by determining the grain or granularity of our data and picking out the atomic facts.
+* Second, by determining the grain or granularity of our data and picking out the atomic facts.
 
 Remember that **facts** are _measures_ - each row in a fact table is a measurement of something.
 * We generally want our facts to be _numeric_ and _additive_ so that we can sum them, count them,
@@ -41,6 +41,12 @@ else. This is important to the operators of a website - they need to know what t
 content is, what gets shared and who it gets shared to. Among other things, this is important in
 determining ad revenue - the more popular a page or article is, the more ad revenue it will generate.
 
+First, let's look at our conceptual model:  
+
+![ConceptualModel](./images/ConceptualSiteModel.drawio.png)
+
+Then, let's walk through the physical model:  
+
 ![SitesAndArticles](./images/SitesAndArticles.drawio.png)
 
 But first we need to understand the data and the model. Below is a concrete diagram that shows 
@@ -63,9 +69,9 @@ Here are the questions our customers are asking:
 
 Now, do the following:
 
-1) Pick out the atomic facts and determine the grain or granularity of the fact table.
-2) Draw a transformational diagram
-3) Draw the star schema diagram
+1. Pick out the atomic facts and determine the grain or granularity of the fact table. 
+2. Draw a transformational diagram
+3. Draw the star schema diagram
 
 
 
