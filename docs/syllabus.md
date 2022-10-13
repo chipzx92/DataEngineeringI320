@@ -165,29 +165,35 @@ Normalization
 Dimensional Modeling (Star Schema)  
 - [Dimensional Modeling, Part 1](presentations/dimensional_modeling)
 - [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)
-Assignment: Document database design for sites database model.   
+Exercise: Document database design for website analytics database model.   
+Assignment: Queries from Star Schema
 
-### Week 9: Data Transformation (Oct 25/27)
-Building the data warehouse  
-Transforming source data into dimensional models  
-Building data products (data marts)  
+### Week 9: Data Transformation (Oct 18/20)
+Building the data warehouse with dbt
+  - Building data products (data marts)  
+  - Transforming source data into dimensional models  
+
 Assignment: Populate dimensional model for semester project  
 
-### Week 10: Data Presentation and Visualization (Nov 1/3)  
+### Week 10: Data Presentation and Visualization (Oct 25/27)  
 Business Intelligence Tools  
 Introduction to Superset  
 Creating visualizations  
 Assignment: Create visualization for semester project  
 
-### Week 11: Workshop on Semester Projects (Nov 8/10)  
+### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
-### Week 12: Data and Metadata Management and Governance (Nov 15/Nov 17)  
+### Week 12: Workshop on Semester Projects (Nov 8/10)
+
+### Week 13: Data and Metadata Management and Governance (Nov 15/Nov 17)  
 Data Quality  
 Data Catalogs, Data Lineage, and Data Governance  
 DataOps and Data Observability  
 Mini-quiz   
 
-### Week 13: Trends and New Directions in Data Engineering (Nov 29/Dec 1)  
+### Thanksgiving break
+
+### Week 15: Trends and New Directions in Data Engineering (Nov 29/Dec 1)  
 Data Mesh  
 CDC/Streaming/Event Processing for near real-time analytics  
 Reverse ETL  
