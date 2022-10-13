@@ -86,5 +86,127 @@ telematics
 cars owned by dealers by brand
 
 
+----------------------
 
+Do same query on star schema and the ER schema.
+
+show a table and ask is it a fact table or a dimension table.
+
+show a partially changed schema, have them shift an aggregation column from a dimension to a fact table.
+
+difference between "fully denormalized" and fact table.
+
+
+Could use the design for the ecology field observations.
+
+Assign them the DataCamp database modeling task?
+
+-----------
+
+take out FK from the Fact table ER.
+
+note that the v.id in the start schema vs operational schema is wrong, should be v.venue_id.
+
+move these tables to a new schema called star_schema (probably should have that in the pipeline anyway)
+
+figure out a way to have them build the query up step by step.
+
+SELECT *
+FROM ticket_sales_facts;
+
+SELECT SUM(ticket_price)
+FROM ticket_sales_facts;
+
+SELECT ticket_sales_facts.band_id, SUM(ticket_price)
+FROM ticket_sales_facts
+GROUP BY ticket_sales_facts.band_id
+
+SELECT ticket_sales_facts.band_name, SUM(ticket_price)
+FROM ticket_sales_facts
+  JOIN bands_dimension ON ticket_sales_facts.band_id = bands_dimension.band_id
+GROUP BY ticket_sales_facts.band_id
+
+
+-- revenue by year.
+
+SELECT *
+FROM ticket;
+
+-- join in performance_dimension to get performance_start
+
+SELECT *
+FROM ticket_sales_facts as f
+  JOIN performance_dimension p USING performance_id
+
+-- now we can get the year.
+
+SELECT *, EXTRACT(YEAR FROM p)
+FROM ticket_sales_facts as f
+  JOIN performance_dimension USING performance_id
+
+
+
+
+
+----------------------
+
+2022-10-12
+
+CREATE TABLE user_accounts (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+
+CREATE TABLE posts (
+    id SERIAL PRIMARY KEY,
+    name TEXT,
+    content TEXT,
+    created_at TIMESTAMP,
+    user_account_id INTEGER
+);
+
+CREATE TABLE posts_resources (
+    post_id INTEGER,
+    resource_id INTEGER	
+);
+
+CREATE TABLE resources (
+    id SERIAL PRIMARY KEY,
+    name TEXT,
+    type TEXT,
+    path TEXT
+);
+
+CREATE TABLE posts_tags (
+    post_id INTEGER,
+    tag_id INTEGER
+);
+
+CREATE TABLE tags (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+CREATE TABLE bids (
+    id SERIAL PRIMARY KEY,
+    amount INTEGER,
+    tag_id INTEGER,
+    advertiser_id INTEGER
+);
+
+CREATE TABLE industries (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+CREATE TABLE posts_tags (
+    industry_id INTEGER,
+    advertiser_id INTEGER
+);
+
+CREATE TABLE advertisers (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
 

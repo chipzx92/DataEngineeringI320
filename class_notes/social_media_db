@@ -1,0 +1,79 @@
+CREATE TABLE bid_facts (
+    tag_id INTEGER,
+    advertiser_id INTEGER,
+    industry_id INTEGER,
+    bid_amount INTEGER
+);
+
+-- grain is a sharing of a resource in a post tagged by a tag
+-- how handle many_to_many with post/tag?
+CREATE TABLE tagged_share_facts (
+    user_account_id INTEGER,
+    resource_id INTEGER,
+    post_id INTEGER,
+    tag_id INTEGER,
+    post_created_at TIMESTAMP
+);
+    
+
+-- possible query across the fact tables:
+-- who has bid on posts sharing xyz resources?
+
+CREATE TABLE user_accounts_dim (
+    id SERIAL PRIMARY KEY,
+    user_account_name TEXT
+);
+
+
+CREATE TABLE posts_dim (
+    id SERIAL PRIMARY KEY,
+    post_title TEXT,
+    post_content TEXT,
+    -- 
+    -- user_account_id INTEGER
+);
+
+-- CREATE TABLE posts_resources (
+  --  post_id INTEGER,  -- also a candidate fact, sharing a resource
+  --  resource_id INTEGER	
+-- );
+
+CREATE TABLE resources_dim (
+    id SERIAL PRIMARY KEY,
+    resource_name TEXT,
+    resource_type TEXT,
+    resource_path TEXT
+);
+
+CREATE TABLE posts_tags (
+   -- post_id INTEGER, -- candidate event (people tag their post, but done at same time as posting)
+   -- tag_id INTEGER
+);
+
+CREATE TABLE tags_dim (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+CREATE TABLE bids_dim (
+    id SERIAL PRIMARY KEY,
+    amount INTEGER,  -- candidate fact
+    bid_submitted_at TIMESTAMP,
+   -- tag_id INTEGER,
+   -- advertiser_id INTEGER
+);
+
+CREATE TABLE industries_dim (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+-- CREATE TABLE posts_tags (
+    --industry_id INTEGER,
+    --advertiser_id INTEGER
+-- );
+
+CREATE TABLE advertisers_dim (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
