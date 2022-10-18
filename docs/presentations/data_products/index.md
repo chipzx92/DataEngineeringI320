@@ -130,6 +130,8 @@ to answer the following questions:
 Which performances had an average ticket price over $25 - we want to know the band, the venue,
 the number of tickets sold, and the total ticket sales revenue as well as the average ticket price.
 
+So the first step is to create a `SELECT` query that answers this question.
+
 The SQL statement can begin with a _DROP TABLE IF EXISTS_, follwed by a _CREATE TABLE...AS_, like so:
 
 ```sql
