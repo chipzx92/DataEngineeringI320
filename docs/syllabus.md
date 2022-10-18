@@ -165,15 +165,13 @@ Normalization
 Dimensional Modeling (Star Schema)  
 - [Dimensional Modeling, Part 1](presentations/dimensional_modeling)
 - [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)
-Exercise: Document database design for website analytics database model.   
 Assignment: Queries from Star Schema
 
 ### Week 9: Data Transformation (Oct 18/20)
+Data Products
+- [Data Products](presentations/data_products)  
 Building the data warehouse with dbt
-  - Building data products (data marts)  
-  - Transforming source data into dimensional models  
-
-Assignment: Populate dimensional model for semester project  
+  - Transforming source data into dimensional models
 
 ### Week 10: Data Presentation and Visualization (Oct 25/27)  
 Business Intelligence Tools  
