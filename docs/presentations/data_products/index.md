@@ -44,23 +44,24 @@ Calculating how full each venue gets for each performance requires a more compli
 statement than we've seen before:
 
 ```sql
-CREATE TABLE analytics.attendance_at_performances AS
-WITH performance_attendees AS (
-    SELECT performance_id, COUNT(ticket_id) AS tickets_sold
+CREATE TABLE analytics.attendance_at_performances AS (
+    WITH performance_attendees AS (
+        SELECT performance_id, COUNT(ticket_id) AS tickets_sold
+        FROM   ticket_sales_facts AS tsf
+        GROUP  BY performance_id
+    )
+    SELECT b.band_id,
+           b.band_name,
+           v.venue_id,
+           v.venue_name,
+           pa.tickets_sold,
+           v.capacity AS venue_capacity,
+           pa.tickets_sold/(v.capacity*1.0) AS pct_seats_filled
     FROM   ticket_sales_facts AS tsf
-    GROUP  BY performance_id
-)
-SELECT b.band_id,
-       b.band_name,
-       v.venue_id,
-       v.venue_name,
-       pa.tickets_sold,
-       v.capacity AS venue_capacity,
-       pa.tickets_sold/(v.capacity*1.0) AS pct_seats_filled
-FROM   ticket_sales_facts AS tsf
-JOIN   bands_dimension AS b ON (b.band_id = tsf.band_id)
-JOIN   venues_dimension AS v ON (v.venue_id = tsf.venue_id)
-JOIN   performance_attendees AS pa ON (pa.performance_id = tsf.performance_id)
+    JOIN   bands_dimension AS b ON (b.band_id = tsf.band_id)
+    JOIN   venues_dimension AS v ON (v.venue_id = tsf.venue_id)
+    JOIN   performance_attendees AS pa ON (pa.performance_id = tsf.performance_id)
+    )
 ```
 
 This question requires using an advanced SQL construct that you haven't learned yet. Many analysts
