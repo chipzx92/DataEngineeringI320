@@ -133,8 +133,8 @@ the number of tickets sold, and the total ticket sales revenue as well as the av
 The SQL statement can begin with a _DROP TABLE IF EXISTS_, follwed by a _CREATE TABLE...AS_, like so:
 
 ```sql
-DROP TABLE IF EXISTS <your_table_name_your EID>;
-CREATE TABLE IF NOT EXISTS <your_table_name_your EID> AS
+DROP TABLE IF EXISTS <your_table_name_your_EID>;
+CREATE TABLE IF NOT EXISTS <your_table_name_your_EID> AS
 SELECT ...
 ;
 ```
