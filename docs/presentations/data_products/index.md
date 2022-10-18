@@ -3,8 +3,8 @@
 Data Products are what get produced at the end of the data transformation pipeline. The creation of 
 data products is usually _customer-driven_ - we build them in response to specific customer and 
 organizational needs. Data products are the primary things that we _publish_ out of our data 
-warehouse. They are what will provide the data that goes into reports, into visualizations, and 
-into other systems.
+warehouse. They are what will provide the data that goes into reports, into visualizations,
+and into other systems in an organization.
 
 ![ExtractLoadTransform](images/ExtractLoadTransform.drawio.png)
 
@@ -25,8 +25,8 @@ simpler, and faster to query - the exact same goals we had in building dimension
 taken a step further.
 
 One big conceptual difference between dimensional models and derived data products is that derived
-data products are _ad-hoc_ - that is, there is no model or process for creating them. We create them
-in response to some need - a request from a data scientist or analyst, a requirement from a 
+data products are _ad-hoc_ - that is, there is no model or process for creating them. They are 
+created in response to some need - a request from a data scientist or analyst, a requirement from a 
 requirements document in a project plan, or some other triggering event.
 
 This can lead to problems. If the lifecycle of data products is not carefully managed, a bewildering
