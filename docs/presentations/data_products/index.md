@@ -13,6 +13,8 @@ as our **primary** data product. A dimensional model also serves as a _data prod
 is, we can use our dimensional models to create derived data products to fulfill customer and 
 organizational requirements.
 
+![PipelineExample](./images/PipelineExample.drawio.png)
+
 ## What Are Data Products?
 
 Data Products are tables in our data warehouse that are:
@@ -66,7 +68,12 @@ and engineers haven't learned it either. So instead of expecting or hoping analy
 can write this complicated SQL  - and have to do it again and again every time they want to get
 this data - we turn this query into a data product that can be reused.
 
-Note that this is an example of how our star schema is a data model factory.
+Note that this is an example of how our star schema is a data model factory - the data product is
+derived from the star schema.
+
+As an aside, every SELECT statement produces a result set that is the equivalent of a table, so we
+can use the result of an SQL statement to create a table. [Give brief explanation of theory of
+relations and how an operation on a relation always produces another relation]
 
 That SQL statement creates this table:
 
@@ -85,10 +92,6 @@ This achieves our goals for data products:
 * Easier to understand - the data product has a single clear purpose: What was the ratio of attendance at each performance to the capacity of the venue?
 * Simpler - Just query the single data product to get the data you need.
 * Faster - Faster to query because the joins have been _pre-computed_.
-
-As an aside, every SELECT statement produces a result set that is the equivalent of a table, so we
-can use the result of an SQL statement to create a table. [Give brief explanation of theory of
-relations and how an operation on a relation always produces another relation]
 
 ### Why Create Data Products?
 
@@ -117,9 +120,7 @@ In truth, most organizations take a kind of hybrid approach - the primary source
 is from a centralized data warehouse, but data scientists and analysts have the ability to use the
 raw data in the data lake for some specialized needs that the data warehouse can't fulfill.
 
-## Data Products in the Data Pipeline
 
-![PipelineExample](./images/PipelineExample.drawio.png)
 
 ### Exercise - Create a Data Product
 
