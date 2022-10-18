@@ -61,7 +61,7 @@ CREATE TABLE analytics.attendance_at_performances AS (
     JOIN   bands_dimension AS b ON (b.band_id = tsf.band_id)
     JOIN   venues_dimension AS v ON (v.venue_id = tsf.venue_id)
     JOIN   performance_attendees AS pa ON (pa.performance_id = tsf.performance_id)
-    )
+)
 ```
 
 This question requires using an advanced SQL construct that you haven't learned yet. Many analysts
