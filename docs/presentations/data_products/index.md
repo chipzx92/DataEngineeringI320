@@ -135,8 +135,8 @@ So the first step is to create a `SELECT` query that answers this question.
 The SQL statement can begin with a _DROP TABLE IF EXISTS_, follwed by a _CREATE TABLE...AS_, like so:
 
 ```sql
-DROP TABLE IF EXISTS <your_table_name_your_EID>;
-CREATE TABLE IF NOT EXISTS <your_table_name_your_EID> AS
+DROP TABLE IF EXISTS analytics.<your_table_name_your_EID>;
+CREATE TABLE IF NOT EXISTS analytics.<your_table_name_your_EID> AS
 SELECT ...
 ;
 ```
