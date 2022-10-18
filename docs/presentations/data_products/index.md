@@ -133,13 +133,17 @@ the number of tickets sold, and the total ticket sales revenue as well as the av
 The SQL statement can begin with a _DROP TABLE IF EXISTS_, follwed by a _CREATE TABLE...AS_, like so:
 
 ```sql
-DROP TABLE IF EXISTS <your_table_name>;
-CREATE TABLE IF NOT EXISTS <your_table_name> AS
+DROP TABLE IF EXISTS <your_table_name_your EID>;
+CREATE TABLE IF NOT EXISTS <your_table_name_your EID> AS
 SELECT ...
 ;
 ```
 Fill in the table name with what you think is a good descriptive name for this data product. Good
 names are important (and not always easy)!
+
+**Important**: The name of the table needs to be followed by your EID - this is because we're all 
+creating this table in the same database schema, so each table has to have a unique name. For
+example I could call the table `avg_ticket_price_youngcc4` (but use a more descriptive name than that).
 
 Then fill in the SELECT statement with a query that will fulfill the requirements above.
 
