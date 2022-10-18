@@ -48,6 +48,8 @@ Finally, modeling a many to many relationship as a separate Entity allows us to 
 
 Sometimes the middle entity doesn't have a natural name, such as Enrollment. In that case using "Record" is useful. For example People have many Addresses, such as "billing" and "mailing". We can record that with a middle entity "AddressRecord" with an attribute of "type".
 
+![](images/address_records.png)
+
 <!--
 Now we turn to another example, relevant to modeling a Book Store.
 

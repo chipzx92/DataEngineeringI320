@@ -191,6 +191,7 @@ CREATE TABLE tags (
 CREATE TABLE bids (
     id SERIAL PRIMARY KEY,
     amount INTEGER,
+    submitted_at TIMESTAMP,
     tag_id INTEGER,
     advertiser_id INTEGER
 );
