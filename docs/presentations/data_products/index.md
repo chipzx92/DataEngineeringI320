@@ -1,24 +1,27 @@
 # Data Products
 
-Data Products are what get produced at the end of the data transformation pipeline. Data products
-are usually _customer-driven_ - we build them in response specific customer and organizational needs.
+Data Products are what get produced at the end of the data transformation pipeline. The creation of 
+data products is usually _customer-driven_ - we build them in response to specific customer and 
+organizational needs. Data products are the primary things that we _publish_ out of our data 
+warehouse. They are what will provide the data that goes into reports, into visualizations, and 
+into other systems.
+
+![ExtractLoadTransform](images/ExtractLoadTransform.drawio.png)
 
 The dimensional models (star schemas) that we build are data products, too. But we can classify them
 as our **primary** data product. A dimensional model also serves as a _data product factory_ - that 
 is, we can use our dimensional models to create derived data products to fulfill customer and 
 organizational requirements.
 
-![ExtractLoadTransform](images/ExtractLoadTransform.drawio.png)
-
 ## What Are Data Products?
 
 Data Products are tables in our data warehouse that are:
-* Derived from star schemas.
+* **Derived** from star schemas.
 * Intended to fulfill certain specific needs of our customers.
 * Often transient; that is, they may only be for a specific project or inquiry.
 
 One of the most important goals in building data products is to make our data easier to understand,
-simpler, and faster to query - the exact same goals we had in building dimensional models but now
+simpler, and faster to query - the exact same goals we had in building dimensional models - but now
 taken a step further.
 
 One big conceptual difference between dimensional models and derived data products is that derived
@@ -29,7 +32,7 @@ requirements document in a project plan, or some other triggering event.
 This can lead to problems. If the lifecycle of data products is not carefully managed, a bewildering
 array of data products may get created to the point that the organization loses track of them. 
 Having too many different data products, especially if they are poorly tracked and documented, can
-be so confusing that it's worse than not having the data products customers need.
+be so confusing that it might be worse than not having the data products customers need. 
 
 Example: Facebook's (Meta's) issues with finding all their customer data.
 
@@ -49,15 +52,43 @@ SELECT b.band_id,
        b.band_name,
        v.venue_id,
        v.venue_name,
-       tickets_sold/(capacity*1.0) AS pct_seats_filled
+       pa.tickets_sold,
+       v.capacity AS venue_capacity,
+       pa.tickets_sold/(v.capacity*1.0) AS pct_seats_filled
 FROM   ticket_sales_facts AS tsf
-JOIN   performance_attendees AS pa ON (pa.performance_id = tsf.performance_id)
 JOIN   bands_dimension AS b ON (b.band_id = tsf.band_id)
-JOIN   venues_dimension AS v ON (v.venue_id = tsf.venue_id);
+JOIN   venues_dimension AS v ON (v.venue_id = tsf.venue_id)
+JOIN   performance_attendees AS pa ON (pa.performance_id = tsf.performance_id)
 ```
 
-Instead of making analysts and other engineers to write this complicated SQL again and again, we
-can encapsulate this query into a data product that can be reused.
+This question requires using an advanced SQL construct that you haven't learned yet. Many analysts
+and engineers haven't learned it either. So instead of expecting or hoping analysts and other engineers 
+can write this complicated SQL  - and have to do it again and again every time they want to get
+this data - we turn this query into a data product that can be reused.
+
+Note that this is an example of how our star schema is a data model factory.
+
+That SQL statement creates this table:
+
+![AttendanceAtPerformances](./images/AttendanceAtPerformances.drawio.png)
+
+Which I can now query as follows:
+
+```sql
+SELECT *
+FROM   analytics.attendance_at_performances
+WHERE  ...
+```
+
+This achieves our goals for data products:
+
+* Easier to understand - the data product has a single clear purpose: What was the ratio of attendance at each performance to the capacity of the venue?
+* Simpler - Just query the single data product to get the data you need.
+* Faster - Faster to query because the joins have been _pre-computed_.
+
+As an aside, every SELECT statement produces a result set that is the equivalent of a table, so we
+can use the result of an SQL statement to create a table. [Give brief explanation of theory of
+relations and how an operation on a relation always produces another relation]
 
 ### Why Create Data Products?
 
@@ -82,8 +113,13 @@ organizations, for the following reasons:
 3) Star schemas also provide a well-structured way to do ad-hoc queries, as opposed to searching across raw data sources.
 4) Combining data from different sources is only done once in a data pipeline but may be repeated many times in a data lake approach.
 
+In truth, most organizations take a kind of hybrid approach - the primary source of analytic data
+is from a centralized data warehouse, but data scientists and analysts have the ability to use the
+raw data in the data lake for some specialized needs that the data warehouse can't fulfill.
+
 ## Data Products in the Data Pipeline
-[In Progress - there will a diagram and some exposition here]
+
+![PipelineExample](./images/PipelineExample.drawio.png)
 
 ### Exercise - Create a Data Product
 
@@ -93,12 +129,13 @@ to answer the following questions:
 Which performances had an average ticket price over $25 - we want to know the band, the venue,
 the number of tickets sold, and the total ticket sales revenue as well as the average ticket price.
 
-The SQL statement can begin with a _DROP TABLE IF EXISTS_ and a _CREATE TABLE...AS_, like so:
+The SQL statement can begin with a _DROP TABLE IF EXISTS_, follwed by a _CREATE TABLE...AS_, like so:
 
 ```sql
 DROP TABLE IF EXISTS <your_table_name>;
 CREATE TABLE IF NOT EXISTS <your_table_name> AS
 SELECT ...
+;
 ```
 Fill in the table name with what you think is a good descriptive name for this data product. Good
 names are important (and not always easy)!
