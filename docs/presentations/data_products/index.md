@@ -111,10 +111,10 @@ instead of processing data in a data pipeline that gets stored in a centralized 
 individual programs or processes create new products. I think that this is a mistake for most 
 organizations, for the following reasons:
 
-1) The difficulty of coordinating both the processes and data products created by decentralized projects and teams.
-2) Dimensional models provide a well-known, structured way to organize analytical data and to build data products.
-3) Star schemas also provide a well-structured way to do ad-hoc queries, as opposed to searching across raw data sources.
-4) Combining data from different sources is only done once in a data pipeline but may be repeated many times in a data lake approach.
+1. The difficulty of coordinating both the processes and data products created by decentralized projects and teams.
+2. Dimensional models provide a well-known, structured way to organize analytical data and to build data products.
+3. Star schemas also provide a well-structured way to do ad-hoc queries, as opposed to searching across raw data sources.
+4. Combining data from different sources is only done once in a data pipeline but may be repeated many times in a data lake approach.
 
 In truth, most organizations take a kind of hybrid approach - the primary source of analytic data
 is from a centralized data warehouse, but data scientists and analysts have the ability to use the
