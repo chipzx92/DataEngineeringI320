@@ -136,10 +136,13 @@ The SQL statement can begin with a _DROP TABLE IF EXISTS_, follwed by a _CREATE 
 
 ```sql
 DROP TABLE IF EXISTS analytics.<your_table_name_your_EID>;
-CREATE TABLE IF NOT EXISTS analytics.<your_table_name_your_EID> AS
-SELECT ...
-;
+CREATE TABLE IF NOT EXISTS analytics.<your_table_name_your_EID> AS (
+    SELECT ...
+);
 ```
+
+Note that `AS` here is not introducing an alias, instead the whole SELECT query is the thing being passed to `CREATE TABLE`
+
 Fill in the table name with what you think is a good descriptive name for this data product. Good
 names are important (and not always easy)!
 
@@ -150,3 +153,10 @@ example I could call the table `avg_ticket_price_youngcc4` (but use a more descr
 Then fill in the SELECT statement with a query that will fulfill the requirements above.
 
 Question: Why do we want the DROP TABLE in this exercise?
+
+You can see the result of your `CREATE TABLE` by running a query (since now it is saved in the database):
+
+```sql
+SELECT *
+FROM analytics.<your_table_name_your_EID>
+```
