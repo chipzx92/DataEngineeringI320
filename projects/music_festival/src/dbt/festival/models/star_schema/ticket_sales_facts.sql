@@ -1,16 +1,17 @@
 {{ config(
     materialized="table"
 ) }}
-SELECT b.id AS band_id, 
-       v.id AS venue_id,
+SELECT b.band_id,
+       v.venue_id,
        f.id AS performance_id,
        c.id AS purchase_id,
        t.id AS ticket_id,
-       p.id AS people_id,
+       p.person_id,
        t.price AS ticket_price       
-FROM   festival.bands AS b
-JOIN   festival.performances AS f ON (b.id = f.band_id)
-JOIN   festival.venues AS v ON (v.id = f.venue_id)
+FROM   festival.performances AS f
 JOIN   festival.tickets AS t ON (t.performance_id = f.id)
 JOIN   festival.purchases AS c ON (c.id = t.purchase_id)
-JOIN   festival.people AS p ON (p.id = c.person_id)
+JOIN   {{ ref('bands_dimension') }} AS b ON (f.band_id = b.band_id)
+JOIN   {{ ref('venues_dimension') }} AS v ON (v.venue_id = f.venue_id)
+JOIN   {{ ref('people_dimension') }} AS p ON (p.person_id = c.person_id)
+

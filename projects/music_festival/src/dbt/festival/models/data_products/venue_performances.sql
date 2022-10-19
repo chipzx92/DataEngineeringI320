@@ -9,7 +9,7 @@ SELECT f.venue_id,
        v.venue_name,
        f.performance_id,
        p.performance_start AS performance_date,
-       f.people_id,
+       f.person_id,
        f.ticket_price,
        v.capacity
 FROM {{ ref('ticket_sales_facts') }} as f
