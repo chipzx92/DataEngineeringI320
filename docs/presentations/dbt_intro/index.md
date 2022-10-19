@@ -4,8 +4,8 @@ dbt (which stands for **d**ata **b**uild **t**ool) is a very popular open-source
 data engineers and analysts to transform data in data pipelines. It works by turning the results of
 SELECT statements into tables in the data warehouse.
 
-In our previous class, we created a data product by turning a SELECT statement against the 
-dimensional model in the Music Festival database:
+In our previous class, we created a data product by executing a CREATE TABLE ... AS SELECT statement 
+against the dimensional model in the Music Festival database:
 
 ```sql
 DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;  
@@ -22,17 +22,25 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS
     HAVING AVG(t.ticket_price) >= 25 
 ```
 
+This SQL statement created a new table in our database called `avg_ticket_price_above_25` and 
+inserted the results of the SELECT statement into that table. We added a DROP TABLE statement before
+the CREATE TABLE so that we could make this idempotent.
+
+This code could be one of the tasks in a data pipeline that creates a data product. But how would it
+get executed in the data pipeline?
+
 ## Data Pipelines and DAGs
 We've also talked previously about data pipelines and directed acyclic graphs (DAGs). A data pipeline
 is the set of tasks or processes that transforms the data from its source(s) into the dimensional 
 model and data products.
 
 We represent the data pipeline as a directed acyclic graph (DAG) so that we can understand the 
-order of the tasks in the data pipeline and their dependencies on each other. There are tools that
-allow you to define a DAG in code and that orchestrate the execution of the tasks in the DAG, but 
-they are beyond the scope of this class.
+order of execution of the tasks in the data pipeline and their dependencies on each other. We want
+to ensure that tasks get executed in the correct order and that tasks that are dependent on other
+tasks don't get executed unless their dependencies execute successfully first. 
 
-Here is the dag for the Music Festival project:
+
+Here is the DAG for the Music Festival project:
 
 ![Festival DAG](./images/FestivalDAG.drawio.png)
 
@@ -50,14 +58,17 @@ in our dimensional model.
 * The second set of transformations transforms the dimensional tables into the ticket_sales_facts table.
 * The third set of transformations transforms the dimensional model into data products.
 
+These transformations are executed by a tool called `dbt`.
+
 ### Transformations using dbt
 
 We will use dbt as the tool to do these transformations. dbt does two very useful things for us:
 
-1) It automatically drops and creates tables for us.
+1) It automatically drops and creates tables for us, so we don't have to write that code.
 2) It allows us to declare dependencies between tables so we can control the flow of execution in a DAG.
 
-So if use dbt, this:
+So if use dbt, these SQL statements:
+
 ```sql
 DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;  
 CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS  
@@ -73,8 +84,9 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS
     HAVING AVG(t.ticket_price) >= 25  
 ```
 
-becomes a file called `avg_ticket_price_above_25.sql` with this content:
-``` 
+turn into a file called `avg_ticket_price_above_25.sql` with this content:
+
+```sql
 {{ 
    config(  
      materialized="table"  
@@ -94,7 +106,7 @@ HAVING AVG(t.ticket_price) >= 25;
 
 Note that we have the same exact SELECT statement in the dbt file. But there are some important
 differences:
-1. The name of the file (`avg_ticket_price_above_25.sql`) is the name of the table we want to create.
+1. The name of the file (`avg_ticket_price_above_25`) is the name of the table we want to create.
 2. The DROP TABLE and CREATE TABLE statements get replaced with this:
 ```
 {{  
