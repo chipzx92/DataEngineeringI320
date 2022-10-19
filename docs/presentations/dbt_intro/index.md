@@ -1,6 +1,6 @@
 # Data Transformations Using DBT
 
-dbt (which stands for **d**ata **d**uild **t**ool) is a very popular open-source tool that is widely used by
+dbt (which stands for **d**ata **b**uild **t**ool) is a very popular open-source tool that is widely used by
 data engineers and analysts to transform data in data pipelines. It works by turning the results of
 SELECT statements into tables in the data warehouse.
 
