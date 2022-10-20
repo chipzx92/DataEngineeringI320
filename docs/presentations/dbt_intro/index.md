@@ -125,11 +125,7 @@ DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;
 CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS  
 ```
 
-We can use `dbt` to run individual files like this 
-
-```
-Chip Demo using dbt for individual model files.
-```
+We can use `dbt` to run individual files like this but the real power of dbt is in managing whole pipelines using references.
 
 ### Transformations and references
 
