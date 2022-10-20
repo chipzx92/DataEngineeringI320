@@ -65,8 +65,8 @@ These transformations are executed by a tool called `dbt`.
 
 We will use dbt as the tool to do these transformations. dbt does two very useful things for us:
 
-1) It automatically drops and creates tables for us, so we don't have to write that code.
-2) It allows us to declare dependencies between tables so we can control the flow of execution in a DAG.
+1. It automatically drops and creates tables for us, so we don't have to write that code.  
+2. It allows us to declare dependencies between tables so we can control the flow of execution in a DAG.
 
 So if we use dbt, these SQL statements:
 
