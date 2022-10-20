@@ -125,34 +125,6 @@ DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;
 CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS  
 ```
 
-The second thing dbt does is enforce dependencies between transformations. For example, we can
-change the SQL in our dbt file as follows:
-```
-SELECT b.band_id,  
-       b.band_name,  
-       v.venue_id,  
-       v.venue_name,  
-       AVG(t.ticket_price) AS average_ticket_price  
-FROM   {{ ref('ticket_sales_facts') }} AS t  
-JOIN   {{ ref('bands_dimension') }} AS b ON (t.band_id = b.band_id)  
-JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)  
-GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
-HAVING AVG(t.ticket_price) >= 25
-```
-
-Let's take a closer look at what changed here:
-
-> FROM   {{ ref('ticket_sales_facts') }} AS t  
-JOIN   {{ ref('bands_dimension') }} AS b ON (t.band_id = b.band_id)  
-JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)
-
-The **{{ ref('ticket_sales_facts') }}** is a directive to the dbt engine that this SQL statement
-cannot be executed until a table named _ticket_sales_facts_ has been dropped and created in a 
-previous step in our DAG. Only when it and the bands_dimension and venues_dimension tables have 
-been created can this table be created. Put another way, this is enforcing this part of our DAG:
-
-![DBTRefDAG](./images/DBTRefDAG.drawio.png)
-
 One important note: **there can be one and only one SQL statement in a dbt SQL file. It must be
 a SELECT** and it will create a table with the same name as the file (without the `.sql` extension).
 
@@ -306,7 +278,35 @@ At the top of the file, put in the dbt directive to materialize a table:
 
 Then add the SQL statement after that. Save the file - we will run the model files in our next class.
 
+# DBT enables the DAG using references
 
+The second thing dbt does is enforce dependencies between transformations. For example, we can
+change the SQL in our dbt file as follows:
+```
+SELECT b.band_id,  
+       b.band_name,  
+       v.venue_id,  
+       v.venue_name,  
+       AVG(t.ticket_price) AS average_ticket_price  
+FROM   {{ ref('ticket_sales_facts') }} AS t  
+JOIN   {{ ref('bands_dimension') }} AS b ON (t.band_id = b.band_id)  
+JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)  
+GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
+HAVING AVG(t.ticket_price) >= 25
+```
+
+Let's take a closer look at what changed here:
+
+> FROM   {{ ref('ticket_sales_facts') }} AS t  
+JOIN   {{ ref('bands_dimension') }} AS b ON (t.band_id = b.band_id)  
+JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)
+
+The **{{ ref('ticket_sales_facts') }}** is a directive to the dbt engine that this SQL statement
+cannot be executed until a table named _ticket_sales_facts_ has been dropped and created in a 
+previous step in our DAG. Only when it and the bands_dimension and venues_dimension tables have 
+been created can this table be created. Put another way, this is enforcing this part of our DAG:
+
+![DBTRefDAG](./images/DBTRefDAG.drawio.png)
 
 
 
