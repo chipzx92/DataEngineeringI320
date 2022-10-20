@@ -1,8 +1,12 @@
 # Data Transformations Using DBT
 
 dbt (which stands for **d**ata **b**uild **t**ool) is a very popular open-source tool that is widely used by
-data engineers and analysts to transform data in data pipelines. It works by turning the results of
-SELECT statements into tables in the data warehouse.
+data engineers and analysts to transform data in data pipelines. It works by 
+
+1. turning the results of SELECT statements into tables in the data warehouse.
+2. enabling references between queries (to implement dependencies in our DAG pipeline
+
+## DBT without references
 
 In our previous class, we created a data product by executing a CREATE TABLE ... AS SELECT statement 
 against the dimensional model in the Music Festival database:
@@ -27,65 +31,7 @@ This SQL statement created a new table in our database called `avg_ticket_price_
 inserted the results of the SELECT statement into that table. We added a DROP TABLE statement before
 the CREATE TABLE so that we could make this idempotent.
 
-This code could be one of the tasks in a data pipeline that creates a data product. But how would it
-get executed in the data pipeline?
-
-## Data Pipelines and DAGs
-We've also talked previously about data pipelines and directed acyclic graphs (DAGs). A data pipeline
-is the set of tasks or processes that transforms the data from its source(s) into the dimensional 
-model and data products.
-
-We represent the data pipeline as a directed acyclic graph (DAG) so that we can understand the 
-order of execution of the tasks in the data pipeline and their dependencies on each other. We want
-to ensure that tasks get executed in the correct order and that tasks that are dependent on other
-tasks don't get executed unless their dependencies execute successfully first. 
-
-
-Here is the DAG for the Music Festival project:
-
-![Festival DAG](./images/FestivalDAG.drawio.png)
-
-Everything to the left of the dotted green line is a task that loads data from a CSV into a table. 
-We used the python `\copy` command to load CSV files into tables, for example:
-
-```sql
-\copy festival.bands FROM './data/bands.csv' WITH CSV HEADER
-```
-
-To the right of the dotted green line are tasks that transform from one or more source tables into 
-a new table. 
-* The first set of transformations transforms our staging tables into dimension tables 
-in our dimensional model. 
-* The second set of transformations transforms the dimensional tables into the ticket_sales_facts table.
-* The third set of transformations transforms the dimensional model into data products.
-
-These transformations are executed by a tool called `dbt`.
-
-### Transformations using dbt
-
-We will use dbt as the tool to do these transformations. dbt does two very useful things for us:
-
-1) It automatically drops and creates tables for us, so we don't have to write that code.
-2) It allows us to declare dependencies between tables so we can control the flow of execution in a DAG.
-
-So if use dbt, these SQL statements:
-
-```sql
-DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;  
-CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS  
-    SELECT b.band_id,  
-           b.band_name,  
-           v.venue_id,  
-           v.venue_name,  
-           AVG(t.ticket_price) AS average_ticket_price  
-    FROM   ticket_sales_facts AS t  
-    JOIN   bands_dimension AS b ON (t.band_id = b.band_id)  
-    JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)  
-    GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
-    HAVING AVG(t.ticket_price) >= 25  
-```
-
-turn into a file called `avg_ticket_price_above_25.sql` with this content:
+So if we use dbt, that SQL turns into a file called `avg_ticket_price_above_25.sql` with this content:
 
 ```sql
 {{ 
@@ -128,7 +74,7 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS
 One important note: **there can be one and only one SQL statement in a dbt SQL file. It must be
 a SELECT** and it will create a table with the same name as the file (without the `.sql` extension).
 
-## How dbt Works
+### How dbt Works
 dbt is a stand-alone program that is already installed for each of you in your VM environment. It
 works by creating a project in which you write SQL files for your transformations. 
 
@@ -150,6 +96,8 @@ Under the `models` directory we have 2 sub-directories - `star_schema` and `data
 that there is a file for each table in our dimensional model in the `star_schema` directory. You
 can also see that we have several files in our `data_products` directory including the 
 `avg_ticket_price_above_25.sql` file that we've been discussing. 
+
+TODO: log into server and run just the avg_ticket_price_above_25.sql
 
 For your semester project, you will have a dbt project set up for you. It will have a `models` 
 directory that contains the `star_schema` and `data_products` sub-directories. You will have to 
@@ -175,8 +123,50 @@ For example, we can look at the `ticket_sales_facts.sql` file
 
 ![TicketSalesFacts](./images/ticket_sales_facts.png)
 
+Open a Terminal from Jupyter and run:
 
-## Running DBT
+> dbt run --select avg_ticket_price_above_25.sql
+
+## Data Pipelines and DAGs
+
+The dbt query we considered above could be one of the tasks in a data pipeline that creates a data product. But how would it
+get executed in the data pipeline?
+
+We've also talked previously about data pipelines and directed acyclic graphs (DAGs). A data pipeline
+is the set of tasks or processes that transforms the data from its source(s) into the dimensional 
+model and data products.
+
+We represent the data pipeline as a directed acyclic graph (DAG) so that we can understand the 
+order of execution of the tasks in the data pipeline and their dependencies on each other. We want
+to ensure that tasks get executed in the correct order and that tasks that are dependent on other
+tasks don't get executed unless their dependencies execute successfully first. 
+
+Here is the DAG for the Music Festival project:
+
+![Festival DAG](./images/FestivalDAG.drawio.png)
+
+Everything to the left of the dotted green line is a task that loads data from a CSV into a table. 
+We used the python `\copy` command to load CSV files into tables, for example:
+
+```sql
+\copy festival.bands FROM './data/bands.csv' WITH CSV HEADER
+```
+
+To the right of the dotted green line are tasks that transform from one or more source tables into 
+a new table. 
+* The first set of transformations transforms our staging tables into dimension tables 
+in our dimensional model. 
+* The second set of transformations transforms the dimensional tables into the ticket_sales_facts table.
+* The third set of transformations transforms the dimensional model into data products.
+
+These transformations can be executed by `dbt` using references (which create dependencies between tasks).
+
+So dbt does two very useful things for us:
+
+1) It automatically drops and creates tables for us, so we don't have to write that code.
+2) It allows us to declare dependencies between tables so we can control the flow of execution in a DAG.
+
+## Running DBT with dependencies
 
 We can execute the SQL files in the `models` directory by running this command from the festival
 project directory:
