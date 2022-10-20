@@ -114,7 +114,7 @@ differences:
 
 
 {% raw %}
-```
+```dbt
 {{
    config(  
      materialized="table"  
