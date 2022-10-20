@@ -284,7 +284,13 @@ end of the file name.
 Then open up your Jupyter notebook. In your file browser, navigate to the `data_products` directory.
 * Create a new file by clicking on the `File` menu dropdown and then choose `New` and `Text` to 
 create a new file.
+
+![CreateNewFile](./images/create_new_file.png)
+
 * This will create a file called `untitled.txt`. Right-click on the file, choose `Rename` and change the file name. 
+
+![RenameFile](./images/rename_file.png)
+
 * Make sure your file ends with the extension `.sql`
 
 At the top of the file, put in the dbt directive to materialize a table:

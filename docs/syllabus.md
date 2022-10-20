@@ -168,10 +168,10 @@ Dimensional Modeling (Star Schema)
 Assignment: Queries from Star Schema
 
 ### Week 9: Data Transformation (Oct 18/20)
-Data Products
+Data Products  
 - [Data Products](presentations/data_products)  
-Building the data warehouse with dbt
-  - Transforming source data into dimensional models
+Introduction to dbt
+- [dbtIntro](presentations/dbt_intro)
 
 ### Week 10: Data Presentation and Visualization (Oct 25/27)  
 Business Intelligence Tools  
