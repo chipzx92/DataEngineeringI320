@@ -171,7 +171,7 @@ Assignment: Queries from Star Schema
 Data Products  
 - [Data Products](presentations/data_products)  
 Introduction to dbt
-- [dbtIntro](presentations/dbt_intro)
+- [dbt Intro](presentations/dbt_intro)
 
 ### Week 10: Data Presentation and Visualization (Oct 25/27)  
 Business Intelligence Tools  
