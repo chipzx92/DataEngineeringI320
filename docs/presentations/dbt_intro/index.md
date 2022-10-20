@@ -68,7 +68,7 @@ We will use dbt as the tool to do these transformations. dbt does two very usefu
 1) It automatically drops and creates tables for us, so we don't have to write that code.
 2) It allows us to declare dependencies between tables so we can control the flow of execution in a DAG.
 
-So if use dbt, these SQL statements:
+So if we use dbt, these SQL statements:
 
 ```sql
 DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;  
