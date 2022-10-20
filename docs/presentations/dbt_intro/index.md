@@ -176,11 +176,11 @@ At the top of the file, put in the dbt directive to materialize a table:
 }} 
 ```
 
-Then add the SQL statement after that. Save the file - we will run the model files in our next class.
+Then add the SQL statement after that. Save the file - come up with a name for it, ending in your EID.
 
 Open a Terminal from Jupyter and run:
 
-> dbt run --select avg_ticket_price_above_25.sql
+> dbt run --select <name_you_used_for_file>.sql
 
 
 ## Data Pipelines and DAGs
