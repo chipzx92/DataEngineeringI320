@@ -294,6 +294,7 @@ create a new file.
 * Make sure your file ends with the extension `.sql`
 
 At the top of the file, put in the dbt directive to materialize a table:
+
 ```
 {{  
    config(  
