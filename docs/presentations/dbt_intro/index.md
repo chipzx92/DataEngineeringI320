@@ -125,6 +125,14 @@ DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;
 CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS  
 ```
 
+We can use `dbt` to run individual files like this 
+
+```
+Chip Demo using dbt for individual model files.
+```
+
+### Transformations and references
+
 The second thing dbt does is enforce dependencies between transformations. For example, we can
 change the SQL in our dbt file as follows:
 ```
