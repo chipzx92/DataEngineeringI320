@@ -87,6 +87,7 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS
 
 turn into a file called `avg_ticket_price_above_25.sql` with this content:
 
+{% raw %}
 ```sql
 {{ 
    config(  
@@ -104,6 +105,7 @@ JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
 GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
 HAVING AVG(t.ticket_price) >= 25;  
 ```
+{% endraw %}
 
 Note that we have the same exact SELECT statement in the dbt file. But there are some important
 differences:
@@ -136,6 +138,8 @@ We can use `dbt` to run individual files like this but the real power of dbt is 
 
 The second thing dbt does is enforce dependencies between transformations. For example, we can
 change the SQL in our dbt file as follows:
+
+{% raw %}
 ```
 SELECT b.band_id,  
        b.band_name,  
@@ -148,6 +152,7 @@ JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)
 GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
 HAVING AVG(t.ticket_price) >= 25
 ```
+{% endraw %}
 
 Let's take a closer look at what changed here:
 
@@ -309,6 +314,7 @@ create a new file.
 
 At the top of the file, put in the dbt directive to materialize a table:
 
+{% raw %}
 ```
 {{  
    config(  
@@ -316,6 +322,7 @@ At the top of the file, put in the dbt directive to materialize a table:
    )  
 }} 
 ```
+{% endraw %}
 
 Then add the SQL statement after that. Save the file - we will run the model files in our next class.
 
