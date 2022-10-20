@@ -9,7 +9,7 @@ against the dimensional model in the Music Festival database:
 
 ```sql
 DROP TABLE IF EXISTS analytics.avg_ticket_price_above_25;  
-CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS  
+CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS (
     SELECT b.band_id,  
            b.band_name,  
            v.venue_id,  
@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS
     JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)  
     GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
     HAVING AVG(t.ticket_price) >= 25 
+)
 ```
 
 This SQL statement created a new table in our database called `avg_ticket_price_above_25` and 
