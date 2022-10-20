@@ -97,8 +97,6 @@ that there is a file for each table in our dimensional model in the `star_schema
 can also see that we have several files in our `data_products` directory including the 
 `avg_ticket_price_above_25.sql` file that we've been discussing. 
 
-TODO: log into server and run just the avg_ticket_price_above_25.sql
-
 For your semester project, you will have a dbt project set up for you. It will have a `models` 
 directory that contains the `star_schema` and `data_products` sub-directories. You will have to 
 write the SQL files that create your star schema in the `star_schema` directory and the
