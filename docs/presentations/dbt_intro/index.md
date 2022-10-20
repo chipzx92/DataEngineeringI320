@@ -183,6 +183,26 @@ directory that contains the `star_schema` and `data_products` sub-directories. Y
 write the SQL files that create your star schema in the `star_schema` directory and the
 SQL files that create your data products in the `data_products` directory.
 
+Go ahead and open up your [Jupyter notebook](https://notebook.dei320.net) so we can look at the
+files in the dbt model directory.
+
+![Jupyter notebook](./images/jupyter_notebook.png)
+
+In the file manager on the left hand side, click on "projects" then "music festival" then "src"
+then "dbt" then "festival". You should see this:
+
+![Festival project](./images/festival_project.png)
+
+Click on the `models` directory. You will see the `star schema` and `data products` directories. 
+Open them up and look at the SQL files.
+
+![Models directory](./images/models_directory.png)
+
+For example, we can look at the `ticket_sales_facts.sql` file
+
+![TicketSalesFacts](./images/ticket_sales_facts.png)
+
+
 ## Running DBT
 
 We can execute the SQL files in the `models` directory by running this command from the festival
@@ -227,6 +247,60 @@ dbt run
 22:05:52    
 22:05:52  Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11  
 ```
+
+## Exercise/Assignment 
+
+Create a data product using dbt. You need to write an SQL file in the `data_products` directory that 
+will create the table for the data product.
+
+We want a data product that answers this question:
+
+> Which bands have played more than one performance and what was their total revenue (ticket sales) and average revenue per performance?
+
+### Write The Query
+
+First, write the SELECT statement in SQL Lab and make sure it's correct. The SELECT query should
+return the following columns:
+* band_id
+* band_name
+* the total number of performances by the band
+* the total revenue for all performances by the band
+* the average revenue for each performance by the band
+
+The SELECT query should only return bands that have had 2 or more performances. 
+
+Your query has to solve the following problems:
+* How do you count the number of performances?
+* How do you exclude bands with only one performance?
+* How do you calculate average revenue per performance?
+
+Once you have a correct SQL file, you can create the dbt model file.
+
+### Create the dbt file
+
+First, decide on a name for your table which is also the name for your file. Append your EID to the
+end of the file name. 
+
+Then open up your Jupyter notebook. In your file browser, navigate to the `data_products` directory.
+* Create a new file by clicking on the `File` menu dropdown and then choose `New` and `Text` to 
+create a new file.
+* This will create a file called `untitled.txt`. Right-click on the file, choose `Rename` and change the file name. 
+* Make sure your file ends with the extension `.sql`
+
+At the top of the file, put in the dbt directive to materialize a table:
+```
+{{  
+   config(  
+     materialized="table"  
+   )  
+}} 
+```
+
+Then add the SQL statement after that. Save the file - we will run the model files in our next class.
+
+
+
+
 
 
 
