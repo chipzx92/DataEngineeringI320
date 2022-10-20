@@ -88,13 +88,11 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS
 turn into a file called `avg_ticket_price_above_25.sql` with this content:
 
 ```sql
-{% raw %}
 {{ 
    config(  
      materialized="table"  
    ) 
 }}  
-{% raw %}
 SELECT b.band_id,  
        b.band_name,  
        v.venue_id,  
@@ -112,13 +110,14 @@ differences:
 1. The name of the file (`avg_ticket_price_above_25`) is the name of the table we want to create.
 2. The DROP TABLE and CREATE TABLE statements get replaced with this:
 
-```
-{% raw %}{{{% endraw %}
+
+{% raw %}
+{{
    config(  
      materialized="table"  
    )  
-{% raw %}}}{% endraw %} 
-```
+}}
+{% endraw %}
 
 This configuration directive tells dbt to materialize (i.e., _create_) the SELECT statement as a 
 table. If the table already exists, it will drop it before attempting to create it. In other words,
