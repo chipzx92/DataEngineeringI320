@@ -109,6 +109,7 @@ Note that we have the same exact SELECT statement in the dbt file. But there are
 differences:
 1. The name of the file (`avg_ticket_price_above_25`) is the name of the table we want to create.
 2. The DROP TABLE and CREATE TABLE statements get replaced with this:
+
 ```
 {{  
    config(  
@@ -116,6 +117,7 @@ differences:
    )  
 }} 
 ```
+
 This configuration directive tells dbt to materialize (i.e., _create_) the SELECT statement as a 
 table. If the table already exists, it will drop it before attempting to create it. In other words,
 dbt is replacing this part of our original SQL code to create the data product:
