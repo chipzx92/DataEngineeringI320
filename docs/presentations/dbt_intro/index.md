@@ -140,7 +140,7 @@ The second thing dbt does is enforce dependencies between transformations. For e
 change the SQL in our dbt file as follows:
 
 {% raw %}
-```
+```sql
 SELECT b.band_id,  
        b.band_name,  
        v.venue_id,  
@@ -157,7 +157,7 @@ HAVING AVG(t.ticket_price) >= 25
 Let's take a closer look at what changed here:
 
 {% raw %}
-```
+```sql
 FROM   {{ ref('ticket_sales_facts') }} AS t  
 JOIN   {{ ref('bands_dimension') }} AS b ON (t.band_id = b.band_id)  
 JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)
@@ -315,7 +315,7 @@ create a new file.
 At the top of the file, put in the dbt directive to materialize a table:
 
 {% raw %}
-```
+```sql
 {{  
    config(  
      materialized="table"  
