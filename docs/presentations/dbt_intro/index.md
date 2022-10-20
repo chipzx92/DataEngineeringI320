@@ -112,11 +112,13 @@ differences:
 
 
 {% raw %}
+```
 {{
    config(  
      materialized="table"  
    )  
 }}
+```
 {% endraw %}
 
 This configuration directive tells dbt to materialize (i.e., _create_) the SELECT statement as a 
@@ -149,13 +151,15 @@ HAVING AVG(t.ticket_price) >= 25
 
 Let's take a closer look at what changed here:
 
+{% raw %}
 ```
 FROM   {{ ref('ticket_sales_facts') }} AS t  
 JOIN   {{ ref('bands_dimension') }} AS b ON (t.band_id = b.band_id)  
 JOIN   {{ ref('venues_dimension') }} AS v ON (t.venue_id = v.venue_id)
 ```
+{% endraw %}
 
-The **{{ ref('ticket_sales_facts') }}** is a directive to the dbt engine that this SQL statement
+The {% raw %}{{ ref('ticket_sales_facts') }}{% endraw %} is a directive to the dbt engine that this SQL statement
 cannot be executed until a table named _ticket_sales_facts_ has been dropped and created in a 
 previous step in our DAG. Only when it and the bands_dimension and venues_dimension tables have 
 been created can this table be created. Put another way, this is enforcing this part of our DAG:
