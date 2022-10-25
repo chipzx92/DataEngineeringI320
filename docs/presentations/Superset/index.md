@@ -1,3 +1,38 @@
+# Running dbt model files
+
+In our last class, you were given the assignment of creating a dbt model file for a data product.
+We're going to run that file in dbt so that you can see it get executed.
+
+Open up your Jupyter notebook:
+
+![Jupyter Notebook](./images/jupyter_notebook.png)
+
+Navigate to the `data_products` directory (_projects->music_festival->src->dbt->festival->models->data_products_)
+
+The dbt model file you created should be in that directory. In my case, the name of the file is
+`avg_ticket_price_above_25.sql`.
+
+![Data Products Dir](./images/data_products_dir.png)
+
+Click on the Jupyter terminal icon at the bottom of the Launcher tab page. 
+
+![Jupyter Terminal](./images/jupyter_terminal.png)
+
+This will launch the Jupyter terminal in a new tab. Then use the `cd` (which stands for `change directory`)
+command to move to the dbt _festival_ director (_projects->music_festival->src->dbt->festival)
+
+![Jupyter Terminal](./images/navigaate_to_festival.png)
+
+To run dbt against the model file, type in the following command and hit return:
+_dbt run --select avg_ticket_price_above_25.sql_
+
+![dbt run select](./images/dbt_run_select.png)
+
+You should see output that looks like this:
+
+![dbt run results](./images/dbt_run_results.png)
+
+
 # Introduction to Superset
 Superset is a popular open-source Business Intelligence (BI) and visualization program. We will use
 Superset to create visualizations for our music festival project and for our semester projects.
