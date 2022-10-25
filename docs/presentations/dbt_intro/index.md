@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS analytics.avg_ticket_price_above_25 AS (
     FROM   ticket_sales_facts AS t  
     JOIN   bands_dimension AS b ON (t.band_id = b.band_id)  
     JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)  
-    GROUP BY b.band_id, b.band_name, v.venue_id, v.band_name  
+    GROUP BY b.band_id, b.band_name, v.venue_id, v.venue_name  
     HAVING AVG(t.ticket_price) >= 25 
 )
 ```
