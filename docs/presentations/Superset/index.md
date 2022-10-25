@@ -204,7 +204,7 @@ Click on the `+` sign where it says _Add new color formatter_.
 
 ![Add New Formatter](./images/add_new_formatter.png)
 
-Click on the `Operator` pulldown and select `>=`. A field called `Target Value` will appear next to
+Click on the `Operator` pulldown and select `≥`. A field called `Target Value` will appear next to
 it. Enter `26.00` and then hit the `APPLY` button. Notice that the values for average_ticket_price
 now have a green background.
 
