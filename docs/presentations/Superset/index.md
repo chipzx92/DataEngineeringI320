@@ -24,7 +24,8 @@ command to move to the dbt _festival_ director (_projects->music_festival->src->
 ![Jupyter data directory](./images/navigate_to_festival.png)
 
 To run dbt against the model file, type in the following command and hit return:
-_dbt run --select avg_ticket_price_above_25.sql_
+
+> dbt run --select avg_ticket_price_above_25.sql
 
 ![dbt run select](./images/dbt_run_select.png)
 
@@ -189,6 +190,37 @@ Select it and then click the `UPDATE CHART` button in the bottom center. You'll 
 _average_ticket_price_ change to be a monetary value.
 
 ![After Formatting](./images/after_format.png)
+
+The next thing we can do is add some conditional formatting to our average ticket price. Our 
+analysts have told us that an average ticket price of $26 or more is optimal, that anything from
+$25.80 is ok, and anything below that is not good. So were going to add some color formatting that
+illustrates this.
+
+Go down to where it says `CONDITIONAL FORMATTING` just above the `CREATE CHART` button.
+
+![Select Conditional Formatting](./images/select_conditional_formatting.png)
+
+Click on the `+` sign where it says _Add new color formatter_.
+
+![Add New Formatter](./images/add_new_formatter.png)
+
+Click on the `Operator` pulldown and select `>=`. A field called `Target Value` will appear next to
+it. Enter `26.00` and then hit the `APPLY` button. Notice that the values for average_ticket_price
+now have a green background.
+
+![Green Values](./images/green_values.png)
+
+Click the '+' again. Change the `Color Scheme` value to `Yellow`. Click on `Operator` and choose `< x <`.
+Enter `26.00` for the `Left Value` and `25.80` for the `Right Value`. Click on `Apply` and notice
+the values in that range now turn to yellow.
+
+![Yellow Values](./images/yellow_values.png)
+
+Click on the `+` one more time. Change the `Color Scheme` to `Red`. Click on `Operator` and choose
+`<=`. Enter `25.80` for the `Target Value` and click `Apply`. Notice the values in that range now
+turn to red.
+
+![Red Values](./images/red_values.png)
 
 Next we need to give the chart a name. You'll notice that in the upper-left hand corner of the page
 it says "Add the name of the chart". Click on that and enter the name of the chart - let's call
