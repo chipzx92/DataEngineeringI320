@@ -239,8 +239,8 @@ Click on the `Save` button. This dialog will appear:
 
 ![Save Chart Dialog](./images/save_chart_dialog.png)
 
-Enter "Test Dashboard" in the _Add To Dashboard_ field and then click the `SAVE & GO TO DASHBOARD` 
-button in the bottom row of buttons.
+Using your own EID enter `<EID> Test Dashboard` in the _Add To Dashboard_ field and then click the `SAVE & GO TO DASHBOARD` 
+button in the bottom row of buttons. If you get an error that it already exists check that you changed `<EID>` to be your own EID.
 
 ![Create New Dashboard](./images/create_new_dashboard.png)
 
