@@ -25,7 +25,9 @@ command to move to the dbt _festival_ director (_projects->music_festival->src->
 
 To run dbt against the model file, type in the following command and hit return:
 
-> dbt run --select avg_ticket_price_above_25.sql
+```sh
+dbt run --select avg_ticket_price_above_25.sql
+```
 
 ![dbt run select](./images/dbt_run_select.png)
 
