@@ -211,13 +211,13 @@ now have a green background.
 ![Green Values](./images/green_values.png)
 
 Click the '+' again. Change the `Color Scheme` value to `Yellow`. Click on `Operator` and choose `< x <`.
-Enter `26.00` for the `Left Value` and `25.80` for the `Right Value`. Click on `Apply` and notice
+Enter `25.80` for the `Left Value` and `26.00` for the `Right Value`. Click on `Apply` and notice
 the values in that range now turn to yellow.
 
 ![Yellow Values](./images/yellow_values.png)
 
 Click on the `+` one more time. Change the `Color Scheme` to `Red`. Click on `Operator` and choose
-`<=`. Enter `25.80` for the `Target Value` and click `Apply`. Notice the values in that range now
+`≤`. Enter `25.80` for the `Target Value` and click `Apply`. Notice the values in that range now
 turn to red.
 
 ![Red Values](./images/red_values.png)
