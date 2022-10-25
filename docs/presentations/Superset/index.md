@@ -248,4 +248,11 @@ This will take you to the dashboard, which should look something like this:
 
 ![Test Dashboard](./images/test%20dashboard.png)
 
-Congratulations, you've created your first chart and dashboard!
+## Exercise
+
+Using the data product you created (which will have your EID at the end of the table name, e.g.,
+`average_ticket_sales_abc1234`), do the following:
+
+1) Add your data product as a dataset.
+2) Create a chart from the dataset - append your eid to the name of your chart.
+3) Save the chart and add it to a new dashboard - append your eid to the name of the dashboard.
