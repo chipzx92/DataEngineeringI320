@@ -19,9 +19,9 @@ Click on the Jupyter terminal icon at the bottom of the Launcher tab page.
 ![Jupyter Terminal](./images/jupyter_terminal.png)
 
 This will launch the Jupyter terminal in a new tab. Then use the `cd` (which stands for `change directory`)
-command to move to the dbt _festival_ director (_projects->music_festival->src->dbt->festival)
+command to move to the dbt _festival_ director (_projects->music_festival->src->dbt->festival_)
 
-![Jupyter Terminal](./images/navigaate_to_festival.png)
+![Jupyter data directory](./images/navigate_to_festival.png)
 
 To run dbt against the model file, type in the following command and hit return:
 _dbt run --select avg_ticket_price_above_25.sql_
@@ -217,17 +217,3 @@ This will take you to the dashboard, which should look something like this:
 ![Test Dashboard](./images/test%20dashboard.png)
 
 Congratulations, you've created your first chart and dashboard!
-
-
-
-## Dashboards and Charts
-
-Dashboards should consist of charts providing different views of a single subject area, i.e., 
-metrics and visualizations about Venues in our Festival project.
-
-# Navigating Superset dashboards and charts
-
-# Creating a single dashboard
-
-# Creating a chart and adding it to a dashboard
-
