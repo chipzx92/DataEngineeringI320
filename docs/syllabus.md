@@ -169,15 +169,15 @@ Assignment: Queries from Star Schema
 
 ### Week 9: Data Transformation (Oct 18/20)
 Data Products  
-- [Data Products](presentations/data_products)  
-Introduction to dbt
-- [dbt Intro](presentations/dbt_intro)
+[Data Products](presentations/data_products)    
+Introduction to dbt  
+[dbt Intro](presentations/dbt_intro)
 
 ### Week 10: Data Presentation and Visualization (Oct 25/27)  
 Business Intelligence Tools  
-Introduction to Superset  
+[Introduction to Superset](presentations/Superset)  
 Creating visualizations  
-Assignment: Create visualization for semester project  
+Assignment: Create visualization from a data product  
 
 ### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
