@@ -80,6 +80,44 @@ GROUP BY b.band_id, b.band_name, v.venue_id, v.venue_name
 ORDER BY ticket_sales DESC
 LIMIT 10;
 
+------------------
+-- Note that the solution above might produce wrong values if the same band has played at 
+-- the same venue more than once (e.g., across years).
+-- You can handle this in two ways: adding in performance_id to the GROUP BY
+-- Or JOIN to performance_dimension and then use performance_starttime
+-------------------
+
+SELECT t.performance_id, 
+       b.band_id, 
+       b.band_name, 
+       v.venue_id, 
+       v.venue_name, 
+       SUM(ticket_price) AS ticket_sales
+FROM   ticket_sales_facts AS t
+  JOIN   bands_dimension AS b ON (t.band_id = b.band_id)
+  JOIN   venues_dimension AS v ON (t.venue_id = v.venue_id)
+GROUP BY t.performance_id, b.band_id, b.band_name, v.venue_id, v.venue_name
+ORDER BY ticket_sales DESC
+LIMIT 10;
+
+-- Or
+
+SELECT p.performance_start,
+       b.band_id, 
+       b.band_name, 
+       v.venue_id, 
+       v.venue_name, 
+       SUM(ticket_price) AS ticket_sales
+FROM   ticket_sales_facts AS t
+  JOIN bands_dimension AS b ON (t.band_id = b.band_id)
+  JOIN venues_dimension AS v ON (t.venue_id = v.venue_id)
+  -- adding the JOIN to get performance time.
+  JOIN performances_dimension AS p ON (t.performance_id = p.performance_id)  
+GROUP BY p.performance_start, b.band_id, b.band_name, v.venue_id, v.venue_name
+ORDER BY ticket_sales DESC
+LIMIT 10;
+
+
 -- What was the highest, lowest, and average price of a ticket? Order it by average ticket price
 -- by band (top 10)
 -- by venue

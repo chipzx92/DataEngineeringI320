@@ -211,3 +211,138 @@ CREATE TABLE advertisers (
     name TEXT
 );
 
+----------------------
+
+Is it true that a JOIN from a fact table to a dimension table never changes the grain?
+
+JOINs to bridge tables change the grain.
+
+-----------------
+
+Where do you do things like resolving name synomyms.  Could do it early in the pipeline, or after the star schema.  I guess this is more data validation/cleaning.
+
+-----------------
+
+need notes on building the star schema transformation query.
+
+SELECT b.id AS band_id, 
+       v.id AS venue_id,
+       f.id AS performance_id,
+       c.id AS purchase_id,
+       t.id AS ticket_id,
+       p.id AS people_id,
+       t.price AS ticket_price       
+FROM   festival.bands AS b
+LEFT OUTER JOIN   festival.performances AS f ON (b.id = f.band_id)
+JOIN   festival.venues AS v ON (v.id = f.venue_id)
+JOIN   festival.tickets AS t ON (t.performance_id = f.id)
+LEFT OUTER JOIN   festival.purchases AS c ON (c.id = t.purchase_id)
+LEFT OUTER JOIN   festival.people AS p ON (p.id = c.person_id)
+
+
+The grain of the fact table is each ticket.  First need is to get the grain, then we can join and add foreign keys.
+
+SELECT *
+FROM tickets
+
+SELECT t.id AS ticket_id, *
+FROM tickets AS t
+
+SELECT t.id AS ticket_id, 
+       t.price AS ticket_price, *
+FROM tickets AS t
+
+/* Now look to navigate across the ER, following foreign keys.
+  We have performance_id and we have purchase_id.  We need those.
+*/
+
+SELECT t.id AS ticket_id, 
+       t.price AS ticket_price,
+       t.performance_id
+FROM tickets AS t
+
+/* But we don't yet have band_id and venue_id or person_id)
+We have to get those from joins.
+  We will eventually need to go both directions
+  but let's head towards performances first.
+*/
+
+
+-- You can think of this as adding all the columns from the performances table,
+-- then renaming those we will keep. Adding the ,* shows all columns even when you 
+-- have selected some. This can cause some duplicates which sql resolves with subscripts
+-- e.g., performance_id__1
+
+SELECT t.id AS ticket_id, 
+       t.price AS ticket_price,
+       t.performance_id,
+       *
+FROM tickets AS t
+  JOIN performances AS p ON t.performance_id = p.id
+
+-- Of the new columns performance_id, band_id, venue_id we will keep band_id and venue_id but not performance_start
+
+SELECT t.id AS ticket_id, 
+       t.price AS ticket_price, 
+       t.performance_id AS performance_id,
+       p.venue_id AS venue_id,
+       p.band_id AS band_id,
+       *
+FROM tickets AS t
+  JOIN performances AS p ON t.performance_id = p.id
+
+-- We don't need to join to venues and bands because we already have venue_id and band_id
+-- and the facts table doesn't need the names (those go in the dimensions).
+
+-- So now we can go back and follow the purchase_id key
+
+SELECT t.id AS ticket_id, 
+       t.price AS ticket_price, 
+       t.performance_id AS performance_id,
+       p.venue_id AS venue_id,
+       p.band_id AS band_id,
+        p.purchase_id AS purchase_id,
+       *
+FROM tickets AS t
+  JOIN performances AS p ON t.performance_id = p.id
+
+
+-- Now we can use purchase_id to join to purchases to get the id.
+
+SELECT t.id AS ticket_id, 
+       t.price AS ticket_price, 
+       t.performance_id AS performance_id,
+       p.venue_id AS venue_id,
+       p.band_id AS band_id,
+       p.purchase_id AS purchase_id,
+       *
+FROM tickets AS t
+  JOIN performances AS p ON t.performance_id = p.id
+  JOIN purchases AS pr ON t.purchase_id = pr.id
+
+
+---------------
+
+give them CSV files + analyst scenarios.
+
+conceptual ER
+physical ER for source data.
+
+--> load scripts for CSV to staging tables. Finish by Tuesday
+
+transformation diagram to star schema.
+
+--> staging tables to star schema.  Ideally finish by Thursday but also next Tuesday
+
+data products design and justification (2-3 paragraphs, could include lo-fi prototype)
+
+--> dbt files for data products Finish by 2nd Tuesday
+
+dashboard design
+
+--> create dashboard in superset.  Finish by 2nd Thursday.
+
+everything submitted as jupyter notebook exported as HTML.
+
+
+

@@ -15,6 +15,14 @@ CREATE TABLE tagged_share_facts (
     post_created_at TIMESTAMP
 );
     
+-- money that flowed to shares of a resource
+-- data-product for a "Drill across"
+resource_id
+tag_id
+advertiser_id
+bid_amount
+-- but then you can't answer questions about posts
+
 
 -- possible query across the fact tables:
 -- who has bid on posts sharing xyz resources?
