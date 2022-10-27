@@ -46,7 +46,7 @@ Superset to create visualizations for our music festival project and for our sem
 * Out of the box support for nearly any SQL database or data engine
 * A lightweight semantic layer for quickly defining custom fields and metrics
 
-When you login to Superset, you should see a webpage that looks like this:
+When you login to Superset (https://superset.dei320.net), you should see a webpage that looks like this:
 
 ![Superset Login](./images/superset_login.png)
 
