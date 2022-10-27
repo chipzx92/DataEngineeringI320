@@ -82,7 +82,7 @@ choose `# Popular`. This shows a page of the most popular visualization types.
 
 ![Choose Popular](./images/choose_popular.png)
 
-We're going to create a Pie Chsrt, so click on the Pie Chart icon on the page. Pie charts are a 
+We're going to create a Pie Chart, so click on the Pie Chart icon on the page. Pie charts are a 
 very common visualization type. They are divided into slices to show the proportions between the 
 different categories being measured.
 
