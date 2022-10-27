@@ -217,6 +217,42 @@ The bar chart now appears on the dashboard
 
 ![Test Dashboard](./images/test_dashboard.png)
 
+## Exercise
+
+Create a time-series bar chart that show the top three bands by revenue for each year. Save it and 
+add it to your test dashboard.
+
+## Semester Project
+
+For your semester project, you will be divided into teams of 4 people. You will be given a set of 
+requirements for your project and data for your project in the form of CSV files. The requirements 
+will be a description of the data and organizational context along with a series of questions that 
+we want the data to answer.
+
+A project will be set up for your team in your VM and it will give you a framework to build your 
+project. In your project, you will do the following:
+
+* Load the CSV files into staging tables. 
+  * Write an E-R Diagram for the staging tables.
+  * Write the SQL scripts to create the tables and run those scripts.
+  * Write `\copy` commands to load the data
+
+* Create a Dimensional Model (Star Schema)
+  * Determine the grain of your data and identify the fact or facts in your data
+  * Determine the dimensions
+  * Write an E-R Diagram for your star schema
+  * Write dbt model files to create and load the data into your star schema
+
+* Create Data Product(s)
+  * Determine what data product(s) you need to fulfill the requirements
+  * Write dbt model files to create and load the data into your data product(s)
+
+* Create Visualizations in Superset
+  * These visualizations should fulfill the requirements you were given for the project.
+
+
+
+
 
 
 
