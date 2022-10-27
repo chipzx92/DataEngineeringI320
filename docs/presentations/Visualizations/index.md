@@ -1,16 +1,19 @@
 # Visualizations in Superset
 
-In our last class, we created a simple chart and dashboard in Superset. 
-
-Show View Query, Expanding view, and editing chart from dashboard
+In our last class, we created a simple chart and dashboard in Superset. Today we're going to create
+some more advanced visualizations and add them to our dashboard.
 
 ## More on Datasets
 
 The data products we've created so far all had aggregated data. These kinds of data products are
-limited in that there's not a lot we can do with them [explain this more clearly]
+limited in that there's not a lot we can do with them; we can't slice and dice them in different
+ways to get different perspectives on the data and we can't effectively filter on them to only 
+show the data we want. In effect, they can only answer a single question - which is useful and
+valuable - but limits the possibilities of what we can do 
 
 For Superset, we want to create data products that are _reusable_ - that is, they can be used to 
-create a wide variety of charts.
+create a wide variety of charts from a single dataset.
+
 So these data products will join tables in our dimensional model but will not do aggregations of
 any kind. Superset itself will do the aggregations for us when we define our charts.
 
