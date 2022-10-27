@@ -256,7 +256,7 @@ project. In your project, you will do the following:
 * Create Visualizations in Superset
   * These visualizations should fulfill the requirements you were given for the project.
 
-You will submit a report as a Jupyter file, using screenshots and markdown cells to present each section.  You will include short pieces of narrative text to describe the work that you have done.
+You will submit a report as a Jupyter file exported as HTML, using screenshots and markdown cells to present each section.  You will include short pieces of narrative text to describe the work that you have done. The report will document the completed project files on the server (which we will also inspect).
 
 After the project is submitted the professors will meet with each student to interview them about the project.  We expect you to understand every step of the project during that interview; it will not be acceptable to say "I didn't do that part of the project".  In other words, everyone must understand the entire project rather than splitting up into pieces.
 
