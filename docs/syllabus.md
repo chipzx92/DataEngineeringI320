@@ -176,8 +176,7 @@ Introduction to dbt
 ### Week 10: Data Presentation and Visualization (Oct 25/27)  
 Business Intelligence Tools  
 [Introduction to Superset](presentations/Superset)  
-Creating visualizations  
-Assignment: Create visualization from a data product  
+[Creating visualizations with Superset](presentations/Visualizations)  
 
 ### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
