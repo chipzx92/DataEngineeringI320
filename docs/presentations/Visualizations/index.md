@@ -34,6 +34,7 @@ JOIN   bands_dimension AS b ON (b.band_id = f.band_id)
 JOIN   performances_dimension AS p ON (p.performance_id = f.performance_id)
 JOIN   venues_dimension AS v ON (v.venue_id = f.venue_id)
 ```
+{% endraw %}
 
 With this data product, we can answer all of these questions:
 1. How much did we make in ticket sales? - per year, per venue, per band
