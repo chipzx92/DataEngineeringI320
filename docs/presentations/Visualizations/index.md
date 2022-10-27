@@ -237,14 +237,16 @@ A project will be set up for your team in your VM and it will give you a framewo
 project. In your project, you will do the following:
 
 * Load the CSV files into staging tables. 
-  * Write an E-R Diagram for the staging tables.
+  * Create a database design for the staging tables.
+    * Concrete data, conceptual ER, physical ER, sample tables (screenshots are sufficient)      
   * Write the SQL scripts to create the tables and run those scripts.
-  * Write `\copy` commands to load the data
+  * Write `\copy` commands into the appropriate file to load the data
 
 * Create a Dimensional Model (Star Schema)
   * Determine the grain of your data and identify the fact or facts in your data
   * Determine the dimensions
-  * Write an E-R Diagram for your star schema
+  * Create a database design for your star schema.
+    * Concrete data, conceptual ER, physical ER, sample tables (screenshots are sufficient) 
   * Write dbt model files to create and load the data into your star schema
 
 * Create Data Product(s)
@@ -254,7 +256,9 @@ project. In your project, you will do the following:
 * Create Visualizations in Superset
   * These visualizations should fulfill the requirements you were given for the project.
 
+You will submit a report as a Jupyter file, using screenshots and markdown cells to present each section.  You will include short pieces of narrative text to describe the work that you have done.
 
+After the project is submitted the professors will meet with each student to interview them about the project.  We expect you to understand every step of the project during that interview; it will not be acceptable to say "I didn't do that part of the project".  In other words, everyone must understand the entire project rather than splitting up into pieces.
 
 
 
