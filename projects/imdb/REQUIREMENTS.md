@@ -1,35 +1,33 @@
-# Requirements for Austin Animal Center Outcomes Project
+# Requirements for IMDB Ratings Project
 
 ## Overview
-You have been given a set of CSV files listing the animals that have been taken into the Austin
-Animal Center (AAC) over the years that show the animal id, name, intake date, outcome date, and the
-outcome type and subtype. An outcome occurs when the animal leaves the shelter for any reason -
-for example, the animal is adopted or the owner reclaims a stray animal.
+You have been given a set of CSV files from the IMDB (Internet Movie DataBase) that contains movie
+titles, the genres of those movies, and the directors, actresses, and actors in those movies. The 
+IMDB marketing VP would like to know what were the highest rated movies of the last decade, 
+what directors, actresses, and actors had the highest average rating for their movies, and what the
+highest rated movies in each genre were.
 
 ## Requirements
-The AAC shelter director and her staff would like to you to analyze the outcome data to help them
-answer the following questions:
 
-1) What is the average number of days in AAC for an animal? 
-* By animal type 
-* By animal type and breed
-* By year by animal type
-2) How many animals come into AAC every year, and how many go out?
-3) What are the 3 busiest months (by number of intakes) and what are the 3 slowest months?
+1) What are the top 10 highest rated movies for the last 5 years?
+2) What directors (with at least 3 movies) have the highest average rating? 
+3) What actresses (with at least 3 movies) have the highest average rating? 
+4) What actors (with at least 3 movies) have the highest average rating? 
+5) What are the 3 highest rated movies in each genre?
 
 Come up with another interesting question and answer that you can get from the data that you think 
-the shelter director should know.
+the marketing VP should know.
 
 ## Project Details
-The name of your project is `aac`. In your [Jupyter notebook](https://notebook.dei320.net) under the
-`projects` directory, you will find the `aac` project. There is a `data` directory with your CSV 
+The name of your project is `imdb`. In your [Jupyter notebook](https://notebook.dei320.net) under the
+`projects` directory, you will find the `imdb` project. There is a `data` directory with your CSV 
 files and a `src` directory where you will write your code.
 
 You have 4 CSV files:
-* **animals.csv** - Contains the id, name, type, breed, and color of the animals that have come to AAC.
-* **animal_outcomes.csv** - Contains the intake and outcomes dates and outcome type/subtype code for each animal.
-* **outcome_types.csv** - Contains the outcome type codes.
-* **outcome_subtypes.csv** - Contains the outcome subtype codes.
+* **imdb_titles** - Titles of movies released between 2000 and 2022.
+* **imdb_title_ratings** - Ratings of all movie titles.
+* **imdb_title_genres** - The genre(s) for each movie title.
+* **imbd_person_title_roles** - The directors, actresses, and actors for each title.
 
 ## Project Steps
 For your project, you will need to do each of these steps:
