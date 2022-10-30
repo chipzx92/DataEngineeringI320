@@ -1,0 +1,12 @@
+--- 
+festival: 
+  outputs: 
+    dev: 
+      type: "postgres"
+      host: "localhost"
+      user: "festival_read_write"
+      password: "writer"
+      dbname: "music_festival"
+      port: 5432
+      schema: "analytics"
+  target: dev
