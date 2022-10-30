@@ -15,7 +15,10 @@ answer the following questions:
 * By animal type and breed
 * By year by animal type
 2) How many animals come into AAC every year, and how many go out?
-3) What are the 3 busiest months (by number of intakes) and what are the 3 slowest months.
+3) What are the 3 busiest months (by number of intakes) and what are the 3 slowest months?
+
+Come up with another interesting question and answer that you can get from the data that you think 
+the shelter director should know.
 
 ## Project Details
 The name of your project is `aac`. In your [Jupyter notebook](https://notebook.dei320.net) under the
