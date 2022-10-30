@@ -5,11 +5,13 @@
 
 -- Make this file idempotent by having a DROP TABLE IF EXISTS command for every table.
 
+-- Make sure you preface every table name with the staging schema, e.g., "staging.table_name"
+
 -- First, have all the DROP TABLE IF EXISTS commands
-DROP TABLE IF EXISTS <your table_name here>;
+DROP TABLE IF EXISTS staging.<your table_name here>;
 
 -- Then have all of the CREATE TABLE IF NOT EXISTS commands
-CREATE TABLE IF NOT EXISTS <your table_name here>
+CREATE TABLE IF NOT EXISTS staging.<your table_name here>
 (
     <your columns here>
 );

@@ -4,6 +4,7 @@ if [ $# -ne 1 ]; then
     echo "Usage: `basename $0` EID"
     exit 1
 fi
+
 eid=$1
 home_dir=/home/${eid}
 dbt_dir=${home_dir}/.dbt

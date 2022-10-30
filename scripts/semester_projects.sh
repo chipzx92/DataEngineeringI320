@@ -25,7 +25,18 @@ do
     # change group to project group
     sudo chown -R ubuntu:${project} ${PROJECT_DIR}/${project}
     # take away all permssions for world - only group and owner can access
-    sudo chmod -R o-rwx ${PROJECT_DIR}/${project}
+    # sudo chmod -R o-rwx ${PROJECT_DIR}/${project}
 done
 echo "Copied data for projects"
 
+for project in "${projects[@]}"
+do
+    pushd ${PROJECT_DIR}/${project}/src/dbt
+    dbt init ${project}
+    cd ${project}
+    mkdir -p models/star_schema models/data_products
+    rm -rf models/example
+    rm -rf ./README.md
+    sudo chown -R ubuntu:${project} .
+    popd
+done
