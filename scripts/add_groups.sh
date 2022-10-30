@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-declare -a groups=("imdb" "aac" "covid" "faang" "dancing" "songs")
+declare -a groups=("imdb" "aac" "covid" "olympics" "dancing" "songs")
 for group in "${groups[@]}"
 do
     echo Creating $group

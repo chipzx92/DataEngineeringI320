@@ -9,7 +9,7 @@ sudo mkdir ${PROJECT_DIR}
 sudo chown ubuntu:ubuntu ${PROJECT_DIR}
 echo "Created ${PROJECT_DIR}"
 
-declare -a projects=("imdb" "aac" "covid" "faang" "dancing" "songs")
+declare -a projects=("imdb" "aac" "covid" "olympics" "dancing" "songs")
 for project in "${projects[@]}"
 do
     mkdir ${PROJECT_DIR}/${project}
