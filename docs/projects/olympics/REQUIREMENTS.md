@@ -24,6 +24,10 @@ Come up with another interesting question and answer that you can get from the d
 the CTO should know.
 
 ## Project Details
+Use the `music_festival` project as a reference (in `projects/music_festival`) for the files and content that you need.
+
+Use the `320d_project_report_template.ipynb` as the basis for your project report. Make a copy in your project folder (and rename to match your project).
+
 The name of your project is `olympics`. In your [Jupyter notebook](https://notebook.dei320.net) under the
 `projects` directory, you will find the `olympics` project. There is a `data` directory with your CSV 
 files and a `src` directory where you will write your code.
