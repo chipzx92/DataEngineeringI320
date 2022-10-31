@@ -8,16 +8,18 @@ Your client is a journalist who wishes to explore questions about the show in a 
 ## Requirements
 Your task is to analyze the data and present a dashboard that answers the following questions (using data products):
 
-1. Which actors have appeared the most times?
-    * in any capacity?
-    * as host?
 
-2. How has the number of segments in each episode changed over time?
+1. Which actors have appeared the most times? Show the top 5.
+    * as a cast member
+    * in any capacity
+    * as host
 
 3. How has the ratio of female to male appearances changed over time?
     * for cast members
     * for hosts
     * for all appearances
+
+2. How has the number of segments in each episode changed over time?
 
 Come up with another interesting question and answer that you can get from the data that you think 
 the journalist might want to write about?
