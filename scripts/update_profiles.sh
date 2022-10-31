@@ -12,13 +12,14 @@ echo EID is ${EID}
 echo PROJECT is ${PROJECT}
 
 # Add to project group
-
-usermod -a -G ${PROJECT} ${EID}
+usermod -g ${PROJECT} ${EID}
+usermod -a -G students ${EID}
 
 # Add PROJECT env var to .profile
 
 HOME_DIR=/home/${EID}
 echo -e "export PROJECT=${PROJECT}" >> ${HOME_DIR}/.profile
+echo -e "umask 0002" >> ${HOME_DIR}/.profile
 
 # Update dbt profiles.yml
 

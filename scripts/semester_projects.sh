@@ -9,7 +9,7 @@ sudo mkdir ${PROJECT_DIR}
 sudo chown ubuntu:ubuntu ${PROJECT_DIR}
 echo "Created ${PROJECT_DIR}"
 
-declare -a projects=("imdb" "aac" "covid" "olympics" "dancing" "songs")
+declare -a projects=("imdb" "aac" "covid" "olympics" "dwts" "songs")
 for project in "${projects[@]}"
 do
     mkdir ${PROJECT_DIR}/${project}
@@ -35,8 +35,13 @@ do
     dbt init ${project}
     cd ${project}
     mkdir -p models/star_schema models/data_products
+    chmod -R 775 models
     rm -rf models/example
     rm -rf ./README.md
     sudo chown -R ubuntu:${project} .
+    sudo chmod 777 /de_i320/data/projects/${project}/src/dbt/logs
+    sudo touch /de_i320/data/projects//${project}/src/dbt/logs/dbt.log
+    sudo chmod 666 /de_i320/data/projects/${project}/src/dbt/logs/dbt.log
+    sudo chown -R ubuntu:${project} /de_i320/data/projects/${project}/src/dbt/logs
     popd
 done

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-declare -a projects=("imdb" "aac" "covid" "olympics" "dancing" "songs")
+declare -a projects=("imdb" "aac" "covid" "olympics" "dwts" "songs")
 for project in "${projects[@]}"
 do
     psql -U postgres -h localhost -d postgres -c "DROP DATABASE IF EXISTS ${project}"
