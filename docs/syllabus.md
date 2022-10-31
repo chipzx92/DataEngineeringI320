@@ -181,8 +181,15 @@ More Advanced visualizations
 
 ### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
-[Requirements Documents](projects)  
-[Project Report Template](projects/320d_project_report_template.ipynb)  
+#### Requirements Documents:  
+[Austin Animal Center Outcomes](docs/projects/aac/REQUIREMENTS.md)  
+[COVID 19 Cases by US County](docs/projects/covid/REQUIREMENTS.md)  
+Dancing with the Stars  
+[Internet Movie Database](docs/projects/imdb/REQUIREMENTS.md)  
+[Olympic Events for all Olympics](docs/projects/olympics/REQUIREMENTS.md)  
+
+#### Project Report Template:  
+[Project Report Template](docs/projects/320d_project_report_template.ipynb)  
 
 ### Week 12: Workshop on Semester Projects (Nov 8/10)
 
