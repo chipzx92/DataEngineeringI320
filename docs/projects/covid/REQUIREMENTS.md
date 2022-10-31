@@ -14,7 +14,7 @@ out the following things from the data:
    * On April 1, 2020
    * On May 15, 2020
    * On June 27, 2020
-2) What 10 states hadthe highest case rate per capita for those dates? What 10 states had the lowest case rates?
+2) What 10 states had the highest case rate per capita for those dates? What 10 states had the lowest case rates?
 3) Did counties with higher percentages of populations over 65 have higher per capita case rates?
 
 Come up with another interesting question and answer that you can get from the data that you think 
