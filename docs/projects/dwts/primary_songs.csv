@@ -1,0 +1,2096 @@
+"primary_song_id","primary_song","primary_song_artist_id"
+1,"""Sweet Dreams (Are Made of This)""",1
+2,"""Wait a Minute""",2
+3,"""Taking Chances""",3
+4,"""Live Like We're Dying""",4
+5,"""The First Time Ever I Saw Your Face""",5
+6,"""A Girl Like You""",6
+7,"""For Your Entertainment""",7
+8,"""Try Sleeping with a Broken Heart""",8
+9,"""I Can't Make You Love Me""",9
+10,"""Drops of Jupiter (Tell Me)""",10
+11,"""This Woman's Work""",11
+12,"""Violentango""",12
+13,"""Nothin' on You""",13
+14,"""Sweet Dreams (Are Made Of This)""",14
+15,"""Yesterday""",15
+16,"""La Cumparsita""",16
+17,"""Umbrella""",17
+18,"""Somebody to Love""",18
+19,"""Oye Como Va""",19
+20,"""(You Make Me Feel Like) A Natural Woman""",20
+21,"""Hot Stuff""",21
+22,"""I Wonder Why""",22
+23,"""Crazy in Love""",23
+24,"""She Bangs""",24
+25,"""What a Wonderful World""",25
+26,"""I Want You Back""",26
+27,"""I Never Loved a Man (The Way I Love You)""",27
+28,"""Three Times A Lady""",28
+29,"""Respect""",20
+30,"""I Have Nothing""",29
+31,"""September""",30
+32,"""I Like It""",31
+33,"""What the World Needs Now Is Love""",32
+34,"""Your Song""",33
+35,"""Come Away with Me""",34
+36,"""I Don't Wanna Miss a Thing""",35
+37,"""Neutron Dance""",36
+38,"""Emotion""",37
+39,"""Top Hat, White Tie and Tails""",38
+40,"""You're The One That I Want""",39
+41,"""Endless Love""",40
+42,"""Let's Face the Music and Dance""",41
+43,"""Careless Whisper""",42
+44,"""If My Friends Could See Me Now""",43
+45,"""I'm Like a Bird""",44
+46,"""Zoot Suit Riot""",45
+47,"""Hero""",46
+48,"""It Don't Mean a Thing""",47
+49,"""Reet Petite""",48
+50,"""Take My Breath Away""",49
+51,"""Do You Love Me""",50
+52,"""Toxic""",51
+53,"""Footloose""",52
+54,"""Dance with Me""",53
+55,"""I'm Still Standing""",33
+56,"""Hernando's Hideaway""",54
+57,"""Crazy Little Thing Called Love""",55
+58,"""Tequila""",57
+59,"""Jailhouse Rock""",58
+60,"""Cell Block Tango""",59
+61,"""Saturday Night's Alright for Fighting""",33
+62,"""Por una Cabeza""",60
+63,"""Soul Bossa Nova""",61
+64,"""Just The Two of Us""",62
+65,"""Bailamos""",46
+66,"""Let There Be Love""",63
+67,"""Matador Paso""",64
+68,"""España cañí""",65
+69,"""Don't Know Why""",34
+70,"""Bamboleo""",66
+71,"""Big Spender""",67
+72,"""Dream a Little Dream of Me""",68
+73,"""Don't Let Me Be Misunderstood""",69
+74,"""Cold, Cold Heart""",34
+75,"""Thriller""",70
+76,"""Eye of the Tiger""",71
+77,"""Why Don't You Do Right""",72
+78,"""The Final Countdown""",73
+79,"""Bootylicious""",37
+80,"""I'm So Excited""",36
+81,"""Let's Get Loud""",74
+82,"""Lady Marmalade""",75
+83,"""Conga""",76
+84,"""Le Freak""",77
+85,"""Diamonds Are a Girl's Best Friend""",78
+86,"""Get The Party Started""",79
+87,"""The Look of Love""",80
+88,"""No More Tears (Enough Is Enough)""",81
+89,"""For Once in My Life""",82
+90,"""Dirrty""",83
+91,"""You Light Up My Life""",29
+92,"""I Am What I Am""",85
+93,"""Shut Up""",86
+94,"""Perhaps, Perhaps, Perhaps""",87
+95,"""9 to 5""",88
+96,"""Wake Me Up Before You Go-Go""",42
+97,"""You Can't Hurry Love""",89
+98,"""Since U Been Gone""",90
+99,"""One Way or Another""",91
+100,"""Un-Break My Heart""",92
+101,"""Fever""",93
+102,"""Material Girl""",94
+103,"""It Had to Be You""",95
+104,"""Total Eclipse of the Heart""",96
+105,"""Celebration""",97
+106,"""Think""",20
+107,"""Stayin' Alive""",98
+108,"""Livin' la Vida Loca""",24
+109,"""Save a Horse (Ride a Cowboy)""",99
+110,"""It's Just Begun""",100
+111,"""Hound Dog""",58
+112,"""The Killing Moon""",101
+113,"""TiK ToK""",102
+114,"""Kiss from a Rose""",103
+115,"""Rescue Me""",104
+116,"""I'll Be""",105
+117,"""Cupid""",106
+118,"""Hold You In My Arms""",107
+119,"""Hungry Like the Wolf""",108
+120,"""She's Always a Woman""",109
+121,"""Gimme All Your Lovin'""",110
+122,"""Shake a Tail Feather""",111
+123,"""I've Got You Under My Skin""",112
+124,"""The Best Damn Thing""",113
+125,"""Love You I Do""",114
+126,"""Hip to be Square""",115
+127,"""Fly Me to the Moon""",112
+128,"""SOS""",116
+129,"""Love Story""",117
+130,"""I Wanna Be Loved By You""",78
+131,"""100 Years""",118
+132,"""Hot Honey Rag""",59
+133,"""Walk Like an Egyptian""",119
+134,"""With You I'm Born Again""",120
+135,"""Canción del Mariachi""",121
+136,"""Hey, Soul Sister""",10
+137,"""See the Day""",122
+138,"""Beggin'""",123
+139,"""Paparazzi""",124
+140,"""Anything Goes""",125
+141,"""That's Life""",112
+142,"""Kung Fu Fighting""",126
+143,"""Grace Kelly""",127
+144,"""All That Jazz""",128
+145,"""It's My Life""",129
+146,"""I Got You (I Feel Good)""",130
+147,"""Wild Thing""",131
+148,"""La Bamba""",132
+149,"""The Bare Necessities""",133
+150,"""You Never Can Tell""",134
+151,"""Old Time Rock and Roll""",135
+152,"""Complicación""",136
+153,"""Don't You (Forget About Me)""",137
+154,"""Oh, Pretty Woman""",138
+155,"""I Don't Want to Miss a Thing""",35
+156,"""The Time of My Life""",139
+157,"""Vision of Love""",140
+158,"""Mambo Gozon""",136
+159,"""1+1=2""",141
+160,"""Comanche""",142
+161,"""Meddle""",143
+162,"""Trouble""",107
+163,"""Hey Mama""",86
+164,"""El Sonido De La Milonga""",144
+165,"""When I Get You Alone""",145
+166,"""Mas de lo Mismo""",14
+167,"""Nasty""",146
+168,"""María""",24
+169,"""Enjoy the Silence""",147
+170,"""25 Miles""",148
+171,"""Vito's Waltz""",149
+172,"""What I Like About You""",150
+173,"""Addicted to Love""",151
+174,"""Are You Lonesome Tonight?""",58
+175,"""Dancin' Fool""",152
+176,"""Seven Nation Army""",153
+177,"""Long Tall Sally""",154
+178,"""Too Darn Hot""",155
+179,"""Just Dance""",156
+180,"""Train in Vain""",157
+181,"""It is You (I Have Loved)""",158
+182,"""You Ain't Seen Nothing Yet""",159
+183,"""Sparks""",160
+184,"""At This Moment""",162
+185,"""El Tango de Roxanne""",163
+186,"""Crash""",164
+187,"""The Muppet Show Theme""",165
+188,"""Nothin' but a Good Time""",166
+189,"""Moon River""",167
+190,"""We Are in Love""",168
+191,"""You're the Top""",169
+192,"""Bust Your Windows""",170
+193,"""Sweet Dreams""",171
+194,"""Take Me on the Floor""",172
+195,"""Shall We Dance?""",173
+196,"""King of Swing""",174
+197,"""El Cumbanchero""",175
+198,"""We Go Together""",176
+199,"""Higher""",177
+200,"""Life Is a Highway""",178
+201,"""Love Man""",179
+202,"""I Got You Babe""",180
+203,"""Rhythm is a Dancer""",181
+204,"""Una Música Brutal""",182
+205,"""Would You...?""",183
+206,"""Secret Agent Man""",184
+207,"""Don't Lie""",86
+208,"""Las Muchachas""",185
+209,"""Oh, Boy!""",186
+210,"""Say Hey (I Love You)""",187
+211,"""As Long as I'm Singing""",188
+212,"""Tilt Ya Head Back""",189
+213,"""Missing You""",190
+214,"""Open Arms""",191
+215,"""Bulletproof""",192
+216,"""La Bomba""",193
+217,"""Underneath Your Clothes""",194
+218,"""Turn Me On""",195
+219,"""Cobrastyle""",196
+220,"""The Cup of Life""",24
+221,"""Kryptonite""",197
+222,"""Stray Cat Strut""",198
+223,"""Smooth""",199
+224,"""Doing It To Death""",200
+225,"""Are You My Woman (Tell Me So)""",201
+226,"""Haven't Met You Yet""",202
+227,"""Spanish Guitar""",203
+228,"""February Song""",204
+229,"""Love Is in the Air""",205
+230,"""Hard to Handle""",207
+231,"""God Only Knows""",208
+232,"""Jumpin' Jack Flash""",209
+233,"""I Wish I Were in Love Again""",112
+234,"""Play That Funky Music""",210
+235,"""U Got the Look""",211
+236,"""El Capitalismo Foraneo""",182
+237,"""Kiss""",211
+238,"""If You Don't Know Me by Now""",212
+239,"""In the Air Tonight""",89
+240,"""Mas Que Nada""",213
+241,"""Spotlight""",114
+242,"""Take a Picture""",214
+243,"""The Pink Panther Theme""",215
+244,"""I Heard It Through the Grapevine""",216
+245,"""This Will Be (An Everlasting Love)""",217
+246,"""Alejandro""",124
+247,"""I've Got the World on a String""",112
+248,"""Bring Me to Life""",218
+249,"""Fool in Love""",219
+250,"""Why Can't We Be Friends?""",220
+251,"""LoveGame""",124
+252,"""Boot Scootin' Boogie""",221
+253,"""All I Want To Do""",222
+254,"""Bananza (Belly Dancer)""",223
+255,"""I'm Yours""",224
+256,"""I Can't Get Next To You""",225
+257,"""Do I Do""",82
+258,"""Close to Me""",226
+259,"""Mi Swing Es Tropical""",227
+260,"""Pride and Joy""",216
+261,"""Bang Bang""",228
+262,"""Mellow Yellow""",229
+263,"""Request Line""",86
+264,"""Charleston""",230
+265,"""Better in Time""",231
+266,"""Dr. Beat""",177
+267,"""Nothin' Better to Do""",232
+268,"""More Than This""",34
+269,"""El Matador""",233
+270,"""Come Rain or Come Shine""",217
+271,"""Uptown Girl""",109
+272,"""Black Mambo""",234
+273,"""I Do the Jerk""",235
+274,"""Lover, Come Back to Me""",81
+275,"""Alone""",236
+276,"""Piano Man""",109
+277,"""(Up a) Lazy River""",237
+278,"""Shut Up and Drive""",116
+279,"""Cabaret""",238
+280,"""Dançando Lambada""",239
+281,"""Put a Lid on It""",240
+282,"""Jump in the Line (Shake, Senora)""",241
+283,"""Recipe for Love""",168
+284,"""Remedio P'al Corazon""",242
+285,"""Come Dance with Me""",112
+286,"""Walkin' My Baby Back Home""",63
+287,"""Don't Cha""",243
+288,"""I Hear a Symphony""",244
+289,"""Coconut Woman""",241
+290,"""Blue Skies""",245
+291,"""Ding Dong Daddy of the D-Car Line""",45
+292,"""The Lady in Red""",246
+293,"""Bubbly""",247
+294,"""Low""",248
+295,"""Feeling Good""",249
+296,"""The More I See You""",202
+297,"""One Day I'll Fly Away""",250
+298,"""Sweet Home Alabama""",251
+299,"""Ain't It Funny""",74
+300,"""American Woman""",252
+301,"""Mony Mony""",253
+302,"""A Deeper Love""",20
+303,"""Let's Do It, Let's Fall in Love""",254
+304,"""Moondance""",255
+305,"""I Want You To Want Me""",256
+306,"""La Comay""",257
+307,"""Bei Mir Bist Du Schon""",258
+308,"""A Little Less Conversation""",58
+309,"""Proud Mary""",259
+310,"""Get on Your Feet""",177
+311,"""I Got a Girl""",141
+312,"""Epoca""",182
+313,"""Les Toreadors""",260
+314,"""They""",261
+315,"""Diablo Rojo""",262
+316,"""Bandstand Boogie""",152
+317,"""I Want My Mullet Back""",264
+318,"""The Way You Move""",265
+319,"""Bewitched""",266
+320,"""King of the Road""",267
+321,"""Baby Got Back""",268
+322,"""I Want You to Want Me""",269
+323,"""Americano""",188
+324,"""My Lovin' (You're Never Gonna Get It)""",270
+325,"""Man With the Hex""",271
+326,"""Tango a Pugliese""",272
+327,"""Sin Rumbo""",273
+328,"""Tango Barbaro""",274
+329,"""Crazy Train""",275
+330,"""I Like The Way (You Move)""",276
+331,"""Taquito Militar""",277
+332,"""Summertime Blues""",278
+333,"""Suite Punta Del Este""",279
+334,"""Strangers in the Night""",112
+335,"""You Should Be Dancing""",98
+336,"""How Sweet It Is (To Be Loved By You)""",216
+337,"""Chain of Fools""",20
+338,"""You're the First, the Last, My Everything""",280
+339,"""Take On Me""",281
+340,"""Palladio, First Movement""",282
+341,"""You'll Never Find Another Love Like Mine""",283
+342,"""I Kissed a Girl""",284
+343,"""Bossa Nova Hand Dance (Deixa Isso Pra La)""",285
+344,"""Swing With Me""",286
+345,"""Lupita""",287
+346,"""Whatever Lola Wants (Gotan Project remix)""",288
+347,"""C'mon Everybody""",289
+348,"""Mandy""",152
+349,"""Dancing In The Street""",290
+350,"""Baby Love""",244
+351,"""Son of a Preacher Man""",291
+352,"""You and Me and the Bottle Makes 3 Tonight (Baby)""",174
+353,"""Cité Tango""",182
+354,"""Brown Derby Jump""",45
+355,"""Libertango""",292
+356,"""The Power of Love""",115
+357,"""I Was Made to Love Her""",82
+358,"""Cheek to Cheek""",263
+359,"""Let's Hear It for the Boy""",293
+360,"""Ride wit Me""",294
+361,"""Viva Las Vegas""",58
+362,"""Mambo (Uno, Dos, Tres)""",287
+363,"""You Give Me Something""",295
+364,"""Take Me Out""",296
+365,"""Mercy Mercy Me""",216
+366,"""Boléro""",297
+367,"""Flip, Flop and Fly""",298
+368,"""House of Bamboo""",167
+369,"""Mack The Knife""",299
+370,"""Only One Road""",3
+371,"""This Cat's On a Hot Tin Roof""",300
+372,"""Three Times a Lady""",301
+373,"""True""",302
+374,"""Walkin' on the Sun""",303
+375,"""Saving All My Love For You""",29
+376,"""Dance Little Sister""",209
+377,"""Assassin's Tango""",304
+378,"""Ready Teddy!""",154
+379,"""Two Hearts""",89
+380,"""99 Red Balloons""",305
+381,"""Para Los Rumberos""",19
+382,"""Suddenly I See""",306
+383,"""Waiting on the World to Change""",307
+384,"""Malagueña""",188
+385,"""Bleeding Love""",231
+386,"""Why Do Fools Fall in Love""",308
+387,"""Hey Baby""",309
+388,"""Valerie""",310
+389,"""Bread and Butter""",311
+390,"""Baby Likes to Rock It""",312
+391,"""Be Here to Love Me""",34
+392,"""Choo Choo Ch'Boogie""",313
+393,"""Disco Inferno""",314
+394,"""I Just Wanna Make Love to You""",315
+395,"""Hey Daddy""",245
+396,"""Feels Like Today""",178
+397,"""Right Now""",316
+398,"""(Your Love Keeps Lifting Me) Higher and Higher""",48
+399,"""Independent Women Part I""",37
+400,"""Signed, Sealed, Delivered I'm Yours""",82
+401,"""Cuban Pete""",318
+402,"""They're Red Hot""",319
+403,"""Let Me Leave""",320
+404,"""Rock Around the Clock""",321
+405,"""What's New Pussycat?""",322
+406,"""You May Be Right""",109
+407,"""P.Y.T. (Pretty Young Thing)""",70
+408,"""Get Busy""",323
+409,"""Granada""",324
+410,"""Ordinary Day""",325
+411,"""Poker Face""",124
+412,"""Don't Get Me Wrong""",326
+413,"""Ring of Fire""",327
+414,"""Shake, Rattle, and Roll""",115
+415,"""Lovin' U""",8
+416,"""Call Me the Breeze""",251
+417,"""Für Elise""",328
+418,"""The Girl Can't Help It""",154
+419,"""Jalousie""",329
+420,"""Don't Stop Me Now""",55
+421,"""Good Time""",330
+422,"""What Makes You Beautiful""",331
+423,"""Lust for Life""",332
+424,"""Bop to the Top""",333
+425,"""Do Your Thing""",334
+426,"""I Put a Spell on You""",335
+427,"""Habanera""",336
+428,"""Complainte de la Butte""",337
+429,"""Barracuda""",236
+430,"""Mambo Italiano""",338
+431,"""The Lady Is a Tramp""",339
+432,"""Maracaibo Oriental""",340
+433,"""Tell Her About It""",109
+434,"""The Beat Goes On""",180
+435,"""New Shoes""",341
+436,"""Cite Tango""",342
+437,"""Daughters""",307
+438,"""That's the Way (I Like It)""",343
+439,"""Goody Two Shoes""",344
+440,"""I Can't Tell A Waltz From A Tango""",345
+441,"""Girlfriend""",113
+442,"""You Know I'm No Good""",310
+443,"""Party Rock Anthem""",347
+444,"""Call Me Irresponsible""",237
+445,"""Jump""",348
+446,"""Sing, Sing, Sing""",349
+447,"""Betece""",350
+448,"""Crocodile Rock""",33
+449,"""Sweet Soul Music""",351
+450,"""Mess Around""",111
+451,"""Perfidia""",352
+452,"""Bohemian Like You""",353
+453,"""De Donde Soy""",354
+454,"""The Big Date""",355
+455,"""El Choclo""",356
+456,"""I Got a Woman""",111
+457,"""Rio""",108
+458,"""Blue Monday""",357
+459,"""Sunny Afternoon""",358
+460,"""Blow Me (One Last Kiss)""",79
+461,"""Love Song""",359
+462,"""Set Fire to the Rain""",360
+463,"""I Got Rhythm""",263
+464,"""Papa Loves Mambo""",361
+465,"""Black Horse and the Cherry Tree""",306
+466,"""The Girl's Gone Wild""",362
+467,"""Bad Moon Rising""",363
+468,"""Goldfinger""",67
+469,"""Kids in America""",364
+470,"""Please Mr. Brown""",345
+471,"""Mr. Bojangles""",365
+472,"""I Go to Rio""",366
+473,"""La Bohemia""",367
+474,"""Hip Hip Chin Chin""",368
+475,"""Disturbia""",116
+476,"""Do Right Woman, Do Right Man""",315
+477,"""Plaza of Execution""",369
+478,"""Sing, Sing, Sing (With a Swing)""",370
+479,"""Switch""",371
+480,"""Is You Is or Is You Ain't My Baby""",372
+481,"""Shout""",373
+482,"""Simply Irresistible""",151
+483,"""Slow Dancing in a Burning Room""",307
+484,"""Ain't That Peculiar""",216
+485,"""If I Were a Boy""",171
+486,"""G.D.F.R.""",374
+487,"""Lips Are Movin""",375
+488,"""Star Wars Theme/Cantina Band""",376
+489,"""Hard Headed Woman""",58
+490,"""Jealousy""",377
+491,"""You Spin Me Round (Like a Record)""",378
+492,"""Captain From Castille""",379
+493,"""Breakaway""",90
+494,"""Theme from Superman""",380
+495,"""Bounce With Me""",381
+496,"""Breakin' Dishes""",116
+497,"""Higher Ground""",82
+498,"""It's a Man's, Man's, Man's World""",130
+499,"""La Virgen de la Macarena""",382
+500,"""Keep Holding On""",113
+501,"""We're Not Gonna Take It""",383
+502,"""Good Lovin'""",384
+503,"""Redneck Woman""",386
+504,"""Everybody Talks""",387
+505,"""Five Months, Two Weeks, Two Days""",388
+506,"""Black Betty""",389
+507,"""The Heat Is On""",390
+508,"""Santa Maria (del Buen Ayre)""",182
+509,"""Fall for You""",391
+510,"""Dance, Dance""",392
+511,"""She Will Be Loved""",393
+512,"""Mi Confesión""",182
+513,"""I Feel for You""",394
+514,"""Cheerleader""",395
+515,"""Bills""",396
+516,"""Can I Get a Witness""",216
+517,"""Rock the Casbah""",157
+518,"""Can't Help Falling in Love""",58
+519,"""Because We Can""",400
+520,"""Iris""",401
+521,"""Crickets Sing for Anamaria""",402
+522,"""The Way You Make Me Feel""",70
+523,"""Upside Down""",308
+524,"""Funkytown""",403
+525,"""My Family is My Life""",369
+526,"""A-Tisket, A-Tasket""",404
+527,"""Non Non Rien N'a Changé""",405
+528,"""A Cool Cat In Town""",406
+529,"""These Boots Are Made For Walkin'""",407
+530,"""What You Waiting For""",408
+531,"""Hey Sexy Lady""",409
+532,"""Lost Without U""",145
+533,"""Baila, Baila""",410
+534,"""Strawberry Wine""",411
+535,"""Marvin Gaye""",412
+536,"""Hey, Good Lookin'""",413
+537,"""Whistle (While You Work It)""",414
+538,"""Uptown Funk""",415
+539,"""New York, New York (FWB Remix)""",416
+540,"""If You Don't Know Me By Now""",212
+541,"""You Give Love a Bad Name""",417
+542,"""He Was Beautiful""",67
+543,"""A Kind of Magic""",55
+544,"""Breathe Again""",92
+545,"""I Dream of Jeannie""",418
+546,"""Me & Mrs. Jones""",419
+547,"""Cosmic Girl""",420
+548,"""Tres Deseos""",177
+549,"""Everything I Can't Have""",145
+550,"""Don't Be Cruel""",58
+551,"""Big Time Operator""",174
+552,"""Tambourine""",421
+553,"""If You're Not the One""",422
+554,"""Samba Hey""",423
+555,"""Baby Wants a Diamond Ring""",240
+556,"""Creep""",424
+557,"""The Nicest Kids in Town""",425
+558,"""Who Says""",426
+559,"""Blue Suede Shoes""",58
+560,"""If I Were A Painting""",427
+561,"""I Go to Sleep""",326
+562,"""Go Daddy-O""",174
+563,"""Dancing in the Street""",290
+564,"""Ten Feet Tall""",429
+565,"""Juicy Wiggle""",430
+566,"""I Lived""",431
+567,"""Physical""",432
+568,"""Take Me to Church""",433
+569,"""Foolish""",434
+570,"""Sandy's Song""",88
+571,"""Apologize""",435
+572,"""Spice Up Your Life""",436
+573,"""I've Got to See You Again""",34
+574,"""I'm a Woman""",93
+575,"""Gravity""",307
+576,"""Say""",307
+577,"""Pon de Replay""",116
+578,"""You're All I Need to Get By""",437
+579,"""Bad Girls""",21
+580,"""Lucky""",438
+581,"""Two Princes""",439
+582,"""The Phantom of the Opera""",442
+583,"""El Gato Montes""",443
+584,"""I'm Outta Love""",444
+585,"""Get Down on It""",445
+586,"""I Don't Like It, I Love It""",446
+587,"""Boogie Woogie Bugle Boy""",349
+588,"""Time of Our Lives""",447
+589,"""Collecting the Ballots""",448
+590,"""Dance Like This""",449
+591,"""Mambo Baby""",450
+592,"""Modern Love""",451
+593,"""Magalenha""",213
+594,"""Tutti Frutti""",154
+595,"""Si Señor!...""",177
+596,"""No Air""",452
+597,"""Best of My Love""",453
+598,"""Tonight (I'm Lovin' You)""",454
+599,"""Living on Video""",455
+600,"""Mama Do (Uh Oh Uh Oh)""",456
+601,"""River Deep – Mountain High""",259
+602,"""Tennessee Waltz""",457
+603,"""Take It to the Limit""",458
+604,"""Cancion Del Mariachi""",459
+605,"""We Got the Beat""",460
+606,"""Vehicle""",461
+607,"""Midnight Train to Georgia""",462
+608,"""This Is How We Roll""",463
+609,"""Chicago (That Toddlin' Town)""",112
+610,"""Whole Lotta Shakin' Goin' On""",464
+611,"""You Make Me Feel So Young""",202
+612,"""California Gurls""",465
+613,"""Working My Way Back to You""",466
+614,"""What's Going On""",216
+615,"""A Woman's Worth""",8
+616,"""Erythrina Fusca""",467
+617,"""Get Up Offa That Thing""",130
+618,"""The Jean Genie""",451
+619,"""Come See About Me""",244
+620,"""Whine Up""",468
+621,"""Irreplaceable""",171
+622,"""True Colors""",469
+623,"""Mi Tierra""",177
+624,"""Come Fly with Me""",112
+625,"""Delilah""",322
+626,"""Tell Her""",471
+627,"""You Don't Know Me""",111
+628,"""Black and Gold""",472
+629,"""Moves like Jagger""",473
+630,"""Free Your Mind""",270
+631,"""Canción Del Mariachi""",474
+632,"""Freedom! '90""",475
+633,"""Friend Like Me""",476
+634,"""Only the Good Die Young""",109
+635,"""Rumour Has It""",360
+636,"""Heaven Must Be Missing an Angel""",477
+637,"""Besame Mucho""",478
+638,"""Candela""",479
+639,"""Venus""",480
+640,"""Jimmy Mack""",481
+641,"""Rip it Up""",154
+642,"""Let's Get it On""",216
+643,"""Champagne Tango""",482
+644,"""Birthday""",284
+645,"""Born to Be Wild""",483
+646,"""One Bad Apple""",484
+647,"""Jump Shout Boogie""",152
+648,"""Hallelujah""",485
+649,"""Can't Get You Out of My Head""",486
+650,"""Mr. Pinstripe Suit""",174
+651,"""Hey Pachuco""",487
+652,"""Forty-Second Street""",488
+653,"""Every Breath You Take""",489
+654,"""I Wish""",82
+655,"""The Way You Look Tonight""",202
+656,"""Gotta Get thru This""",422
+657,"""Amor Que Se Baila""",490
+658,"""Free Fallin'""",491
+659,"""When I Need You""",492
+660,"""Queen Bee""",493
+661,"""Don't Stop Believin'""",191
+662,"""Que Es Lo Que Quiere Esa Nena""",423
+663,"""My Sharona""",494
+664,"""Somebody That I Used to Know""",495
+665,"""Homegrown Honey""",496
+666,"""Thinking Out Loud""",497
+667,"""Put Your Records On""",498
+668,"""I Like to Move It""",499
+669,"""What's Love Got to Do with It""",219
+670,"""I Walk the Line""",327
+671,"""The Shoop Shoop Song (It's in His Kiss)""",500
+672,"""Runaway""",501
+673,"""The Ride""",369
+674,"""Cupid Shuffle""",502
+675,"""Have You Ever Really Loved a Woman?""",503
+676,"""Quando, Quando, Quando""",504
+677,"""I'll Make Love to You""",505
+678,"""Sobe Son""",76
+679,"""Dance with Me Tonight""",506
+680,"""Drop It Like It's Hot""",507
+681,"""Shake It Off""",117
+682,"""La Luz Del Ritmo""",233
+683,"""Angels""",365
+684,"""Girls Just Want to Have Fun""",469
+685,"""At the Hop""",508
+686,"""Jai Ho (You Are My Destiny)""",509
+687,"""Give It 2 U""",510
+688,"""Eso Beso""",511
+689,"""So Nice""",512
+690,"""Por Arriba, Por Abajo""",24
+691,"""We Are Family""",513
+692,"""Sugar""",393
+693,"""In da Club""",514
+694,"""Turn the Beat Around""",177
+695,"""A Little Respect""",515
+696,"""Fallen""",516
+697,"""Why Can't I Be You?""",226
+698,"""Boy from New York City""",517
+699,"""Your Body Is a Wonderland""",307
+700,"""Lullaby of Birdland""",288
+701,"""I'm with You""",113
+702,"""Don't Stop the Music""",116
+703,"""I'm Your Man""",485
+704,"""Mambo a la Sandoval""",518
+705,"""3-6-9""",519
+706,"""(I Can't Get No) Satisfaction""",179
+707,"""Amore e Musica""",520
+708,"""La Isla Bonita""",94
+709,"""Fire Burning""",521
+710,"""Los Vino""",273
+711,"""This Cat's on a Hot Tin Roof""",300
+712,"""Poison""",522
+713,"""Story of My Life""",331
+714,"""Walk Away""",90
+715,"""Somewhere Only We Know""",523
+716,"""Cha Cha""",524
+717,"""Ran Kan Kan""",136
+718,"""Sexual Healing""",216
+719,"""Angel""",525
+720,"""Jaleo""",24
+721,"""Wouldn't It Be Nice""",208
+722,"""Home""",526
+723,"""You Shook Me All Night Long""",527
+724,"""Empire""",194
+725,"""Celebrate""",528
+726,"""Limbo""",529
+727,"""Don't Cry For Me Argentina""",530
+728,"""Mambo Swing""",174
+729,"""Hold On, I'm Comin'""",351
+730,"""I Love to Boogie""",531
+731,"""It Takes Two""",532
+732,"""My Way""",533
+733,"""Tango Diabolo""",534
+734,"""Cuban Mambo""",535
+735,"""Tanguedia II""",279
+736,"""Ain't Nothing Wrong with That""",536
+737,"""The Dirty Boogie""",188
+738,"""Heavy Action""",537
+739,"""Call Me Maybe""",538
+740,"""Land of a Thousand Dances""",539
+741,"""Girls in Bikinis""",540
+742,"""I Will Survive""",85
+743,"""We Will Rock You""",55
+744,"""Fix You""",160
+745,"""Want U Back""",541
+746,"""Star Wars Theme""",376
+747,"""All Night""",542
+748,"""Burn""",543
+749,"""ABC""",26
+750,"""Father Figure""",475
+751,"""Lewis Boogie Blues""",544
+752,"""Habañera""",336
+753,"""Save the Last Dance for Me""",545
+754,"""I Know You Want Me (Calle Ocho)""",528
+755,"""Asi Se Baila El Tango""",546
+756,"""Are You Gonna Be My Girl""",547
+757,"""Copacabana""",152
+758,"""Dangerous""",548
+759,"""How Long Will I Love You?""",543
+760,"""Cool""",408
+761,"""Waiting for Tonight""",74
+762,"""Part-Time Lover""",82
+763,"""Hedwig's Theme""",380
+764,"""Brown Sugar""",549
+765,"""Puttin' on the Ritz""",38
+766,"""Let It Rock""",550
+767,"""Sweet Pea""",551
+768,"""1 Thing""",552
+769,"""Billy a Dick""",553
+770,"""Boogie Wonderland""",30
+771,"""Gettin' Jiggy wit It""",371
+772,"""All About That Bass""",375
+773,"""You Can't Stop the Beat""",425
+774,"""I Will Always Love You""",29
+775,"""Mrs. Robinson""",555
+776,"""Timber""",556
+777,"""Money (That's What I Want)""",557
+778,"""Counting Stars""",431
+779,"""Blurred Lines""",558
+780,"""Tuesday's Gone""",251
+781,"""Concrete and Clay""",559
+782,"""So What""",79
+783,"""1812 Overture""",561
+784,"""Heaven Is a Place on Earth""",562
+785,"""Somewhere in Time"" theme",563
+786,"""Oye 2014""",564
+787,"""Hanuman""",565
+788,"""Rather Be""",566
+789,"""Chillando Goma""",567
+790,"""Brazil""",112
+791,"""Under Pressure""",568
+792,"""Steppin' Out with My Baby""",569
+793,"""My Cherie Amour""",82
+794,"""Whose Bed Have Your Boots Been Under?""",570
+795,"""Amparito Roca""",467
+796,"""Peter Gunn Theme""",215
+797,"""Hallelujah I Love Her So""",111
+798,"""The House is Rockin'""",571
+799,"""Volare""",66
+800,"""If I Ain't Got You""",8
+801,"""Little Bitty Pretty One""",572
+802,"""Adorn""",573
+803,"""Back in Business""",238
+804,"""My Heart Will Go On""",3
+805,"""Give It to Me Baby""",574
+806,"""So This Is Love""",575
+807,"""Beyond the Sea""",237
+808,"""Let Her Go""",576
+809,"""You Can't Sit Down""",577
+810,"""Annie, I'm Not Your Daddy""",578
+811,"""Luck Be a Lady""",112
+812,"""The Reflex""",108
+813,"""Tears Dry on Their Own""",310
+814,"""If I Lose Myself""",431
+815,"""Pack Up""",579
+816,"""Wings""",580
+817,"""Get Ready""",225
+818,"""Only a Man""",581
+819,"""Come Home""",582
+820,"""American Girl""",583
+821,"""Variations on Dark Eyes""",584
+822,"""Holding Out for a Hero""",96
+823,"""Gimme the Light""",323
+824,"""Personal Jesus""",147
+825,"""Mambo Jambo""",287
+826,"""Good Morning""",586
+827,"""Babarabatiri""",136
+828,"""Le Disko""",587
+829,"""Juventud de Presente""",136
+830,"""New York, New York""",112
+831,"""Ritmo de Chunga""",287
+832,"""Sing""",497
+833,"""She's Country""",588
+834,"""Man! I Feel Like a Woman!""",570
+835,"""All Nite (Don't Stop)""",146
+836,"""Big and Bad""",174
+837,"""Hushabye Mountain""",589
+838,"""Que Bueno Baila Usted""",590
+839,"""Imagine""",592
+840,"""Weird Science""",593
+841,"""Treasure""",594
+842,"""Clarity""",595
+843,"""Gonna Make You Sweat (Everybody Dance Now)""",596
+844,"""Flashdance (What a Feeling)""",597
+845,"""Girl on Fire""",8
+846,"""Coming Home, Pt. II""",598
+847,"""Living in New York City""",145
+848,"""Thank You for Being a Friend""",599
+849,"""Not My Father's Son""",600
+850,"""Shut Up and Dance""",601
+851,"""Play Me""",602
+852,"""Living in America""",130
+853,"""Slippin' and Slidin'""",154
+854,"""Guaglione""",287
+855,"""The Take Over, the Breaks Over""",392
+856,"""That Old Black Magic""",339
+857,"""Straight To Number One""",183
+858,"""It Had Better Be Tonight""",202
+859,"""Beat It""",70
+860,"""Saca Tu Mujer""",603
+861,"""Let's Call the Whole Thing Off""",604
+862,"""Hey Goldmember""",605
+863,"""Unchained Melody""",606
+864,"""(Everything I Do) I Do It for You""",503
+865,"""Wanted""",607
+866,"""Good Girl""",608
+867,"""Why Ya Wanna""",609
+868,"""Say Something""",610
+869,"""Swing Set""",611
+870,"""Follow the Leader""",612
+871,"""Domino""",613
+872,"""Singin' in the Rain""",614
+873,"""Mambo No. 5""",141
+874,"""The Addams Family Theme""",615
+875,"""Some Kind of Wonderful""",616
+876,"""Wild Ones""",617
+877,"""Straight to Memphis""",368
+878,"""The Ballad of Gilligan's Isle""",618
+879,"""A Beautiful Mine""",619
+880,"""The Last Waltz""",504
+881,"""The Book of Love""",620
+882,"""Dan Swit Me""",621
+883,"""Turning Tables""",360
+884,"""Baby, It's Cold Outside""",322
+885,"""Mustang Sally""",539
+886,"""Ain't That a Kick in the Head?""",338
+887,"""Love Rollercoaster""",622
+888,"""Jim Dandy""",623
+889,"""Blame It On the Boogie""",624
+890,"""Around the World""",155
+891,"""Just the Two of Us""",62
+892,"""Satellite""",626
+893,"""Ain't No Mountain High Enough""",437
+894,"""Married Life""",627
+895,"""Back to Black""",628
+896,"""America""",629
+897,"""She Thinks My Tractor's Sexy""",630
+898,"""Skin (Sarabeth)""",178
+899,"""Addicted to You""",631
+900,"""Do My Thing""",632
+901,"""Dance Bailalo""",633
+902,"""Daylight""",393
+903,"""Yellow""",160
+904,"""Ac-Cent-Tchu-Ate the Positive""",20
+905,"""Sympathy for the Devil""",209
+906,"""Dark Waltz""",634
+907,"""Superstition""",82
+908,"""Somebody's Watching Me""",635
+909,"""Applause""",124
+910,"""Mad World""",636
+911,"""Breaking Bad Theme""",637
+912,"""Three's Company, Too""",640
+913,"""Atlas""",160
+914,"""American Soldier""",641
+915,"""He's a Tramp""",93
+916,"""Always""",112
+917,"""Pump It""",86
+918,"""Car Wash""",642
+919,"""You're the One That I Want""",643
+920,"""Sweetheart from Venezuela""",241
+921,"""Midnight Tango""",644
+922,"""Nutbush City Limits""",219
+923,"""Dancing on the Ceiling""",28
+924,"""How Will I Know""",645
+925,"""Islands in the Stream""",646
+926,"""Yeah 3x""",647
+927,"""The Middle""",648
+928,"""Feel Again""",431
+929,"""Ghostbusters""",649
+930,"""Witchcraft""",112
+931,"""Spooky""",291
+932,"""Whatever Lola Wants""",650
+933,"""Just Give Me a Reason""",651
+934,"""Symphony No. 5""",328
+935,"""Kiss You""",331
+936,"""Bad Things""",652
+937,"""Movin' on Up""",653
+938,"""Did I Make the Most of Loving You?""",654
+939,"""Step in Time""",655
+940,"""When You Wish upon a Star""",656
+941,"""Alice's Theme""",657
+942,"""Stand by Your Man""",658
+943,"""May Each Day""",167
+944,"""The Way I Are""",659
+945,"""Chica Chica Boom Chic""",660
+946,"""Start Me Up""",209
+947,"""Let's Twist Again""",661
+948,"""It's Tricky""",662
+949,"""Workin' Day and Night""",70
+950,"""Miami""",371
+951,"""Milkshake""",664
+952,"""Love Will Keep Us Together""",665
+953,"""Try""",247
+954,"""Givin' It Up for Your Love""",666
+955,"""Scream""",667
+956,"""I Believe in You and Me""",29
+957,"""Surfboard""",668
+958,"""Lullabye (Goodnight, My Angel)""",109
+959,"""Fade into You""",669
+960,"""Live While We're Young""",331
+961,"""Tiny Dancer""",33
+962,"""I've Got the Music in Me""",670
+963,"""Bad""",70
+964,"""Dance to the Music""",672
+965,"""42nd Street""",673
+966,"""Teenage Mutant Ninja Turtles Theme""",675
+967,"""Mama Said""",676
+968,"""Zero to Hero""",677
+969,"""A Whole New World""",678
+970,"""He's a Pirate""",679
+971,"""I Wanna Dance with Somebody (Who Loves Me)""",29
+972,"""Bad, Bad Leroy Brown""",680
+973,"""Jessie's Girl""",681
+974,"""Carnival de Paris""",682
+975,"""Land of 1000 Dances""",539
+976,"""Suavemente""",683
+977,"""Dance with My Father""",684
+978,"""Love Will Never Do (Without You)""",146
+979,"""Fine By Me""",685
+980,"""Sir Duke""",82
+981,"""Don't Stop""",686
+982,"""Die Young""",102
+983,"""All of Me""",687
+984,"""Human""",688
+985,"""Happy""",689
+986,"""Good Feeling""",690
+987,"""Billy-a-Dick""",691
+988,"""Eternal Flame""",119
+989,"""Skyfall""",360
+990,"""That'll Be the Day""",186
+991,"""King""",692
+992,"""Stitches""",693
+993,"""Poor Unfortunate Souls""",694
+994,"""Love Is an Open Door""",695
+995,"""Heat Wave""",481
+996,"""Hold Me Closer""",696
+997,"""Barbra Streisand""",698
+998,"""Push It""",699
+999,"""Maneater""",44
+1000,"""All Shook Up""",58
+1001,"""Hunter""",689
+1002,"""It's Not Unusual""",322
+1003,"""One Two Three Four (Get On The Dance Floor)""",700
+1004,"""Livin' On A Prayer""",417
+1005,"""The Ballroom Blitz""",701
+1006,"""Chantilly Lace""",702
+1007,"""Five Guys Named Moe""",703
+1008,"""Runaway Baby""",594
+1009,"""U Can't Touch This""",704
+1010,"""Diga Diga Doo""",47
+1011,"""Wake Me Up""",631
+1012,"""Everybody (Backstreet's Back)""",706
+1013,"""Amazing Grace""",707
+1014,"""Summer""",708
+1015,"""Surfin' Safari""",208
+1016,"""Waves""",709
+1017,"""We Found Love""",710
+1018,"""She's a Bad Mama Jama (She's Built, She's Stacked)""",711
+1019,"""Got to Give It Up""",216
+1020,"""Tití Me Preguntó""",712
+1021,"""She's a Lady""",322
+1022,"""My Guy""",713
+1023,"""Jump, Jive, and Wail!""",188
+1024,"""España Cani""",84
+1025,"""She Came to Give It to You""",714
+1026,"""Rock This Town""",715
+1027,"""Angelica""",716
+1028,"""Dark Horse""",717
+1029,"""Sugarfoot""",718
+1030,"""Love Me Right!""",719
+1031,"""Wildest Moments""",720
+1032,"""This Head That I Hold""",721
+1033,"""Into Action""",722
+1034,"""Wannabe""",436
+1035,"""William Tell Overture""",724
+1036,"""Hollywood Swinging""",726
+1037,"""Let Me Drown""",727
+1038,"""Good to Be Alive (Hallelujah)""",685
+1039,"""Hopelessly Devoted to You""",432
+1040,"""Want to Want Me""",728
+1041,"""Wiggle""",729
+1042,"""When I Grow Up""",316
+1043,"""Dancing with Myself""",253
+1044,"""As It Was""",730
+1045,"""Shake Your Body (Down to the Ground)""",624
+1046,"""Mamma Knows Best""",613
+1047,"""Pass the Dutchie""",731
+1048,"""Brand New""",732
+1049,"""Grown Woman""",171
+1050,"""Jumpin' Jack""",174
+1051,"""One Way or Another (Teenage Kicks)""",331
+1052,"""Butter""",733
+1053,"""Hey Ya!""",734
+1054,"""Juice""",735
+1055,"""Sparkling Diamonds""",737
+1056,"""Get Lucky""",738
+1057,"""Man Like That""",686
+1058,"""End of Time""",171
+1059,"""Five Minutes More""",112
+1060,"""Dear Future Husband""",375
+1061,"""Super Bad""",130
+1062,"""Bust a Move""",742
+1063,"""Groove Is in the Heart""",743
+1064,"""Crazy Stupid Love""",744
+1065,"""Back in Time""",528
+1066,"""Jungle Jazz""",745
+1067,"""Too Close""",746
+1068,"""Lights""",543
+1069,"""Give Me Love""",497
+1070,"""Stay""",747
+1071,"""Dance Again""",749
+1072,"""Symphony 6: Fair Thee Well & the Requiem Mix""",750
+1073,"""Shake Señora""",528
+1074,"""Carry On""",751
+1075,"""Like I'm Gonna Lose You""",752
+1076,"""Shake""",179
+1077,"""Let It Go""",753
+1078,"""Hold My Hand""",754
+1079,"""Word Up!""",755
+1080,"""Honey, I'm Good.""",685
+1081,"""Electric Feel""",756
+1082,"""Savage (Major Lazer Remix)""",757
+1083,"""Last Dance""",21
+1084,"""La Vida Es Un Carnaval""",758
+1085,"""Bailando""",759
+1086,"""Greased Lightnin'""",760
+1087,"""Supercalifragilisticexpialidocious""",761
+1088,"""Be Our Guest""",762
+1089,"""Da Ya Think I'm Sexy?""",764
+1090,"""Another One Bites the Dust""",55
+1091,"""You're the Best""",765
+1092,"""Kiss Me More""",766
+1093,"""Glamorous""",767
+1094,"""Papi""",74
+1095,"""Zorongo""",768
+1096,"""Mickey""",769
+1097,"""Sexy Silk""",613
+1098,"""Blinding Lights""",770
+1099,"""Bossa Nova Baby""",58
+1100,"""Pompeii""",771
+1101,"""Can't Feel My Face""",770
+1102,"""Heartbreak Hotel""",58
+1103,"""Shake, Rattle and Roll""",58
+1104,"""Diamonds""",116
+1105,"""Sexy People (The Fiat Song)""",772
+1106,"""Give Me Everything""",707
+1107,"""Animal""",387
+1108,"""Danger Zone""",52
+1109,"""Rebelión""",773
+1110,"""I Just Can't Wait to Be King""",774
+1111,"""Cruella de Vil""",775
+1112,"""Get Up (I Feel Like Being a) Sex Machine""",130
+1113,"""Skate""",778
+1114,"""Levitating""",748
+1115,"""Love Lockdown""",779
+1116,"""Forget You""",781
+1117,"""Raise Your Glass""",782
+1118,"""Don't Start Now""",748
+1119,"""Don't Look Down""",783
+1120,"""King Creole""",58
+1121,"""Jealous (I Ain't with It)""",784
+1122,"""Booty""",785
+1123,"""Love Letters""",787
+1124,"""Mr. Saxobeat""",788
+1125,"""I Wan'na Be Like You (The Monkey Song)""",388
+1126,"""Under the Sea""",790
+1127,"""Hot in Herre""",791
+1128,"""Pour Some Sugar on Me""",792
+1129,"""YMCA""",793
+1130,"""Que Sera, Sera (Whatever Will Be, Will Be)""",87
+1131,"""Better Days""",794
+1132,"""Kissing You""",795
+1133,"""Roar""",284
+1134,"""My Wish""",178
+1135,"""I Wanna Dance with Somebody""",29
+1136,"""Tell It to My Heart""",796
+1137,"""Super Bass""",797
+1138,"""I'm a Slave 4 U""",51
+1139,"""(I've Had) The Time of My Life""",799
+1140,"""Geronimo""",800
+1141,"""If I Can Dream""",58
+1142,"""Necessary Evil""",801
+1143,"""Run Boy Run""",802
+1144,"""Walk the Dinosaur""",803
+1145,"""I Love It""",804
+1146,"""Feel So Close""",708
+1147,"""I Won't Give Up""",224
+1148,"""Say You Won't Let Go""",805
+1149,"""Despacito""",806
+1150,"""Make Me Want To""",807
+1151,"""Work Bitch""",51
+1152,"""Sucker""",808
+1153,"""She Works Hard for the Money""",21
+1154,"""Stupid Love""",124
+1155,"""Buttons""",316
+1156,"""Vogue""",94
+1157,"""Pony""",809
+1158,"""Mr. Put It Down""",810
+1159,"""Lay Me Down""",645
+1160,"""Outside""",811
+1161,"""Suspicious Minds""",58
+1162,"""Always On My Mind""",58
+1163,"""Burning Love""",58
+1164,"""The Devil Went Down to Georgia""",812
+1165,"""Secret""",813
+1166,"""Ghost""",814
+1167,"""Dirty Diana""",70
+1168,"""Mundian to Bach Ke""",815
+1169,"""What You Waiting For?""",408
+1170,"""Super Freak""",574
+1171,"""Watching You""",816
+1172,"""Titanium""",817
+1173,"""Rain on Me""",818
+1174,"""U Know What's Up""",819
+1175,"""Twist and Shout""",373
+1176,"""Try a Little Tenderness""",820
+1177,"""Cheeseburger in Paradise""",821
+1178,"""Rhythm Nation""",146
+1179,"""What Now""",116
+1180,"""A Little Party Never Killed Nobody (All We Got)""",823
+1181,"""Champagne Kisses""",720
+1182,"""Cinema Italiano""",824
+1183,"""No Time to Die""",825
+1184,"""Come with Me Now""",826
+1185,"""Somethin' Bad""",827
+1186,"""Man in the Mirror""",70
+1187,"""Leave Me Alone""",70
+1188,"""Light My Fire""",828
+1189,"""Love On Top""",171
+1190,"""A Thousand Years""",688
+1191,"""All by Myself""",3
+1192,"""Don't Go Yet""",829
+1193,"""Here Comes the Sun""",15
+1194,"""Put Your Hands on Me""",831
+1195,"""Man Wanted""",832
+1196,"""The Night Out""",833
+1197,"""Get It Right""",834
+1198,"""Work from Home""",835
+1199,"""Whatever It Takes""",836
+1200,"""Dynamite""",733
+1201,"""Once Upon a Dream""",837
+1202,"""Hora Zero""",262
+1203,"""People Are Strange""",838
+1204,"""Centuries""",392
+1205,"""Diane Young""",839
+1206,"""Scott & Fran's Paso Doble""",840
+1207,"""Diamonds Are Forever""",67
+1208,"""You Know My Name""",841
+1209,"""The World Is Not Enough""",842
+1210,"""Licence to Kill""",843
+1211,"""You'll Be in My Heart""",89
+1212,"""Everybody's Free (To Feel Good)""",844
+1213,"""Uninvited""",845
+1214,"""I Just Can't Stop Loving You""",70
+1215,"""Gasolina""",529
+1216,"""Watch Out for This (Bumaye)""",846
+1217,"""Can't Remember to Forget You""",847
+1218,"""I Just Want to Make Love to You""",315
+1219,"""Say I Do""",848
+1220,"""Circus""",849
+1221,"""Conquest""",153
+1222,"""Build Me Up Buttercup""",850
+1223,"""Game of Thrones Theme""",851
+1224,"""Señorita""",852
+1225,"""Miss Independent""",854
+1226,"""When You Believe""",855
+1227,"""The Beautiful People""",856
+1228,"""Cry Little Sister""",857
+1229,"""Earned It""",770
+1230,"""Los Muertos Vivos Están""",858
+1231,"""For Your Eyes Only""",859
+1232,"""The Name's Bond... James Bond""",860
+1233,"""Trust""",211
+1234,"""Babalu""",318
+1235,"""I Was Here""",171
+1236,"""Sail""",861
+1237,"""1977""",862
+1238,"""Adrenalina""",863
+1239,"""My Heart Goes Boom""",864
+1240,"""Never Tear Us Apart""",865
+1241,"""Piece of Me""",849
+1242,"""Stronger""",849
+1243,"""...Baby One More Time""",849
+1244,"""Womanizer""",849
+1245,"""Confident""",866
+1246,"""Let's Go Crazy""",867
+1247,"""Let's Groove""",30
+1248,"""Haunted""",171
+1249,"""O Fortuna""",868
+1250,"""Valió la Pena""",869
+1251,"""Work Song""",433
+1252,"""Thunderball""",322
+1253,"""Another Way to Die""",870
+1254,"""GoldenEye""",219
+1255,"""Carnaval de Paris""",682
+1256,"""Cat and Mouse""",871
+1257,"""Free Free Free""",872
+1258,"""Do You Believe in Magic""",873
+1259,"""Rise Up""",874
+1260,"""Everybody Wants to Rule the World""",875
+1261,"""Read All About It (Pt. III)""",876
+1262,"""That's It, I Quit, I'm Movin' On""",106
+1263,"""6'2""",877
+1264,"""Misery""",393
+1265,"""Go Get It""",878
+1266,"""Till the World Ends""",849
+1267,"""(You Drive Me) Crazy (The Stop! Remix)""",849
+1268,"""Outrageous""",849
+1269,"""Every Little Step""",879
+1270,"""Con Calma""",880
+1271,"""Lover""",117
+1272,"""This Is Me""",881
+1273,"""Never Too Much""",684
+1274,"""Dreams""",882
+1275,"""Isn't She Lovely""",82
+1276,"""Viva la Vida""",160
+1277,"""Feelin' Good""",885
+1278,"""Writing's on the Wall""",645
+1279,"""Die Another Day""",94
+1280,"""A Star Is Born""",886
+1281,"""T-R-O-U-B-L-E""",362
+1282,"""Dinero""",887
+1283,"""YES""",888
+1284,"""Heart Upon My Sleeve""",631
+1285,"""If I Knew""",594
+1286,"""Love Letter""",889
+1287,"""Discombobulate""",716
+1288,"""The Plaza of Execution""",369
+1289,"""Hold It Against Me""",849
+1290,"""Gimme More""",849
+1291,"""Dance Apocalyptic""",890
+1292,"""Hold On""",891
+1293,"""Dreaming of You""",892
+1294,"""Shallow""",893
+1295,"""Roses""",894
+1296,"""Born This Way""",124
+1297,"""Titanium""—David Guetta feat. Sia / ""Fix You""",160
+1298,"""I Won't Dance (Step Up 3D Remix)""",38
+1299,"""The Greatest Show""",897
+1300,"""Remember Me""",898
+1301,"""Wait for It""",899
+1302,"""Turn Down for What""",900
+1303,"""Talk Dirty""",901
+1304,"""Good Golly, Miss Molly""",154
+1305,"""Theme from The Dukes of Hazzard (Good Ol' Boys)""",902
+1306,"""I'm a Lady""",375
+1307,"""Mo Money Mo Problems""",903
+1308,"""Uptight (Everything's Alright)""",82
+1309,"""Scream & Shout"" (with will.i.am)",849
+1310,"""Oops!... I Did It Again""",849
+1311,"""A Dream Is a Wish Your Heart Makes""",763
+1312,"""Going Up the Country""",904
+1313,"""Mamma Mia""",905
+1314,"""I Hope You Dance""",906
+1315,"""Almost There""",907
+1316,"""Surrender""",909
+1317,"""Finally Free""",910
+1318,"""Dig a Little Deeper""",911
+1319,"""Chim Chim Cher-ee""",912
+1320,"""Animals""",393
+1321,"""Say You Love Me""",720
+1322,"""Jungle""",913
+1323,"""It Don't Mean a Thing (If It Ain't Got That Swing)""",368
+1324,"""Fish Out of Water""",914
+1325,"""Sweet Sensation""",690
+1326,"""Too Darn Hot (RAC Mix)""",263
+1327,"""Love Never Felt So Good""",70
+1328,"""I Just Called to Say I Love You""",82
+1329,"""Danza Kuduro""",916
+1330,"""The Incredits""",627
+1331,"""I'll Make a Man Out of You""",917
+1332,"""Pumpin Blood""",918
+1333,"""Welcome to Burlesque""",919
+1334,"""Night Fever""",98
+1335,"""Bamboléo""",66
+1336,"""Part of Your World""",707
+1337,"""Prince Ali""",476
+1338,"""Back It Up""",920
+1339,"""Classic""",921
+1340,"""Take You Higher""",922
+1341,"""Mr. Blue Sky""",923
+1342,"""Il gatto e la volpe""",924
+1343,"""1, 2, 3 Turnaround""",925
+1344,"""Can't Take My Eyes Off You""",926
+1345,"""Hey Boy! Hey Girl!""",786
+1346,"""Morning Drums""",927
+1347,"""Just a Fool""",928
+1348,"""Adore You (Cedric Gervais Remix)""",929
+1349,"""All-American Girl""",608
+1350,"""No Excuses""",375
+1351,"""Maria Maria""",931
+1352,"""Shake Your Bon-Bon""",24
+1353,"""Cherry Pink (and Apple Blossom White)""",287
+1354,"""How Far I'll Go""",933
+1355,"""Bang Bang (My Baby Shot Me Down)""",919
+1356,"""Strong Enough""",919
+1357,"""If I Can't Have You""",693
+1358,"""Hands to Myself""",934
+1359,"""Walking on Sunshine""",935
+1360,"""It's All Right""",936
+1361,"""Circle of Life""",937
+1362,"""Make It Rain""",497
+1363,"""What Do You Mean?""",938
+1364,"""Roses and Violets""",939
+1365,"""One Way Or Another""",940
+1366,"""The Simpsons Main Title Theme""",657
+1367,"""Problem""",941
+1368,"""Strong Ones""",942
+1369,"""Shake the Room""",943
+1370,"""Original Don""",944
+1371,"""Montserrat""",945
+1372,"""Latch (Acoustic)""",645
+1373,"""Ain't Too Proud to Beg""",225
+1374,"""Them Girls""",946
+1375,"""Sissy That Walk""",947
+1376,"""Centerfield""",948
+1377,"""Echa Pa'lla (Manos Pa'rriba)""",950
+1378,"""Buster Voodoo""",262
+1379,"""Someday My Prince Will Come""",707
+1380,"""Colombia, Mi Encanto""",951
+1381,"""I Wan'na Be Like You""",952
+1382,"""Stand Out""",953
+1383,"""If I Could Turn Back Time""",919
+1384,"""Jolene""",88
+1385,"""Reflection""",83
+1386,"""Wicked Game""",954
+1387,"""A Cool Cat in Town""",406
+1388,"""You're Never Fully Dressed Without a Smile""",955
+1389,"""Tainted Love""",956
+1390,"""The Boy from New York City""",517
+1391,"""Canned Heat""",420
+1392,"""Dare You""",958
+1393,"""Lost in Your Eyes""",959
+1394,"""Like That""",960
+1395,"""Our House""",961
+1396,"""Money Maker""",962
+1397,"""Finesse""",594
+1398,"""Bad Guy""",825
+1399,"""Old Town Road""",963
+1400,"""King of New York""",965
+1401,"""All I Do Is Win""",966
+1402,"""Resolve""",967
+1403,"""America the Beautiful""",707
+1404,"""Ex's & Oh's""",583
+1405,"""Roar (Acoustic)""",284
+1406,"""Blue Jeans""",968
+1407,"""Blame""",969
+1408,"""Welcome to New York""",117
+1409,"""New York's My Home""",339
+1410,"""Swan Lake Suite""",707
+1411,"""There's Nothing Holdin' Me Back""",693
+1412,"""Come Get It Bae""",689
+1413,"""Do It Like This""",970
+1414,"""La Malanga""",971
+1415,"""Next to Me""",836
+1416,"""Gaston""",972
+1417,"""Ways to Be Wicked""",973
+1418,"""That's It!""",974
+1419,"""A Spoonful of Sugar""",976
+1420,"""You've Got a Friend in Me""",977
+1421,"""Adore You""",730
+1422,"""Party in the U.S.A.""",929
+1423,"""Rise""",284
+1424,"""Drag Me Down""",331
+1425,"""Booty Swing""",978
+1426,"""Scars""",979
+1427,"""No Doubt About It""",980
+1428,"""If the World Should Ever Stop""",981
+1429,"""Both Sides, Now""",982
+1430,"""Love Runs Out""",431
+1431,"""New York State of Mind""",983
+1432,"""New Dorp. New York.""",984
+1433,"""Good Time Good Life""",986
+1434,"""Woman""",987
+1435,"""Sign of the Times""",730
+1436,"""Basketball""",988
+1437,"""It's a Small World""",989
+1438,"""What About Us""",79
+1439,"""Make Way""",990
+1440,"""Don't Worry, Be Happy""",991
+1441,"""Dangerous Woman""",677
+1442,"""Arabian Nights""",992
+1443,"""Mother Knows Best""",993
+1444,"""Be Prepared""",994
+1445,"""Que Viva la Vida""",995
+1446,"""Love Me Again""",996
+1447,"""Beauty and the Beast""",997
+1448,"""We're All in This Together""",998
+1449,"""Because You Loved Me""",3
+1450,"""Que Viva La Vida""",995
+1451,"""Beautiful Crazy""",1000
+1452,"""Let's Get Married (ReMarquable Remix)""",1001
+1453,"""When the Party's Over""",1002
+1454,"""Levels""",631
+1455,"""Revolution (District 78 Remix)""",1003
+1456,"""Super Mario Bros. Theme""",1004
+1457,"""Can't Touch It""",1005
+1458,"""Theme from New York, New York""",112
+1459,"""What Is Love""",1006
+1460,"""Move""",1007
+1461,"""Glowing""",1009
+1462,"""Born Ready""",1010
+1463,"""Don't Worry""",1011
+1464,"""This Is My Time""",1012
+1465,"""BO$$""",835
+1466,"""Dança Molengo""",1013
+1467,"""Hot n Cold""",284
+1468,"""Magic"" ",1014
+1469,"""Yeah!""",1017
+1470,"""Let Me Go""",1018
+1471,"""Yakety Yak""",1019
+1472,"""Let's Stay Together""",1020
+1473,"""The Hills""",770
+1474,"""Can't Take My Eyes Off of You (I Love You Baby)""",1022
+1475,"""Beautiful""",1023
+1476,"""I'm Gonna Be (500 Miles)""",1024
+1477,"""Sing, Sing, Sing (With a Swing)""—Benny Goodman / ""Apache""",1025
+1478,"""Why Don't You Do Right?""",93
+1479,"""Can't Stop Dancin'""",1026
+1480,"""Let Me Love You (Tiësto Remix)""",1027
+1481,"""Make Something Beautiful""",1028
+1482,"""Go, Cubs, Go""",1029
+1483,"""The Rest of Our Life""",1030
+1484,"""See You Again""",1031
+1485,"""O""",160
+1486,"""Dance With Me Tonight""",506
+1487,"""Fade Into You""",1032
+1488,"""Unstoppable""",1033
+1489,"""Call Me Cruella""",1035
+1490,"""Summer Nights""",39
+1491,"""Candy""",365
+1492,"""Young and Beautiful""",837
+1493,"""Pucko""",1036
+1494,"""Bad Romance""",124
+1495,"""Ordinary People""",687
+1496,"""Larger Than Life""",706
+1497,"""Maniac""",1037
+1498,"""WTF (Where They From)""",1038
+1499,"""The Pieces Don't Fit Anymore""",295
+1500,"""Marchin On""",431
+1501,"""SexyBack""",1039
+1502,"""Nitty Gritty""",1040
+1503,"""Ashes""",3
+1504,"""Live Life""",1042
+1505,"""That's What I Like""",1043
+1506,"""'Deed I Do""",111
+1507,"""XXPEN$IVE""",1045
+1508,"""24K Magic""",594
+1509,"""Hit Me with a Hot Note""",1046
+1510,"""Stand by Me""",1047
+1511,"""Reflejo de Luna""",1048
+1512,"""Hit the Road Jack""",111
+1513,"""Para Te""",1049
+1514,"""Look at Me, I'm Sandra Dee""",1050
+1515,"""Beauty School Dropout""",1052
+1516,"""My Songs Know What You Did in the Dark (Light Em Up)""",392
+1517,"""Roxanne""",489
+1518,"""Someone You Loved""",1002
+1519,"""Southbound""",608
+1520,"""You Got It (The Right Stuff)""",1053
+1521,"""Like a Virgin""",94
+1522,"""Dr. Bones""",45
+1523,"""You and Me""",1054
+1524,"""You Make My Dreams""",1055
+1525,"""Hideaway""",1056
+1526,"""Ladies Man""",505
+1527,"""The Gambler""",427
+1528,"""Here""",1057
+1529,"""Ice Ice Baby""",1058
+1530,"""The A-Team theme""",1059
+1531,"""Untouchable""",1060
+1532,"""No Rights No Wrongs""",754
+1533,"""Pillowtalk""",1061
+1534,"""I'm Going Down""",642
+1535,"""The Pirate That Should Not Be""",262
+1536,"""One More Night""",393
+1537,"""Fat Sam's Grand Slam""",1062
+1538,"""Born to Hand Jive""",1063
+1539,"""Sandy""",760
+1540,"""There Are Worse Things I Could Do""",1064
+1541,"""Look at Me, I'm Sandra Dee (Reprise)""",432
+1542,"""Sexy and I Know It""",1065
+1543,"""Locked Out of Heaven""",594
+1544,"""Light It Up""",1066
+1545,"""The Other Side""",1067
+1546,"""Time Warp""",1068
+1547,"""Livin' on a Prayer""",417
+1548,"""Footprints in the Sand""",231
+1549,"""Turn Up the Music""",647
+1550,"""Good Girls Go Bad""",1069
+1551,"""Storm"" (from Kà)",1070
+1552,"""God Blessed Texas""",1071
+1553,"""Stuff Like That There""",1072
+1554,"""Bad Intentions""",1073
+1555,"""Look What You Made Me Do""",117
+1556,"""Count on Me""",1075
+1557,"""When I Was Your Man""",594
+1558,"""Azumba""",927
+1559,"""Concierto Para Quinteto""",342
+1560,"""Wicked Games""",1076
+1561,"""Sweet but Psycho""",1077
+1562,"""I Think We're Alone Now""",1078
+1563,"""Rhythm of the Night""",1079
+1564,"""A Sky Full of Stars""",160
+1565,"""All the Way""",1080
+1566,"""Basket Case""",1081
+1567,"""We Are the Champions""",707
+1568,"""Love Me Now""",687
+1569,"""Grown""",580
+1570,"""Unlove You""",1083
+1571,"""Sax""",960
+1572,"""I Will Survive """,1085
+1573,"""Conqueror""",1086
+1574,"""Walk on Water""",1087
+1575,"""Anything You Can Do""",1088
+1576,"""Don't Give Up""",1089
+1577,"""Fine China""",647
+1578,"""Shake It""",1090
+1579,"""Take My Breath""",770
+1580,"""There Will Be Blood""",1092
+1581,"""The Raiders March""",380
+1582,"""Smooth Criminal""",70
+1583,"""Survivor""",1094
+1584,"""Monster Mash""",1095
+1585,"""On the Floor""",785
+1586,"""Can You Do This""",990
+1587,"""Love Someone""",1098
+1588,"""How to Save a Life""",707
+1589,"""The Brady Bunch""",1099
+1590,"""Burnin' Up""",1100
+1591,"""Give Me Your Love""",1101
+1592,"""Ain't Got Far to Go""",754
+1593,"""Sweet Caroline""",602
+1594,"""Easy""",1102
+1595,"""Most Girls""",1103
+1596,"""Scooby Doo Pa Pa""",1105
+1597,"""Can't Hold Us""",1106
+1598,"""Hips Don't Lie""",1107
+1599,"""Icarus""",1108
+1600,"""I Got 5 on It (Tethered Mix)""",1110
+1601,"""Bad Habits""",497
+1602,"""Come Sail Away""",1111
+1603,"""Good Vibrations""",1112
+1604,"""Have I Told You Lately""",764
+1605,"""Say So""",1113
+1606,"""You Are the Reason""",1114
+1607,"""Ni Tú Ni Yo""",1115
+1608,"""Smile""",707
+1609,"""Stronger (What Doesn't Kill You)""",90
+1610,"""I Don't Want to Be""",1116
+1611,"""Green Acres Theme""",639
+1612,"""As Days Go By""",1117
+1613,"""Suffer""",1118
+1614,"""Motownphilly""",505
+1615,"""Move (You're Steppin' on My Heart)""",1119
+1616,"""In the Night""",770
+1617,"""Mi Gente""",1120
+1618,"""Lights Down Low""",1121
+1619,"""Havana""",1122
+1620,"""Peppy and George""",1123
+1621,"""Beneath Your Beautiful""",1124
+1622,"""Yerbatero""",1125
+1623,"""Beauty and a Beat""",1126
+1624,"""Paint It Black""",1127
+1625,"""This Is How We Do It""",1128
+1626,"""Humble and Kind""",1130
+1627,"""You Gotta Be""",795
+1628,"""A Million Dreams""",1131
+1629,"""2 On""",1132
+1630,"""Lux Aeterna""",1133
+1631,"""Wavey""",1134
+1632,"""Sugar Town""",407
+1633,"""Dedication to My Ex (Miss That)""",1135
+1634,"""I Run to You""",1136
+1635,"""Glad You Came""",1137
+1636,"""Go, Diego, Go! Theme""",1138
+1637,"""Love and Marriage""",112
+1638,"""Bewitched Theme""",1139
+1639,"""A Little Party Never Killed Nobody""",823
+1640,"""Cake by the Ocean""",1140
+1641,"""Bad Man""",1141
+1642,"""My House""",690
+1643,"""Bun Up the Dance""",1142
+1644,"""Instruction""",1143
+1645,"""Mani Picao""",1144
+1646,"""Fat Bottomed Girls""",55
+1647,"""Stars""",1146
+1648,"""Sorry""",938
+1649,"""Hollywood""",1147
+1650,"""Hit Me with Your Best Shot""",1148
+1651,"""Torn""",967
+1652,"""Black Magic""",580
+1653,"""Fire""",1149
+1654,"""Krazy""",1150
+1655,"""Sherry""",1151
+1656,"""International Love""",1152
+1657,"""The X-Files""",1153
+1658,"""DuckTales""",1154
+1659,"""The Walking Dead Theme""",1155
+1660,"""Angela""",1156
+1661,"""Chapel of Love""",1157
+1662,"""Don't""",497
+1663,"""Perm""",594
+1664,"""Red Right Hand""",1158
+1665,"""Aguanile""",1159
+1666,"""Radio Ga Ga''",55
+1667,"""Body Language""",55
+1668,"""V.E.S.P.A.""",1160
+1669,"""I'm Too Sexy""",1161
+1670,"""Move Your Body""",955
+1671,"""Lake Michigan""",1162
+1672,"""Cry Baby""",781
+1673,"""The Show""",1164
+1674,"""Great Gosh A'Mighty""",154
+1675,"""Candy Shop""",1165
+1676,"""Take Me to Heaven""",1166
+1677,"""Swalla""",1167
+1678,"""Stole the Show""",1168
+1679,"""Pata Pata""",1169
+1680,"""The Fresh Prince of Bel-Air""",1170
+1681,"""Tubthumping""",1171
+1682,"""Love on the Brain""",116
+1683,"""Keep A-Knockin'""",154
+1684,"""Rockin' Robin""",70
+1685,"""You're My Best Friend""",55
+1686,"""Killer Queen""",55
+1687,"""It Had Better Be Tonight (Meglio stasera)""",1147
+1688,"""Just Around the Riverbend""",1174
+1689,"""Last Friday Night (T.G.I.F.)""",284
+1690,"""Lifestyles of the Rich and Famous""",1175
+1691,"""Too Many Fish in the Sea""",691
+1692,"""Tamacun""",262
+1693,"""Save Tonight""",1042
+1694,"""Big Trouble""",1176
+1695,"""Impossible""",835
+1696,"""Ain't Too Cool""",396
+1697,"""It's Gonna Be Me""",1177
+1698,"""I Can't Help Myself (Sugar Pie Honey Bunch)""",1178
+1699,"""Jump (For My Love)""",36
+1700,"""Bye Bye Bye""",1177
+1701,"""Bills, Bills, Bills""",37
+1702,"""Psycho""",1179
+1703,"""I Get a Kick Out of You""",1147
+1704,"""When Will My Life Begin?""",1181
+1705,"""Moves Like Jagger""",1182
+1706,"""This Year's Love""",1183
+1707,"""Gimme Some Lovin""",1185
+1708,"""If It Ain't Love""",728
+1709,"""Woman's World""",1186
+1710,"""Shape of You""",497
+1711,"""Sorry (Latino remix)""",1187
+1712,"""The Breaks""",988
+1713,"""The Glory Days""",627
+1714,"""Adventure of a Lifetime""",160
+1715,"""No Scrubs""",1189
+1716,"""Boy with Luv""",733
+1717,"""Step by Step""",1053
+1718,"""Swan Lake Remix""",1191
+1719,"""Everything I Wanted""",825
+1720,"""Zero""",836
+1721,"""I Wan'na Be like You (The Monkey Song)""",388
+1722,"""Part of Your World (Reprise)""",1193
+1723,"""King of Anything""",359
+1724,"""Ain't Nothing Wrong With That""",536
+1725,"""Marry You""",594
+1726,"""Into the Sunset (Headhunterz radio edit)""",1194
+1727,"""Battle Cry""",836
+1728,"""Bella Donna Twist""",1195
+1729,"""Forever Young""",1196
+1730,"""Unconditionally""",284
+1731,"""Express Yourself""",94
+1732,"""Rainbow Connection""",1197
+1733,"The Facts of Life theme",1198
+1734,"""Fight Song""",1199
+1735,"""Falling Slowly""",1200
+1736,"""Escapade""",146
+1737,"""I Want It That Way""",706
+1738,"""Incredits 2""",627
+1739,"""I'm Every Woman""",394
+1740,"""Club Can't Handle Me""",1201
+1741,"""Romeo""",334
+1742,"""Sexy, Sexy!""",188
+1743,"""Stay the Night""",1203
+1744,"""Real Wild Child""",1204
+1745,"""High Bar/Taikoba""",1205
+1746,"""Battlefield""",1070
+1747,"""Two Two Tango""",1206
+1748,"""Good Good Father""",1207
+1749,"""Evermore""",204
+1750,"""7 Years""",1098
+1751,"""300 Violin Orchestra""",1208
+1752,"""Anchor""",1209
+1753,"""Move On Up""",1210
+1754,"""Take Me Home""",1211
+1755,"""Over My Head (Cable Car)""",1212
+1756,"""All for You""",146
+1757,"""If""",146
+1758,"""Any Time, Any Place""",146
+1759,"""Stuck with U""",1213
+1760,"""Nobody Knows""",1215
+1761,"""Main Titles"" (from Beetlejuice)",657
+1762,"""Under Your Spell""",914
+1763,"""When Love Takes Over""",1217
+1764,"""Should I Stay or Should I Go""",157
+1765,"""Walkin' Back to Happiness""",1218
+1766,"""Love Is All Around""",1219
+1767,"""Nice Work If You Can Get It""",1220
+1768,"""Lighting Up the Night""",1221
+1769,"""Jeux d'Eau""",1205
+1770,"""Come Together""",15
+1771,"""Tzelma""",1205
+1772,"""I've Got No Strings""",1222
+1773,"""Unforgettable""",955
+1774,"""For the First Time in Forever""",1223
+1775,"""The Star-Spangled Banner""",505
+1776,"""Verge""",1224
+1777,"""Godspeed (Sweet Dreams)""",1225
+1778,"""Steamboat Willie Suite""",1226
+1779,"""Black Cat""",146
+1780,"""Miss You Much""",146
+1781,"""Work It""",1227
+1782,"""Wonder""",693
+1783,"""Way Down We Go""",1228
+1784,"""Mr. Sandman""",1229
+1785,"""Shame""",583
+1786,"""Candyman""",83
+1787,"""Cooler Than Me""",1230
+1788,"""The Boy Does Nothing""",1232
+1789,"""Jump, Jive, an' Wail""",188
+1790,"""La Nouba""",1205
+1791,"""The Hollywood Wiz""",1233
+1792,"""From the Ground Up""",1234
+1793,"""When Can I See You Again?""",1235
+1794,"""Ride""",1237
+1795,"""Un jour mon prince viendra""",801
+1796,"""When You Wish Upon a Star""",707
+1797,"""Feedback""",146
+1798,"""Perfect""",497
+1799,"""Dancing with a Stranger""",1240
+1800,"""Dead Man's Party""",1242
+1801,"""Thank God I'm a Country Boy""",1243
+1802,"""This Ain't a Love Song""",417
+1803,"""My First Kiss""",1244
+1804,"""Crazy""",35
+1805,"""Gotta Work""",552
+1806,"""I Write Sins Not Tragedies""",1245
+1807,"""To Where You Are""",204
+1808,"""If I Could""",1247
+1809,"""Dog Days Are Over""",1248
+1810,"""In My Daughter's Eyes""",1249
+1811,"""A Song for You""",1250
+1812,"""That's How You Know""",1251
+1813,"""Trashin' the Camp""",89
+1814,"""Kiss the Girl""",790
+1815,"""Lose You to Love Me""",934
+1816,"""Crazy for You""",94
+1817,"""Every Little Thing""",1254
+1818,"""One Shot""",607
+1819,"""Burning Man""",1255
+1820,"""Cry Me Out""",456
+1821,"""Mama Told Me (Not to Come)""",1256
+1822,"""Kiss Me, Honey Honey, Kiss Me""",67
+1823,"""Life After You""",1257
+1824,"""The Boys Are Back in Town""",1258
+1825,"""Laugh at Me""",1259
+1826,"""For the Cool in You""",1260
+1827,"""One Sweet Day""",1261
+1828,"""Cum On Feel the Noize""",1262
+1829,"""Surprise Yourself""",1263
+1830,"""Woman Up""",375
+1831,"""The Right Time""",1264
+1832,"""Fun, Fun, Fun""",208
+1833,"""Try Everything""",194
+1834,"""Belle""",1265
+1835,"""Circle of Life (District 78 remix)""",1191
+1836,"""You're Welcome""",1266
+1837,"""Dernière danse""",1267
+1838,"""California Love""",1269
+1839,"""Born to Love You""",1270
+1840,"""Tennessee Whiskey""",1271
+1841,"""Ladies in the ’90s""",1067
+1842,"""Break Your Heart""",1163
+1843,"""These Arms of Mine""",179
+1844,"""Sex Bomb""",322
+1845,"""Tush""",110
+1846,"""Nobody But Me""",1273
+1847,"""If You're Reading This""",1130
+1848,"""Time Is Running Out""",1274
+1849,"""Purple Haze""",1275
+1850,"""La Negra Tiene Tumbao""",758
+1851,"""Reach Out I'll Be There""",1178
+1852,"""Hold Back the River""",753
+1853,"""Legend""",1277
+1854,"""Wild Wild West""",1278
+1855,"""La cumparsita""",1279
+1856,"""I Don't Want to Wait""",1280
+1857,"""Thunder""",836
+1858,"""Country Girl (Shake It for Me)""",1007
+1859,"""Magic""",1014
+1860,"""Last Night a D.J. Saved My Life""",1283
+1861,"""O-o-h Child""",1285
+1862,"""Theme from Mission: Impossible""",1286
+1863,"""Bohemian Rhapsody""",55
+1864,"""Bla Bla Bla Cha Cha Cha""",1287
+1865,"""Need the Sun to Break""",753
+1866,"""Waterfalls""",1189
+1867,"""Hoedown""",1288
+1868,"""Feel It Still""",1289
+1869,"""Holly Rock""",1290
+1870,"""Let's Be Bad""",1291
+1871,"""Santa Maria (Del Buen Ayre)""",182
+1872,"""Before You Go (Piano version)""",1002
+1873,"""Telephone""",1292
+1874,"""Gimme Some Lovin'""",1185
+1875,"""Water""",1293
+1876,"""Yes""",1294
+1877,"""Love Machine""",1295
+1878,"""Dreaming""",91
+1879,"""(If You're Wondering If I Want You To) I Want You To""",1296
+1880,"""Chelsea""",1297
+1881,"""Let It Be""",15
+1882,"""I'll Be There""",26
+1883,"""The Black Pearl""",679
+1884,"""Flash's Theme""",55
+1885,"""School's Out""",1299
+1886,"""Paint It, Black""",209
+1887,"""Rhythm Is Gonna Get You""",177
+1888,"""Echa pa'lante""",354
+1889,"""Mas que Nada""",1300
+1890,"""Hotel California""",1301
+1891,"""Hips""",1303
+1892,"""I Get to Love You""",1304
+1893,"""Under Control""",1305
+1894,"""Supermarket Flowers""",497
+1895,"""The Night We Met""",1307
+1896,"""Dark Fantasy""",779
+1897,"""Live Your Life - Nick Cordero""",1309
+1898,"""Girl on Fire""—Alicia Keys / ""Hollaback Girl""",408
+1899,"""Move Your Feet""",1310
+1900,"""Check it Out""",1311
+1901,"""Tu Sonrisa""",683
+1902,"""Fantasy""",554
+1903,"""You Raise Me Up""",204
+1904,"""My Prerogative""",879
+1905,"""Over the Rainbow""",1313
+1906,"""The Murder""",1314
+1907,"""Gonna Fly Now""",1315
+1908,"""Aguanilé""",1316
+1909,"""One Fine Day""",1317
+1910,"""Universal Mind Control""",1318
+1911,"""Quizás, Quizás, Quizás""",1319
+1912,"""Game of Survival""",1304
+1913,"""Lonely""",1321
+1914,"""Stand Up for Something""",1323
+1915,"""Rewrite the Stars""",1324
+1916,"""Pray for Me""",1325
+1917,"""Edelweiss""",1326
+1918,"""Bad Day""",1327
+1919,"""Let It Be Me""",107
+1920,"""Stay Gold""",82
+1921,"""Fiebre""",1328
+1922,"""Bumpy Ride""",1329
+1923,"""Never Forget You""",1330
+1924,"""Roundtable Rival""",1331
+1925,"""Lose Control""",1333
+1926,"""X""",1334
+1927,"""Just the Way You Are""",594
+1928,"""Put It in a Love Song""",1336
+1929,"""Falling In Love At a Coffee Shop""",1337
+1930,"""Con te partirò""",1338
+1931,"""Waltz of the Flowers""",561
+1932,"""March of the Toreadors""",399
+1933,"""Romeo and Juliet""",1339
+1934,"""Wake Me Up Before You Go Go""",42
+1935,"""Get Down Tonight""",343
+1936,"""In the Mood""",1341
+1937,"""Jai Ho""",1342
+1938,"""Remains of the Day""",657
+1939,"""Bad Boy Good Man""",1343
+1940,"""Jump, Jive an' Wail""",188
+1941,"""If the World Was Ending""",1344
+1942,"""Head Above Water""",113
+1943,"""Boom Boom Pow""",86
+1944,"""Explosive / Adagio for Strings""",292
+1945,"""I Dovregubbens Hall""",1345
+1946,"""Hello""",28
+1947,"""Easy Lover""",1346
+1948,"""My Girl""",225
+1949,"""Day-O (The Banana Boat Song)""",241
+1950,"""Freedom""",1348
+1951,"""Feeling Alive""",1349
+1952,"""Believer""",836
+1953,"""Slow Hands""",1350
+1954,"""Both Sides Now (Torch Songs)""",1351
+1955,"""Down""",1352
+1956,"""Cowboy Take Me Away""",1353
+1957,"""The Flower Duet""",1354
+1958,"""Walk Like a Man""",1355
+1959,"""Cruisin'""",1356
+1960,"""I Can't Get Next to You""",225
+1961,"""Pure Imagination""",1357
+1962,"""Howlin' for You""",1359
+1963,"""Don't Let Me Down""",1360
+1964,"""Beautiful Day""",1361
+1965,"""Savage""—Megan Thee Stallion / ""Hypnotize""",903
+1966,"""It's Oh So Quiet""",1363
+1967,"""Ain't No Sunshine"" (Lido remix)",1364
+1968,"""Always Look on the Bright Side of Life""",1365
+1969,"""The Way You Do the Things You Do""",225
+1970,"""Ooo Baby Baby""",1369
+1971,"""Being with You""",1356
+1972,"""Little Shop of Horrors""",1370
+1973,"""You Don't Own Me""",1371
+1974,"""Gangsta's Paradise""",1094
+1975,"""Desperado""",116
+1976,"""I Say a Little Prayer""",20
+1977,"""Good Place""",914
+1978,"""Chuck Berry""",689
+1979,"""Singin' In The Rain""",1191
+1980,"""Let's Get Loud""—Jennifer Lopez / ""Bamboleo""",66
+1981,"""I'll Be There for You""",1373
+1982,"""God Bless The USA""",1374
+1983,"""The Yankee Doodle Boy""",1375
+1984,"""Seasons of Love""",1376
+1985,"""Abracadabra""",1377
+1986,"""Castle on the Hill""",497
+1987,"""Faith""",1378
+1988,"""Victorious""",1245
+1989,"""To Build a Home""",1380
+1990,"""Brother""",1381
+1991,"""The Brady Bunch Theme""",1099
+1992,"""Unwritten""",1382
+1993,"""Charlie's Angels Theme""",418
+1994,"""Baby One More Time""",51
+1995,"""December, 1963 (Oh, What a Night)""",1355
+1996,"""Skyscraper""",866
+1997,"""Something's Got a Hold on Me""",315
+1998,"""Stone Cold""",866
+1999,"""Head High""",939
+2000,"""Hill Street Blues""",1385
+2001,"""(Theme From) The Monkees""",1386
+2002,"""Werewolves of London""",1387
+2003,"""Memory""",231
+2004,"""A Brand New Day""",684
+2005,"""She Used to Be Mine""",359
+2006,"""Yes I Can""",339
+2007,"""Let's Hurt Tonight""",431
+2008,"""End of the Road""",505
+2009,"""Santa María (del Buen Ayre)""",182
+2010,"""Check It Out""",1311
+2011,"""Dark Times""",1390
+2012,"""One Time""",1352
+2013,"""Hall of Fame""",1391
+2014,"""Explosive""",1392
+2015,"""The Ding-Dong Daddy of the D-Car Line""",45
+2016,"""I Won't Dance""",112
+2017,"""If I Had You""",7
+2018,"""You Really Got Me""",358
+2019,"""According to You""",1393
+2020,"""Ghosts 'N Stuff""",1394
+2021,"""The Naughty Lady of Shady Lane""",1395
+2022,"""Canon in D Major""",1396
+2023,"""Scars to Your Beautiful""",1057
+2024,"""Go Mama""",1397
+2025,"""Living""",1398
+2026,"""Shame on Me""",1399
+2027,"""Unsteady""",1401
+2028,"""Puttin' on the Ritz 2017 (Jazzy Radio Mix)""",1402
+2029,"""Barflies at the Beach""",487
+2030,"""Palladio""",1403
+2031,"""Pencil Full Of Lead""",341
+2032,"""What the World Needs Now""",1405
+2033,"""Can't Be Tamed""",929
+2034,"""Marriage of Figaro""",1406
+2035,"""Ave Maria""",1407
+2036,"""Bad Romance (Instrumental)""",124
+2037,"""Kill of the Night""",686
+2038,"""Hollow""",1408
+2039,"""Shot Me Down""",1409
+2040,"""Fire Under My Feet""",231
+2041,"""Tango Misterioso""",1410
+2042,"""My Love""",955
+2043,"""Spanish Paso""",369
+2044,"""La Donna è Mobile""",1412
+2045,"""Montagues and Capulets""",1413
+2046,"""I Am Your Man""",235
+2047,"""Hot2Touch""",1414
+2048,"""Without You""",1415
+2049,"""This Will Be""",217
+2050,"""Jump in the Line""",241
+2051,"""Allerdings Otros Aires""",273
+2052,"""I Want You Back""—The Jackson 5 / ""Please Mr. Postman""",1416
+2053,"""Orange Colored Sky""",63
+2054,"""S.O.B.""",1418
+2055,"""The Sound of Silence""",1419
+2056,"""Kill the Lights""",1420
+2057,"""Maybe I, Maybe You""",1421
+2058,"""Stuck in the Middle With You""",1422
+2059,"""Rip It Up""",154
+2060,"""Mama Do the Hump""",471
+2061,"""Maggie May""",764
+2062,"""Wicked Ones""",1423
+2063,"""Beethoven's 5 Secrets""",1424
+2064,"""Fireball""",1425
+2065,"""Just Like Fire""",79
+2066,"""Breathe (2 AM)""",1426
+2067,"""Kathleen""",1183
+2068,"""Over and Over Again""",1428
+2069,"""Good Golly Miss Molly""",154
+2070,"""One and Only""",360
+2071,"""White Room""",1430
+2072,"""It Is You (I Have Loved)""",158
+2073,"""Minnie the Moocher""",1431
+2074,"""We Are the Ones""",1433
+2075,"""Waiting for a Girl Like You""",1434
+2076,"""Hella Good""",129
+2077,"""Eyes on Fire""",1435
+2078,"""Mr. Big Stuff""",1438
+2079,"""La Yumba""",1439
+2080,"""Teenage Dream""",284
+2081,"""Tightrope""",1440
+2082,"""Firework""",284
+2083,"""Objection (Tango)""",194
+2084,"""Mercy""",1442
+2085,"""Way Over Yonder""",1443
+2086,"""Latinos""",1444
+2087,"""I Play Chicken with the Train""",1445
+2088,"""Mary Goes to Jesus""",1446
+2089,"""She's Got Me Dancing""",1447
+2090,"""Jai Ho! (You Are My Destiny)""",1342
+2091,"""Puttin' On The Ritz""",41
+2092,"""Dancing Machine"" / ""I Want You Back""",26
+2093,"""Splish Splash""",237
+2094,"""Tootsee Roll""",1449
+2095,"""Do You Love Me?""",50
