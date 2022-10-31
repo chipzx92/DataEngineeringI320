@@ -182,7 +182,7 @@ More Advanced visualizations
 ### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
 #### Requirements Documents:  
-[Austin Animal Center Outcomes](docs/projects/aac/REQUIREMENTS.md)  
+[Austin Animal Center Outcomes](docs/projects/aac)  
 [COVID 19 Cases by US County](docs/projects/covid/REQUIREMENTS.md)  
 Dancing with the Stars  
 [Internet Movie Database](docs/projects/imdb/REQUIREMENTS.md)  
