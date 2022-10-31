@@ -181,6 +181,9 @@ More Advanced visualizations
 
 ### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
+[Requirements Documents](projects)  
+[Project Report Template](projects/320d_project_report_template.ipynb)  
+
 ### Week 12: Workshop on Semester Projects (Nov 8/10)
 
 ### Week 13: Data and Metadata Management and Governance (Nov 15/Nov 17)  
