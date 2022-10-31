@@ -10,12 +10,12 @@ for example, the animal is adopted or the owner reclaims a stray animal.
 The AAC shelter director and her staff would like to you to analyze the outcome data to help them
 answer the following questions:
 
-1) What is the average number of days in AAC for an animal? 
-* By animal type 
-* By animal type and breed
-* By year by animal type
-2) How many animals come into AAC every year, and how many go out?
-3) What are the 3 busiest months (by number of intakes) and what are the 3 slowest months?
+1. What is the average number of days in AAC for an animal? 
+   * By animal type 
+   * By animal type and breed
+   * By year by animal type
+2. How many animals come into AAC every year, and how many go out? 
+3. What are the 3 busiest months (by number of intakes) and what are the 3 slowest months?
 
 Come up with another interesting question and answer that you can get from the data that you think 
 the shelter director should know.
@@ -37,24 +37,24 @@ Use the `music_festival` project as a reference (in `projects/music_festival`) f
 Use the `320d_project_report_template.ipynb` as the basis for your project report. Make a copy in your project folder (and rename to match your project).
 
 For your project, you will need to do each of these steps:
-1) Create your staging tables.
+1. Create your staging tables.
    * Create an concrete data example from the data.
    * Create a conceptual E-R diagram of the staging tables.
    * Create a physical E-R diagram of the staging tables.
    * Write the CREATE TABLE statements for the staging tables.
-   * Run the script to execute the CREATE TABLE statements.
-2) Load the data from the CSV files into your staging tables.
+   * Run the script to execute the CREATE TABLE statements. 
+2. Load the data from the CSV files into your staging tables.
    * Write the \copy commands to load the CSV files into the staging tables.
    * Run the script to execute the \copy commands.
-3) Create your dimensional model (star schema).
+3. Create your dimensional model (star schema).
    * Identify the fact(s) in your data and the grain of the data.
    * Create the transformation diagram.
    * Create a concrete example of the star schema data.
    * Create a conceptual E-R diagram of the star schema.
    * Create a physical E-R diagram of the star schema.
    * Write the dbt model files to create the star schema.
-4) Create your data products.
+4. Create your data products.
    * Decide what data products you need to create to answer the questions in the requirements.
    * Write the dbt model files to create the data products.
-5) Create reports and visualizations that answer the questions posed in the requirements.
+5. Create reports and visualizations that answer the questions posed in the requirements.
    * You should have a mix of tabular reports and charts - use whatever is most appropriate to answer the questions.

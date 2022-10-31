@@ -9,16 +9,16 @@ to the board of the International Olympic Committee (IOC).
 The Olympic CTO and her staff would like to you to analyze Olympic event results and answer the
 following questions:
 
-1) What country scored the most points:
-   * Overall, i.e., in all olympic games (top 3)
-   * in each of the last 5 Olympic Games
-2) What country has take the most gold medals:
-   * Overall (top 3)
-   * In each of the last 5 Olympic Games
-3) What teams have won the most medals (all medals):
-    * Overall (top 3)
-    * In each the last 5 Olympic games
-4) What athletes have won the most medals? (top 10)
+1. What country scored the most points:  
+   * Overall, i.e., in all olympic games (top 3)  
+   * in each of the last 5 Olympic Games  
+2. What country has take the most gold medals:  
+   * Overall (top 3)  
+   * In each of the last 5 Olympic Games  
+3. What teams have won the most medals (all medals):  
+   * Overall (top 3)  
+   * In each the last 5 Olympic games  
+4. What athletes have won the most medals? (top 10)  
 
 Come up with another interesting question and answer that you can get from the data that you think 
 the CTO should know.
@@ -39,31 +39,31 @@ You have 5 CSV files:
 * **olympic_athletes.csv** - Contains all the athletes who have participated in Olympic events.
 * **olympic_event_results.csv** - Contains the results of all of the events in the Games.
 
-Scores are awarded as follows for medals:
-Gold - 3 points
-Silver - 2 points
-Bronze - 1 point
+Scores are awarded as follows for medals:  
+Gold - 3 points  
+Silver - 2 points  
+Bronze - 1 point  
 
 ## Project Steps
 For your project, you will need to do each of these steps:
-1) Create your staging tables.
+1. Create your staging tables.
    * Create an concrete data example from the data.
    * Create a conceptual E-R diagram of the staging tables.
    * Create a physical E-R diagram of the staging tables.
    * Write the CREATE TABLE statements for the staging tables.
    * Run the script to execute the CREATE TABLE statements.
-2) Load the data from the CSV files into your staging tables.
+2. Load the data from the CSV files into your staging tables.
    * Write the \copy commands to load the CSV files into the staging tables.
    * Run the script to execute the \copy commands.
-3) Create your dimensional model (star schema).
+3. Create your dimensional model (star schema).
    * Identify the fact(s) in your data and the grain of the data.
    * Create the transformation diagram.
    * Create a concrete example of the star schema data.
    * Create a conceptual E-R diagram of the star schema.
    * Create a physical E-R diagram of the star schema.
    * Write the dbt model files to create the star schema.
-4) Create your data products.
+4. Create your data products.
    * Decide what data products you need to create to answer the questions in the requirements.
    * Write the dbt model files to create the data products.
-5) Create reports and visualizations that answer the questions posed in the requirements.
+5. Create reports and visualizations that answer the questions posed in the requirements.
    * You should have a mix of tabular reports and charts - use whatever is most appropriate to answer the questions.

@@ -9,11 +9,11 @@ highest rated movies in each genre were.
 
 ## Requirements
 
-1) What are the top 10 highest rated movies for the last 5 years?
-2) What directors (with at least 3 movies) have the highest average rating? 
-3) What actresses (with at least 3 movies) have the highest average rating? 
-4) What actors (with at least 3 movies) have the highest average rating? 
-5) What are the 3 highest rated movies in each genre?
+1. What are the top 10 highest rated movies for the last 5 years?  
+2. What directors (with at least 3 movies) have the highest average rating?   
+3. What actresses (with at least 3 movies) have the highest average rating?   
+4. What actors (with at least 3 movies) have the highest average rating?   
+5. What are the 3 highest rated movies in each genre?  
 
 Come up with another interesting question and answer that you can get from the data that you think 
 the marketing VP should know.
@@ -35,24 +35,24 @@ Use the `music_festival` project as a reference (in `projects/music_festival`) f
 Use the `320d_project_report_template.ipynb` as the basis for your project report. Make a copy in your project folder (and rename to match your project).
 
 For your project, you will need to do each of these steps:
-1) Create your staging tables.
+1. Create your staging tables.
    * Create an concrete data example from the data.
    * Create a conceptual E-R diagram of the staging tables.
    * Create a physical E-R diagram of the staging tables.
    * Write the CREATE TABLE statements for the staging tables.
    * Run the script to execute the CREATE TABLE statements.
-2) Load the data from the CSV files into your staging tables.
+2. Load the data from the CSV files into your staging tables.
    * Write the \copy commands to load the CSV files into the staging tables.
    * Run the script to execute the \copy commands.
-3) Create your dimensional model (star schema).
+3. Create your dimensional model (star schema).
    * Identify the fact(s) in your data and the grain of the data.
    * Create the transformation diagram.
    * Create a concrete example of the star schema data.
    * Create a conceptual E-R diagram of the star schema.
    * Create a physical E-R diagram of the star schema.
    * Write the dbt model files to create the star schema.
-4) Create your data products.
+4. Create your data products.
    * Decide what data products you need to create to answer the questions in the requirements.
    * Write the dbt model files to create the data products.
-5) Create reports and visualizations that answer the questions posed in the requirements.
+5. Create reports and visualizations that answer the questions posed in the requirements.
    * You should have a mix of tabular reports and charts - use whatever is most appropriate to answer the questions.
