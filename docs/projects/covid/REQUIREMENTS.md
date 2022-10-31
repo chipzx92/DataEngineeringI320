@@ -32,6 +32,10 @@ You have 4 CSV files:
 * **county_demographics** - Contains demographic information about the county - percentage of population over 65, under 18, and under 5
 
 ## Project Steps
+Use the `music_festival` project as a reference (in `projects/music_festival`) for the files and content that you need.
+
+Use the `320d_project_report_template.ipynb` as the basis for your project report. Make a copy in your project folder (and rename to match your project).
+
 For your project, you will need to do each of these steps:
 1) Create your staging tables.
    * Create an concrete data example from the data.
