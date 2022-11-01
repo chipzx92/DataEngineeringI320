@@ -16,6 +16,12 @@ Each team will read their requirements document and make a copy of the
 project. The requirements document and the project report template are also linked to in the 
 syllabus.
 
+Examine the Project Report Template; as you complete steps below you will complete/customize your report 
+to reflect the project work you have done. You will add pictures (screenshots and exported vizualizations)
+and short descriptive paragraphs.  The report should be written as a documentation of your work, with the 
+final part presenting results that meet the analysis requirements presented in the `REQUIREMENTS.md` file 
+in the project links above.
+
 Each person on a team will be linked to a project directory for their project that will be available 
 on their Jupyter notebook. The project directory will have the following structure:
 
@@ -132,3 +138,17 @@ terminal and run the following commands:
 cd <your project name>/src/scripts
 bash run_dbt.sh
 ```
+
+### Examine your requirements, design data products
+
+Examing your project requirements again, looking at the `REQUIREMENTS.md` file in your project directory.
+
+You will need to create a dashboard using Superset. For that to work you will need to create data product tables for Superset to use. That means creating additional dbt files to define your data products, then locating them in Superset to design your visualizations and your dashboard.
+
+> See the [Superset](../Superset/) presentation as a guide to help you with with this step.
+
+Once your dashboard is complete you should export your visualizations and place them in your project report. You can do this pictures or short videos if interaction is important to your analysis.
+
+### Review your report
+
+Review and improve your project report, filling out each section in the template, adding screenshots and exported vizualizations as necessary to explain your project team's work and answer the `REQUIREMENTS.md`  Each of the elements above should be included in your report; the report and your dashboard on Superset will be the outputs reviewed by the grading team.  So, for example, if your ER diagrams are not in your report, we will be unable to consider them in grading.
