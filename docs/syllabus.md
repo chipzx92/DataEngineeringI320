@@ -181,6 +181,9 @@ More Advanced visualizations
 
 ### Week 11: Workshop on Semester Projects (Nov 1/3)  
 
+#### Semester Project Instructions:
+[Semester Project](presentations/semester_project)
+
 #### Requirements Documents:  
 [Austin Animal Center Outcomes](projects/aac/REQUIREMENTS.md)  
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
