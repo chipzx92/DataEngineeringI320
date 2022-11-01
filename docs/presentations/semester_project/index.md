@@ -16,11 +16,7 @@ Each team will read their requirements document and make a copy of the
 project. The requirements document and the project report template are also linked to in the 
 syllabus.
 
-Examine the Project Report Template; as you complete steps below you will complete/customize your report 
-to reflect the project work you have done. You will add pictures (screenshots and exported vizualizations)
-and short descriptive paragraphs.  The report should be written as a documentation of your work, with the 
-final part presenting results that meet the analysis requirements presented in the `REQUIREMENTS.md` file 
-in the project links above.
+Examine the Project Report Template; as you complete steps below you will complete/customize your report to reflect the project work you have done. You will add pictures (screenshots and exported vizualizations) and short descriptive paragraphs.  The report should be written as a documentation of your work, with the final part presenting results that meet the analysis requirements presented in the `REQUIREMENTS.md` file in the project links above.
 
 Each person on a team will be linked to a project directory for their project that will be available 
 on their Jupyter notebook. The project directory will have the following structure:
