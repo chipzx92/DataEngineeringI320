@@ -192,7 +192,7 @@ Dancing with the Stars
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)  
 
 #### Project Report Template:  
-[Project Report Template](projects/320d_project_report_template.ipynb)  
+[Project Report Template](320d_project_report_template.ipynb)  
 
 ### Week 12: Workshop on Semester Projects (Nov 8/10)
 
