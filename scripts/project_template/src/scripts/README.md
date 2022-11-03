@@ -26,11 +26,11 @@ You will write `\copy` commands into the `create_load_commands.sql` file. These 
 the data in your CSV files into your staging tables. You can also edit this file in your 
 Jupyter notebook. This file is located in the `projects/<your project_name>/src/scripts` directory.
 
-You will load the data into the staging tables by running the `load_staging_data.sh` script. To run
+You will load the data into the staging tables by running the `copy_staging_data.sh` script. To run
 it, open a Jupyter terminal and run the following commands:
 
 `cd projects/<your project name>/src/scripts`  
-`bash load_staging_data.sh`
+`bash copy_staging_data.sh`
 
 ## Running DBT Model Files
 
