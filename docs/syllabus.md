@@ -187,32 +187,23 @@ More Advanced visualizations
 #### Requirements Documents:  
 [Austin Animal Center Outcomes](projects/aac/REQUIREMENTS.md)  
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
-Dancing with the Stars  
+[Dancing with the Stars](projects/dwts/REQUIREMENTS.md)
 [Internet Movie Database](projects/imdb/REQUIREMENTS.md)  
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)  
+[Saturday Night Live](projects/snl/REQUIREMENTS.md)
 
 #### Project Report Template:  
 [Project Report Template](320d_project_report_template.ipynb)  
 
 ### Week 12: Workshop on Semester Projects (Nov 8/10)
 
-### Week 13: Data and Metadata Management and Governance (Nov 15/Nov 17)  
-Data Quality  
-Data Catalogs, Data Lineage, and Data Governance  
-DataOps and Data Observability  
-Mini-quiz   
+### Week 13: Workshop on Semester Projects (Nov 15/Nov 17)   
 
 ### Thanksgiving break
 
 ### Week 15: Trends and New Directions in Data Engineering (Nov 29/Dec 1)  
-Data Mesh  
-CDC/Streaming/Event Processing for near real-time analytics  
-Reverse ETL  
-Careers in Data Engineering  
-* Data Engineer as an Analytics Engineer  
-* Data Engineer as a Software Engineer  
-* Data Engineer as a Data Scientist  
-* Data Engineer as an Infrastructure Engineer  
+Nov 29 - Project Presentations  
+Dec 1 - [Wrap-Up](presentations/Wrap-up): Data Engineering concepts, careers, and interviewing  
 
 ## Assessments
 
