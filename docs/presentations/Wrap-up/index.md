@@ -9,6 +9,13 @@ asset - companies as diverse as Amazon, Tik Tok, any major sports team, Netflix,
 significant competitive advantage from leveraging their data using data engineering and data
 science.
 
+* Amazon uses its data to make recommendations, analyze its supply chain, optimize deliveries, and 
+advertise products to its customers.  
+* Tik Tok uses its data to decide what videos to recommend based on the user's profile, location, and declared interests
+* Analytics revolutionized pro basketball by emphasizing the value of three-point shots 
+* Netflix uses data to personalize content recommendations and to decides what movies and series to make or continue 
+* Google decides where and when to place ads (which account for 90% of its revenue) based on its data.
+  
 ![DataIsTheNewOil](./images/DataIsTheNewOil.png)
 
 ![Data has to be refined](./images/RefineToBeUseful.png)
