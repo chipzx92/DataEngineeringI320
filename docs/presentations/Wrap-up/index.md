@@ -55,6 +55,7 @@ Interviewing tips:
 * If you know what skills they're looking for, study them.
 * If there's a job you really want, try to do one or more interviews with other companies first.
 * Act positive, friendly, and confident, but be yourself.
+* Think out loud - most interviewers want to see your thought process.
 * Don't pretend you know what you don't know.
 * If you're asked a question that you don't know the answer to, ask what the answer is.
 * You can ask them questions, too - it's a two-way street.
