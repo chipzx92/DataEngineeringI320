@@ -5,17 +5,19 @@ Welcome to I320: Data Engineering in the School of Information at the University
 |             |                                 |
 | ----------- |---------------------------------|
 | Semester    | Fall 2023                       |
-| Classroom   | CBA 4.330                       
+| Classroom   | CBA 4.330                       |
 | Class times | 12:30-2:00 Tuesdays and Thursdays |
 | Unique Number | 28370                           |
 
 Jump to [Course Schedule](#course-schedule).
 
 ## Lab link
-
-Instructions for how to access your VM environment are here: [AWS VM Environment Access](presentations/aws_vm)    
+Access to lab systems will be available about 2 weeks into the semester.  
+Instructions on how to access your VM environment (when available): [AWS VM Environment Access](presentations/aws_vm)   
+<!--
 Superset access: [https://superset.dei320.net](https://superset.dei320.net)  
-Jupyter access: [https://notebook.dei320.net](https://notebook.dei320.net)    
+Jupyter access: [https://notebook.dei320.net](https://notebook.dei320.net) 
+-->
 
 ## Course Description
 
@@ -25,6 +27,7 @@ This class will be a foundational course in Data Engineering principles and prac
 - Understand the data engineering lifecycle.
 - Use SQL to transform and query data.
 - Understand data modeling techniques for organizing and managing data. 
+- Understand how to create reports and visualizations from data.
 - Build data pipelines to collect, transform, analyze, and visualize data from operational source systems. 
 
 The class will balance general principles with hands-on experience with some of the tools, 
@@ -34,12 +37,13 @@ building data pipelines end-to-end, from ingesting source data to creating analy
 that deliver value to organizations. We’ll use business intelligence tools to build visualizations 
 using those data products. We will look at both batch processing and streaming systems to understand 
 their pros and cons. We’ll talk about data lakes, data warehouses, ETL/ELT, and batch and streaming 
-systems to understand the pros and cons of each. Time permitting, we will look at issues around data quality, 
-understand the uses of data catalogs, examine data lineage and data profiling tools, and discuss 
-data governance in organizations. Finally, we’ll discuss trends and future directions in data engineering.
+systems to understand the pros and cons of each. Time permitting, we will look at data pipeline
+orchestration tools, issues around data quality, understand the uses of data catalogs, examine data 
+lineage and data profiling tools, and discuss data governance in organizations. Finally, we’ll 
+discuss trends and future directions in data engineering.
 
-Some python or other programming languages are helpful. INF 320D Database Design and INF 320D Data Visualization,
-are also helpful.
+Knowing or learning SQL is key to success in this course. Some python or other programming languages 
+are helpful. INF 320D Database Design and INF 320D Data Visualization are also helpful.
 
 ## Professors and Office Hours
 
@@ -63,16 +67,16 @@ Peoples and communities who have been or have become a part of these lands and t
 here on Turtle Island.
 
 ## Course Objectives
-Learn fundamentals of data engineering.  
+Learn fundamental concepts of data engineering.  
 Be able to apply the principles used in class to build a simple data pipeline and visualize the data.  
 Prepare students for careers as data professionals.  
 
 ## Computing Resources
 You need a laptop with a browser to access the data visualization tool we will use. You will be 
 using a virtual machine (VM) on a cloud service to do most of your work. The software used in this 
-class will be installed on your VM or as a cloud service. However, you will need your own laptop for 
-class, able to access the utexas Wi-Fi network.  If you do not have a laptop, or yours stops working, 
-the school and university has resources available. Please check [these university resources](https://onestop.utexas.edu/keep-learning/#acc_1-1). 
+class will be available on VM running in Amazon Web Service (AWS). However, you will need your own 
+laptop for class, able to access the utexas Wi-Fi network.  If you do not have a laptop, or yours 
+stops working, the school and university has resources available. Please check [these university resources](https://onestop.utexas.edu/keep-learning/#acc_1-1). 
 Check the "Before your classes" section; I believe that you reach out to the Texas One Stop. We will 
 work to have one or two loaner laptops available since we know things sometimes break just before class.
 
@@ -82,6 +86,9 @@ The course is an in person course; you should plan to attend each and every clas
 that recordings can be very useful for unavoidable missed classes and for reviewing in-class material 
 when working on homework or studying.
 
+Classes will be recorded using the in-classroom technology and will be made available after each
+class ends. Links for the recordings can be found in the Panopto Video link in Canvas.
+<!--
 Therefore, this class is using the Lectures Online recording system. This system records the audio 
 and video material presented in class for you to review after class. Links for the recordings will 
 appear in the Lectures Online tab on the Canvas page for this class. You will find this tab along the 
@@ -92,7 +99,7 @@ instructions presented to you on the page. You can learn more about how to use t
 system at http://sites.la.utexas.edu/lecturesonline/students/how-to-access-recordings/.
 
 You can find additional information about Lectures Online at: https://sites.la.utexas.edu/lecturesonline/.
-
+-->
 
 ## Course Texts
 
@@ -106,12 +113,12 @@ access extends for 6 months. I will establish the access a few weeks into the se
 invitation email to come to the email address registered with the University. The most relevant 
 courses are:
 
-- [Introduction to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science)
-- [Intro to SQL for Data Science](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
-- [Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql)
+- [Introduction to SQL](https://app.datacamp.com/learn/courses/introduction-to-sql)
+- [Intermediate SQL](https://app.datacamp.com/learn/courses/intermediate-sql)
+- [Joining Data in SQL](https://app.datacamp.com/learn/courses/joining-data-in-postgresql)
 
 ## Course Schedule 
-[subject to change as course materials are developed]
+[subject to change as course materials are updated or changed]
 
 ### Week 1: Introduction to Data Engineering (Aug 22/24)  
 Introductions  
@@ -121,16 +128,18 @@ Definition and Overview of Data Engineering
 *What is Data Engineering* presentation  
 Overview of example end-to-end project  
 Overview of semester project 
-
+<!--
 - [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf)
 - [Data Transformation Exercise](exercises/transformations_exercise/)
+-->
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29/Aug 31)  
 
-Presentation and distribution of sample end-to-end project  
+Presentation and distribution of sample end-to-end project.
+<!--
   - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
-
-Discussion of semester projects
+-->
+Overview of weekly assignments and semester projects.
 
 <!-- Installation  
 Processing steps in the data pipeline w/examples  
@@ -148,16 +157,20 @@ Assignment: Make enhancements to sample project
 
 ### Weeks 3-5.1: SQL Review (Sep 5/7 12/14 19)    
 
-[Link to SQL material](presentations/sql)
+<!-- [Link to SQL material](presentations/sql) -->
 
 Into to Postgres and psql   
 SQL Basics Review  
-Aggregate Functions (COUNT, SUM, AVG)
+Aggregate Functions (COUNT, SUM, AVG)  
 Different types of Joins especially Outer Joins   
 SQL mini-quiz  
 
 ### Week 5.2: Introduction to Semester Project (Sep 21)
-
+You will be divided up into teams of 4 and assigned your semester projects. Each project will 
+consist of a requirements document explaining what you need to do and what the goals of the
+project are, a set of data files, a database dedicated to your project, and workspaces for your
+files and visualizations.
+<!--
 #### Semester Project Instructions:
 [Semester Project](presentations/semester_project)
 
@@ -168,62 +181,76 @@ SQL mini-quiz
 [Internet Movie Database](projects/imdb/REQUIREMENTS.md)  
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)  
 [Saturday Night Live](projects/snl/REQUIREMENTS.md)
+-->
 
 ### Week 6: Source Systems and Data Ingestion (Sep 26/28)
+<!--
 [Link to Ingestion Presentation](presentations/Ingestion/)  
 [Link to Bulk Load](presentations/ingestion-pt2/)
-
-What is a Data Lake?  
+-->
+We will cover the following topics:  
+What are source systems?  
+Why do we replicate source data?  
+What is a Data Lake?    
 What is a Data Warehouse?  
-Data Lakehouses   
-Source Systems  
-Replication of source data  
-Batch Processing  
-Streaming  
-Bulk ingestion using the Copy command  
-Workshop on ingesting data for semester project  
+What is a Data Lakehouse?  
+What is Batch Processing?  
+What are Streaming systems?  
+Bulk ingestion using the Copy command   
+Workshop on ingesting data for semester project   
 
 <!--
-### Week 7: Data Cleansing and Validation (Oct 4/6)  
+### Week 7: Data Cleansing and Validation (Oct 3/5)  
 Data Quality of Source Systems  
 Statistical validation  
 Rule-based validation  
 -->
 
-### Weeks 7-8: Data Modeling (Oct 3/5 and 10/12)  
+### Weeks 7-8: Data Modeling (Oct 3/5 and 10/12)
+We will discuss the following topics:
 ER diagrams and modeling transactional systems
+<!--
 - [one-to-many](presentations/modeling/01_has_many/)
 - [many-to-many](presentations/modeling/02_many_to_many/)
 - [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)
+-->
 Normalization  
-Dimensional Modeling (Star Schema)  
+Dimensional Modeling (Star Schemas)  
+<!--
 - [Dimensional Modeling, Part 1](presentations/dimensional_modeling)
 - [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)
+-->
 Assignment: Queries from Star Schema
 
 ### Week 9: Data Transformation (Oct 17/19)
-Data Products  
-[Data Products](presentations/data_products)    
-Introduction to dbt  
-[dbt Intro](presentations/dbt_intro)
+What are Data Products and why do we need to create them?  
+<!-- [Data Products](presentations/data_products)-->
+Introduction to bulding star schemas and data products with dbt  
+<!-- [dbt Intro](presentations/dbt_intro) -->
 
 ### Week 10: Data Presentation and Visualization (Oct 24/26)  
-Business Intelligence Tools - Superset  
-[Introduction to Superset](presentations/Superset)   
-More Advanced visualizations  
-[Creating visualizations with Superset](presentations/Visualizations)    
+Introduction to Business Intelligence Tools using Superset    
+<!-- [Introduction to Superset](presentations/Superset) --> 
+More Advanced visualizations with Superset 
+<!-- [Creating visualizations with Superset](presentations/Visualizations) --> 
 
 ### Week 11: Workshop on Semester Projects (Oct 31/Nov 2)  
-
+Review Semester Project Instructions  
+Review Project Report Template  
+Ingestion of Source Data  
+<!--
 #### Review Semester Project Instructions:
 [Semester Project](presentations/semester_project)
 
 #### Project Report Template:  
 [Project Report Template](320d_project_report_template.ipynb)  
+-->
 
 ### Week 12: Workshop on Semester Projects (Nov 7/9)
+Building Star Schemas and Data Products  
 
 ### Week 13: Workshop on Semester Projects (Nov 14/Nov 16)   
+Building reports and visualizations  
 
 ### Thanksgiving break (Nov 20-25))
 
@@ -235,11 +262,11 @@ Nov 30 - [Wrap-Up](presentations/Wrap-up): Data Engineering concepts, careers, a
 
 Course grades will be assiged based on performance in the course assessments (see below for details):
 
-- Weekly assignments (~10): 40%
+- Weekly assignments (~8-10): 40%
 - Semester Project: 60%
   - Group Pipeline code and dashboard: 40%, Due Nov Friday 16 (before Thanksgiving break)
   - Group presentation: 5%, Tuesday Nov 28 (just after Thanksgiving break)
-  - Individual interview about group project: 15% (scheduled during last week of classes (Mon Nov 27-Mon Dec 4).
+  - Individual interview about core data engineering concepts and the group project: 15% (scheduled during last week of classes (Mon Nov 28-Mon Dec 4).
 
 The assignments and grading scheme (A, A-, B, ..., F) are shown in Canvas.  Assignments will be submitted through Canvas.
 
@@ -279,7 +306,7 @@ The project will consist of three elements, two graded as a group and one graded
 
 1. A working data pipeline, using the technologies taught in this class, including vizualization dashboards, together with a written commentary (README.md) describing the pipeline and the challenges overcome will be submitted (3-4 pages including illustrations). Worth 40% of course grade.
 2. A group presentation built using Markdown and presented in class on Tuesday Nov 28 (presentation 5-8 minutes, around 6 slides). Worth 5% of course grade.
-3. An individual interview with course professor to explain the project and answers questions about the techniques and results. Worth 15% of course grade. 
+3. An individual interview with course professor to test your understanding of core data engineering concepts and answer questions about the techniques and results in your project. Worth 15% of course grade. 
 
 Working in groups for this course does not mean dividing up the work; We require each group member 
 to understand everything about their project. If there is a part of your project that you don't 
