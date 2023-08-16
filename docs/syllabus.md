@@ -87,7 +87,8 @@ that recordings can be very useful for unavoidable missed classes and for review
 when working on homework or studying.
 
 Classes will be recorded using the in-classroom technology and will be made available after each
-class ends. Links for the recordings can be found in the Panopto Video link in Canvas.
+class ends. Links for the recordings can be found in the Panopto Video link in Canvas.  
+
 <!--
 Therefore, this class is using the Lectures Online recording system. This system records the audio 
 and video material presented in class for you to review after class. Links for the recordings will 
@@ -99,7 +100,7 @@ instructions presented to you on the page. You can learn more about how to use t
 system at http://sites.la.utexas.edu/lecturesonline/students/how-to-access-recordings/.
 
 You can find additional information about Lectures Online at: https://sites.la.utexas.edu/lecturesonline/.
--->
+-->  
 
 ## Course Texts
 
@@ -128,17 +129,20 @@ Definition and Overview of Data Engineering
 *What is Data Engineering* presentation  
 Overview of example end-to-end project  
 Overview of semester project 
+
 <!--
 - [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf)
 - [Data Transformation Exercise](exercises/transformations_exercise/)
--->
+-->  
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29/Aug 31)  
 
-Presentation and distribution of sample end-to-end project.
+Presentation and distribution of sample end-to-end project.  
+
 <!--
   - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
 -->
+
 Overview of weekly assignments and semester projects.
 
 <!-- Installation  
@@ -157,7 +161,7 @@ Assignment: Make enhancements to sample project
 
 ### Weeks 3-5.1: SQL Review (Sep 5/7 12/14 19)    
 
-<!-- [Link to SQL material](presentations/sql) -->
+<!-- [Link to SQL material](presentations/sql) -->  
 
 Into to Postgres and psql   
 SQL Basics Review  
@@ -169,7 +173,8 @@ SQL mini-quiz
 You will be divided up into teams of 4 and assigned your semester projects. Each project will 
 consist of a requirements document explaining what you need to do and what the goals of the
 project are, a set of data files, a database dedicated to your project, and workspaces for your
-files and visualizations.
+files and visualizations.  
+
 <!--
 #### Semester Project Instructions:
 [Semester Project](presentations/semester_project)
@@ -181,13 +186,15 @@ files and visualizations.
 [Internet Movie Database](projects/imdb/REQUIREMENTS.md)  
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)  
 [Saturday Night Live](projects/snl/REQUIREMENTS.md)
--->
+-->  
 
 ### Week 6: Source Systems and Data Ingestion (Sep 26/28)
+
 <!--
 [Link to Ingestion Presentation](presentations/Ingestion/)  
 [Link to Bulk Load](presentations/ingestion-pt2/)
--->
+-->  
+
 We will cover the following topics:  
 What are source systems?  
 Why do we replicate source data?  
@@ -204,40 +211,51 @@ Workshop on ingesting data for semester project
 Data Quality of Source Systems  
 Statistical validation  
 Rule-based validation  
--->
+-->  
 
 ### Weeks 7-8: Data Modeling (Oct 3/5 and 10/12)
 We will discuss the following topics:
-ER diagrams and modeling transactional systems
+ER diagrams and modeling transactional systems  
+
 <!--
 - [one-to-many](presentations/modeling/01_has_many/)
 - [many-to-many](presentations/modeling/02_many_to_many/)
 - [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)
--->
+-->  
+
 Normalization  
-Dimensional Modeling (Star Schemas)  
+Dimensional Modeling (Star Schemas)   
+
 <!--
 - [Dimensional Modeling, Part 1](presentations/dimensional_modeling)
 - [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)
--->
+-->  
+
 Assignment: Queries from Star Schema
 
 ### Week 9: Data Transformation (Oct 17/19)
-What are Data Products and why do we need to create them?  
-<!-- [Data Products](presentations/data_products)-->
+What are Data Products and why do we need to create them? 
+
+<!-- [Data Products](presentations/data_products)-->  
+
 Introduction to bulding star schemas and data products with dbt  
-<!-- [dbt Intro](presentations/dbt_intro) -->
+
+<!-- [dbt Intro](presentations/dbt_intro) -->  
 
 ### Week 10: Data Presentation and Visualization (Oct 24/26)  
-Introduction to Business Intelligence Tools using Superset    
-<!-- [Introduction to Superset](presentations/Superset) --> 
+Introduction to Business Intelligence Tools using Superset 
+
+<!-- [Introduction to Superset](presentations/Superset) -->  
+
 More Advanced visualizations with Superset 
-<!-- [Creating visualizations with Superset](presentations/Visualizations) --> 
+
+<!-- [Creating visualizations with Superset](presentations/Visualizations) -->  
 
 ### Week 11: Workshop on Semester Projects (Oct 31/Nov 2)  
 Review Semester Project Instructions  
 Review Project Report Template  
 Ingestion of Source Data  
+
 <!--
 #### Review Semester Project Instructions:
 [Semester Project](presentations/semester_project)
