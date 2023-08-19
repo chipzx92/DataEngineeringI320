@@ -18,6 +18,8 @@ Instructions on how to access your VM environment (when available): [AWS VM Envi
 Superset access: [https://superset.dei320.net](https://superset.dei320.net)  
 Jupyter access: [https://notebook.dei320.net](https://notebook.dei320.net) 
 -->
+There is a [glossary](glossary.md) of terms and concepts that we will use in this course that you may find useful.
+It also contains references to important and influential books on data engineering.
 
 ## Course Description
 
@@ -48,7 +50,11 @@ are helpful. INF 320D Database Design and INF 320D Data Visualization are also h
 ## Professors and Office Hours
 
 This course is taught by [Chip Young](https://utexas.instructure.com/courses/1341797/users/4569937), 
-a working data professional.
+a working data professional. I previously taught this class in the Fall 2022 semester along with
+Professor James Howison.
+
+The academic assistant for this class is Urjani Chakravarti. She will help assist students with
+classroom assignments and assist with grading.
 
 Office hours are by email request. Also happy to talk before class, please email to set that up.
 Feel free to reach out, happy to chat about anything, including career paths, other courses, life in 

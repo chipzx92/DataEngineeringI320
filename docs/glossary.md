@@ -1,5 +1,4 @@
 # Glossary of Data Engineering Terms
-
 **analytics**  
 Analytics is defined as the *systematic computational analysis of data or statistics*<sup>1</sup>. 
 
@@ -90,14 +89,14 @@ original format to an analytical system, and then taken through a series of tran
 to produce data products and analytics.
 
 **ETL**  
-Stands for *Extract, Transform, and Load*<sup>911</sup>
+Stands for *Extract, Transform, and Load*<sup>11</sup>
 An older data engineering concept where data is extracted from a source system, transformed in a 
 staging area, and then loaded into an analytical system.
 
 **idempotent**  
 An operation that produces the same result no matter how many times it is executed<sup>3</sup>.
 
-This is a term from mathematical theory, but in the context of data engineering it makes that 
+This is a term from mathematical theory, but in the context of data engineering it means that 
 running a task in a data pipeline or even a series of tasks in a pipeline will produce the same 
 result even when run multiple times over the same data.
 
@@ -155,6 +154,21 @@ Transformation can involve any or all of the following steps:
 A virtual machine or VM is defined as *the virtualization or emulation of a computer system*<sup>16</sup>.
 We will be doing our work on an EC2 system in AWS that is a virtual machine running Postgres,
 JupyterHub notebooks, dbt, and Superset.
+
+## Data Engineering References
+These are the most important and influential books on data engineering, databases, and SQL:  
+[Data Mesh: Delivering Data-Driven Value at Scale](https://www.amazon.com/Data-Mesh-Delivering-Data-Driven-Value/dp/1492092398/ref=sr_1_1?crid=3SAWWWJHN45E8&keywords=data+mesh+by+zhamak+dehghani&qid=1692474826&sprefix=data+mesh%2Caps%2C138&sr=8-1) - Zhamak Deghani  
+[Fundamentals of Data Engineering: Plan and Build Robust Data Systems](https://www.amazon.com/Fundamentals-Data-Engineering-Robust-Systems/dp/1098108302/ref=sr_1_1?crid=1QK5ZGLXJXHH7&keywords=fundamentals+of+data+engineering&qid=1692474979&sprefix=data+engineering%2Caps%2C141&sr=8-1) - Joe Reis and Matt Housley  
+[Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=sr_1_1?crid=6ZX5DTW5YGIQ&keywords=designing+data+intensive+applications&qid=1692474628&sprefix=data+in%2Caps%2C136&sr=8-1) - Martin Kleppmann  
+[The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling](https://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/ref=sr_1_1?crid=U8KARG36H9HF&keywords=ralph+kimball+data+warehouse&qid=1692474713&sprefix=raplh+Kimball%2Caps%2C130&sr=8-1) - Ralph Kimball and Margy Ross  
+[Learning SQL: Generate, Manipulate, and Retrieve Data](https://www.amazon.com/gp/product/1492057614/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1492057614&linkCode=as2&tag=booksoncode-20&linkId=3128a4b0016740aaa187152eeeccbbb8) - Alan Beaulieu    
+[Database Design and Relational Theory: Normal Forms and All That Jazz](https://www.amazon.com/Database-Design-Relational-Theory-Normal/dp/1484255399/ref=pd_vtp_h_pd_vtp_h_sccl_2/142-7984303-9720919?pd_rd_w=g1jwV&content-id=amzn1.sym.e16c7d1a-0497-4008-b7be-636e59b1dfaf&pf_rd_p=e16c7d1a-0497-4008-b7be-636e59b1dfaf&pf_rd_r=GM1AV87VTTD81DNWHM5V&pd_rd_wg=SIzTn&pd_rd_r=34620033-4b68-4d2f-a476-be788167b0d0&pd_rd_i=1484255399&psc=1) - C.J. Date  
+[Storytelling with Data: A Data Visualization Guide for Business Professionals](https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257/ref=sr_1_1?crid=2HEBRP6I9FCO8&keywords=data+visualization&qid=1692477093&s=books&sprefix=Data+Visual%2Cstripbooks%2C112&sr=1-1) - Cole Nussbaumer Knaflic
+[The Informed Company: How to Build Modern Agile Data Stacks that Drive Winning Insights](https://www.amazon.com/Informed-Company-Cloud-Based-Explore-Understand/dp/1119748003/ref=sr_1_1?crid=28ARE5W2UP01E&keywords=the+informed+company&qid=1692475170&sprefix=the+informed+company%2Caps%2C133&sr=8-1) - Dave Fowler and Matthew C. David  
+
+These last two books are not books on data engineering or databases, but are the best books available on software architecture and python and I highly recommend them.
+[Fundamentals of Software Architecture: An Engineering Approach](https://www.amazon.com/Fundamentals-Software-Architecture-Comprehensive-Characteristics/dp/1492043451/ref=sr_1_1?crid=13PK40JECO3P5&keywords=software+architecture&qid=1692475296&sprefix=software+%2Caps%2C144&sr=8-1) - Mark Richards and Neal Ford  
+[Fluent Python: Clear, Concise, and Effective Programming](https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1492056359/ref=sr_1_1?crid=3KE5AM0JI3DS3&keywords=fluent+python&qid=1692475702&s=books&sprefix=fluent%2Cstripbooks%2C134&sr=1-1) - Luciano Ramalho  
 
 ### Notes:
 <sup>1</sup>https://en.wikipedia.org/wiki/Analytics  
