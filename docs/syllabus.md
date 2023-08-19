@@ -130,18 +130,15 @@ Definition and Overview of Data Engineering
 Overview of example end-to-end project  
 Overview of semester project 
 
-<!--
 - [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf)
 - [Data Transformation Exercise](exercises/transformations_exercise/)
--->  
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29/Aug 31)  
 
 Presentation and distribution of sample end-to-end project.  
 
-<!--
   - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
--->
+
 
 Overview of weekly assignments and semester projects.
 
