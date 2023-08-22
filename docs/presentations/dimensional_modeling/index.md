@@ -8,8 +8,8 @@ We build (or at least, we should build) normalized data models for our operation
 systems - what we've been calling E-R data models - because that is the right model for applications 
 that have many small transactions. But normalized data models are inefficient and hard to understand 
 when doing more complex kinds of analytics. Analytical queries against operational databases will 
-join many tables and use more sophisticated features of SQL to get the answers to the questions we 
-want to ask.
+join many tables and will need to use more sophisticated features of SQL to get the answers to the  
+questions we want to ask.
 
 ### Operational Data Model
 In our last assignment, we created a physical E-R model of our operational database:
