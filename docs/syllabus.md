@@ -2,12 +2,12 @@
 
 Welcome to I320: Data Engineering in the School of Information at the University of Texas at Austin.
 
-|             |                                 |
-| ----------- |---------------------------------|
-| Semester    | Fall 2023                       |
-| Classroom   | CBA 4.330                       |
+|             |                                  |
+| ----------- |----------------------------------|
+| Semester    | Fall 2023                        |
+| Classroom   | CBA 4.330                        |
 | Class times | 12:30-2:00 Tuesdays and Thursdays |
-| Unique Number | 28370                           |
+| Unique Number | 28370                            |
 
 Jump to [Course Schedule](#course-schedule).
 
@@ -20,6 +20,11 @@ Jupyter access: [https://notebook.dei320.net](https://notebook.dei320.net)
 -->
 There is a [glossary](glossary.md) of terms and concepts that we will use in this course that you may find useful.
 It also contains references to important and influential books on data engineering.
+
+## Course Objectives
+Learn fundamental concepts of data engineering.  
+Be able to apply the principles used in class to build a simple data pipeline and visualize the data.  
+Prepare students for careers as data professionals.  
 
 ## Course Description
 
@@ -72,11 +77,6 @@ Lipan Apache, Alabama-Coushatta, Kickapoo, Tigua Pueblo, and all the American In
 Peoples and communities who have been or have become a part of these lands and territories in Texas, 
 here on Turtle Island.
 
-## Course Objectives
-Learn fundamental concepts of data engineering.  
-Be able to apply the principles used in class to build a simple data pipeline and visualize the data.  
-Prepare students for careers as data professionals.  
-
 ## Computing Resources
 You need a laptop with a browser to access the data visualization tool we will use. You will be 
 using a virtual machine (VM) on a cloud service to do most of your work. The software used in this 
@@ -115,7 +115,7 @@ There are no required texts for the course, but you will find these resources to
 An intro book for MySQL that's available online at UT is: [Learning MySQL](http://www.utxa.eblib.com/patron/FullRecord.aspx?p=540862).
 
 As a member of this class you will have free access to the DataCamp site through their support for 
-education (more at [datacamp.com/groups/education](datacamp.com/groups/education), I believe that 
+education (more at [datacamp.com/groups/education](datacamp.com/groups/education)). I believe that 
 access extends for 6 months. I will establish the access a few weeks into the semester, causing an 
 invitation email to come to the email address registered with the University. The most relevant 
 courses are:
@@ -130,22 +130,16 @@ courses are:
 ### Week 1: Introduction to Data Engineering (Aug 22/24)  
 Introductions  
 Syllabus review  
-Definition and Overview of Data Engineering 
-
-*What is Data Engineering* presentation  
-Overview of example end-to-end project  
-Overview of semester project 
-
+Definition and Overview of Data Engineering
 - [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf)
 
+Overview of weekly assignments and semester projects.
+- [Data Transformation Exercise](exercises/transformations_exercise/)
 
 ### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29/Aug 31)  
 
 Presentation and distribution of sample end-to-end project.
 - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
-
-Overview of weekly assignments and semester projects.
-- [Data Transformation Exercise](exercises/transformations_exercise/)
 
 <!-- Installation  
 Processing steps in the data pipeline w/examples  
