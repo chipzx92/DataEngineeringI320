@@ -56,10 +56,10 @@ are helpful. INF 320D Database Design and INF 320D Data Visualization are also h
 
 This course is taught by [Chip Young](https://utexas.instructure.com/courses/1341797/users/4569937), 
 a working data professional. I previously taught this class in the Fall 2022 semester along with
-Professor James Howison.
+Professor James Howison. You can reach me at chip.young@utexas.edu or text me at +1 415-637-9585.
 
 The academic assistant for this class is Urjani Chakravarti. She will help assist students with
-classroom assignments and assist with grading.
+classroom assignments and assist with grading. You can reach Urjani at urjani.chakravarti@utexas.edu.
 
 Office hours are by email request. Also happy to talk before class, please email to set that up.
 Feel free to reach out, happy to chat about anything, including career paths, other courses, life in 
