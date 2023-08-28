@@ -118,8 +118,6 @@ using the _INSERT_ command. However, inserting each new row one at a time when w
 rows to insert can be very slow. Bulk loaders overcome this be reading many records at a time into
 the database, bypassing some of the extra checking that is done when executing SQL commands, and
 even loading multiple chunks of data in parallel.
-
-TODO: Show comparison of times between bulk load and row-by-row inserts
     
 ### Cleaning and Validation
 
@@ -192,7 +190,7 @@ but it's nice to have a wide variety to choose from.
 We create dashboards that consist of multiple charts that address different facets of the same 
 subject area:
 
-![Screenshot of example Dashboard](images/Sample_Dashboard.png)
+![Screenshot of example Dashboard](images/ACL_Dashboard.png)
 
 We start with the dataset to build a dashboard. For the music festival project, the datasets we
 use are the data products we created as the last step in our pipeline.
