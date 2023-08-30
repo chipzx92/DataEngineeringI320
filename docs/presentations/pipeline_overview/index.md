@@ -196,7 +196,7 @@ We start with the dataset to build a dashboard. For the music festival project, 
 use are the data products we created as the last step in our pipeline.
 
 We create charts from datasets, which are the data products that we've imported into Superset. Here 
-we see our two data products available as datasets in Superset
+we see our three data products available as datasets in Superset.
 
 ![Screenshot Showing DataSets](images/datasets.png)
 
