@@ -155,3 +155,23 @@ Tables are `tabular`, which means they are made up of columns and rows. In some 
 3. Database tables strictly enforce datatypes. Excel can "format column" and have a datatype specified, but those can be changed and even mixed.
 4. Only the columns you create exist, there is no concept of an empty or unnamed column.
 5. Database tables only have the rows that you create. The `PRIMARY KEY` column cannot be empty. 
+
+### Assignment:
+Books CREATE and INSERT statements - In your assignments tab.   
+
+**Proper formatting for CREATE TABLE statements:**  
+DROP TABLE IF EXISTS *<a_table>*;  
+CREATE TABLE IF NOT EXISTS *<a_table>* (   
+    *<column1>*          SERIAL PRIMARY KEY,  
+    *<column2>*          *<datatype>*
+    *<long_column_name>* *<datatype>*
+    .
+    .
+    .
+);
+- DROP TABLE on first line
+- Use IF EXISTS and IF NOT EXISTS
+- CREATE TABLE on second line with open paren at end
+- column names indented
+- datatypes lined up evenly
+- ends with closed paren and semi-colon on separate line
