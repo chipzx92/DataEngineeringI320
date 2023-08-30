@@ -136,7 +136,7 @@ Definition and Overview of Data Engineering
 Overview of weekly assignments and semester projects.
 - [Data Transformation Exercise](exercises/transformations_exercise/)
 
-### Week 2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29/Aug 31)  
+### Week 2.1: Introduction to Data Pipelines/End-to-End Presentation (Aug 29)  
 
 Presentation and distribution of sample end-to-end project.
 - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
@@ -155,12 +155,14 @@ Project Definition
 Assignment: Make enhancements to sample project  
 -->
 
-### Weeks 3-5.1: SQL Review (Sep 5/7 12/14 19)    
+### Weeks 2.2-5.1: SQL Review (Aug 31 Sep 5/7 12/14 19)    
 
+[In-Class Exercise](exercises/card_exercise)  
 [Link to SQL material](presentations/sql)  
 
-Intro to Postgres and SQL Lab   
-SQL Basics Review  
+Intro to Postgres and SQL Lab  
+Create Table
+SQL Basics Review
 Aggregate Functions (COUNT, SUM, AVG)  
 Different types of Joins especially Outer Joins   
 SQL mini-quiz  

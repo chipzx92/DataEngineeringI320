@@ -34,15 +34,14 @@ Use either pen and paper, or any document on your computer.
 - Pick two values for each kind of adjective. E.g., Red and Green for color.
 
 # Task Four
-
+- Each row of four students will be a team. Working together, do the following:
 - Use four yellow post-it notes and write the name of a different item on each one (ie "Mug", "Pen")
 - Use another four yellow post-it notes to write down each of the adjectives. You should have Red written on one Pink post-it, and Green on another.
 - Use the green string to link the post-its to describe the items. 
     - e.g., the "Green" post-it should be linked to the "Vase" card and to the "Highlighter" card.
 
 # Task Five
-
-- Arrange three desks in a row.  These will be our three tables.
+- Divide your desk for your team into three sections. These will be our three "tables".
 - Using a blue post-it in the top left corner, give each table a name.
     - The first table should be called "objects"
     - The second table should be called "colors"

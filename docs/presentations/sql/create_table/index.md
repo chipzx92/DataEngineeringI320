@@ -12,12 +12,9 @@ We will now learn the SQL statements to create these tables and insert these row
 
 ```sql
 
---CREATE DATABASE class_objects;
-
+DROP TABLE IF EXISTS objects;
 DROP TABLE IF EXISTS colors;
 DROP TABLE IF EXISTS functions;
-DROP TABLE IF EXISTS objects;
-
 
 CREATE TABLE IF NOT EXISTS colors (
     id SERIAL PRIMARY KEY,
@@ -32,8 +29,8 @@ CREATE TABLE IF NOT EXISTS functions (
 CREATE TABLE IF NOT EXISTS objects (
     id SERIAL PRIMARY KEY,
     name TEXT,
-    color_id INTEGER,
-    function_id INTEGER
+    color_id INTEGER REFERENCES colors(id),
+    function_id INTEGER REFERENCES functions(id)
 );
 
 ```
@@ -72,24 +69,21 @@ The first column in each table is the `id` column, which has the special datatyp
 The `objects` table has two additional columns:
 
 ```sql
-    color_id INTEGER,
-    function_id INTEGER
+    color_id INTEGER REFERENCES colors(id),
+    function_id INTEGER REFERENCES functions(id)
 ```
 
-These are foreign keys that reference the `id` column in `colors` and `functions` respectively.
-
-That's it.
+These are *foreign keys* that reference the `id` column in `colors` and `functions` respectively.
 
 Exercise:
 
 - Use SQL Lab to create a class_objects.sql database.
-
-The login for SQL Lab is `admin` with password `DEI320D_student!`.
+- Make sure you create it in your EID schema.
 
 
 # Inserting data
 
-Once we have created tables we need to add data. Later in the course we will use a `\copy` command to suck in whole CSV files, but for now we will use `INSERT` for just a little data.
+Once we have created tables we need to add data. Later in the course we will use a `\copy` command to load in whole CSV files, but for now we will use `INSERT` for just a little data.
 
 
 ```sql
@@ -106,7 +100,7 @@ Note for the data, numbers (like `1` and `2`) are just written, but data for a `
 The database responds by saying how many rows of data were inserted. Note, though, that if you copy the commands above all together the message you see will say that only 1 row was inserted. That is coming from just the last `INSERT` (for "holds"), the messages from the first three are hidden by the last one.
 
 Exercise:
-- Run these inserts statements and use `Preview colors` in SQL Lab to see that the data was inserted.
+- Run these insert statements and use `Preview colors` in SQL Lab to see that the data was inserted.
 
 ## Multi-row INSERT
 
@@ -129,6 +123,28 @@ Exercise:
     - A silver fork
     - A pink mug
     - two green cups
+
+## Important Concepts
+### Primary Key
+A database primary key is a column or combination of columns with a value that uniquely identifies 
+each row in a table. In the examples above, an "id" column is used as the primary key in each table.
+Declaring this column as a PRIMARY KEY in the CREATE TABLE statement ensures that a duplicate id
+value cannot be inserted into the table.
+
+### Foreign Key
+A foreign key consists of a column that references the primary key of another table.  The purpose 
+of the foreign key is to ensure *referential integrity* of the data. In other words, only values 
+that are primary key values in the referenced table are permitted in the foreign key column.
+
+### Idempotent
+An operation that produces the same result no matter how many times it is executed.
+
+This is a term from mathematical theory, but in the context of data engineering it means that 
+running a task in a data pipeline or even a series of tasks in a pipeline will produce the same 
+result even when run multiple times over the same data.
+
+A simple example of idempotence is writing a task that first deletes all the data in a table
+and then reloads the data from the source. A task like this is guaranteed to be idempotent.
 
 ## Differences between database tables and spreadsheets
 

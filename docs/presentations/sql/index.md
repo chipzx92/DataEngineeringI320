@@ -22,7 +22,7 @@ For us in this class this means two things:
 
 Here is an index of the topics we will cover.
 
-1. [CREATE table, through text files. Datatypes.](create_table)
+1. [CREATE table, Inserting data, and Datatypes.](create_table)
     
 2. [SELECT/WHERE and boolean logic and SELECT clause transformations](select_basics)
 
