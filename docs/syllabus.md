@@ -157,9 +157,9 @@ Assignment: Make enhancements to sample project
 
 ### Weeks 2.2-5.1: SQL Review (Aug 31 Sep 5/7 12/14 19)    
 
-Answers to Questions:
-What is the difference between Data Science and Data Analytics?
-What is the difference between ETL and ELT?
+**Answers to Questions:**  
+What is the difference between Data Science and Data Analytics?  
+What is the difference between ETL and ELT?  
 
 [In-Class Exercise](exercises/card_exercise)  
 [Link to SQL material](presentations/sql)  
