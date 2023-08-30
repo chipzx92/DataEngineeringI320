@@ -157,9 +157,9 @@ Assignment: Make enhancements to sample project
 
 ### Weeks 3-5.1: SQL Review (Sep 5/7 12/14 19)    
 
-<!-- [Link to SQL material](presentations/sql) -->  
+[Link to SQL material](presentations/sql)  
 
-Into to Postgres and psql   
+Intro to Postgres and SQL Lab   
 SQL Basics Review  
 Aggregate Functions (COUNT, SUM, AVG)  
 Different types of Joins especially Outer Joins   
