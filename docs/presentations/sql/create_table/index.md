@@ -159,16 +159,18 @@ Tables are `tabular`, which means they are made up of columns and rows. In some 
 ### Assignment:
 Books CREATE and INSERT statements - In your assignments tab.   
 
-**Proper formatting for CREATE TABLE statements:**  
-DROP TABLE IF EXISTS *<a_table>*;  
-CREATE TABLE IF NOT EXISTS *<a_table>* (   
-    *<column1>*          SERIAL PRIMARY KEY,  
-    *<column2>*          *<datatype>*
-    *<long_column_name>* *<datatype>*
+**Proper formatting for CREATE TABLE statements:** 
+```sql
+DROP TABLE IF EXISTS a_table_name;  
+CREATE TABLE IF NOT EXISTS a_table_name (   
+    column1          SERIAL PRIMARY KEY,  
+    column2          a_datatype, 
+    long_column_name a_datatype 
     .
     .
     .
 );
+```
 - DROP TABLE on first line
 - Use IF EXISTS and IF NOT EXISTS
 - CREATE TABLE on second line with open paren at end
