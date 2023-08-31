@@ -2,12 +2,12 @@
 
 You can copy each of these queries to the query window in SqlLab.  Once you've done that [return to select_basics](../select_basics/).
 
-We have to use a schema name when creating tables.  I'm creating this table in the analytics schema.
+We have to use a schema name when creating tables.  Make sure you select the schema named after your EID.
 
 ```sql
-DROP TABLE IF EXISTS analytics.cars;
+DROP TABLE IF EXISTS cars;
 
-CREATE TABLE analytics.cars (    
+CREATE TABLE cars (    
     id SERIAL PRIMARY KEY,
     manufacturer TEXT,
     model TEXT,

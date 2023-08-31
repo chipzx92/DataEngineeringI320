@@ -33,19 +33,20 @@ We will build our queries up step by step. This is a little laborious but as our
 
 # The WHERE clause: picking rows using conditions
 
-To run these queries we need to create a schema and a table called `cars`. [The commands you can copy to do this are here.](create_class_cars.html).
+To run these queries we need to create a schema and a table called `cars`. 
+[The commands you can copy to do this are here.](create_class_cars.html).
 
-Once you execute those queries, you can select the `analytics` schema.
+Once you execute those queries, you can select your EID schema.
 
-![select analytics schema](select_analytics_schema.png)
+![select analytics schema](images/select_eid_schema.png)
 
 and then select the `cars` table.
 
-![select cars](select_cars_table.png)
+![select cars](images/select_cars_table.png)
 
 and finally choose "Preview"
 
-![preview](cars_preview.png)
+![preview](images/cars_preview.png)
 
 Each row in the database represents a single car model and there are 234 car models in the database (I reduced the full set by only including cars produced in 1999 and 2008). On each row we have data about one car, such as the year it was produced (`cars.year`), the manufacturer (`cars.manufacturer`) (e.g., audi, ford), the model (e.g., a4, focus). Using a select query we can narrow the database to find cars that match our query.
 
