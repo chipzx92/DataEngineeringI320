@@ -119,7 +119,7 @@ INSERT INTO objects(name, color_id, function_id)
 Exercise:
 
 - execute this `INSERT` query. Inspect via `Preview Objects`.
-- Use Jupyter to create a text file and write `INSERT` statements to add additional data to your database so you can represent:
+- Use SQL Lab to write `INSERT` statements to add additional data to your database so you can represent:
     - A silver fork
     - A pink mug
     - two green cups
