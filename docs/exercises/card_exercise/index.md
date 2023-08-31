@@ -36,7 +36,7 @@ Use either pen and paper, or any document on your computer.
 # Task Four
 - Each row of four students will be a team. Working together, do the following:
 - Use four yellow post-it notes and write the name of a different item on each one (ie "Mug", "Pen")
-- Use another four yellow post-it notes to write down each of the adjectives. You should have Red written on one Pink post-it, and Green on another.
+- Use another four yellow post-it notes to write down each of the adjectives. You should have Red written on one yellow post-it, and Green on another.
 - Use the green string to link the post-its to describe the items. 
     - e.g., the "Green" post-it should be linked to the "Vase" card and to the "Highlighter" card.
 
