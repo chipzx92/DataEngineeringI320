@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling: SELECT (basics and operators)"
+title: "SQL: SELECT (basics and operators)"
 ---
 
 # Topics
@@ -34,13 +34,6 @@ FROM   [tables]
 WHERE  [conditions about rows]
 ```
 
-I wait until the end to specify the columns I want to see, so I start my queries with `SELECT *` 
-where the star means "all columns".
-
-We will build our queries up step by step. This is a little laborious but as our queries become more 
-complex (especially as we work with more than one table) you'll find that this habit serves you 
-very well.
-
 # The FROM clause: specifying the table you want
 A relational database like Postgres stores data in _tables_. A table is a logical collection of data
 represented in a tabular form of _rows_ and _columns_. A row of data represents a single instance of
@@ -52,6 +45,7 @@ mpg rating, etc. A table will have 0 or more rows.
 We can begin to write our query by specifying the table we want to query the data from. Later, we
 will learn how to query data from multiple tables when we learn how to do joins but for now we
 will use a single table in the FROM clause.
+
 
 # The WHERE clause: picking rows using conditions
 
@@ -75,6 +69,13 @@ Each row in the database represents a single car model and there are 234 car mod
 about one car, such as the year it was produced (`cars.year`), the manufacturer 
 (`cars.manufacturer`) (e.g., audi, ford), the model (e.g., a4, focus). Using a select query we can 
 narrow the database to find cars that match our query.
+
+We will build our queries up step by step. This is a little laborious but as our queries become more 
+complex (especially as we work with more than one table) you'll find that this habit serves you 
+very well.
+
+We wait until the end to specify the columns we want to see, so we'll start our queries with `SELECT *` 
+where the star means "all columns".
 
 Let's say we are interested in cars that have four cylinders. The `cars.cylinders` column has that 
 information. We start by confirming that we are addressing the right table by executing this query:
@@ -101,10 +102,9 @@ WHERE  cars.cylinders = 4
 Now we will only see rows where the condition in the `WHERE` clause is true. It's just the same as 
 using the paper template: the computer looks at one row at a time and checks the number in the 
 `cylinders` column. If that number is a `4` then the whole row is copied into the results.  If you 
-run that query on phpmyadmin, by copying the query above and pasting it into the SQL tab (go ahead 
-and try it now) you'll see that the results have 81 rows (although phpmyadmin breaks the 81 rows up 
-into three pages of 4 pages of 25 each, you can change the results per page at the bottom). Every 
-one of the rows has a `4` in the `cylinders` column.
+run that query in SQL Lab, by copying the query above and pasting it into the SQL tab (go ahead 
+and try it now) you'll see that the results have 81 rows. Every one of the rows has a `4` in the 
+`cylinders` column.
 
 ![](images/query_1.png)
 
