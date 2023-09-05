@@ -300,7 +300,7 @@ which returns the 19 rows that we expected.
 
 ## Other operators
 
-Above we've used two operators inside the parts of our `WHERE`: the equals sing `=`, the `<` sign, 
+Above we've used two operators inside the parts of our `WHERE`: the equals sign `=`, the `<` sign, 
 and the `IN` keyword.  There are many other operators, such as `>`, `>=` and so on.
 
 There are also operators that do the reverse of these. Thus I can also say "not equal": `!=` or `<>` 
@@ -360,8 +360,6 @@ aliasing.
 SELECT stores.sales, stores.expenses, stores.sales - stores.expenses AS revenue
 FROM   stores
 ```
-
-We can 
 
 ### Exercise
 
