@@ -6,19 +6,19 @@ Often we want to combine data from different tables.  Take this example:
 
 > hobbies
 
-| name | hobby |
-| -- | -- |
-| Shuyen | dancing |
-| Brian | dancing |
-|  Adnan (left only) | running |
+| name                | hobby   |
+|---------------------|---------|
+| Shuyen              | dancing |
+| Brian               | dancing |
+| Adnan *(left only)* | running |
 
 > majors
 
-| name | major |
-| -- | -- |
-| Shuyen | Art |
-| Brian | Theater |
-|  Yungsheng (right only) | English |
+| name                     | major    |
+|--------------------------|----------|
+| Shuyen                   | Art      |
+| Brian                    | Theater  |
+| Yungsheng *(right only)* | English  |
 
 There are quite a few different ways to get this done.
 
@@ -77,8 +77,8 @@ The first keeps all of the data, matching up rows and adding `NULL` values where
 
 ```sql
 SELECT *
-FROM hobbies 
-  FULL JOIN majors
+FROM   hobbies 
+FULL JOIN majors
 ```
 
 > full_join_result
@@ -101,7 +101,7 @@ We can also keep all of the data from one table, and add in only the matching da
 ```sql
 SELECT *
 FROM hobbies 
-  LEFT JOIN majors
+LEFT JOIN majors
 ```
     
 > left_join_result
@@ -119,7 +119,7 @@ FROM hobbies
 ```sql
 SELECT *
 FROM hobbies 
-  RIGHT JOIN majors
+RIGHT JOIN majors
 ```
 
 > right_join_result
