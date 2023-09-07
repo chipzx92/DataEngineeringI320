@@ -83,12 +83,12 @@ FULL JOIN majors
 
 > full_join_result
 
-| student_name | hobby | major |
-| --| --| -- | 
-|  Shuyen (both tables)       | dancing | Art     |
-| Brian        | dancing | Theater | 
-|  Adnan (left only)       | running | **NULL**    |
-|  Yungsheng (right only)   | **NULL**    | English |
+| student_name             | hobby | major     |
+|--------------------------| ------|-----------| 
+| Shuyen *(both tables)*   | dancing | Art       |
+| Brian                    | dancing | Theater   | 
+| Adnan *(left only)*      | running | **NULL**  |
+| Yungsheng *(right only)* | **NULL**    | English   |
 
 ### LEFT and RIGHT JOIN
 
@@ -106,11 +106,11 @@ LEFT JOIN majors
     
 > left_join_result
 
-| student_name | hobby |   major |
-| --| --| -- | 
-|  Shuyen (both tables) | dancing | Art |
-|  Brian (both tables) | dancing |Theater |
-|  Adnan (left only) | running | **NULL**
+| student_name           | hobby | major    |
+|------------------------| ------|----------| 
+| Shuyen *(both tables)* | dancing | Art      |
+| Brian *(both tables)*  | dancing | Theater  |
+| Adnan *(left only)*    | running | **NULL** 
 
 #### RIGHT JOIN
 
@@ -124,11 +124,11 @@ RIGHT JOIN majors
 
 > right_join_result
 
-| student_name | hobby |   major
-| --| --| -- |
-|  Shuyen (both tables) |       dancing | Art |
-|  Brian (both tables) |        dancing | Theater |
-|  Yungsheng (right only) |    **NULL** |    English |
+| student_name             | hobby | major    
+|--------------------------| ------|----------|
+| Shuyen *(both tables)*   |       dancing | Art      |
+| Brian *(both tables)*    |        dancing | Theater  |
+| Yungsheng *(right only)* |    **NULL** | English  |
 
 These are really useful when we have data in a table about things and we want to "bring over" any data we have about those things. 
 
@@ -154,10 +154,10 @@ Finally, our fourth option is to only keep rows that have data in both tables. T
 
 > inner_join_result
 
-| student_name | hobby |   major |
-| -- | -- | -- | 
-|  Shuyen (both tables) |       dancing | Art |
-|  Brian (both tables) |        dancing | Theater |
+| student_name           | hobby | major    |
+|------------------------| ----- |----------| 
+| Shuyen *(both tables)* |       dancing | Art      |
+| Brian *(both tables)*  |        dancing | Theater  |
 
 ## Inner vs Outer?
 
@@ -223,23 +223,23 @@ Consider these data:
 
 > countries
 
-| english_name | iso_code3 | iso_code2 |
-| -- | -- | -- |
-| China | CHN | CN |
-| Australia | AUS | AU |
-| United States of America | USA | US |
+| english_name | iso_code3 | iso_code2  |
+| ------------ | --------- |------------|
+| China | CHN | CN         |
+| Australia | AUS | AU         |
+| United States of America | USA | US         |
 
 Now we can use these to convert a iso_code to an english name for a country. Consider:
 
 > olympic_medals
 
 | country | year_occured | medal_count |
-| -- | -- | -- |
-| AU | 1984 | 20 |
-| CN | 1984 | 30 |
-| USA | 1984 | 29 |
-| AU | 1980 | 20 |
-| CN | 1980 | 30 |
+| ------- | ------------ |-------------|
+| AU | 1984 | 20          |
+| CN | 1984 | 30          |
+| USA | 1984 | 29          |
+| AU | 1980 | 20          |
+| CN | 1980 | 30          |
 
 We can use a `JOIN` to lookup values in `countries`, or "bring over" the matching values from `countries`, so that each row that has "CN" has "China" in a new column, each row that has "AU" has "Australia" etc.
 
@@ -279,17 +279,17 @@ Recall our string database?  When we converted that to tabular relational form, 
 
 > objects
 
-| id | name | color_id |
-| -- | -- | -- |
-| 1 | Mug | 10 |
-| 2 | Pen | 20 |
+| id  | name | color_id |
+|-----| ---- | -------- |
+| 1   | Mug | 10 |
+| 2   | Pen | 20 |
 
 > colors
 
-| id | name  |
-| -- | --    | 
-| 10 | red   |
-| 20 | green |
+| id | name      |
+| ---- |-----------| 
+| 10 | red       |
+| 20 | green     |
 
 We can use joins to lookup the color for each object. This is just like the case above, except instead of `AU` and `CN` we have the `10` and `20` labels in `color_id`. 
 
@@ -301,10 +301,10 @@ FROM objects
 
 > results
 
-| id | name | color_id | id | name |
-| -- | -- | -- | -- | -- |
-| 1 | Mug | 10 | 10 | red |
-| 2 | Pen | 20 | 20 | green | 
+| id | name | color_id | id | name   |
+| ---- | ---- | ---- | ---- |--------|
+| 1 | Mug | 10 | 10 | red    |
+| 2 | Pen | 20 | 20 | green  | 
 
 Note that both objects and colors have a column `name` (and a column `id`). SQL allows this in results tables, but it is confusing so we use `AS` to rename things.
 
@@ -316,9 +316,9 @@ FROM objects
 ```
 
 | object_name | color_name |
-| -- | -- |
-| Mug | red |
-| Pen | green | 
+| ----------- |------------|
+| Mug | red        |
+| Pen | green      | 
 
 This pattern of joining with an `ON` condition that matches up primary key and foreign key is very common. The `id` is used in other tables to represent a relationship with a row in a different table. This allows us to stitch back together data that is spread across databases.
 
@@ -326,11 +326,11 @@ You may notice that I've used `JOIN` (inner join) rather than `LEFT JOIN` (outer
 
 > objects
 
-| id | name | color_id |
-| -- | -- | -- |
-| 1 | Mug | 10 |
-| 2 | Pen | 20 |
-| 3 | Pencil | 30 |
+| id | name | color_id   |
+| --- | ---- |------------|
+| 1 | Mug | 10         |
+| 2 | Pen | 20         |
+| 3 | Pencil | 30         |
 
 But if the `colors` table does not have a row for purple (`30, purple`) then beware that using just `JOIN` will silently drop our pencil.
 
@@ -388,24 +388,24 @@ When we join two tables we get an intermediate result table.  That intermediate 
 
 > objects
 
-| id | name | color_id | function_id |
-| -- | -- | -- | -- |
-| 1 | Mug | 10 | 200 |
-| 2 | Pen | 20 | 100 |
+| id | name | color_id | function_id  |
+| ---- | ---- | ---- |--------------|
+| 1 | Mug | 10 | 200          |
+| 2 | Pen | 20 | 100          |
 
 > colors
 
-| id | name  |
-| -- | --    | 
-| 10 | red   |
-| 20 | green |
+| id    | name    |
+|-------|---------| 
+| 10    | red     |
+| 20    | green   |
 
 > functions
 
-| id | name |
-| -- | --   |
-| 100 | writes | 
-| 200 | holds |
+| id | name     |
+| ---- |----------|
+| 100 | writes   | 
+| 200 | holds    |
 
 We can begin as before by joining `objects` to `colors`:
 
@@ -423,7 +423,7 @@ This gives us a result, which is the start of our ever growing intermediate tabl
 > intermediate results
 
 | id | name | color_id | function_id | id | name |
-| -- | -- | -- | -- | -- |
+| ---- | ---- | ------ | ----------- | ---- | ----|
 | 1 | Mug | 10 | 200 | 10 | red |
 | 2 | Pen | 20 | 100 | 20 | green | 
 
@@ -443,10 +443,10 @@ FROM objects
 
 > results
 
-| id | name | color_id | function_id | id | name | id | name |
-| -- | -- | -- | -- | -- | -- | -- | -- |
-| 1 | Mug | 10 | 200 | 10 | red | 200 | holds
-| 2 | Pen | 20 | 100 | 20 | green | 100 | writes
+| id | name | color_id | function_id | id | name | id | name    |
+| ---- | ----- | ------ | ---------- | ---- | ---- | ---- |---------|
+| 1 | Mug | 10 | 200 | 10 | red | 200 | holds   
+| 2 | Pen | 20 | 100 | 20 | green | 100 | writes  
 
 So the intermediate results table grows and grows.  You can also see that column names are ambiguous, making using `AS` crucial.
 
