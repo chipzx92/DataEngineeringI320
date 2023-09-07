@@ -1,5 +1,10 @@
 # Joining tables
 
+Today we're going to talk about using JOINs to get data from more than one table. But first,
+we'll go over last week's assignment and then talk about this week's assignment.
+
+[Assignment: SELECT queries](https://utexas.instructure.com/courses/1367958/assignments/6455713)
+
 {:toc}
 
 Often we want to combine data from different tables.  Take this example:
