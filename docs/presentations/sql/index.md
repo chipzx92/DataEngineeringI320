@@ -19,16 +19,15 @@ For us in this class this means two things:
 
 2. You are expected to use the approaches we teach, and not other approaches, even if they produce the same answers. There can be multiple ways to get things done in SQL but for teams to understand, check, and building on each other's work, it is much easier when people use standardized approaches.
 
-
 Here is an index of the topics we will cover.
 
 1. [CREATE table, Inserting data, and Datatypes.](create_table)
     
 2. [SELECT/WHERE and boolean logic and SELECT clause transformations](select_basics)
 
-3. [Aggregate functions](aggregate_functions) and [GROUP BY](grouping)
+3. [Combining data with JOIN](joins)
 
-4. [Combining data with JOIN](joins)
+4. [Aggregate functions](aggregate_functions) and [GROUP BY](grouping)
 
 Additional topics:
 
