@@ -2,14 +2,14 @@
 SELECT *
 FROM cars
 WHERE year = 2008
-  AND cylinders = 4
+  AND cylinders = 4;
 
 --Question 2:
 SELECT *
 FROM cars
 WHERE year = 2008
   AND cylinders = 4
-ORDER BY manufacturer
+ORDER BY manufacturer;
 
 --Question 3:
 Answer: 'The query returned no data'
@@ -19,23 +19,37 @@ This was the case because there was no cars that had the model year of 2000 and 
 SELECT *
 FROM cars
 ORDER BY city_mpg DESC
-LIMIT 5
+LIMIT 5;
 
 --Question 5:
 SELECT *
 FROM cars
 ORDER BY hwy_mpg
-LIMIT 5
+LIMIT 5;
 
 --Question 6:
 SELECT *
 FROM cars
 WHERE (model = 'mustang' AND manufacturer = 'ford')
-OR (model = 'a6 quattro' AND manufacturer = 'audi')
+OR (model = 'a6 quattro' AND manufacturer = 'audi');
 
 -- OR
 
 SELECT *
 FROM cars
 WHERE model = 'mustang'
-OR model = 'a6 quattro'
+OR model = 'a6 quattro';
+
+-- OR
+
+SELECT *
+FROM cars
+WHERE model IN ('mustang', 'a6 quattro');
+
+-- OR
+
+SELECT *
+FROM cars
+WHERE manufacturer IN ('ford', 'audi')
+  AND model IN ('mustang', 'a6 quattro');
+
