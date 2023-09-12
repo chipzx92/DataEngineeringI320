@@ -27,7 +27,9 @@ Here is an index of the topics we will cover.
 
 3. [Combining data with JOIN](joins)
 
-4. [Aggregate functions](aggregate_functions) and [GROUP BY](grouping)
+4. [Joins, Part 2](joins2)
+
+5. [Aggregate functions](aggregate_functions) and [GROUP BY](grouping)
 
 Additional topics:
 
