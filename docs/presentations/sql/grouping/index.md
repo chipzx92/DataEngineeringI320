@@ -164,9 +164,9 @@ What tables do we need to join to tickets to get band and venue names?
 
 Exercises
 1. What are the band names and ticket sales revenue for the top 10 bands?  
-2. How many tickets were sold at each performance? (select band name, ticket sales revenue, and # of tickets)
-3. How many times did those top 5 bands perform? (select the band name, ticket sales revenue and # of performances)
-4. What was the average ticket price per performance for the top 5 bands? (select all the columns plus average ticket price)
+2. What was the average ticket price per performance for the top 5 bands? (select band name, ticket sales revenue, and average ticket price)
+3. How many tickets were sold at each performance? (select band name, ticket sales revenue, avg ticket price, and # of tickets)
+4. How many times did those top 5 bands perform? (select the band name, ticket sales revenue, avg ticket price, # of tickets and # of performances)
 5. What was the average revenue per performance for the top 5 bands (select all the columns plus average revenue per performance)
 6. What was the average revenue per performance per venue for the top 5 bands?
 
