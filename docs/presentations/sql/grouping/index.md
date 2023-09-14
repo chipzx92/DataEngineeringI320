@@ -1,6 +1,5 @@
 #GROUP BY: using aggregate functions on sub-sets of tables
 
-
 In the previous presentation we learned about aggregate functions, which let us 'collapse' a table 
 (or a column in a table) down to a single value. We learned about :
 
@@ -143,9 +142,17 @@ this, we need to add a WHERE clause to our GROUP BY:
 SELECT b.name AS band_name, COUNT(*) AS performances
 FROM   bands AS b
 JOIN   performances AS p ON (p.band_id = b.id)
-WHERE  b.name = 'Asleep at the Wheel'
+WHERE  band_name = 'Asleep at the Wheel'
 GROUP BY band_name;
 ```
+
+Let's look again at the order of execution in the SQL statement with GROUP BY:
+FROM
+WHERE
+SELECT
+GROUP BY
+ORDER BY
+LIMIT
 
 We would really like to know what bands played at a performance and what venue the performance was
 at. To be able to do that, we're going to need to join multiple tables together to get that 
@@ -156,7 +163,12 @@ What tables do we need to join to tickets to get band and venue names?
 ![](images/FestivalERD.drawio.png)
 
 Exercises
-
+1. What are the band names and ticket sales revenue for the top 10 bands?  
+2. How many tickets were sold at each performance? (select band name, ticket sales revenue, and # of tickets)
+3. How many times did those top 5 bands perform? (select the band name, ticket sales revenue and # of performances)
+4. What was the average ticket price per performance for the top 5 bands? (select all the columns plus average ticket price)
+5. What was the average revenue per performance for the top 5 bands (select all the columns plus average revenue per performance)
+6. What was the average revenue per performance per venue for the top 5 bands?
 
 
 <!--
