@@ -1,192 +1,165 @@
----
-title: 'Data Wrangling: GROUP BY'
----
+#GROUP BY: using aggregate functions on sub-sets of tables
 
-GROUP BY: using aggregate functions on sub-sets of tables
-=========================================================
 
-In the previous class we learned about aggregate functions, which let us 'collapse' a table (or a column in a table) down to a single value. We learned about `COUNT(*)` which shows us the number of rows in a table, and `SUM(column)` which collapses a column of numbers down by adding them together.
+In the previous presentation we learned about aggregate functions, which let us 'collapse' a table 
+(or a column in a table) down to a single value. We learned about :
 
-Often we want to do these things, but rather than doing them on a whole table, we want to split the table up into sections, then use `COUNT` or `SUM` on each of those sections.  In this way `GROUP BY` lets us divide the table into multiple parts, then use an aggregate function on each part.  The parts are defined by having the same value in one of the columns.
+* `SUM(column)` which collapses a column of numbers down by adding them together;
+* `AVG(column)`, which gives use the averaged value of the numbers in a column;
+* `COUNT(*)` which shows us the number of rows in a table;
+* `MAX(column)` which gives us the maximum value in a column
+* `MIN(column)` which gives us the minimum value in a column
 
-Again using our small slice of the `tickets` table, let's say that we want to know the total spent in each purchase. We first sort the table by `purchase_id` and then divide the table up into three groups, one for each of the values for `purchase_id`.
+We also learned about `DISTINCT`, which gives us the distinct set of values in a column.
 
+Often we want to do these things, but rather than doing them on a whole table, we want to split the 
+table up into sections, then use `SUM`, `AVG`, or `COUNT` on each of those sections.  In this way 
+the `GROUP BY` clause lets us divide the table into multiple parts, then use an aggregate function 
+on each part.  The parts are defined by having the same value in one of the columns.
+
+Again using our small slice of the `tickets` table, let's say that we want to know three things:
+* How much did each performance make in ticket sales?
+* What was the average ticket price for each performance?
+* How many tickets where sold for each performance?
+
+## GROUP BY with SUM
+*How much did each performance make in ticket sales?* 
+
+The `tickets` table contains the `price` column and the `performance_id` column. So we can SUM up 
+ticket `price` for each performance if we GROUP BY `performance_id`.
+
+You can do this in the following steps:
+
+1. Choose the table to use in the FROM clause:
 ```sql
 SELECT *
-FROM tickets
-ORDER BY tickets.purchase_id
-LIMIT 30 -- to avoid dumping whole table
+FROM   tickets;
+```
+2. Choose the column you want to SUM:
+```sql
+SELECT SUM(price)
+FROM   tickets;
+```
+3. Now choose the column you want to group the SUMs on. In this case we want to total the ticket sales revenue for each performance:
+```sql
+SELECT performance_id, SUM(price)
+FROM   tickets;
 ```
 
-![](images/tickets_sorted.png)
+But now we need to tell the database to group on that column, so we add the GROUP BY clause:
+```sql
+SELECT performance_id, SUM(price)
+FROM tickets
+GROUP BY performance_id;
+```
 
-Sorting the table brings all the rows with value `1` together.  Grouping is drawing a line across the table where the values change:
+![](images/GroupByTickets.drawio.png)
 
-![](images/tickets_sorted_grouped.png)
+Notice that we get one row for each performance_id with the price added up for that performance.  
 
-So we get a group for all the rows with the value `1` in the `purchase_id` column, a group for all the rows with the value `2` and a group for the `3`s.
+![](images/sum_price_group_by.png)
 
-Now we make three moves:
-1. Put grouping term at start of `SELECT`
-2. Change `ORDER BY` to `GROUP BY`
-3. Add aggregate function to `SELECT` and `AS` alias.
+So `GROUP BY` allows us to split up a table into groups that share a value in a particular column, 
+and then apply aggregate functions to get a single value by 'collapsing' the group. The aggregate 
+functions work exactly the same as they do on a whole table, but operate only on the rows in each 
+group. You will always get back one row for each group.
 
-Here I show the steps separately, but you have to do all three at once (server will throw an error if you do try to execute the intermediate parts).
+## GROUP BY with AVG
+*What was the average ticket price for each performance?*
+![](images/AvgTickets.drawio.png)
 
+We get the average price in the same way we got the sum - we group by performance_id:
+
+![](images/avg_price_by_performance.png)
+
+Notice again that we get one row for each performance_id with the price averaged for each 
+performance.  
+
+# GROUP BY with COUNT
+* How many tickets where sold for each performance?*   
+
+![](images/CountTickets.drawio.png)
+
+Notice here that we're counting rows:
+
+![](images/count_tickets_group_by.png)
+
+Exercises:
+1. What happens if you add ticket_id to any of the SQL statements above and run it?
+2. How would you get the top 10 performances by ticket sales revenue?
+3. How would you get the 5 lowest average ticket prices?
+4. How would you get the top 5 performances by number of tickets sold?
+
+## GROUP BY with JOINs
+
+We can join tables together to get additional information using GROUP BY. For example, we can find
+out how many performances each band has played at the festival by joining the `performances` and
+`bands` tables together. Let's do this step-by-step:
+1. Choose the tables:
 ```sql
 SELECT *
-FROM tickets
-ORDER BY tickets.purchase_id
-LIMIT 30
-
--- 1. Put grouping term at start of SELECT
-SELECT tickets.purchase_id,
-FROM tickets
-ORDER BY tickets.purchase_id
-LIMIT 30
-
--- 2. Change ORDER BY to GROUP BY
-SELECT tickets.purchase_id,
-FROM tickets
-GROUP BY tickets.purchase_id
-LIMIT 30
-
--- 3. Add aggregate function to SELECT and alias.
-SELECT tickets.purchase_id, SUM(price) AS total_of_purchase
-FROM tickets
-GROUP BY tickets.purchase_id
-LIMIT 30
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id);
+```
+2. Choose the columns :
+```sql
+SELECT b.name AS band_name, COUNT(*) AS performances
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id);
+```
+3. Add in the GROUP BY:
+```sql
+SELECT b.name AS band_name, COUNT(*) AS performances
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+GROUP BY band_name;
 ```
 
----------------
-**You must always copy the column from the GROUP BY part to be the first part of SELECT.**
+4. And let's order it by band name:
+```sql
+SELECT b.name AS band_name, COUNT(*) AS performances
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+GROUP BY band_name
+ORDER BY band_name;
+```
 
----------------
+Note the order of the clauses in the SQL statement:  
+SELECT  
+FROM (+ JOIN)  
+WHERE  
+GROUP BY  
+ORDER BY  
+LIMIT  
 
+Exercise: How would we get the number of performances at each venue?
 
-When we use an aggregate function in the `SELECT` part we get one answer for each group, rather than one answer for the whole table.  
+# GROUP BY with JOINs filtered by WHERE
 
-Thus for this data `COUNT(*)` would give you three answers, one for each group, showing the number of rows in that group.
-
-`SUM(tickets.price)` is also going to give you three answers, one for each group, by adding up the values in the `price` column using only the rows in each group.
-
-![](images/tickets_group_sum.png)
-
-So `GROUP BY` allows us to split up a table into groups that share a value in a particular column, and then apply aggregate functions to get a single value by 'collapsing' the group. The aggregate functions work exactly the same as they do on a whole table, but operate only on the rows in each group. You will always get back one row for each group.
-
-The full build up for the query always involves the `ORDER BY` step. Once you use `GROUP BY` you can't see the rows in the group, `ORDER BY` gives you a chance to inspect inside the group. This is very useful.
+Let's say we want to find out how many times a particular band has played at the festival. To do
+this, we need to add a WHERE clause to our GROUP BY:
 
 ```sql
--- What was the total spent in each purchase?
-SELECT *
-FROM tickets
-LIMIT 30
-
--- tickets.purchase_id allows us to bring the rows for
--- each purchase together
-SELECT *
-FROM tickets
-ORDER BY tickets.purchase_id
-LIMIT 30
--- Execute query and check that grouping seems correct,
--- look for change over of grouping variable.
-
--- 1. Put grouping term at start of SELECT
--- 2. Change ORDER BY to GROUP BY
--- 3. Apply aggregate function.
-SELECT tickets.purchase_id, SUM(tickets.price) AS total_of_purchase
-FROM tickets
-GROUP BY tickets.purchase_id
-LIMIT 30
+SELECT b.name AS band_name, COUNT(*) AS performances
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+WHERE  b.name = 'Asleep at the Wheel'
+GROUP BY band_name;
 ```
 
-Note that you can't use `SELECT DISTINCT column` along with `GROUP BY` (because it could return more than one value for each group), but you can use `SELECT COUNT(DISTINCT column)` to count the number of distinct values in a column, within a group. `COUNT(DISTINCT column)` returns a single value for each group.
+We would really like to know what bands played at a performance and what venue the performance was
+at. To be able to do that, we're going to need to join multiple tables together to get that 
+information.
 
-## Exercise
+What tables do we need to join to tickets to get band and venue names?
 
-Print out this picture and use it as a worksheet:
+![](images/FestivalERD.drawio.png)
 
-![](images/grouping_worksheet.png)
+Exercises
+
+
 
 <!--
-## GROUP BY after a join
-
-For example, we might want to ask:
-
-```
-How many performances did each band give?
-```
-
-I'm going to interpret this question as asking for the name of the band and a count of their performances. We know how to figure this out one band at a time:
-
-```sql
-SELECT *
-FROM bands
-WHERE bands.name = 'Beardyman'
--- 1 row
-
--- Join to performances, now a row per performance, all Beardyman
-SELECT *
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-WHERE bands.name = 'Beardyman'
-
--- Now count the rows.
-SELECT 'Beardyman', COUNT(*) AS number_of_beardyman_shows
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-WHERE bands.name = 'Beardyman'
-```
-
-(Note that I've used a constant `'Beardyman'` in the `SELECT` which is just copied to the results.)
-
-Using `GROUP BY` enables us to answer this question for each band in the one query.
-
-We'll be using `bands.id` as our grouping variable, so we'll get our table divided into as many groups as there are bands (note that I'm not using `bands.name` due to possibility of different bands with same name, the `id` column uniquely identifies bands).
-
-We begin by joining the tables as normal:
-
-```sql
-SELECT *
-FROM bands
-
-SELECT *
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-```
-
-Now we examine those results and then sort the join table by the bands.id field, using `ORDER BY`:
-
-```sql
-SELECT *
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-ORDER BY bands.id
-```
-
-That query gives these results:
-
-![](images/bands_grouped.png)
-
-You can see that most bands only have a single row, because they only have a single performance. But look at 'Heidi Swedberg' there are two rows for two performances (on different days).  When we group by bands.id (or performances.band_id) we will collapse those rows. Within each group to get the number of performances we use `COUNT(*)`. Most of the groups will only have a single row, but some will have more.
-
-Now we do our three part change:
-1. move grouping term to `SELECT`
-2. change `ORDER BY` to `GROUP BY`
-3. add aggregate function with `AS` alias.
-
-```sql
-SELECT bands.id, COUNT(*) AS num_performances
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-GROUP BY bands.id
-```
-
 So using `GROUP BY` happens after the `JOIN` and `WHERE` parts. You can group a joined table just as you group a regular table.
 
 To see just the bands with `2` performances, we can add a new `ORDER BY` using our calculated and aliased field. We can do this because (if you remember) `ORDER BY` works on the results table and executes after everything else (other than `LIMIT`).
