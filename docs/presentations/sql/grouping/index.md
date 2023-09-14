@@ -171,44 +171,6 @@ Exercises
 6. What was the average revenue per performance per venue for the top 5 bands?
 
 
-<!--
-So using `GROUP BY` happens after the `JOIN` and `WHERE` parts. You can group a joined table just as you group a regular table.
-
-To see just the bands with `2` performances, we can add a new `ORDER BY` using our calculated and aliased field. We can do this because (if you remember) `ORDER BY` works on the results table and executes after everything else (other than `LIMIT`).
-
-```sql
-SELECT bands.id, COUNT(*) AS num_performances
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-GROUP BY bands.id
-ORDER BY num_performances DESC
-```
-
-So now we have our bands sorted by the number of performances they gave. We're almost done but recall that we wanted the name of the band and their performances. Currently we only have the band `id`s and the count, but we also want the name of the band. To get this we can add the `bands.name` into the SELECT.
-
-```sql
-SELECT bands.id, bands.name, COUNT(*) AS num_performances
-FROM bands
-  JOIN performances
-    ON bands.id = performances.band_id
-GROUP BY bands.id
-ORDER BY num_performances DESC
-```
-
-This works, but we have to *be very careful adding columns into the SELECT of a query with a GROUP BY* if the column we're adding isn't in the GROUP BY or isn't an aggregate function. We can **only** do it if every value in the group is identical.
-
-The reason is that SQL has to choose a value for that field from the many rows in the group, and it is possible that the field you added could have more than one value within that group. This isn't a concern with the columns in the `GROUP BY` because the way the groups are created ensures that every row has the same value in the column that we're grouping by. It also isn't a concern with aggregate functions like `SUM` because they 'collapse' the column to a single value.
-
-When we use other columns, however, what happens is that SQL simply selects the value from a random row and uses that as the value for the group. *Yes, that is actually what happens*. I know, I know, it seems insane. But it is not a problem if every row in the group has the same value (because choosing a random one still gets you the one you were looking for.)
-
-You might be thinking: well, can't I just group on `bands.name` and not worry about this picking a random value stuff? You can write the query that way, but if two bands were to have the same name, all of their performances would be in the same group. Perhaps unlikely with bands at a festival, but very problematic for people, courses, etc. which often have the same name. If you use `id` to group (and include it in your `SELECT`, of course) then you might get two rows with the same name in your result, but you'll understand why.
-
-Incidentally, this is why `MIN` and `MAX` shouldn't be used in the `SELECT` part when you want to find 'the smallest', 'the biggest', or 'the earliest'. When you do SQL is treating the table as one big group and when you add in the other column it picks a value from a random row and includes that.
-
-Happily recent versions of postgres will give an error if a column is included that would result in this sort of error, but other SQL implementations will not.  Thus it is important to follow the advice above.
-
-!-->
 
 ## HAVING
 
