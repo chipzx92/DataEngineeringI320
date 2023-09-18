@@ -1,4 +1,4 @@
-#GROUP BY: using aggregate functions on sub-sets of tables
+# GROUP BY: using aggregate functions on sub-sets of tables
 
 In the previous presentation we learned about aggregate functions, which let us 'collapse' a table 
 (or a column in a table) down to a single value. We learned about :
