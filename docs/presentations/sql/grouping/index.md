@@ -163,22 +163,158 @@ What tables do we need to join to tickets to get band and venue names?
 ![](images/FestivalERD.drawio.png)
 
 Exercises
-1. What are the band names and ticket sales revenue for the top 10 bands?  
-2. What was the average ticket price per performance for the top 5 bands? (select band name, ticket sales revenue, and average ticket price)
-3. How many tickets were sold at each performance? (select band name, ticket sales revenue, avg ticket price, and # of tickets)
+1. What are the band names and ticket sales revenue for the top 10 bands? 
+```sql
+SELECT b.name AS band_name, SUM(price) AS ticket_sales_revenue
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY band_name
+ORDER BY ticket_sales_revenue DESC
+LIMIT 10;
+```
+2. What was the average ticket price for the top 5 bands? (select band name, ticket sales revenue, and average ticket price)
+```sql
+SELECT b.name AS band_name, 
+       SUM(price) AS ticket_sales_revenue,
+       AVG(price) AS average_ticket_price
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY band_name
+ORDER BY ticket_sales_revenue DESC
+LIMIT 5;
+```
+3. How many tickets were sold byt the top 5 bands? (select band name, ticket sales revenue, avg ticket price, and # of tickets)
+```sql
+SELECT b.name AS band_name, 
+       SUM(price) AS ticket_sales_revenue,
+       AVG(price) AS average_ticket_price,
+       COUNT(*) AS tickets_sold
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY band_name
+ORDER BY ticket_sales_revenue DESC
+LIMIT 5;
+```
 4. How many times did those top 5 bands perform? (select the band name, ticket sales revenue, avg ticket price, # of tickets and # of performances)
-5. What was the average revenue per performance for the top 5 bands (select all the columns plus average revenue per performance)
-6. What was the average revenue per performance per venue for the top 5 bands?
+```sql
+SELECT b.name AS band_name, 
+       SUM(price) AS ticket_sales_revenue,
+       AVG(price) AS average_ticket_price,
+       COUNT(*) AS tickets_sold,
+       COUNT(DISTINCT performance_id) AS performances
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY band_name
+ORDER BY ticket_sales_revenue DESC
+LIMIT 5;
+```
+5. What was the average revenue per performance for the top 5 bands (select all the columns plus average revenue per performance)?
+```sql
+SELECT b.name AS band_name, 
+       SUM(price) AS ticket_sales_revenue,
+       AVG(price) AS average_ticket_price,
+       COUNT(*) AS tickets_sold,
+       COUNT(DISTINCT performance_id) AS performances,
+       SUM(price)/(COUNT(DISTINCT performance_id)*1.0) AS average_revenue_per_performance
+FROM   bands AS b
+JOIN   performances AS p ON (p.band_id = b.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY band_name
+ORDER BY ticket_sales_revenue DESC
+LIMIT 5;
+```
+6. What were the top 5 bands in terms of average revenue per performance per venue?
+```sql
+SELECT b.name AS band_name,
+       v.name AS venue_name,
+       COUNT(DISTINCT performance_id) AS performances,
+       SUM(price)/(COUNT(DISTINCT performance_id)*1.0) AS average_revenue_per_performance
+FROM   performances AS p 
+JOIN   bands AS b ON (p.band_id = b.id)
+JOIN   venues AS v ON (p.venue_id = v.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY band_name, venue_name
+ORDER BY average_revenue_per_performance DESC
+LIMIT 5;
+```
 
+### How Does Group By Work?
 
+Imagine the following query against a tickets table with these 6 rows. We want to get the
+COUNT of tickets for each performance, the SUM of the ticket sales for each performance, and the 
+AVG price of a ticket for each performance.
+
+![](images/GroupByExplanation1.drawio.png)
+
+When we run the query, it executes the group by reading each row from the source table. In the result
+table, it creates a new row for each distinct value of the column we're grouping by. The row in 
+the result table will have a column for each aggregate function.
+
+Read row 1: ticket_id=1 performance_id=11 price=35
+We create a new row for performance_id=11, count the row, and set the sum and average to 35.
+
+|  performance_id |  COUNT |   SUM   |   AVG   |
+| --------------- | ------ | ------- | ------- |
+|       11        |    1   |   35    |    35   |
+
+Read row 2: ticket_id=2 performance_id=13 price=17
+We create a new row for performance_id=13, count the row, and set the sum and average to 17
+
+|  performance_id | COUNT | SUM | AVG |
+| --------------- |-------|-----|-----|
+|       11        | 1     | 35  | 35  |
+|       13        | 1     | 17  | 17  |
+
+Read row 3: ticket_id=3 performance_id=11 price=20
+We add one to the count, add 20 to the sum, and get the average of 35+20 for performance_id=11
+
+|  performance_id | COUNT | SUM | AVG  |
+| --------------- |-------|-----|------|
+|       11        | 2     | 55  | 27.5 |
+|       13        | 1     | 17  | 17  |
+
+Read row 4: ticket_id=4 performance_id=12 price=28
+We create a new row for performance_id=12, count the row, and set the sum and average to 28
+
+|  performance_id | COUNT | SUM | AVG  |
+| --------------- |-------|-----|------|
+|       11        | 2     | 55  | 27.5 |
+ |       13       |  1    | 17  |   17 |
+|       12       | 1     | 28  | 28   |
+
+Read row 5: ticket_id=5 performance_id=11 price=27
+We add one to the count, add 27 to the sum, and get the average of 35+20+27 for performance_id = 11
+
+|  performance_id | COUNT | SUM | AVG  |
+| --------------- |-------|-----|------|
+|       11        | 3     | 82  | 27.3 |
+|       13       | 1     | 17  | 17   |
+|       12       | 1     | 28  | 28   |
+
+Read row 6: ticket_id=6 performance_id=13 price=27
+We add one to the count, add 27 to the sum, and get the average of 27+17 for performance_id = 13
+|  performance_id | COUNT | SUM | AVG  |
+| --------------- |-------|-----|------|
+|       11        | 3     | 82  | 27.3 |
+|       13       | 2     | 44  | 22   |
+|       12       | 1     | 28  | 28   |
 
 ## HAVING
 
 What if we only want to see purchases that included more than 10 tickets?
 
-That is difficult because of the order that the clauses execute. `GROUP BY` (and therefore `COUNT(*)`) happens _after_ `WHERE`, so we don't have the count of tickets in a purchase at the time that `WHERE` executes. Since we don't have it yet, we can't use it in the `WHERE`.
+That is difficult because of the order that the clauses execute. `GROUP BY` 
+(and therefore `COUNT(*)`) happens _after_ `WHERE`, so we don't have the count of tickets in a 
+purchase at the time that `WHERE` executes. Since we don't have it yet, we can't use it in 
+the `WHERE`.
 
-We want to eliminate some rows from our _results_ table, just as `LIMIT` does. SQL accommodates this common use case with an additional keyword: `HAVING`. The syntax is exactly the same as `WHERE` clause had our results been a table in the database.
+We want to eliminate some rows from our _results_ table, just as `LIMIT` does. SQL accommodates 
+this common use case with an additional keyword: `HAVING`. The syntax is exactly the same as `WHERE` 
+clause had our results been a table in the database.
 
 Thus to get only purchases that included more than 10 tickets we can do:
 
@@ -201,11 +337,14 @@ GROUP BY purchase_id
 HAVING COUNT(*) > 10
 ```
 
-Note that we cannot say `HAVING tickets_per_purchase > 10` we cannot use the alias from the SELECT clause in the HAVING clause. This has to do with the order that things execute, HAVING executes after `GROUP BY` but before `SELECT`. 
+Note that we cannot say `HAVING tickets_per_purchase > 10` we cannot use the alias from the SELECT 
+clause in the HAVING clause. This has to do with the order that things execute, HAVING executes 
+after `GROUP BY` but before `SELECT`. 
 
 ![](images/alias_in_having.png)
 
-This is fairly annoying, especially if the expression we want to filter by is complicated (because it then has to be repeated in the SELECT and in the HAVING).
+This is fairly annoying, especially if the expression we want to filter by is complicated (because 
+it then has to be repeated in the SELECT and in the HAVING).
 
 ## GROUP BY on more than one column
 
