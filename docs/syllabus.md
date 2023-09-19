@@ -169,7 +169,7 @@ Create Table
 SQL Basics Review
 Aggregate Functions (COUNT, SUM, AVG)  
 Different types of Joins especially Outer Joins   
-SQL mini-quiz  
+SQL Review Assignment    
 
 ### Week 5.2: Introduction to Semester Project (Sep 21)
 You will be divided up into teams of 4 and assigned your semester projects. Each project will 
