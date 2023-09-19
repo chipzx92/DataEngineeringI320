@@ -227,20 +227,7 @@ GROUP BY band_name
 ORDER BY ticket_sales_revenue DESC
 LIMIT 5;
 ```
-6. What were the top 5 bands in terms of average revenue per performance per venue?
-```sql
-SELECT b.name AS band_name,
-       v.name AS venue_name,
-       COUNT(DISTINCT performance_id) AS performances,
-       SUM(price)/(COUNT(DISTINCT performance_id)*1.0) AS average_revenue_per_performance
-FROM   performances AS p 
-JOIN   bands AS b ON (p.band_id = b.id)
-JOIN   venues AS v ON (p.venue_id = v.id)
-JOIN   tickets AS t ON (t.performance_id = p.id)
-GROUP BY band_name, venue_name
-ORDER BY average_revenue_per_performance DESC
-LIMIT 5;
-```
+
 ### How Does Group By Work?
 
 Imagine the following query against a tickets table with these 6 rows. We want to get the
@@ -320,21 +307,20 @@ Thus to get only purchases that included more than 10 tickets we can do:
 
 ```sql
 SELECT *
-FROM tickets
+FROM tickets;
 
-SELECT *
-FROM tickets
-ORDER BY purchase_id
+SELECT purchase_id, COUNT(*)
+FROM tickets;
 
 SELECT purchase_id, COUNT(*) as tickets_per_purchase
 FROM tickets
-GROUP BY purchase_id
+GROUP BY purchase_id;
 
 -- Now add a HAVING clause to filter these results
 SELECT purchase_id, COUNT(*) as tickets_per_purchase
 FROM tickets
 GROUP BY purchase_id
-HAVING COUNT(*) > 10
+HAVING COUNT(*) > 10;
 ```
 
 Note that we cannot say `HAVING tickets_per_purchase > 10` we cannot use the alias from the SELECT 
@@ -400,19 +386,28 @@ GROUP BY people.gender, people.zip
 
 ![](images/people_grouped.png)
 
-### Exercise
+How would we get the top 5 performances in terms of ticket sales revenue where we list the band and
+venue at the performance?
 
-If we reverse the order of the terms in the `GROUP BY` will the answers change?
-
-![](images/reversed_order_group.png)
-
-You may find the exercises 6-8 on [SUM and COUNT on SQLZoo](http://sqlzoo.net/wiki/SUM_and_COUNT) useful.
+```sql
+SELECT p.performance_id,
+       b.name AS band_name,
+       v.name AS venue_name,
+       SUM(price) AS ticket_sales_revenue
+FROM   performances AS p 
+JOIN   bands AS b ON (p.band_id = b.id)
+JOIN   venues AS v ON (p.venue_id = v.id)
+JOIN   tickets AS t ON (t.performance_id = p.id)
+GROUP BY performance_id, band_name, venue_name
+ORDER BY ticket_sales_revenue DESC
+LIMIT 5;
+```
 
 ## Working with dates
 Dates and Times can be stored in a number of different ways:  
-* As a date (2023-09-19)
-* As a timestamp (2023-09-19 12:30:00)
-* As a timestamp with a time zone offset (2023-09-19T12:30:00+00) - this is how performance_start is stored
+* As a date: **2023-09-19**
+* As a timestamp: **2023-09-19 12:30:00**
+* As a timestamp with a time zone offset **2023-09-19T12:30:00+00** - this is how performance_start is stored
 
 You'll need the following ways of working with dates to do the assignment:
 
@@ -440,12 +435,15 @@ GROUP  BY performance_id;
 
 ### COMPARISONS
 You can use all of the standard operators on dates:
-* **=** *(equal to)*
-* **!=** or **<>** *(not equal to)*
-* **>** *(greater than)*
-* **<** *(less than)*
-* **>=** *(greater than or equal to)*
-* **<=** *(less than or equal to)*
+
+| operator         | description                |
+|------------------|----------------------------|
+| **=**            | *equal to*                 |
+| **!=** or **<>** | *not equal to*             |
+| **>**            | *greater than*             |
+| **<**            | *less than*                |
+| **>=**           | *greater than or equal to* |
+| **<=**           | *(=less than or equal to*  |
 
 Here we get the ticket sales revenue for each performance from 2010 on:
 ```sql
@@ -457,6 +455,16 @@ WHERE  performance_start >= '2010-01-01'
 GROUP BY performance_id
 ```
 
+Here we get all performances on October 10, 2021 at 11 PM:
+```sql
+SELECT performance_id, 
+       performance_start,
+       SUM(price) AS ticket_sales_revenue
+FROM   tickets AS t 
+JOIN   performances AS p ON (p.id = t.performance_id)
+WHERE  performance_start = '2021-10-10 23:00:00' 
+GROUP BY performance_id, performance_start
+```
 Here we get the ticket sales revenue for each performance from 2010 on using EXTRACT to get the year.
 ```sql
 SELECT performance_id, 
