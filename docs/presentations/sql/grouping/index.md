@@ -241,7 +241,6 @@ GROUP BY band_name, venue_name
 ORDER BY average_revenue_per_performance DESC
 LIMIT 5;
 ```
-
 ### How Does Group By Work?
 
 Imagine the following query against a tickets table with these 6 rows. We want to get the
@@ -254,31 +253,31 @@ When we run the query, it executes the group by reading each row from the source
 table, it creates a new row for each distinct value of the column we're grouping by. The row in 
 the result table will have a column for each aggregate function.
 
-Read row 1: ticket_id=1 performance_id=11 price=35
-We create a new row for performance_id=11, count the row, and set the sum and average to 35.
+**Read row 1: ticket_id=1 performance_id=11 price=35**    
+We create a new row for performance_id=11, count the row, and set the sum and average to 35.  
 
 |  performance_id |  COUNT |   SUM   |   AVG   |
 | --------------- | ------ | ------- | ------- |
 |       11        |    1   |   35    |    35   |
 
-Read row 2: ticket_id=2 performance_id=13 price=17
-We create a new row for performance_id=13, count the row, and set the sum and average to 17
+**Read row 2: ticket_id=2 performance_id=13 price=17**   
+We create a new row for performance_id=13, count the row, and set the sum and average to 17.  
 
 |  performance_id | COUNT | SUM | AVG |
 | --------------- |-------|-----|-----|
 |       11        | 1     | 35  | 35  |
 |       13        | 1     | 17  | 17  |
 
-Read row 3: ticket_id=3 performance_id=11 price=20
-We add one to the count, add 20 to the sum, and get the average of 35+20 for performance_id=11
+**Read row 3: ticket_id=3 performance_id=11 price=20**    
+We add one to the count, add 20 to the sum, and get the average of 35+20 for performance_id=11.  
 
 |  performance_id | COUNT | SUM | AVG  |
 | --------------- |-------|-----|------|
 |       11        | 2     | 55  | 27.5 |
 |       13        | 1     | 17  | 17  |
 
-Read row 4: ticket_id=4 performance_id=12 price=28
-We create a new row for performance_id=12, count the row, and set the sum and average to 28
+**Read row 4: ticket_id=4 performance_id=12 price=28**   
+We create a new row for performance_id=12, count the row, and set the sum and average to 28.  
 
 |  performance_id | COUNT | SUM | AVG  |
 | --------------- |-------|-----|------|
@@ -286,8 +285,8 @@ We create a new row for performance_id=12, count the row, and set the sum and av
  |       13       |  1    | 17  |   17 |
 |       12       | 1     | 28  | 28   |
 
-Read row 5: ticket_id=5 performance_id=11 price=27
-We add one to the count, add 27 to the sum, and get the average of 35+20+27 for performance_id = 11
+**Read row 5: ticket_id=5 performance_id=11 price=27**    
+We add one to the count, add 27 to the sum, and get the average of 35+20+27 for performance_id = 11.  
 
 |  performance_id | COUNT | SUM | AVG  |
 | --------------- |-------|-----|------|
@@ -295,8 +294,9 @@ We add one to the count, add 27 to the sum, and get the average of 35+20+27 for 
 |       13       | 1     | 17  | 17   |
 |       12       | 1     | 28  | 28   |
 
-Read row 6: ticket_id=6 performance_id=13 price=27
-We add one to the count, add 27 to the sum, and get the average of 27+17 for performance_id = 13
+**Read row 6: ticket_id=6 performance_id=13 price=27**   
+We add one to the count, add 27 to the sum, and get the average of 27+17 for performance_id = 13. 
+
 |  performance_id | COUNT | SUM | AVG  |
 | --------------- |-------|-----|------|
 |       11        | 3     | 82  | 27.3 |
@@ -348,15 +348,29 @@ it then has to be repeated in the SELECT and in the HAVING).
 
 ## GROUP BY on more than one column
 
-Sometimes we want to group by one than one field.  In the data below there are two genders shown, but it's important for me to emphasize that there could be additional values for gender beyond 'man' and 'woman'. In fact Facebook, famously, eventually [was shamed into introducing a free-form text field for gender](https://www.huffpost.com/entry/facebook-gender-free-form-field-_n_6762458?guccounter=1).  
+Sometimes we want to group by one than one field.  In the data below there are two genders shown, 
+but it's important for me to emphasize that there could be additional values for gender beyond 'man' 
+and 'woman'. In fact Facebook, famously, eventually 
+[was shamed into introducing a free-form text field for gender](https://www.huffpost.com/entry/facebook-gender-free-form-field-_n_6762458?guccounter=1).  
 
-While I do only use 'man' and 'woman' below, using a freeform text field, rather than codes like 1 or 2, or a set of prespecified values from a drop-down is bad practice.  Free-form is much better than the category 'other,' because it is inaccurate and painful, as described by Bowker and Star (from the Information School world) in their book ['Sorting things out: classification and its consequences.'](https://mitpress.mit.edu/9780262522953/sorting-things-out/).
+While I do only use 'man' and 'woman' below, using a freeform text field, rather than codes like 1 
+or 2, or a set of prespecified values from a drop-down is bad practice.  Free-form is much better 
+than the category 'other,' because it is inaccurate and painful, as described by Bowker and Star 
+(from the Information School world) in their book 
+['Sorting things out: classification and its consequences.'](https://mitpress.mit.edu/9780262522953/sorting-things-out/).
 
-However, in this database we have two values, 'man' and 'woman'. And we might want to know the average age for those that chose each label, broken down by the zip code in which they live.
+However, in this database we have two values, 'man' and 'woman'. And we might want to know the 
+average age for those that chose each label, broken down by the zip code in which they live.
 
-Just as we can use more than one column with `ORDER BY` (using a second column to 'split ties' from our first column), we can use more than one column with `GROUP BY`.
+Just as we can use more than one column with `ORDER BY` (using a second column to 'split ties' 
+from our first column), we can use more than one column with `GROUP BY`.
 
-The same procedure as above works with two (or more columns). The key is to realize that the groups are based on _unique combinations of the grouping variables_. You might think of the first grouping variable as the 'outer' variable and the second as the 'inner' variable.  Remember that the grouping variables always come at the start of the SELECT, if you use two grouping variables, then you have to ask for both at the start, in the same order. If you follow the three steps from above you can't go wrong.
+The same procedure as above works with two (or more columns). The key is to realize that the groups 
+are based on _unique combinations of the grouping variables_. You might think of the first grouping 
+variable as the 'outer' variable and the second as the 'inner' variable.  Remember that the grouping 
+variables always come at the start of the SELECT, if you use two grouping variables, then you have 
+to ask for both at the start, in the same order. If you follow the three steps from above you can't 
+go wrong.
 
 ![](images/people.png)
 
@@ -393,3 +407,62 @@ If we reverse the order of the terms in the `GROUP BY` will the answers change?
 ![](images/reversed_order_group.png)
 
 You may find the exercises 6-8 on [SUM and COUNT on SQLZoo](http://sqlzoo.net/wiki/SUM_and_COUNT) useful.
+
+## Working with dates
+Dates and Times can be stored in a number of different ways:  
+* As a date (2023-09-19)
+* As a timestamp (2023-09-19 12:30:00)
+* As a timestamp with a time zone offset (2023-09-19T12:30:00+00) - this is how performance_start is stored
+
+You'll need the following ways of working with dates to do the assignment:
+
+### EXTRACT
+You can get the year from a date column using the EXTRACT function:
+```sql
+SELECT EXTRACT(YEAR from performance_start)
+FROM   performances;
+```
+
+This also works with any other part of a date/time field - MONTH, DAY, HOUR, MINUTE, SECOND.  
+
+### BETWEEN
+You can get all the rows between 2 dates using the BETWEEN keyword. Here we get the ticket sales 
+revenue for each performance in 2021 by selecting all performances from January 1 to December 31
+of 2021:
+```sql
+SELECT performance_id, 
+       SUM(price) AS ticket_sales_revenue
+FROM   tickets AS t 
+JOIN   performances AS p ON (p.id = t.performance_id)
+WHERE  performance_start BETWEEN '2021-01-01' AND '2021-12-31'
+GROUP  BY performance_id;
+```
+
+### COMPARISONS
+You can use all of the standard operators on dates:
+* **=** *(equal to)*
+* **!=** or **<>** *(not equal to)*
+* **>** *(greater than)*
+* **<** *(less than)*
+* **>=** *(greater than or equal to)*
+* **<=** *(less than or equal to)*
+
+Here we get the ticket sales revenue for each performance from 2010 on:
+```sql
+SELECT performance_id, 
+       SUM(price) AS ticket_sales_revenue
+FROM   tickets AS t 
+JOIN   performances AS p ON (p.id = t.performance_id)
+WHERE  performance_start >= '2010-01-01' 
+GROUP BY performance_id
+```
+
+Here we get the ticket sales revenue for each performance from 2010 on using EXTRACT to get the year.
+```sql
+SELECT performance_id, 
+       SUM(price) AS ticket_sales_revenue
+FROM   tickets AS t 
+JOIN   performances AS p ON (p.id = t.performance_id)
+WHERE  EXTRACT(YEAR from performance_start) > 2009 
+GROUP BY performance_id
+```
