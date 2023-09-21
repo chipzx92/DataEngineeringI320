@@ -177,10 +177,10 @@ consist of a requirements document explaining what you need to do and what the g
 project are, a set of data files, a database dedicated to your project, and workspaces for your
 files and visualizations.  
 
-<!--
+
 #### Semester Project Instructions:
 [Semester Project](presentations/semester_project)
-
+<!--
 #### Requirements Documents:  
 [Austin Animal Center Outcomes](projects/aac/REQUIREMENTS.md)  
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
@@ -188,6 +188,7 @@ files and visualizations.
 [Internet Movie Database](projects/imdb/REQUIREMENTS.md)  
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)  
 [Saturday Night Live](projects/snl/REQUIREMENTS.md)
+[Pokemon](projects/pokemon/REQUIREMENTS.md)
 -->  
 
 ### Week 6: Source Systems and Data Ingestion (Sep 26/28)

@@ -7,6 +7,8 @@
 4. [Internet Movie Database Ratings (imdb)](../../projects/imdb/REQUIREMENTS.md)
 5. [Olympic Events (olympics)](../../projects/olympics/REQUIREMENTS.md)
 6. [Saturday Night Live shows (snl)](../../projects/sat_night_live/REQUIREMENTS.md)
+7. [Pokemon Dataset (pokemon)](../../projects/pokemon/REQUIREMENTS.md)
+8. [Fast Food Analysis]()
 
 You will be divided into teams of 4 and be assigned a project. Each project has a requirements
 document, which is linked above.
@@ -16,7 +18,11 @@ Each team will read their requirements document and make a copy of the
 project. The requirements document and the project report template are also linked to in the 
 syllabus.
 
-Examine the Project Report Template; as you complete steps below you will complete/customize your report to reflect the project work you have done. You will add pictures (screenshots and exported vizualizations) and short descriptive paragraphs.  The report should be written as a documentation of your work, with the final part presenting results that meet the analysis requirements presented in the `REQUIREMENTS.md` file in the project links above.
+Examine the Project Report Template; as you complete steps below you will complete/customize your 
+report to reflect the project work you have done. You will add pictures (screenshots and exported 
+visualizations) and short descriptive paragraphs.  The report should be written as a documentation 
+of your work, with the final part presenting results that meet the analysis requirements presented 
+in the `REQUIREMENTS.md` file in the project links above.
 
 Each person on a team will be linked to a project directory for their project that will be available 
 on their Jupyter notebook. The project directory will have the following structure:
@@ -74,9 +80,10 @@ The next step is to create the staging tables. You first need to do the followin
 > See the [Data Modeling](../modeling/01_has_many) presentation as a guide to help you with these 
 steps.
 
-Then your team will write CREATE TABLE statements to create your staging tables. These are the tables you will
-load your CSV files into. These CREATE TABLE statements will go into the `staging_tables.sql` file.
-You can edit this file in your Jupyter notebook. This file is located in the `<your project_name>/src/scripts` directory.
+Then your team will write CREATE TABLE statements to create your staging tables. These are the 
+tables you will load your CSV files into. These CREATE TABLE statements will go into the 
+`staging_tables.sql` file. You can edit this file in your Jupyter notebook. This file is located 
+in the `<your project_name>/src/scripts` directory.
 
 You will create the tables by running the `create_staging_tables.sh` script. To run it, open a 
 Jupyter terminal and run the following commands:
@@ -139,12 +146,19 @@ bash run_dbt.sh
 
 Examing your project requirements again, looking at the `REQUIREMENTS.md` file in your project directory.
 
-You will need to create a dashboard using Superset. For that to work you will need to create data product tables for Superset to use. That means creating additional dbt files to define your data products, then locating them in Superset to design your visualizations and your dashboard.
+You will need to create a dashboard using Superset. For that to work you will need to create data 
+product tables for Superset to use. That means creating additional dbt files to define your data 
+products, then locating them in Superset to design your visualizations and your dashboard.
 
 > See the [Superset](../Superset/) presentation as a guide to help you with with this step.
 
-Once your dashboard is complete you should export your visualizations and place them in your project report. You can do this pictures or short videos if interaction is important to your analysis.
+Once your dashboard is complete you should export your visualizations and place them in your project 
+report. You can do this pictures or short videos if interaction is important to your analysis.
 
 ### Review your report
 
-Review and improve your project report, filling out each section in the template, adding screenshots and exported vizualizations as necessary to explain your project team's work and answer the `REQUIREMENTS.md`  Each of the elements above should be included in your report; the report and your dashboard on Superset will be the outputs reviewed by the grading team.  So, for example, if your ER diagrams are not in your report, we will be unable to consider them in grading.
+Review and improve your project report, filling out each section in the template, adding screenshots 
+and exported visualizations as necessary to explain your project team's work and answer the 
+`REQUIREMENTS.md`  Each of the elements above should be included in your report; the report and your 
+dashboard on Superset will be the outputs reviewed by the grading team.  So, for example, if your ER 
+diagrams are not in your report, we will be unable to consider them in grading.
