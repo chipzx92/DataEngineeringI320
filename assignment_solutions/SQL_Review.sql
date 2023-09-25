@@ -65,6 +65,9 @@ LIMIT 1;
 -- Because the 3 bands had a total of 8 performances (or words to that affect)
 
 -- Question 11
+SELECT COUNT(DISTINCT band_id) AS count_of_bands
+FROM   performances;
+-- or
 SELECT COUNT(DISTINCT b.name) AS count_of_bands
 FROM   bands AS b
 JOIN   performances AS p ON (p.band_id = b.id);
@@ -77,7 +80,7 @@ JOIN   bands AS b ON (b.id = p.band_id)
 JOIN   venues AS v ON (v.id = p.venue_id)
 WHERE  p.performance_start < '2011-01-01'
   AND  v.name IN ('BMI', 'Honda', 'Austin Kiddie Limits');
--- 141
+-- 205
 
 -- Question 13
 SELECT b.name
