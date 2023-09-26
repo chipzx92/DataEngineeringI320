@@ -4,14 +4,14 @@ Most organizations have their operational data in many different source systems.
 **E**xtract the data out of these sources, **L**oad into our analytical data warehouse, and 
 **T**ransform it into data products that we can use to analyze and visualize the data.
 
-< give example of how many source systems there are in GDI, an organization of less than 40 people >
+<!-- give example of how many source systems there are in GDI, an organization of less than 40 people -->
 
 ## Data Lakes and Data Warehouses
 
 The data extracted from source systems needs to be stored, organized and managed effectively. The 
 most common approaches to this are the `Data Warehouse` and the `Data Lake`.
 
-![https://martinfowler.com/bliki/DataLake.html](./images/DataLakeDataWHFowler.png)
+![https://martinfowler.com/bliki/DataLake.html](./images/DataLakeDataWHFowler.png)  
 _credit: https://martinfowler.com/bliki/DataLake.html_
 
 The Data Warehouse is:
@@ -137,7 +137,7 @@ Time: 17760.980 ms (00:17.761)
 ```  
 
 It takes less than 18 seconds. So we have an order-of-magnitude performance improvement (18 seconds
-versus 189 seconds) and an order-of-magnitude less code (3 lines of code versus 30 lines of code) if
+versus 189 seconds) and an order-of-magnitude less code (3 lines of code versus 66 lines of code) if
 we use the bulk loader versus writing a program. And on today's systems that run in the cloud and
 bill by resource usage, we might also pay an order-of-magnitude more in monetary cost.
 

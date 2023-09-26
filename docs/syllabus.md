@@ -192,9 +192,8 @@ files and visualizations.
 -->  
 
 ### Week 6: Source Systems and Data Ingestion (Sep 26/28)
-
+[Link to Ingestion Presentation](presentations/Ingestion/) 
 <!--
-[Link to Ingestion Presentation](presentations/Ingestion/)  
 [Link to Bulk Load](presentations/ingestion-pt2/)
 -->  
 
