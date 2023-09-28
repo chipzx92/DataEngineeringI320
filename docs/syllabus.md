@@ -180,8 +180,9 @@ files and visualizations.
 
 #### Semester Project Instructions:
 [Semester Project](presentations/semester_project)  
+
 <!--  
-#### Requirements Documents:  
+Requirements Documents:  
 [Austin Animal Center Outcomes](projects/aac/REQUIREMENTS.md)  
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
 [Dancing with the Stars](projects/dwts/REQUIREMENTS.md)  

@@ -76,7 +76,8 @@ same for the SCHEMA drop-down.
 ![Database](./images/Database%20and%20Schema.png)
 
 Now write a CREATE TABLE statement that will be the table you load the data from the CSV into. It
-needs to have the same structure as the CSV file.
+needs to have the same structure as the CSV file. Make sure you have a DROP TABLE statement first,
+and use IF EXISTS/NOT EXISTS in your DROP/CREATE statements.
 
 ![create table](./images/create%20table.png)
 
@@ -104,7 +105,7 @@ You should see two files. These are the files we will use to load the data.
 
 Open the `load.sql` file:
 
-![load sql](./images/load.sql.png)
+![load sql](./images/load_sql.png)
 
 You're going to fill in the commands in this file to load the CSV file. Write a copy command that
 will do this.
