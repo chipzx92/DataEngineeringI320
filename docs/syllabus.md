@@ -179,21 +179,21 @@ files and visualizations.
 
 
 #### Semester Project Instructions:
-[Semester Project](presentations/semester_project)
-<!--
+[Semester Project](presentations/semester_project)  
+<!--  
 #### Requirements Documents:  
 [Austin Animal Center Outcomes](projects/aac/REQUIREMENTS.md)  
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
-[Dancing with the Stars](projects/dwts/REQUIREMENTS.md)
+[Dancing with the Stars](projects/dwts/REQUIREMENTS.md)  
 [Internet Movie Database](projects/imdb/REQUIREMENTS.md)  
-[Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)  
-[Saturday Night Live](projects/snl/REQUIREMENTS.md)
-[Pokemon](projects/pokemon/REQUIREMENTS.md)
+[Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
+[Saturday Night Live](projects/snl/REQUIREMENTS.md)  
+[Pokemon](projects/pokemon/REQUIREMENTS.md)  
 -->  
 
-### Week 6: Source Systems and Data Ingestion (Sep 26/28)
-[Link to Ingestion Presentation](presentations/Ingestion/) 
-[Link to Bulk Load](presentations/ingestion-pt2/)
+### Week 6: Source Systems and Data Ingestion (Sep 26/28)  
+[Link to Ingestion Presentation](presentations/Ingestion/)  
+[Link to Bulk Load](presentations/ingestion-pt2/)  
 
 
 We will cover the following topics:  
@@ -214,23 +214,16 @@ Statistical validation
 Rule-based validation  
 -->  
 
-### Weeks 7-8: Data Modeling (Oct 3/5 and 10/12)
-We will discuss the following topics:
+### Weeks 7-8: Data Modeling (Oct 3/5 and 10/12)  
+We will discuss the following topics:  
 ER diagrams and modeling transactional systems  
-
-<!--
-- [one-to-many](presentations/modeling/01_has_many/)
-- [many-to-many](presentations/modeling/02_many_to_many/)
-- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)
--->  
-
-Normalization  
-Dimensional Modeling (Star Schemas)   
-
-<!--
-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)
-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)
--->  
+- [one-to-many](presentations/modeling/01_has_many/)  
+- [many-to-many](presentations/modeling/02_many_to_many/)  
+- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)  
+ 
+Dimensional Modeling (Star Schemas)  
+- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
+- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
 
 Assignment: Queries from Star Schema
 
