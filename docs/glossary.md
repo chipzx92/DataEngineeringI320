@@ -8,7 +8,7 @@ reports and visualizations. There are several different sub-categories of analyt
 * predictive analytics
 * prescriptive analytics
 
-**analytical system**
+**analytical system**  
 A computing system or platform specifically dedicated to processing data for the purpose of
 reporting on, analyzing, and visualizing that data. The heart of most analytical systems is a 
 data warehouse or data lake, but other architectures are also possible.
@@ -22,7 +22,7 @@ Some of the more popular AWS services are:
 
 There are many dozens of other services provided by AWS.
 
-**DAG**  
+**DAG**   
 DAG stands for Directed Acyclic Graph<sup>3</sup>. A DAG is a graph consisting of vertices (nodes) and edges
 (lines) were the edges connect the vertices.
 - starting from a single vertice
@@ -30,9 +30,12 @@ DAG stands for Directed Acyclic Graph<sup>3</sup>. A DAG is a graph consisting o
 - in one single direction (directed)
 - with no cycling back to previously joined vertices (acylic)
 
+**data flow diagram**  
+A data flow diagram<sup>17</sup> (DFD) maps out the flow of information for any process or system.   
+
 **data lake**  
-A data lake is defined as a *a system or repository of data stored in its natural/raw format, usually 
-object blobs or files<sup>4</sup>
+A data lake is defined as *a system or repository of data stored in its natural/raw format, usually 
+object blobs or files*.<sup>4</sup>
 
 **data pipeline**  
 A data pipeline<sup>5</sup> is a series of programs or tasks that transforms a set of input datasets into a set
@@ -58,7 +61,7 @@ for our data warehouse, but many organizations use the new breed of cloud data w
 [Snowflake](https://www.snowflake.com/en/), [Big Query](https://cloud.google.com/bigquery?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-e-dr-1605212&utm_content=text-ad-none-any-DEV_c-CRE_665665924750-ADGP_Hybrid%20%7C%20BKWS%20-%20MIX%20%7C%20Txt_BigQuery-KWID_43700077225652815-kwd-47616965283&utm_term=KW_bigquery-ST_bigquery&gclid=CjwKCAjwivemBhBhEiwAJxNWNw0CWdBW6ZItQsQwjJUDUNuDlc0Y1J4iRilJR7yrSbPkSsnLC5vczhoChOsQAvD_BwE&gclsrc=aw.ds), 
 and [Redshift](https://aws.amazon.com/redshift/).
 
-**dbt**
+**dbt**  
 dbt (Data Build Tool)<sup>8</sup> is an open-source software tool that uses SQL to transform one or more
 input database tables into an output table.
 
@@ -92,6 +95,17 @@ to produce data products and analytics.
 Stands for *Extract, Transform, and Load*<sup>11</sup>
 An older data engineering concept where data is extracted from a source system, transformed in a 
 staging area, and then loaded into an analytical system.
+
+**Entity-Relationship Diagram (ERD)**  
+An Entity-Relationship Diagram (ERD)<sup>18</sup> visualizes the relationships between entities like people, 
+things, or concepts in a database. An ERD will also often visualize the attributes of these entities.
+By defining the entities, their attributes, and showing the relationships between them, an ERD 
+can illustrate the logical structure of databases. 
+
+**Foreign Key**
+A foreign key consists of a column that references the primary key of another table.  The purpose 
+of the foreign key is to ensure *referential integrity* of the data. In other words, only values 
+that are primary key values in the referenced table are permitted in the foreign key column.
 
 **idempotent**  
 An operation that produces the same result no matter how many times it is executed<sup>3</sup>.
@@ -134,8 +148,12 @@ Postgres and MySQL are the most popular open-source SQL databases.
 
 We will use Postgres as our database system in this course.
 
+**Primary Key**
+A database primary key<sup>15</sup> is a column or combination of columns with a value that uniquely identifies 
+each row in a table.
+
 **Superset**  
-Superset<sup>15</sup>is an open-source business intelligence tool that can query analytic data stores to build
+Superset<sup>16</sup>is an open-source business intelligence tool that can query analytic data stores to build
 reports and visualizations.
 
 We will use Superset to create reports and visualizations on the data products we build.
@@ -185,4 +203,7 @@ These last two books are not books on data engineering or databases, but are the
 <sup>12</sup>https://en.wikipedia.org/wiki/Linux
 <sup>13</sup>https://medium.com/memory-leak/data-orchestration-a-primer-56f3ddbb1700
 <sup>14</sup>https://www.postgresql.org/
-<sup>15</sup>https://superset.apache.org/
+<sup>15</sup>https://www.relationaldbdesign.com/database-analysis/module2/database-primary-key.php
+<sup>16</sup>https://superset.apache.org/
+<sup>17</sup>https://www.lucidchart.com/pages/data-flow-diagram
+<sup>18</sup>https://www.smartdraw.com/entity-relationship-diagram/
