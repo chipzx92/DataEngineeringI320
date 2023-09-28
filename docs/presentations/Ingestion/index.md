@@ -146,9 +146,9 @@ For a CSV file that looks like this:
 ```text
 id,make,model,year,color,msrp
 1,Audi,A-4,2022,silver,38750
-2,BMW,i323,black,32499
-3,Volkwagen,Jetta,green,31356
-4,Subaru,Forester,white,35466
+2,BMW,i323,2022,black,32499
+3,Volkwagen,Jetta,2021,green,31356
+4,Subaru,Forester,2023,white,35466
 ```
 
 1. Write a CREATE TABLE statement to create a table to load this data into. It's important to get the order and data types right.
