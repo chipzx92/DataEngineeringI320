@@ -1,4 +1,4 @@
-#Data Modeling
+# Data Modeling
 
 On our last class, we talked about ingesting or loading data into an analytics system using bulk 
 loading - the "L" of "ELT". Now we're going to start talking about the "T" - transformation. But in
