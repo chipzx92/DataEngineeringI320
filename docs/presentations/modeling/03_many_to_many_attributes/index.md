@@ -112,6 +112,15 @@ e.g., _Roundrock library subscribed to "The Economist" magazine from 1972 throug
 Use the results in the screenshot as an example. You can ignore country or include it as an attribute of the competitor.  Hint: the Event is "800m Freestyle Women". See more results here: [Rio 2016 Swimming Results](https://www.olympic.org/rio-2016/swimming)
 ![](images/SwimmingResultsScreenshot.png)
 
+6. Books and Authors
+e.g., Neil Gaiman and Terry Prachett wrote Good Omens. Stephen King and Peter Straub wrote the Talisman. Carl Bernstein and Bob Woodward wrote All The Presidents Men.
+
+8. Classes, Teachers, Classrooms
+e.g., _Maggie teaches Intro to Data Science in PAR 208 Thursday, Ibrahim teaches English in PAR 208 Wednesday, Emmanuel teaches Business Ethics in CBA 3.330._
+
+9. Customers and Mobile Apps
+e.g., _Milo has TikTok, Facebook, and Amazon Prime, Shuyen has TikTok and Instagram, Ravi has Instagram, Reddit, and Yelp._
+
 Don't forget to brainstorm some additional concrete instances, write them down, and include them as sample data in your table sketches!
 
 <!--
