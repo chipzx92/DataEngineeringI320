@@ -167,7 +167,7 @@ You should (using paper and pens):
 
 Examples (all one-to-many and only two boxes and one line.)
 
-1. Players on basketball teams (at one time, assume no changes)
+1. Players on football or basketball teams (at one time, assume no changes)
 2. Families and their Pets.
 3. Presidents and their terms in office
 4. Species and their genus (e.g., Felis Catus and Felis silvestris)
