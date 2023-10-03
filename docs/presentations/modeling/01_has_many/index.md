@@ -1,12 +1,13 @@
----
-title: "Data Wrangling: Data Modeling"
----
-Data Modeling
-===================================
+#Data Modeling
+
+On our last class, we talked about ingesting or loading data into an analytics system using bulk 
+loading - the "L" of "ELT". Now we're going to start talking about the "T" - transformation. But in
+order to do that we have to first understand how the data from our source systems is modeled and 
+then how we want to model the data to transform it a way that optimizes it for analytics.
 
 In this module we learn two approaches to modeling data: 
 
-1. Normalized entity relationship (ER) modeling 
+1. Normalized Entity-Relationship (ER) modeling 
 2. Star schema modeling
 
 Normalized ER models are common in transactional (source) systems (such as those that run a website). 
@@ -47,7 +48,7 @@ with two attributes: color ("red"/"green") and function ("holds"/writes"). Each 
 objects had a single color and function ("The red mug holds"). Conversely each color or function 
 could have many objects; we could have many green objects or many objects that write. Thus we can 
 say that there is a "one-to-many" relationship between color and objects. There is a separate 
-one-to-many relationship between function and color.
+one-to-many relationship between function and objects.
 
 On the other hand, we could easily imagine a situation where each object was described with more 
 than one color ("The highlighter is green and black"), so that the relationship was two-way: a 
@@ -166,11 +167,11 @@ You should (using paper and pens):
 
 Examples (all one-to-many and only two boxes and one line.)
 
-1. Players on football teams (at one time, assume no changes)
+1. Players on basketball teams (at one time, assume no changes)
 2. Families and their Pets.
 3. Presidents and their terms in office
 4. Species and their genus (e.g., Felis Catus and Felis silvestris)
 5. State/Province and their Country
 6. Cities and states (use some cities with the same name in different states)
-7. Bands and their albums
+7. Musicians/Bands and their albums
 8. Authors and books
