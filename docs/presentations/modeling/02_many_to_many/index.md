@@ -74,6 +74,16 @@ call a _composite primary key_. We show that by underlining/bolding both of the 
 (rather than just `id` which is underlined in regular tables); we show this in the physical ER 
 diagram by having `PK` next to both columns.
 
+However, I generally prefer to add an id column to every table in a production database. The reason 
+for this is the it makes it much easier to evolve the structure of the database over time. Entities
+and relationships in the database tend to change and evolve over time - usually by adding new tables
+and new columns - and maintaining the relationships between those tables is simpler if the linking
+primary and foreign keys are a single id column. So ultimately I prefer a many-to-many table 
+structure that looks like this:
+
+![](images/HobbiesM2M.drawio.png)
+
+
 ## Naming conventions for simple association tables
 
 The simple association table is named in lowercase but with a name made up by joining the two 
@@ -83,11 +93,11 @@ the alphabet.) We use the pluralized form because the table names are pluralized
 
 Note that the simple association table **does not show up in the conceptual ER diagram**, but it 
 does show up in the physical ER diagram and in the table sketches. So there can be more tables than 
-there are boxes in the ER diagram.
+there are boxes in the Conceptual diagram.
 
 # Modeling Exercise (in-class)
 
-Form five groups and you will be assigned one of the relationships below. Each should be modeled 
+Form eight groups and you will be assigned one of the relationships below. Each should be modeled 
 with just two entities (two boxes) and one relationship between them (one line). Hint: they are all 
 many-to-many with a simple association table :)
 

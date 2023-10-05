@@ -1,6 +1,5 @@
----
-title: "Data Wrangling: many-to-many with attributes"
----
+# Many-to-Many With Attributes
+
 Modeling Relationships as Entities ("many-to-many with attributes")
 =================================================================
 

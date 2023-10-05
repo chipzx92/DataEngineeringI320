@@ -1,6 +1,3 @@
----
-title: "Modeling attributes"
----
 # Attributes
 
 So far we have focused on modeling relationships. In addition there are frequently additional pieces of data that we want to store. 
