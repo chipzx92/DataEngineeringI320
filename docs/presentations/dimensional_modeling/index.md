@@ -15,7 +15,11 @@ questions we want to ask.
 In our last assignment, we created a physical E-R model of our operational database:
 
 What is this data model about?  
-_Bands_ give _Performances_ at _Venues_ to _People_ who made _Purchases_ of _Tickets_.
+_Bands_ give _Performances_ at _Venues_ to _People_ who made _Purchases_ of _Tickets_
+
+- or -
+
+_People_ make _Purchases_ of _Tickets_ to see _Performances_ of _Bands_ at _Venues_
 
 ![Festival ERD](./images/FestivalERD.drawio.png)
 
@@ -98,7 +102,7 @@ What is an atomic fact in our Music Festival data model?
 ![Festival ERD](./images/FestivalERD.drawio.png)
 
 Remember that facts are numeric and additive - what column in our data model would we want to
-sum up, count, average, or do math on to help us answer the questions above.
+sum up, count, average, or do math on to help us answer the questions above?
 
 ### Creating Our Dimensional Model
 
