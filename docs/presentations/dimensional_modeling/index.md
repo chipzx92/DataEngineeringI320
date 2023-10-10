@@ -17,7 +17,7 @@ In our last assignment, we created a physical E-R model of our operational datab
 What is this data model about?  
 _Bands_ give _Performances_ at _Venues_ to _People_ who made _Purchases_ of _Tickets_
 
-- or -
+OR -
 
 _People_ make _Purchases_ of _Tickets_ to see _Performances_ of _Bands_ at _Venues_
 
