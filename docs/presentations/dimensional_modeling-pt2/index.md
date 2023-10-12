@@ -1,3 +1,5 @@
+# Dimensional Modeling, Part II
+
 In our last class, we looked at how to transform operational data models into dimensional models or 
 star schemas. We did this by:
 
