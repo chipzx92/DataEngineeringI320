@@ -180,8 +180,7 @@ files and visualizations.
 
 #### Semester Project Instructions:
 [Semester Project](presentations/semester_project)  
-
-<!--  
+ 
 Requirements Documents:  
 [Austin Animal Center Outcomes](projects/aac/REQUIREMENTS.md)  
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
@@ -190,7 +189,7 @@ Requirements Documents:
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
 [Saturday Night Live](projects/snl/REQUIREMENTS.md)  
 [Pokemon](projects/pokemon/REQUIREMENTS.md)  
--->  
+[Women's Tennis Association](projects/wta/REQUIREMENTS.md)  
 
 ### Week 6: Source Systems and Data Ingestion (Sep 26/28)  
 [Link to Ingestion Presentation](presentations/Ingestion/)  
@@ -231,11 +230,11 @@ Assignment: Queries from Star Schema
 ### Week 9: Data Transformation (Oct 17/19)
 What are Data Products and why do we need to create them? 
 
-<!-- [Data Products](presentations/data_products)-->  
+[Introduction to Data Products](presentations/data_products) 
 
 Introduction to bulding star schemas and data products with dbt  
 
-<!-- [dbt Intro](presentations/dbt_intro) -->  
+<!-- [Introduction to dbt](presentations/dbt_intro) -->  
 
 ### Week 10: Data Presentation and Visualization (Oct 24/26)  
 Introduction to Business Intelligence Tools using Superset 
