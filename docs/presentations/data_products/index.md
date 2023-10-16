@@ -66,15 +66,14 @@ CREATE TABLE analytics.attendance_at_performances AS (
 
 This question requires using an advanced SQL construct that you haven't learned yet. Many analysts
 and engineers haven't learned it either. So instead of expecting or hoping analysts and other engineers 
-can write this complicated SQL  - and have to do it again and again every time they want to get
+can write this complicated SQL - and have to do it again and again every time they want to get
 this data - we turn this query into a data product that can be reused.
 
 Note that this is an example of how our star schema is a data model factory - the data product is
 derived from the star schema.
 
-As an aside, every SELECT statement produces a result set that is the equivalent of a table, so we
-can use the result of an SQL statement to create a table. [Give brief explanation of theory of
-relations and how an operation on a relation always produces another relation]
+Remember that we talekd about how a SELECT statement produces a result set that is the equivalent 
+of a table, so we can use the result of an SQL statement to create a table. 
 
 That SQL statement creates this table:
 
