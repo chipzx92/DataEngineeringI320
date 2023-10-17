@@ -187,7 +187,7 @@ Requirements Documents:
 [Dancing with the Stars](projects/dwts/REQUIREMENTS.md)  
 [Internet Movie Database](projects/imdb/REQUIREMENTS.md)  
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
-[Saturday Night Live](projects/snl/REQUIREMENTS.md)  
+[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)  
 [Pokemon](projects/pokemon/REQUIREMENTS.md)  
 [Women's Tennis Association](projects/wta/REQUIREMENTS.md)  
 
