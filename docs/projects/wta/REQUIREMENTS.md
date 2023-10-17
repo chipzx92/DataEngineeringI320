@@ -21,18 +21,17 @@ tour season:
 
 6. Who wins more matches by age, as a percentage (round the age to an integer)? Can we determine if there is a range of years where players are in their prime or not?
 
-Professor Oak is currently involved in research to uncover fascinating insights about Pokemon from various generations. Your role is to aid in analyzing the data to provide answers to the following questions:
-
 Come up with another interesting question and answer that might help the IT Director with their research.
 
 ## Project Details
 The name of your project is wta. In your Jupyter notebook under the projects directory, you will find the wta project. 
 There is a data directory with your CSV files and a src directory where you will write your code.
 
-You have 4 CSV files:
+You have 5 CSV files:
 * **wta_matches.csv**
 * **wta_players.csv**
 * **wta_rankings.csv**
+* **wta_rankings_current,csv**
 * **wta_tourney_levels.csv**
 
 ## Project Steps 
