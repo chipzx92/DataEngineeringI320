@@ -234,7 +234,7 @@ What are Data Products and why do we need to create them?
 
 Introduction to bulding star schemas and data products with dbt  
 
-<!-- [Introduction to dbt](presentations/dbt_intro) -->  
+[Introduction to dbt](presentations/dbt_intro)  
 
 ### Week 10: Data Presentation and Visualization (Oct 24/26)  
 Introduction to Business Intelligence Tools using Superset 
