@@ -49,7 +49,7 @@ Everything to the left of the dotted green line is a task that loads data from a
 We used the python `\copy` command to load CSV files into tables, for example:
 
 ```sql
-\copy festival.bands FROM './data/bands.csv' WITH CSV HEADER
+\copy festival.bands FROM '../../data/bands.csv' WITH CSV HEADER
 ```
 
 To the right of the dotted green line are tasks that transform from one or more source tables into 
