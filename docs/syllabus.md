@@ -239,7 +239,7 @@ Introduction to bulding star schemas and data products with dbt
 ### Week 10: Data Presentation and Visualization (Oct 24/26)  
 Introduction to Business Intelligence Tools using Superset 
 
-<!-- [Introduction to Superset](presentations/Superset) -->  
+ [Introduction to Superset](presentations/Superset) 
 
 More Advanced visualizations with Superset 
 

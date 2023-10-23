@@ -10,7 +10,7 @@ Open up your Jupyter notebook:
 Navigate to the `data_products` directory (_projects->music_festival->src->dbt->festival->models->data_products_)
 
 The dbt model file you created should be in that directory. In my case, the name of the file is
-`avg_ticket_price_above_25.sql`.
+`avg_ticket_price_above_25.sql_ccy1234`.
 
 ![Data Products Dir](./images/data_products_dir.png)
 
@@ -26,7 +26,7 @@ command to move to the dbt _festival_ director (_projects->music_festival->src->
 To run dbt against the model file, type in the following command and hit return:
 
 ```sh
-dbt run --select avg_ticket_price_above_25.sql
+dbt run --select avg_ticket_price_above_25_<your eid>.sql
 ```
 
 ![dbt run select](./images/dbt_run_select.png)
@@ -46,9 +46,10 @@ Superset to create visualizations for our music festival project and for our sem
 * Out of the box support for nearly any SQL database or data engine
 * A lightweight semantic layer for quickly defining custom fields and metrics
 
-When you login to Superset (https://superset.dei320.net), you should see a webpage that looks like this:
+When you login to Superset (https://superset.dei320.net), you should see a webpage that looks like this.
+There is a dashboard for the Music Festival project, which you can use as a reference.
 
-![Superset Login](./images/superset_login.png)
+![Superset Login](./images/SupersetLogin.png)
 
 Today we'll look at how to make the data from our dimensional models and data products available
 in Superset and how to use that data to create a chart and a dashboard.
@@ -77,7 +78,7 @@ Let's add the data product we created in a previous class that has average ticke
 
 * Select `music_festival` as the database
 * Select `analytics` as the schema
-* Select `avg_ticket_price_above_25` as the table
+* Select `avg_ticket_price_above_25_<your eid>` as the table
 
 ![add data product](./images/add_data_product.png)
 
@@ -89,10 +90,13 @@ datasets.
 Once we've added the dataset, we can now create one or more charts from that dataset and place 
 those charts in a dashboard.
 
+This is what you will do for the data products that you create. Adding a data product as a dataset
+makes it possible to create charts for the data in that dataset.
+
 ## Charts
 
 ### Creating a Chart
-Double-click on the `avg_ticket_price_above_25` dataset. The `CREATE CHART` page will appear.
+Double-click on the `avg_ticket_price_above_25_<your eid>` dataset. The `CREATE CHART` page will appear.
 
 ![Create New Chart](./images/create_new_chart.png)
 
@@ -103,7 +107,7 @@ A _Metric_ is a calculated value that can be used in a chart. By default, every 
 COUNT(*) metric. You can create additional metrics, which is a topic we will discuss later.
 
 The list of columns shows the name of the column and a little icon on the left that indicates the
-data type of the column - `#` is a number, `abc` is a string.
+data type of the column - `#` is a number, `abc` is a string, and a clock icon is a date.
 
 ![Create Chart Data Panel](./images/create_new_chart_data.png)
 
@@ -116,7 +120,7 @@ Click on _Raw Records_. This will create a simple tabular (row and column) repor
 
 ![Raw Records](./images/raw_records.png)
 
-Under `Columns`, click on the `+` sign - you'll see this dialog:
+Under `Columns`, click on the `+` sign - you'll see this dialog. Click on the `simple` tab.
 
 ![Show Columns](./images/show_columns.png)
 
@@ -124,8 +128,9 @@ Click the `v` in the _Columns_ dropdown to get the list of columns to add to the
 
 ![Choose Columns](./images/choose_columns.png)
 
-Click on _band_name_ to add it to the list of columns that will be in the report. Do the same for 
-_venue_name_ and the _average_ticket_price_. These are the columns that will appear in our report.
+Click on _band_name_ and then hit the `SAVE` button to add it to the list of columns that will be in 
+the report. Do the same for _venue_name_ and the _average_ticket_price_. Be sure to hit `SAVE` after
+you select each column. These are the columns that will appear in our report.
 
 ![Drag Columns](./images/drag_columns.png)
 
