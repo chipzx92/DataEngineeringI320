@@ -4,11 +4,12 @@
 1. [Austin Animal Center Outcomes (aac)](../../projects/aac/REQUIREMENTS.md)
 2. [Covid-19 Cases in US Counties (covid)](../../projects/covid/REQUIREMENTS.md)
 3. [Dancing with the Stars (dwts)](../../projects/dwts/REQUIREMENTS.md)
-4. [Internet Movie Database Ratings (imdb)](../../projects/imdb/REQUIREMENTS.md)
-5. [Olympic Events (olympics)](../../projects/olympics/REQUIREMENTS.md)
-6. [Saturday Night Live shows (snl)](../../projects/sat_night_live/REQUIREMENTS.md)
-7. [Pokemon Dataset (pokemon)](../../projects/pokemon/REQUIREMENTS.md)
-8. [WTA Tennis Rankings (wta)](../../projects/wta/REQUIREMENTS.md)
+4. [Internet Movie Database Ratings action genres (imdb_action)](../../projects/imdb_action/REQUIREMENTS.md)
+5. [Internet Movie Database Ratings dramatic genres (imdb_drama)](../../projects/imdb_drama/REQUIREMENTS.md)
+6. [Internet Movie Database Ratings entertainment genres (imdb_ent)](../../projects/imdb_ent/REQUIREMENTS.md)
+7. [Olympic Events (olympics)](../../projects/olympics/REQUIREMENTS.md)
+8. [Saturday Night Live shows (snl)](../../projects/sat_night_live/REQUIREMENTS.md)
+
 
 You will be divided into teams of 4 and be assigned a project. Each project has a requirements
 document, which is linked above.
