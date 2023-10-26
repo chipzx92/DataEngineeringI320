@@ -223,18 +223,18 @@ The bar chart now appears on the dashboard
 
 ## Exercise
 
-Create a time-series bar chart that show the top three bands by revenue for each year. Save it and 
-add it to your test dashboard.
+Create a pie chart that show the top top bands by revenue using the `analytics.band_performances` 
+dataset. Customize it to show both the band name and revenue. Save it and add it to your test dashboard.
 
 ## Semester Project
 
-For your semester project, you will be divided into teams of 4 people. You will be given a set of 
+For your semester project, you have been divided into teams of 4 people. You have been given a set of 
 requirements for your project and data for your project in the form of CSV files. The requirements 
-will be a description of the data and organizational context along with a series of questions that 
+are a description of the data and organizational context along with a series of questions that 
 we want the data to answer.
 
-A project will be set up for your team in your VM and it will give you a framework to build your 
-project. In your project, you will do the following:
+A project has been set up for your team in your VM and it gives you a framework to build your 
+project. In your project, the members of your team will do the following:
 
 * Load the CSV files into staging tables. 
   * Create a database design for the staging tables.
