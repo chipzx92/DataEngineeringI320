@@ -186,10 +186,10 @@ files and visualizations.
 [COVID 19 Cases by US County](projects/covid/REQUIREMENTS.md)  
 [Dancing with the Stars](projects/dwts/REQUIREMENTS.md)  
 [Internet Movie Database - entertainment genres](projects/imdb_ent/REQUIREMENTS.md)  
-[Internet Movie Database - action genres](projects/imdb_action/REQUIREMENTS.md) 
-[Internet Movie Database - dramatic genres](projects/imdb_drama/REQUIREMENTS.md) 
+[Internet Movie Database - action genres](projects/imdb_action/REQUIREMENTS.md)  
+[Internet Movie Database - dramatic genres](projects/imdb_drama/REQUIREMENTS.md)   
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
-[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)
+[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)  
 
 ### Week 6: Source Systems and Data Ingestion (Sep 26/28)  
 [Link to Ingestion Presentation](presentations/Ingestion/)  
