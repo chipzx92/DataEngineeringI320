@@ -239,24 +239,22 @@ Introduction to bulding star schemas and data products with dbt
 ### Week 10: Data Presentation and Visualization (Oct 24/26)  
 Introduction to Business Intelligence Tools using Superset 
 
- [Introduction to Superset](presentations/Superset) 
+[Introduction to Superset](presentations/Superset) 
 
 More Advanced visualizations with Superset 
 
-<!-- [Creating visualizations with Superset](presentations/Visualizations) -->  
+[Creating visualizations with Superset](presentations/Visualizations)  
 
 ### Week 11: Workshop on Semester Projects (Oct 31/Nov 2)  
 Review Semester Project Instructions  
 Review Project Report Template  
 Ingestion of Source Data  
 
-<!--
 #### Review Semester Project Instructions:
 [Semester Project](presentations/semester_project)
 
 #### Project Report Template:  
-[Project Report Template](320d_project_report_template.ipynb)  
--->
+[Project Report Template](320d_project_report_template.ipynb)
 
 ### Week 12: Workshop on Semester Projects (Nov 7/9)
 Building Star Schemas and Data Products  
