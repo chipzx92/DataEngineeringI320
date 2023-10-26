@@ -223,7 +223,7 @@ The bar chart now appears on the dashboard
 
 ## Exercise
 
-Create a pie chart that show the top top bands by revenue using the `analytics.band_performances` 
+Create a pie chart that show the top 10 bands by revenue using the `analytics.band_performances` 
 dataset. Customize it to show both the band name and revenue. Save it and add it to your test dashboard.
 
 ## Semester Project
