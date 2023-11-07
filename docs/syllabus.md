@@ -257,16 +257,29 @@ Ingestion of Source Data
 [Project Report Template](320d_project_report_template.ipynb)
 
 ### Week 12: Workshop on Semester Projects (Nov 7/9)
-Building Star Schemas and Data Products  
+Building Star Schemas (Dimensional Models) and Data Products 
+
+References:
+[Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
+[Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
+
+[Introduction to Data Products](presentations/data_products)  
+[Introduction to dbt](presentations/dbt_intro)  
 
 ### Week 13: Workshop on Semester Projects (Nov 14/Nov 16)   
 Building reports and visualizations  
+
+References:
+[Introduction to Superset](presentations/Superset)  
+[Creating visualizations with Superset](presentations/Visualizations)  
+
+Semester Project due by Nov 20
 
 ### Thanksgiving break (Nov 20-25))
 
 ### Week 15: Trends and New Directions in Data Engineering (Nov 28/30)  
 Nov 28 - Project Presentations  
-Nov 30 - [Wrap-Up](presentations/Wrap-up): Data Engineering concepts, careers, and interviewing  
+Nov 30 - [Wrap-Up](presentations/Wrap-up): Talk on Generative Artificial Intelligence and Data Engineering careers and interviewing  
 
 ## Assessments
 
