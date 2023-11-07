@@ -259,7 +259,7 @@ Ingestion of Source Data
 ### Week 12: Workshop on Semester Projects (Nov 7/9)
 Building Star Schemas (Dimensional Models) and Data Products 
 
-References:
+References:  
 [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
 [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
 
@@ -269,7 +269,7 @@ References:
 ### Week 13: Workshop on Semester Projects (Nov 14/Nov 16)   
 Building reports and visualizations  
 
-References:
+References:  
 [Introduction to Superset](presentations/Superset)  
 [Creating visualizations with Superset](presentations/Visualizations)  
 
