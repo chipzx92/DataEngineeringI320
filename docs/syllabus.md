@@ -328,7 +328,7 @@ The project will be done in groups (to be determined but likely 4 students).
 The project will consist of three elements, two graded as a group and one graded individually.
 
 1. A working data pipeline, using the technologies taught in this class, including vizualization dashboards, together with a written commentary (README.md) describing the pipeline and the challenges overcome will be submitted (3-4 pages including illustrations). Worth 40% of course grade.
-2. A group presentation built using Markdown and presented in class on Tuesday Nov 28 (presentation 5-8 minutes, around 6 slides). Worth 5% of course grade.
+2. A group presentation presented in class on Tuesday Nov 28 (presentation 5-8 minutes, around 3-6 slides). Worth 5% of course grade.
 3. An individual interview with course professor to test your understanding of core data engineering concepts and answer questions about the techniques and results in your project. Worth 15% of course grade. 
 
 Working in groups for this course does not mean dividing up the work; We require each group member 
