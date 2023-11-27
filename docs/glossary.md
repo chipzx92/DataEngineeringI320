@@ -47,6 +47,11 @@ tasks. If we have a simple graph A -> B -> C, where A, B, and C are tasks and ->
 of execution, then C is dependent on B, meaning that B must complete successfully before C can be
 executed.
 
+The phases of the data pipeline can be defined as follows:
+* Ingestion - Loading data from source system(s) into a data warehouse or data lake.
+* Transformation - Restructuring data into a format suitable for analytical processing (for example, transforming source tables into a star schema).
+* Presentation - Making transformed data available through BI Tools (e.g. Superset), APIs, or other tools.
+
 **data product**  
 One definition of a data product is a *reusable data asset, built to deliver a trusted dataset, for 
 a specific purpose*.<sup>6</sup>
