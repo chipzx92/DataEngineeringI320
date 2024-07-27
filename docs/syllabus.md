@@ -13,7 +13,7 @@ Jump to [Course Schedule](#course-schedule).
 
 ## Lab link
 Access to lab systems will be available about 2 weeks into the semester.  
-Instructions on how to access your VM environment (when available): [VM Environment Access](presentations/aws_vm)   
+Instructions on how to access your VM environment (when available)<!-- : [VM Environment Access](presentations/aws_vm) -->
 
 There is a [glossary](glossary.md) of terms and concepts that we will use in this course that you may find useful.
 It also contains references to important and influential books on data engineering.
@@ -52,8 +52,9 @@ are helpful. INF 320D Database Design and INF 320D Data Visualization are also h
 ## Professors and Office Hours
 
 This course is taught by [Chip Young](https://utexas.instructure.com/courses/1341797/users/4569937), 
-a working data professional. I previously taught this class in the Fall 2022 along with
-Professor James Howison and in Fall 2023. You can reach me at chip.young@utexas.edu or text me at +1 415-637-9585.
+a working data professional. I previously taught this class in the Fall 2022 semester along with
+Professor James Howison and in Fall 2023 semester. You can reach me at chip.young@utexas.edu or 
+text me at +1 415-637-9585.
 
 The academic assistant for this class is Urjani Chakravarti. She will help assist students with
 classroom assignments and assist with grading. You can reach Urjani at urjani.chakravarti@utexas.edu.
@@ -124,19 +125,19 @@ courses are:
 ## Course Schedule 
 [subject to change as course materials are updated or changed]
 
-### Week 1.1: Introduction to Data Engineering (Aug 27)  
+### Week 1.1: Course Overview/Introduction to Data Engineering (Aug 27)  
 Introductions  
 Syllabus review  
 Definition and Overview of Data Engineering
-- [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf)
+<!-- - [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf) -->
 
 Overview of weekly assignments and semester projects.
-- [Data Transformation Exercise](exercises/transformations_exercise/)
+<!-- - [Data Transformation Exercise](exercises/transformations_exercise/)  -->
 
 ### Week 1.2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29)  
 
 Presentation and distribution of sample end-to-end project.
-- [Data Engineering Pipeline Overview](presentations/pipeline_overview)
+<!-- - [Data Engineering Pipeline Overview](presentations/pipeline_overview) -->
 
 <!-- Installation  
 Processing steps in the data pipeline w/examples  
@@ -154,12 +155,14 @@ Assignment: Make enhancements to sample project
 
 ### Weeks 2-4: SQL Review (Sep 3/5 10/12 17/19)    
 
+<!--
 **Answers to Questions:**  
 What is the difference between Data Science and Data Analytics?  
 What is the difference between ETL and ELT?  
 
 [In-Class Exercise](exercises/card_exercise)  
 [Link to SQL material](presentations/sql)  
+-->
 
 Intro to Postgres and SQL Lab  
 Create Table
@@ -174,8 +177,9 @@ consist of a requirements document explaining what you need to do and what the g
 project are, a set of data files, a database dedicated to your project, and workspaces for your
 files and visualizations.  
 
-
+<!--
 #### Semester Project Instructions:
+
 [Semester Project](presentations/semester_project)  
  
 #### Requirements Documents:  
@@ -188,10 +192,12 @@ files and visualizations.
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
 [Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)  
 
+-->
 ### Week 5.2-6.1: Source Systems and Data Ingestion (Sep 26/Oct 1)  
+<!--
 [Link to Ingestion Presentation](presentations/Ingestion/)  
 [Link to Bulk Load](presentations/ingestion-pt2/)  
-
+-->
 
 We will cover the following topics:  
 What are source systems?  
@@ -204,44 +210,39 @@ What are Streaming systems?
 Bulk ingestion using the Copy command   
 Workshop on ingesting data for semester project   
 
-<!--
-### Week 7: Data Cleansing and Validation (Oct 3/5)  
-Data Quality of Source Systems  
-Statistical validation  
-Rule-based validation  
--->  
-
 ### Weeks 6.2-8.1: Data Modeling (Oct 3, 8/10, 15)  
 We will discuss the following topics:  
-ER diagrams and modeling transactional systems  
+ER diagrams and modeling transactional systems 
+<!--
 - [one-to-many](presentations/modeling/01_has_many/)  
 - [many-to-many](presentations/modeling/02_many_to_many/)  
 - [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)  
- 
+-->
 Dimensional Modeling (Star Schemas)  
+<!--
 - [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
 - [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
-
+-->
 Assignment: Queries from Star Schema
 
 
 ### Week 8.2-9.1: Data Transformation (Oct 17,22)
 What are Data Products and why do we need to create them? 
 
-[Introduction to Data Products](presentations/data_products) 
+<!-- [Introduction to Data Products](presentations/data_products) -->
 
 Introduction to bulding star schemas and data products with dbt  
 
-[Introduction to dbt](presentations/dbt_intro)  
+<!-- [Introduction to dbt](presentations/dbt_intro) --> 
 
 ### Week 9.2-10.1: Data Presentation and Visualization (Oct 24,29)  
 Introduction to Business Intelligence Tools using Superset 
 
-[Introduction to Superset](presentations/Superset) 
+<!-- [Introduction to Superset](presentations/Superset) -->
 
 More Advanced visualizations with Superset 
 
-[Creating visualizations with Superset](presentations/Visualizations)  
+<!-- [Creating visualizations with Superset](presentations/Visualizations) --> 
 
 ### Week 10.2: Data Orchestration and Data Catalogs (Oct 31)
 We will look at Dagster, a data orchestration tool, and DataHub, a data catalog tool. 
@@ -253,28 +254,34 @@ Review Semester Project Instructions
 Review Project Report Template  
 Ingestion of Source Data  
 
+<!--
 #### Review Semester Project Instructions:
 [Semester Project](presentations/semester_project)
 
 #### Project Report Template:  
 [Project Report Template](320d_project_report_template.ipynb)
+-->
 
 ### Week 12: Workshop on Semester Projects (Nov 12/14)
 Building Star Schemas (Dimensional Models) and Data Products 
 
+<!--
 References:  
 [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
 [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
 
 [Introduction to Data Products](presentations/data_products)  
 [Introduction to dbt](presentations/dbt_intro)  
+-->
 
 ### Week 13: Workshop on Semester Projects (Nov 19/21)   
 Building reports and visualizations  
 
+<!--
 References:  
 [Introduction to Superset](presentations/Superset)  
 [Creating visualizations with Superset](presentations/Visualizations)  
+-->
 
 Semester Project due by Nov 25
 
@@ -284,7 +291,7 @@ Semester Project due by Nov 25
 Dec 3 - Project Presentations  
 
 ### Week 15.2: Trends and New Directions in Data Engineering (Dec 5) 
-Dec 5 - [Wrap-Up](presentations/Wrap-up): Talk on Generative Artificial Intelligence and Data Engineering careers and interviewing  
+Dec 5 - <!-- [Wrap-Up](presentations/Wrap-up): --> Talk on Generative Artificial Intelligence and Data Engineering careers and interviewing  
 
 ## Assessments
 
@@ -325,8 +332,8 @@ you are spending more time than expected; reach out for a meeting with a course 
 
 ### Project
 
-60% of your course grade will come from a group project to a data engineering workflow (sometimes 
-also called a "data pipeline"). 
+60% of your course grade will come from a group project to create a data engineering workflow (sometimes 
+also called a "data pipeline") to transform a data set and visualizations from that data.. 
 
 The project will be done in groups (to be determined but likely 4 students).
 
