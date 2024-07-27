@@ -243,7 +243,7 @@ More Advanced visualizations with Superset
 
 [Creating visualizations with Superset](presentations/Visualizations)  
 
-### Week 10.2: Oct 17 Data Orchestration and Data Catalogs (Oct 31)
+### Week 10.2: Data Orchestration and Data Catalogs (Oct 31)
 We will look at Dagster, a data orchestration tool, and DataHub, a data catalog tool. 
 - What do these tools do and why are they needed?
 - How are they used in organizations
@@ -280,8 +280,10 @@ Semester Project due by Nov 25
 
 ### Thanksgiving break (Nov 25-30))
 
-### Week 15: Trends and New Directions in Data Engineering (Dec 3/5)  
+### Week 15.1: Project Presentations (Dec 3) 
 Dec 3 - Project Presentations  
+
+### Week 15.2: Trends and New Directions in Data Engineering (Dec 5) 
 Dec 5 - [Wrap-Up](presentations/Wrap-up): Talk on Generative Artificial Intelligence and Data Engineering careers and interviewing  
 
 ## Assessments
@@ -292,7 +294,7 @@ Course grades will be assiged based on performance in the course assessments (se
 - Semester Project: 60%
   - Group Pipeline code and dashboard: 40%, Due Nov Friday 16 (before Thanksgiving break)
   - Group presentation: 5%, Tuesday Nov 28 (just after Thanksgiving break)
-  - Individual interview about core data engineering concepts and the group project: 15% (scheduled during last week of classes (Mon Nov 28-Mon Dec 4).
+  - Individual interview about core data engineering concepts and the group project: 15% (scheduled during last week of classes (Mon Dec 2 - Mon Dec 9).
 
 The assignments and grading scheme (A, A-, B, ..., F) are shown in Canvas.  Assignments will be submitted through Canvas.
 
