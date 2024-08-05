@@ -300,7 +300,7 @@ Course grades will be assiged based on performance in the course assessments (se
 - Weekly assignments (~8-10): 40%
 - Semester Project: 60%
   - Group Pipeline code and dashboard: 40%, Due Nov Friday 16 (before Thanksgiving break)
-  - Group presentation: 5%, Tuesday Nov 28 (just after Thanksgiving break)
+  - Group presentation: 5%, Tuesday Dec 3 (just after Thanksgiving break)
   - Individual interview about core data engineering concepts and the group project: 15% (scheduled during last week of classes (Mon Dec 2 - Mon Dec 9).
 
 The assignments and grading scheme (A, A-, B, ..., F) are shown in Canvas.  Assignments will be submitted through Canvas.
