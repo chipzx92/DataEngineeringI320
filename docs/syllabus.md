@@ -213,16 +213,12 @@ Workshop on ingesting data for semester project
 ### Weeks 6.2-8.1: Data Modeling (Oct 3, 8/10, 15)  
 We will discuss the following topics:  
 ER diagrams and modeling transactional systems 
-<!--
-- [one-to-many](presentations/modeling/01_has_many/)  
-- [many-to-many](presentations/modeling/02_many_to_many/)  
-- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)  
--->
+<!--[one-to-many](presentations/modeling/01_has_many/)  --> 
+<!-- [many-to-many](presentations/modeling/02_many_to_many/) --> 
+<!-- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)  -->
 Dimensional Modeling (Star Schemas)  
-<!--
-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
--->
+<!-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  -->
+<!-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  -->
 Assignment: Queries from Star Schema
 
 
