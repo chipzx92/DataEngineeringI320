@@ -2,7 +2,8 @@
 
 This week we will gain an overview of the data engineering pipelines that we are going to build.
 
-In the presentation today we begin with our task, and first show the final outcome, then we circle back to the start, and discuss the data and the pipeline steps and tools we use.
+In the presentation today we begin with our task, and first show the final outcome, then we circle 
+back to the start, and discuss the data and the pipeline steps and tools we use.
 
 This presentation is to give you a high-level overview and a map to the semester; we will go over each of these steps in detail in individual classes.  We don't expect you to understand the details, we just hope you are intrigued and excited to learn more.
 

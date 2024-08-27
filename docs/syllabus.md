@@ -129,7 +129,7 @@ courses are:
 Introductions  
 Syllabus review  
 Definition and Overview of Data Engineering
-<!-- - [Data Engineering Introduction Slides](presentations/DataEngineeringIntroduction.pdf) -->
+- [Data Engineering Introduction Slides](presentations/Data Engineering Introduction.pdf)
 
 Overview of weekly assignments and semester projects.
 <!-- - [Data Transformation Exercise](exercises/transformations_exercise/)  -->

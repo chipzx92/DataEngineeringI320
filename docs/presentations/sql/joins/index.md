@@ -111,11 +111,11 @@ LEFT JOIN majors
     
 > left_join_result
 
-| student_name           | hobby | major    |
-|------------------------| ------|----------| 
-| Shuyen *(both tables)* | dancing | Art      |
-| Brian *(both tables)*  | dancing | Theater  |
-| Adnan *(left only)*    | running | **NULL** 
+| student_name           | hobby    | major    |
+|------------------------|----------|----------| 
+| Shuyen *(both tables)* | dancing  | Art      |
+| Brian *(both tables)*  | dancing  | Theater  |
+| Adnan *(left only)*    |  running | **NULL** 
 
 #### RIGHT JOIN
 

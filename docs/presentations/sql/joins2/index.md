@@ -167,6 +167,12 @@ ORDER BY performance_start, band_name
 Do we have any bands in our database that haven't played any performances? How would we find this
 out using a Left Join?
 
+<!--
+Hints:
+* We want to eliminate all of the rows that match to find out the ones that don't
+* What is the value of columns that don't match in Left, Right, or Full outer joins?
+-->
+
 
 ### Right Joins
 Do we have any venues in our database that haven't hosted any performances? How could we find this
