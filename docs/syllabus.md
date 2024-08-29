@@ -137,7 +137,7 @@ Overview of weekly assignments and semester projects.
 ### Week 1.2: Introduction to Data Pipelines/End-to-End Presentation (Aug 29)  
 
 Presentation and distribution of sample end-to-end project.
-<!-- - [Data Engineering Pipeline Overview](presentations/pipeline_overview) -->
+- [Data Engineering Pipeline Overview](presentations/pipeline_overview)
 
 <!-- Installation  
 Processing steps in the data pipeline w/examples  
