@@ -138,6 +138,7 @@ Overview of weekly assignments and semester projects.
 
 Presentation and distribution of sample end-to-end project.
 - [Data Engineering Pipeline Overview](presentations/pipeline_overview)
+- [Data Modeling Exercise](exercises/card_exercise)
 
 <!-- Installation  
 Processing steps in the data pipeline w/examples  
