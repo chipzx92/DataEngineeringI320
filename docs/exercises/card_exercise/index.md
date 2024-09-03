@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling: Card Exercise"
+title: "Data Modeling: Card Exercise"
 ---
 Card Exercise for Data Modeling
 ===================================

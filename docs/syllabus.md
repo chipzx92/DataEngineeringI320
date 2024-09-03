@@ -151,7 +151,8 @@ ELT vs ETL
 Semester Project  
 Assignments of data sources  
 Project Definition  
-Assignment: Make enhancements to sample project  
+[In-Class Exercise](exercises/card_exercise)  
+-- Assignment: Make enhancements to sample project  
 -->
 
 ### Weeks 2-4: SQL Review (Sep 3/5 10/12 17/19)    
@@ -159,16 +160,13 @@ Assignment: Make enhancements to sample project
 <!--
 **Answers to Questions:**  
 What is the difference between Data Science and Data Analytics?  
-What is the difference between ETL and ELT?  
-
-[In-Class Exercise](exercises/card_exercise)  
-[Link to SQL material](presentations/sql)  
+What is the difference between ETL and ELT?
 -->
-
-Intro to Postgres and SQL Lab  
-Create Table
-SQL Basics Review
-Aggregate Functions (COUNT, SUM, AVG)  
+#### Links to SQL material:  
+[Intro to Postgres and SQL Lab](presentations/sql)  
+[Create Table](presentations/sql/create_table)  
+[SQL Basics Review](presentations/sql/select_basics)  
+Aggregate Functions (COUNT, SUM, AVG)
 Different types of Joins especially Outer Joins   
 SQL Review Assignment    
 
