@@ -1,5 +1,7 @@
 # SQL for data engineering
 
+[Link for VPN Instructions](https://cloud.wikis.utexas.edu/wiki/spaces/iSchool/pages/46925218/VPN)
+
 SQL is the language we will use for data engineering.
 
 SQL queries have two main jobs:
