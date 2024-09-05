@@ -52,7 +52,7 @@ will use a single table in the FROM clause.
 To run these queries we need to create a schema and a table called `cars`. 
 [The commands you can copy to do this are here.](create_class_cars.html).
 
-Once you execute those queries, you can select your EID schema.
+Once you execute those queries, you can select your `exercises` schema.
 
 ![select analytics schema](images/select_eid_schema.png)
 
@@ -436,3 +436,25 @@ select query:
 
 Finally as usual w3cSchool has a useful SQL tutorial. It doesn't go in exactly the same order as 
 we did, but it's pretty close. Here are their materials on [SQL SELECT](http://www.w3schools.com/sql/sql_select.asp)
+
+### Assignment:
+Books CREATE and INSERT statements - In your assignments tab.   
+
+**Proper formatting for CREATE TABLE statements:** 
+```sql
+DROP TABLE IF EXISTS a_table_name;  
+CREATE TABLE IF NOT EXISTS a_table_name (   
+    column1          SERIAL PRIMARY KEY,  
+    column2          a_datatype, 
+    long_column_name a_datatype 
+    .
+    .
+    .
+);
+```
+- DROP TABLE on first line
+- Use IF EXISTS and IF NOT EXISTS
+- CREATE TABLE on second line with open paren at end
+- column names indented
+- datatypes lined up evenly
+- ends with closed paren and semi-colon on separate line
