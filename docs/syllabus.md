@@ -157,16 +157,11 @@ Project Definition
 
 ### Weeks 2-4: SQL Review (Sep 3/5 10/12 17/19)    
 
-<!--
-**Answers to Questions:**  
-What is the difference between Data Science and Data Analytics?  
-What is the difference between ETL and ELT?
--->
 #### Links to SQL material:  
 [Intro to Postgres and SQL Lab](presentations/sql)  
 [Create Table](presentations/sql/create_table)  
 [SQL Basics Review](presentations/sql/select_basics)  
-Aggregate Functions (COUNT, SUM, AVG)
+[Aggregate Functions (COUNT, SUM, AVG)](presentations/sql/aggregate_functions)  
 Different types of Joins especially Outer Joins   
 SQL Review Assignment    
 
