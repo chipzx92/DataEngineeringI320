@@ -1,7 +1,7 @@
 # Joining tables
 
-Today we're going to talk about using JOINs to get data from more than one table. But first,
-we'll go over last week's assignment and then talk about this week's assignment.
+Today we're going to talk about using JOINs to get data from more than one table. 
+<!-- But first, we'll go over last week's assignment and then talk about this week's assignment. -->
 
 [Assignment: SELECT queries](https://utexas.instructure.com/courses/1367958/assignments/6455713)
 
@@ -39,61 +39,55 @@ We also can't copy both columns and paste them underneath.  If we do that the va
 
 So the database knows ways to combine the tables that preserve the meaning of the data.
 
-We will look at four different ways to combine these tables: 1) `FULL JOIN`, 2) `LEFT JOIN`, 3) `RIGHT JOIN`, and 4) `INNER JOIN`
+We will look at four different ways to combine these tables: 1) `(INNER) JOIN`, 2) `LEFT (OUTER) JOIN`, 3) `RIGHT (OUTER) JOIN`, and 4) `FULL (OUTER) JOIN`
 
 <table>
 <tr>
+<td colspan = 2>
+(INNER) JOIN
+
+<img src="images/inner_join.png" />
+</td>
+</tr>
+
+<tr>
+<td>
+LEFT (OUTER) JOIN
+
+<img src="images/left_join.png" />
+</td>
+
+<td>
+RIGHT (OUTER) JOIN
+
+<img src="images/right_join.png" />
+</td>
+</tr>
+
+<tr>
 <td colspan=2>
-FULL JOIN
+FULL (OUTER) JOIN
 
 <img src="images/full_join.png" />
 </td>
 </tr>
 
-<tr>
-<td>
-LEFT JOIN
-
-<img src="images/left_join.png" />
-</td>
-<td>
-RIGHT JOIN
-
-<img src="images/right_join.png" />
-</td>
-</tr>
-<tr>
-<td colspan = 2>
-INNER JOIN
-
-<img src="images/inner_join.png" />
-</td>
-</tr>
 </table>
 
 Images from https://learnsql.com/blog/sql-joins/
 
+## INNER JOIN
 
-## FULL JOIN
+![](images/inner_join.png)
 
-The first keeps all of the data, matching up rows and adding `NULL` values where rows are only in one table or the other.  This is called the `FULL JOIN`.
+First, the most common option is to keep only the rows that have data in both tables. This is called an `INNER JOIN`. 
 
-![](images/full_join.png)
+> inner_join_result
 
-```sql
-SELECT *
-FROM   hobbies 
-FULL JOIN majors
-```
-
-> full_join_result
-
-| student_name             | hobby | major     |
-|--------------------------| ------|-----------| 
-| Shuyen *(both tables)*   | dancing | Art       |
-| Brian                    | dancing | Theater   | 
-| Adnan *(left only)*      | running | **NULL**  |
-| Yungsheng *(right only)* | **NULL**    | English   |
+| student_name           | hobby | major    |
+|------------------------| ----- |----------| 
+| Shuyen *(both tables)* |       dancing | Art      |
+| Brian *(both tables)*  |        dancing | Theater  |
 
 ### LEFT and RIGHT JOIN
 
@@ -151,18 +145,26 @@ is identical to
 hobbies LEFT JOIN majors
 ```
 
-## INNER JOIN
+## FULL JOIN
 
-![](images/inner_join.png)
+The final option keeps all of the data, matching up rows and adding `NULL` values where rows are only in one table or the other.  This is called the `FULL JOIN`.
 
-Finally, our fourth option is to only keep rows that have data in both tables. This is called an `INNER JOIN`. 
+![](images/full_join.png)
 
-> inner_join_result
+```sql
+SELECT *
+FROM   hobbies 
+FULL JOIN majors
+```
 
-| student_name           | hobby | major    |
-|------------------------| ----- |----------| 
-| Shuyen *(both tables)* |       dancing | Art      |
-| Brian *(both tables)*  |        dancing | Theater  |
+> full_join_result
+
+| student_name             | hobby | major     |
+|--------------------------| ------|-----------| 
+| Shuyen *(both tables)*   | dancing | Art       |
+| Brian                    | dancing | Theater   | 
+| Adnan *(left only)*      | running | **NULL**  |
+| Yungsheng *(right only)* | **NULL**    | English   |
 
 ## Inner vs Outer?
 
@@ -198,7 +200,7 @@ In that way our `LEFT JOIN` above would become:
 ```sql
 SELECT *
 FROM hobbies 
-  LEFT JOIN majors ON hobbies.student_name = majors.student_name
+  LEFT JOIN majors ON (hobbies.student_name = majors.student_name)
 ```
 
 There is a special shorthand when the column name is the same in both tables, `USING column_name`.  Making it:
@@ -206,7 +208,7 @@ There is a special shorthand when the column name is the same in both tables, `U
 ```sql
 SELECT *
 FROM hobbies 
-  LEFT JOIN majors USING student_name 
+  LEFT JOIN majors USING (student_name) 
 ```
 
 <!--
