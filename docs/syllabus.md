@@ -162,7 +162,7 @@ Project Definition
 [Create Table](presentations/sql/create_table)  
 [SQL Basics Review](presentations/sql/select_basics)  
 [Aggregate Functions (COUNT, SUM, AVG)](presentations/sql/aggregate_functions)  
-[Intro to Joining Tables](presentations/sql/joins)
+[Intro to Joining Tables](presentations/sql/joins)  
 Different types of Joins especially Outer Joins   
 SQL Review Assignment    
 
