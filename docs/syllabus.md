@@ -163,7 +163,7 @@ Project Definition
 [SQL Basics Review](presentations/sql/select_basics)  
 [Aggregate Functions (COUNT, SUM, AVG)](presentations/sql/aggregate_functions)  
 [Intro to Joining Tables](presentations/sql/joins)  
-Different types of Joins especially Outer Joins   
+[Joins, Part 2](presentations/sql/joins2)  
 SQL Review Assignment    
 
 ### Week 5.: Introduction to Semester Project (Sep 24)
