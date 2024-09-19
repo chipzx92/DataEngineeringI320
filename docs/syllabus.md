@@ -164,9 +164,39 @@ Project Definition
 [Aggregate Functions (COUNT, SUM, AVG)](presentations/sql/aggregate_functions)  
 [Intro to Joining Tables](presentations/sql/joins)  
 [Joins, Part 2](presentations/sql/joins2)  
-SQL Review Assignment    
+[Group By, Part 2 and Having](presentations/sql/grouping)
 
-### Week 5.: Introduction to Semester Project (Sep 24)
+SQL Review Assignment - Due Tuesday, September 24 by class time (12:30 PM)
+
+### Week 5: Source Systems and Data Ingestion (Sep 24/26)  
+<!--
+[Link to Ingestion Presentation](presentations/Ingestion/)  
+[Link to Bulk Load](presentations/ingestion-pt2/)  
+-->
+
+We will cover the following topics:  
+What are source systems?  
+Why do we replicate source data?  
+What is a Data Lake?    
+What is a Data Warehouse?  
+What is a Data Lakehouse?  
+What is Batch Processing?  
+What are Streaming systems?  
+Bulk ingestion using the Copy command   
+Workshop on ingesting data for semester project   
+
+### Weeks 6.2-8.1: Data Modeling (Oct 1/3, 8/10)  
+We will discuss the following topics:  
+ER diagrams and modeling transactional systems 
+<!--[one-to-many](presentations/modeling/01_has_many/)  --> 
+<!-- [many-to-many](presentations/modeling/02_many_to_many/) --> 
+<!-- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)  -->
+Dimensional Modeling (Star Schemas)  
+<!-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  -->
+<!-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  -->
+Assignment: Queries from Star Schema
+
+### Week 5.: Introduction to Semester Project (Oct 15)
 You will be divided up into teams of 4 and assigned your semester projects. Each project will 
 consist of a requirements document explaining what you need to do and what the goals of the
 project are, a set of data files, a database dedicated to your project, and workspaces for your
@@ -188,34 +218,6 @@ files and visualizations.
 [Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)  
 
 -->
-### Week 5.2-6.1: Source Systems and Data Ingestion (Sep 26/Oct 1)  
-<!--
-[Link to Ingestion Presentation](presentations/Ingestion/)  
-[Link to Bulk Load](presentations/ingestion-pt2/)  
--->
-
-We will cover the following topics:  
-What are source systems?  
-Why do we replicate source data?  
-What is a Data Lake?    
-What is a Data Warehouse?  
-What is a Data Lakehouse?  
-What is Batch Processing?  
-What are Streaming systems?  
-Bulk ingestion using the Copy command   
-Workshop on ingesting data for semester project   
-
-### Weeks 6.2-8.1: Data Modeling (Oct 3, 8/10, 15)  
-We will discuss the following topics:  
-ER diagrams and modeling transactional systems 
-<!--[one-to-many](presentations/modeling/01_has_many/)  --> 
-<!-- [many-to-many](presentations/modeling/02_many_to_many/) --> 
-<!-- [many-to-many with attributes](presentations/modeling/03_many_to_many_attributes/)  -->
-Dimensional Modeling (Star Schemas)  
-<!-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  -->
-<!-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  -->
-Assignment: Queries from Star Schema
-
 
 ### Week 8.2-9.1: Data Transformation (Oct 17,22)
 What are Data Products and why do we need to create them? 
