@@ -169,10 +169,9 @@ Project Definition
 SQL Review Assignment - Due Tuesday, September 24 by class time (12:30 PM)
 
 ### Week 5: Source Systems and Data Ingestion (Sep 24/26)  
-<!--
-[Link to Ingestion Presentation](presentations/Ingestion/)  
-[Link to Bulk Load](presentations/ingestion-pt2/)  
--->
+
+[ngestion from Source Systems](presentations/Ingestion/)  
+[Bulk Loading from Source Systems](presentations/ingestion-pt2/)
 
 We will cover the following topics:  
 What are source systems?  
