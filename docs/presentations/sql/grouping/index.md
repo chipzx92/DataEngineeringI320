@@ -185,7 +185,7 @@ GROUP BY band_name
 ORDER BY ticket_sales_revenue DESC
 LIMIT 5;
 ```
-3. How many tickets were sold byt the top 5 bands? (select band name, ticket sales revenue, avg ticket price, and # of tickets)
+3. How many tickets were sold by the top 5 bands? (select band name, ticket sales revenue, avg ticket price, and # of tickets)
 ```sql
 SELECT b.name AS band_name, 
        SUM(price) AS ticket_sales_revenue,
