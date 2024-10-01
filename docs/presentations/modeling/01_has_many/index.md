@@ -156,7 +156,7 @@ and deduct points for not following them.
 
 # Modeling Exercise (in-class)
 
-In Zoom working groups you will be assigned one of the relationships below. Each should be modeled 
+In 4-person working groups you will be assigned one of the relationships below. Each should be modeled 
 with just two entities (two boxes) and one relationship between them (one line).
 
 You should (using paper and pens):
@@ -176,3 +176,4 @@ Examples (all one-to-many and only two boxes and one line.)
 6. Cities and states (use some cities with the same name in different states)
 7. Musicians/Bands and their albums
 8. Authors and books
+
