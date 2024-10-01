@@ -70,8 +70,8 @@ Open the SQL Lab Editor:
 
 ![sqllab](./images/SQL%20Lab.png)
 
-Click on the DATABASE drop-down and pick your database (your database name is your EID). Do the 
-same for the SCHEMA drop-down.
+Click on the DATABASE drop-down and pick your database (your database name is your EID). Change the 
+schema to `exercises`.
 
 ![Database](./images/Database%20and%20Schema.png)
 
