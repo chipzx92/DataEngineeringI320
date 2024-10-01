@@ -171,29 +171,28 @@ SQL Review Assignment - Due Tuesday, September 24 by class time (12:30 PM)
 ### Week 5: Source Systems and Data Ingestion (Sep 24/26)  
 
 [Ingestion from Source Systems](presentations/Ingestion/)  
-[Bulk Loading from Source Systems](presentations/ingestion-pt2/)
+[Bulk Loading from Source Systems](presentations/ingestion-pt2/)  
+[Overview of File Systems](presentations/file_systems/)  
 
 We will cover the following topics:  
 What are source systems?  
 Why do we replicate source data?  
 What is a Data Lake?    
 What is a Data Warehouse?  
-What is a Data Lakehouse?  
-What is Batch Processing?  
-What are Streaming systems?  
+What is a Data Lakehouse?   
 Bulk ingestion using the Copy command   
 Workshop on ingesting data for semester project   
 
 ### Weeks 6.2-8.1: Data Modeling (Oct 1/3, 8/10)  
 We will discuss the following topics:  
-ER diagrams and modeling transactional systems   
+#### ER diagrams and modeling transactional systems   
 [One-to-Many Relationships](presentations/modeling/01_has_many/)   
 [Many-to-Many Relationships](presentations/modeling/02_many_to_many/)   
 [Many-to-Many with Attributes](presentations/modeling/03_many_to_many_attributes/)  
-Dimensional Modeling (Star Schemas)  
+#### Dimensional Modeling (Star Schemas)  
 <!-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  -->
 <!-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  -->
-Assignment: Queries from Star Schema
+<!-- Assignment: Queries from Star Schema -->
 
 ### Week 5.: Introduction to Semester Project (Oct 15)
 You will be divided up into teams of 4 and assigned your semester projects. Each project will 
