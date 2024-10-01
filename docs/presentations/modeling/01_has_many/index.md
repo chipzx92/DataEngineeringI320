@@ -37,8 +37,8 @@ If you were modeling Olympic swimming events you might write:
 > the 200m, 400m and the 800m freestyle and she won all three in record time. She was joined on the 
 > podium by .... She didn't swim any backstroke events.
 
-So, by "free form description" I mean just jotting down some examples in free text that you are g
-oing to use as concrete examples for your modeling.
+So, by "free form description" I mean just jotting down some examples in free text that you are 
+going to use as concrete examples for your modeling.
 
 Two kinds of relationships
 ===================
@@ -55,7 +55,8 @@ than one color ("The highlighter is green and black"), so that the relationship 
 single color could have many objects, but each object could have many colors. In that situation we 
 might say that we had a "many-to-many" relationship between objects and colors. 
 
-First we will do examples with only one-to-many, then we will introduce many-to-many.
+First we will do examples with only one-to-many relationships, then we will introduce many-to-many
+relationships.
 
 # The four parts of our database designs
 

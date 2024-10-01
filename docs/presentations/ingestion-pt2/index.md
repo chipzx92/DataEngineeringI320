@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS festival.tickets (
 ## Exercise - Create a table and ingest it using \copy
 
 ### Login to Jupyter and Superset
-Open your Jupyter notebook (https://notebook.dei320.net) and log in - your server may take a minute to start.
+Open your Jupyter notebook (https://notebook.dei320.ischool.utexas.edu) and log in - your server may take a minute to start.
 
 ![Jupyter](./images/jupyter%20notebook.png)
 
@@ -61,7 +61,7 @@ Click on `projects`, then `exercises`, then `bulk load`, then `data`. You will s
 
 ![data](./images/data.png)
 
-Now open Superset (https://superset.dei320.net) and log in.
+Now open Superset (https://superset.dei320.ischool.utexas.edu) and log in.
 
 ![superset](./images/superset%20login.png)
 
