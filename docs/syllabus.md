@@ -189,10 +189,15 @@ We will discuss the following topics:
 [One-to-Many Relationships](presentations/modeling/01_has_many/)   
 [Many-to-Many Relationships](presentations/modeling/02_many_to_many/)   
 [Many-to-Many with Attributes](presentations/modeling/03_many_to_many_attributes/)  
+
+Assignment: Document the Music Festival Design  
+Link to download draw.io: https://www.drawio.com/  
+
 #### Dimensional Modeling (Star Schemas)  
-<!-- [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  -->
-<!-- [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  -->
-<!-- Assignment: Queries from Star Schema -->
+[Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
+[Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)
+
+Assignment: Queries from Star Schema  
 
 ### Week 5.: Introduction to Semester Project (Oct 15)
 You will be divided up into teams of 4 and assigned your semester projects. Each project will 
