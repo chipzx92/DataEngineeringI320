@@ -199,7 +199,7 @@ Link to download draw.io: https://www.drawio.com/
 
 Assignment: Queries from Star Schema  
 
-### Week 8: Data Transformation (Oct 15,22)
+### Week 8: Data Transformation (Oct 15,17)
 What are Data Products and why do we need to create them? 
 
 [Introduction to Data Products](presentations/data_products)
