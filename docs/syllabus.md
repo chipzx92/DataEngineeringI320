@@ -183,7 +183,7 @@ What is a Data Lakehouse?
 Bulk ingestion using the Copy command   
 Workshop on ingesting data for semester project   
 
-### Weeks 6.2-8.1: Data Modeling (Oct 1/3, 8/10)  
+### Weeks 6-7: Data Modeling (Oct 1/3, 8/10)  
 We will discuss the following topics:  
 #### ER diagrams and modeling transactional systems   
 [One-to-Many Relationships](presentations/modeling/01_has_many/)   
@@ -199,7 +199,16 @@ Link to download draw.io: https://www.drawio.com/
 
 Assignment: Queries from Star Schema  
 
-### Week 5.: Introduction to Semester Project (Oct 15)
+### Week 8: Data Transformation (Oct 15,22)
+What are Data Products and why do we need to create them? 
+
+[Introduction to Data Products](presentations/data_products)
+
+Introduction to bulding star schemas and data products with dbt  
+
+[Introduction to dbt](presentations/dbt_intro)
+
+### Week 9.1: Introduction to Semester Project (Oct 22)
 You will be divided up into teams of 4 and assigned your semester projects. Each project will 
 consist of a requirements document explaining what you need to do and what the goals of the
 project are, a set of data files, a database dedicated to your project, and workspaces for your
@@ -221,15 +230,6 @@ files and visualizations.
 [Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)  
 
 -->
-
-### Week 8.2-9.1: Data Transformation (Oct 17,22)
-What are Data Products and why do we need to create them? 
-
-<!-- [Introduction to Data Products](presentations/data_products) -->
-
-Introduction to bulding star schemas and data products with dbt  
-
-<!-- [Introduction to dbt](presentations/dbt_intro) --> 
 
 ### Week 9.2-10.1: Data Presentation and Visualization (Oct 24,29)  
 Introduction to Business Intelligence Tools using Superset 
