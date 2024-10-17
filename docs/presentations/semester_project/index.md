@@ -8,8 +8,9 @@
 5. [Internet Movie Database Ratings dramatic genres (imdb_drama)](../../projects/imdb_drama/REQUIREMENTS.md)
 6. [Internet Movie Database Ratings entertainment genres (imdb_ent)](../../projects/imdb_ent/REQUIREMENTS.md)
 7. [Olympic Events (olympics)](../../projects/olympics/REQUIREMENTS.md)
-8. [Saturday Night Live shows (snl)](../../projects/sat_night_live/REQUIREMENTS.md)
-
+8. [Pokemon](../../projects/pokemon/REQUIREMENTS.md)
+9. [Saturday Night Live shows (snl)](../../projects/sat_night_live/REQUIREMENTS.md)
+10. [Women's Tennis Association (wta)](../../projects/wta/REQUIREMENTS.md)
 
 You will be divided into teams of 4 and be assigned a project. Each project has a requirements
 document, which is linked above.

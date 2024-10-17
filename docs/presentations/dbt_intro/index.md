@@ -222,7 +222,7 @@ Open them up and look at the SQL files.
 
 For example, we can look at the `ticket_sales_facts.sql` file
 
-![TicketSalesFacts](./images/ticket_sales_facts.png)
+![TicketSalesFacts](./images/ticket_sales_facts2.png)
 
 
 ## Running DBT
