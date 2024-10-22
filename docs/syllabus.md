@@ -224,11 +224,11 @@ files and visualizations.
 [Dancing with the Stars](projects/dwts/REQUIREMENTS.md)  
 [Internet Movie Database - entertainment genres](projects/imdb_ent/REQUIREMENTS.md)  
 [Internet Movie Database - action genres](projects/imdb_action/REQUIREMENTS.md)  
-[Internet Movie Database - dramatic genres](projects/imdb_drama/REQUIREMENTS.md)   
-[Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
-[Pokemon Characters](projects/pokemon/REQUIREMENTS.md)
-[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md) 
-[Womens Tennis Association](projects/wta/REQUIREMENTS.md)
+[Internet Movie Database - dramatic genres](projects/imdb_drama/REQUIREMENTS.md)     
+[Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)     
+[Pokemon Characters](projects/pokemon/REQUIREMENTS.md)  
+[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)   
+[Womens Tennis Association](projects/wta/REQUIREMENTS.md)  
 
 
 ### Week 9.2-10.1: Data Presentation and Visualization (Oct 24,29)  
