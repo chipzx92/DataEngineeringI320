@@ -214,7 +214,6 @@ consist of a requirements document explaining what you need to do and what the g
 project are, a set of data files, a database dedicated to your project, and workspaces for your
 files and visualizations.  
 
-<!--
 #### Semester Project Instructions:
 
 [Semester Project](presentations/semester_project)  
@@ -227,9 +226,10 @@ files and visualizations.
 [Internet Movie Database - action genres](projects/imdb_action/REQUIREMENTS.md)  
 [Internet Movie Database - dramatic genres](projects/imdb_drama/REQUIREMENTS.md)   
 [Olympic Events for all Olympics](projects/olympics/REQUIREMENTS.md)   
-[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md)  
+[Pokemon Characters](projects/pokemon/REQUIREMENTS.md)
+[Saturday Night Live](projects/sat_night_live/REQUIREMENTS.md) 
+[Womens Tennis Association](projects/wta/REQUIREMENTS.md)
 
--->
 
 ### Week 9.2-10.1: Data Presentation and Visualization (Oct 24,29)  
 Introduction to Business Intelligence Tools using Superset 
