@@ -234,11 +234,11 @@ files and visualizations.
 ### Week 9.2-10.1: Data Presentation and Visualization (Oct 24,29)  
 Introduction to Business Intelligence Tools using Superset 
 
-<!-- [Introduction to Superset](presentations/Superset) -->
+[Introduction to Superset](presentations/Superset)
 
 More Advanced visualizations with Superset 
 
-<!-- [Creating visualizations with Superset](presentations/Visualizations) --> 
+[Creating visualizations with Superset](presentations/Visualizations)
 
 ### Week 10.2: Data Orchestration and Data Catalogs (Oct 31)
 We will look at Dagster, a data orchestration tool, and DataHub, a data catalog tool. 
