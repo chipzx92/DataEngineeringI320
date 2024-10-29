@@ -179,8 +179,6 @@ Then choose the _venue_name_ as the dimension.
 
 ![venue name dimension](./images/venue_name_dimension.png)
 
-Let's also
-
 We're ready to create the initial version of the chart. Click on `CREATE CHART`.
 
 ![Create Bar Chart](./images/create_ts_bar_chart.png)
