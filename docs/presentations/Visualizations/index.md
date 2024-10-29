@@ -96,7 +96,7 @@ for overall revenue and then a time-series bar chart for year-by-year revenue.
 
 You can see in the center column where we specify the values for our chart, you see two new fields -
 `Dimensions` and `Metrics`. `Dimensions` are _dimensional attributes_ - in our festival project, 
-that would mean columns like band_name, venue_name, capacity, performance_start, etc.
+that would mean columns like band_name, venue_name, capacity, performance_date, etc.
 
 `Metrics` are aggregations of measures, i.e., the facts from our dimensional model. In the case of
 our festival project, this would be ticket_sales that we will aggregate in various ways.
@@ -157,7 +157,7 @@ _Time Series Bar Chart v2_.
 ![Bar Chart](./images/time_series_bar_chart.png)
 
 The first field in the center panel is the `TIME COLUMN`. You'll note that it is automatically 
-populated with the _performance_start_ field. This is because Superset will automatically 
+populated with the _performance_date_ field. This is because Superset will automatically 
 recognize a column with a date/time values and use it to populate this field.
 
 Immediately below that is the `TIME GRAIN` field. This is not the same as the grain of our 
