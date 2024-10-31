@@ -240,44 +240,43 @@ More Advanced visualizations with Superset
 
 [Creating visualizations with Superset](presentations/Visualizations)
 
-### Week 10.2: Data Orchestration and Data Catalogs (Oct 31)
-We will look at Dagster, a data orchestration tool, and DataHub, a data catalog tool. 
-- What do these tools do and why are they needed?
-- How are they used in organizations
-
-### Week 11: Workshop on Semester Projects (Nov 5/7)  
+### Week 10.2 - 11: Workshop on Semester Projects (Oct 31, Nov 5/7)  
 Review Semester Project Instructions  
 Review Project Report Template  
 Ingestion of Source Data  
 
-<!--
 #### Review Semester Project Instructions:
 [Semester Project](presentations/semester_project)
 
 #### Project Report Template:  
 [Project Report Template](320d_project_report_template.ipynb)
--->
+
+#### Ingestion of Source Data 
+[Ingestion from Source Systems](presentations/Ingestion/)  
+[Bulk Loading from Source Systems](presentations/ingestion-pt2/)  
+
+We will also look at Dagster, a data orchestration tool, and DataHub, a data catalog tool. 
+- What do these tools do and why are they needed?
+- How are they used in organizations
 
 ### Week 12: Workshop on Semester Projects (Nov 12/14)
 Building Star Schemas (Dimensional Models) and Data Products 
 
-<!--
 References:  
 [Dimensional Modeling, Part 1](presentations/dimensional_modeling)  
 [Dimensional Modeling, Part 2](presentations/dimensional_modeling-pt2)  
 
 [Introduction to Data Products](presentations/data_products)  
 [Introduction to dbt](presentations/dbt_intro)  
--->
+
 
 ### Week 13: Workshop on Semester Projects (Nov 19/21)   
 Building reports and visualizations  
 
-<!--
 References:  
 [Introduction to Superset](presentations/Superset)  
 [Creating visualizations with Superset](presentations/Visualizations)  
--->
+
 
 Semester Project due by Nov 25
 

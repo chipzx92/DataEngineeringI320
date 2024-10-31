@@ -39,8 +39,8 @@ Use the `music_festival` project as a reference (in `projects/music_festival`) f
 
 Use the `320d_project_report_template.ipynb` as the basis for your project report. Make a copy in your project folder (and rename to match your project).
 
-The name of your project is `dwts`. In your [Jupyter notebook](https://notebook.dei320.net) under the
-`projects` directory, you will find the `dwts` project. There is a `data` directory with your CSV 
+The name of your project is `wta`. In your [Jupyter notebook](https://notebook.dei320.net) under the
+`projects` directory, you will find the `wta` project. There is a `data` directory with your CSV 
 files and a `src` directory where you will write your code.
 
 For your project, you will need to do each of these steps:
